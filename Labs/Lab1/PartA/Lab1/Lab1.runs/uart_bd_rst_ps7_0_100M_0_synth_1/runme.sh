@@ -4,7 +4,6 @@
 # Vivado(TM)
 # runme.sh: a Vivado-generated Runs Script for UNIX
 # Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-# Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 # 
 
 echo "This script was generated under a different operating system."
@@ -12,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx/Vivado/2023.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2023.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2023.2/bin
+  PATH=F:/Xilinx/Vivado/2022.1/ids_lite/ISE/bin/nt64;F:/Xilinx/Vivado/2022.1/ids_lite/ISE/lib/nt64:F:/Xilinx/Vivado/2022.1/bin
 else
-  PATH=C:/Xilinx/Vivado/2023.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2023.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2023.2/bin:$PATH
+  PATH=F:/Xilinx/Vivado/2022.1/ids_lite/ISE/bin/nt64;F:/Xilinx/Vivado/2022.1/ids_lite/ISE/lib/nt64:F:/Xilinx/Vivado/2022.1/bin:$PATH
 fi
 export PATH
 
@@ -25,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/MastersProgram/ECE6740/Labs/Lab1/Lab1/Lab1.runs/uart_bd_rst_ps7_0_100M_0_synth_1'
+HD_PWD='F:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_rst_ps7_0_100M_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

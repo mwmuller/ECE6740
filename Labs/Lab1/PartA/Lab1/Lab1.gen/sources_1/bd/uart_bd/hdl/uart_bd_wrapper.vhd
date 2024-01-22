@@ -1,8 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
---Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
---Date        : Wed Jan 17 18:53:15 2024
+--Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+--Date        : Mon Jan 22 16:16:27 2024
 --Host        : DESKTOP-LF8951D running 64-bit major release  (build 9200)
 --Command     : generate_target uart_bd_wrapper.bd
 --Design      : uart_bd_wrapper
@@ -35,8 +34,7 @@ entity uart_bd_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
-    uart_rtl_rxd : in STD_LOGIC;
-    uart_rtl_txd : out STD_LOGIC
+    led : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
 end uart_bd_wrapper;
 
@@ -64,8 +62,7 @@ architecture STRUCTURE of uart_bd_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    uart_rtl_rxd : in STD_LOGIC;
-    uart_rtl_txd : out STD_LOGIC
+    led : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component uart_bd;
 begin
@@ -92,7 +89,6 @@ uart_bd_i: component uart_bd
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
-      uart_rtl_rxd => uart_rtl_rxd,
-      uart_rtl_txd => uart_rtl_txd
+      led(3 downto 0) => led(3 downto 0)
     );
 end STRUCTURE;

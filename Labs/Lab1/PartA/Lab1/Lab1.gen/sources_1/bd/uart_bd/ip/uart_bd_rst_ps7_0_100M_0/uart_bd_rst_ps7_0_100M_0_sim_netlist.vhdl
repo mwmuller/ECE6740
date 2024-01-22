@@ -1,11 +1,10 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
--- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Wed Jan 17 18:54:31 2024
+-- Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+-- Date        : Mon Jan 22 15:27:28 2024
 -- Host        : DESKTOP-LF8951D running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               f:/MastersProgram/ECE6740/Labs/Lab1/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_rst_ps7_0_100M_0/uart_bd_rst_ps7_0_100M_0_sim_netlist.vhdl
+--               f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_rst_ps7_0_100M_0/uart_bd_rst_ps7_0_100M_0_sim_netlist.vhdl
 -- Design      : uart_bd_rst_ps7_0_100M_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -1076,7 +1075,7 @@ entity uart_bd_rst_ps7_0_100M_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of uart_bd_rst_ps7_0_100M_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of uart_bd_rst_ps7_0_100M_0 : entity is "proc_sys_reset,Vivado 2023.2";
+  attribute x_core_info of uart_bd_rst_ps7_0_100M_0 : entity is "proc_sys_reset,Vivado 2022.1";
 end uart_bd_rst_ps7_0_100M_0;
 
 architecture STRUCTURE of uart_bd_rst_ps7_0_100M_0 is

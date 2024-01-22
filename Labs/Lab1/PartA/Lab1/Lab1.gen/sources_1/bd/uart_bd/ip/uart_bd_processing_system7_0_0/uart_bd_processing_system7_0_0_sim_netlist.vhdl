@@ -1,11 +1,10 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
--- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Wed Jan 17 18:54:33 2024
+-- Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+-- Date        : Mon Jan 22 15:27:30 2024
 -- Host        : DESKTOP-LF8951D running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               f:/MastersProgram/ECE6740/Labs/Lab1/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_processing_system7_0_0/uart_bd_processing_system7_0_0_sim_netlist.vhdl
+--               f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_processing_system7_0_0/uart_bd_processing_system7_0_0_sim_netlist.vhdl
 -- Design      : uart_bd_processing_system7_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -5724,7 +5723,7 @@ entity uart_bd_processing_system7_0_0 is
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of uart_bd_processing_system7_0_0 : entity is "yes";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of uart_bd_processing_system7_0_0 : entity is "processing_system7_v5_5_processing_system7,Vivado 2023.2";
+  attribute X_CORE_INFO of uart_bd_processing_system7_0_0 : entity is "processing_system7_v5_5_processing_system7,Vivado 2022.1";
 end uart_bd_processing_system7_0_0;
 
 architecture STRUCTURE of uart_bd_processing_system7_0_0 is

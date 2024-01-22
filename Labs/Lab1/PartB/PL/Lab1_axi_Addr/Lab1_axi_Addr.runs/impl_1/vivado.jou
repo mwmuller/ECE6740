@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Jan 22 15:08:03 2024
+# Process ID: 27088
+# Current directory: F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/impl_1
+# Command line: vivado.exe -log axi_addr_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source axi_addr_wrapper.tcl -notrace
+# Log file: F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/impl_1/axi_addr_wrapper.vdi
+# Journal file: F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/impl_1\vivado.jou
+# Running On: DESKTOP-LF8951D, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 16, Host memory: 34276 MB
+#-----------------------------------------------------------
+source axi_addr_wrapper.tcl -notrace
