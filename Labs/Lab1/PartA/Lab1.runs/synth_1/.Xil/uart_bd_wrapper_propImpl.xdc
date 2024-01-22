@@ -1,5 +1,0 @@
-set_property SRC_FILE_INFO {cfile:F:/ECE6740/zybo_master/PYNQ-Z1_C.xdc rfile:../../../../../zybo_master/PYNQ-Z1_C.xdc id:1} [current_design]
-set_property src_info {type:XDC file:1 line:108 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN uart_rtl_txd [get_ports {ck_io[28]}]
-set_property src_info {type:XDC file:1 line:109 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN uart_rtl_rxd [get_ports {ck_io[35]}]

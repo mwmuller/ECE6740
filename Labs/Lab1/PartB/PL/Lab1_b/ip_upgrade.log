@@ -1,0 +1,37 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Sun Jan 21 21:05:39 2024
+| Host         : DESKTOP-NE4QLD0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'adder_bd_lab1_axi_interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of adder_bd_lab1_axi_interface_0_0 (xilinx.com:user:lab1_axi_interface:1.0) from (Rev. 6) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Thu Jan 18 20:41:23 2024
+| Host         : DESKTOP-NE4QLD0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'adder_bd_lab1_axi_interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of adder_bd_lab1_axi_interface_0_0 (xilinx.com:user:lab1_axi_interface:1.0 (Rev. 6)) to current project options.
+

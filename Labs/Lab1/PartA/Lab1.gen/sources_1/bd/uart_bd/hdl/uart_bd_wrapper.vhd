@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
---Date        : Thu Jan 18 14:34:17 2024
+--Date        : Thu Jan 18 20:28:50 2024
 --Host        : DESKTOP-NE4QLD0 running 64-bit major release  (build 9200)
 --Command     : generate_target uart_bd_wrapper.bd
 --Design      : uart_bd_wrapper
@@ -34,7 +34,8 @@ entity uart_bd_wrapper is
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    LED0 : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
 end uart_bd_wrapper;
 
@@ -61,7 +62,8 @@ architecture STRUCTURE of uart_bd_wrapper is
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC
+    FIXED_IO_ps_porb : inout STD_LOGIC;
+    LED0 : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component uart_bd;
 begin
@@ -87,6 +89,7 @@ uart_bd_i: component uart_bd
       FIXED_IO_mio(53 downto 0) => FIXED_IO_mio(53 downto 0),
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
-      FIXED_IO_ps_srstb => FIXED_IO_ps_srstb
+      FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
+      LED0(31 downto 0) => LED0(31 downto 0)
     );
 end STRUCTURE;

@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Jan 21 22:13:08 2024
+# Process ID: 14412
+# Current directory: F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_b/Lab1_b.runs/adder_bd_c_addsub_0_0_synth_1
+# Command line: vivado.exe -log adder_bd_c_addsub_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source adder_bd_c_addsub_0_0.tcl
+# Log file: F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_b/Lab1_b.runs/adder_bd_c_addsub_0_0_synth_1/adder_bd_c_addsub_0_0.vds
+# Journal file: F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_b/Lab1_b.runs/adder_bd_c_addsub_0_0_synth_1\vivado.jou
+# Running On: DESKTOP-NE4QLD0, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 25690 MB
+#-----------------------------------------------------------
+source adder_bd_c_addsub_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 455.246 ; gain = 185.008
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/ECE6740/Labs/Lab1/PartB/PL'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'f:/ECE6740/Labs/Lab1/PartB/PL' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'f:/ECE6740/Labs/Lab1/PartB/PL/Lab1_b/Lab1_b.runs/adder_bd_c_addsub_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [Coretcl 2-1822] config_ip_cache: ignoring specified IP instance 'adder_bd_c_addsub_0_0'; does not support IP Caching: IP instance does not support OOC synthesis.
+Command: synth_design -top adder_bd_c_addsub_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_b/Lab1_b.srcs/sources_1/bd/adder_bd/ip/adder_bd_c_addsub_0_0/adder_bd_c_addsub_0_0.xci
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+ERROR: [Runs 36-287] File does not exist or is not accessible:'f:/ece6740/labs/lab1/partb/pl/tmp_edit_project.gen/sources_1/ip/adder_bd_c_addsub_0_0/hdl/xbip_utils_v3_0_vh_rfs.vhd'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'f:/ece6740/labs/lab1/partb/pl/tmp_edit_project.gen/sources_1/ip/adder_bd_c_addsub_0_0/hdl/c_reg_fd_v12_0_vh_rfs.vhd'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'f:/ece6740/labs/lab1/partb/pl/tmp_edit_project.gen/sources_1/ip/adder_bd_c_addsub_0_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'f:/ece6740/labs/lab1/partb/pl/tmp_edit_project.gen/sources_1/ip/adder_bd_c_addsub_0_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'f:/ece6740/labs/lab1/partb/pl/tmp_edit_project.gen/sources_1/ip/adder_bd_c_addsub_0_0/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'f:/ece6740/labs/lab1/partb/pl/tmp_edit_project.gen/sources_1/ip/adder_bd_c_addsub_0_0/hdl/xbip_addsub_v3_0_vh_rfs.vhd'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'f:/ece6740/labs/lab1/partb/pl/tmp_edit_project.gen/sources_1/ip/adder_bd_c_addsub_0_0/hdl/c_addsub_v12_0_vh_rfs.vhd'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'f:/ece6740/labs/lab1/partb/pl/tmp_edit_project.gen/sources_1/ip/adder_bd_c_addsub_0_0/synth/adder_bd_c_addsub_0_0.vhd'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2432
+ERROR: [Synth 8-522] parsing error: cannot open vhdl file 'f:/ece6740/labs/lab1/partb/pl/tmp_edit_project.gen/sources_1/ip/adder_bd_c_addsub_0_0/hdl/xbip_utils_v3_0_vh_rfs.vhd'
+Failed to read vhdl 'f:/ece6740/labs/lab1/partb/pl/tmp_edit_project.gen/sources_1/ip/adder_bd_c_addsub_0_0/hdl/xbip_utils_v3_0_vh_rfs.vhd'
+INFO: [Common 17-83] Releasing license: Synthesis
+9 Infos, 3 Warnings, 0 Critical Warnings and 10 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 21 22:13:26 2024...

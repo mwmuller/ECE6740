@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x8A704736FFB38C26",
+      "boundary_crc": "0xB7FD9D367717C17",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../Lab1_b.gen/sources_1/bd/adder_bd",
       "name": "adder_bd",
@@ -12,7 +12,9 @@
     },
     "design_tree": {
       "c_addsub_0": "",
-      "clk_wiz": ""
+      "clk_wiz": "",
+      "xlslice_0": "",
+      "lab1_axi_interface_0": ""
     },
     "ports": {
       "sys_clock": {
@@ -52,47 +54,10 @@
           }
         }
       },
-      "A_0": {
-        "type": "data",
-        "direction": "I",
-        "left": "31",
-        "right": "0",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "B_0": {
-        "type": "data",
-        "direction": "I",
-        "left": "31",
-        "right": "0",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "S_0": {
-        "type": "data",
+      "led": {
         "direction": "O",
-        "left": "31",
-        "right": "0",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": [
-              "xilinx.com:interface:datatypes:1.0 {",
-              "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum",
-              "{} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format",
-              "bool minimum {} maximum {}} value TRUE}}}} DATA_WIDTH 32",
-              "}"
-            ],
-            "value_src": "ip_prop"
-          }
-        }
+        "left": "3",
+        "right": "0"
       }
     },
     "components": {
@@ -134,31 +99,52 @@
             "value": "true"
           }
         }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "3",
+        "xci_name": "adder_bd_xlslice_0_1",
+        "xci_path": "ip\\adder_bd_xlslice_0_1\\adder_bd_xlslice_0_1.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "3"
+          }
+        }
+      },
+      "lab1_axi_interface_0": {
+        "vlnv": "xilinx.com:user:lab1_axi_interface:1.0",
+        "ip_revision": "11",
+        "xci_name": "adder_bd_lab1_axi_interface_0_0",
+        "xci_path": "ip\\adder_bd_lab1_axi_interface_0_0\\adder_bd_lab1_axi_interface_0_0.xci",
+        "inst_hier_path": "lab1_axi_interface_0"
       }
     },
     "nets": {
-      "A_0_1": {
-        "ports": [
-          "A_0",
-          "c_addsub_0/A"
-        ]
-      },
-      "B_0_1": {
-        "ports": [
-          "B_0",
-          "c_addsub_0/B"
-        ]
-      },
       "c_addsub_0_S": {
         "ports": [
           "c_addsub_0/S",
-          "S_0"
+          "xlslice_0/Din",
+          "lab1_axi_interface_0/R_ADDR_SUM"
         ]
       },
       "clk_wiz_clk_out1": {
         "ports": [
           "clk_wiz/clk_out1",
-          "c_addsub_0/CLK"
+          "c_addsub_0/CLK",
+          "lab1_axi_interface_0/s00_axi_aclk"
+        ]
+      },
+      "lab1_axi_interface_0_R_ADDR_1": {
+        "ports": [
+          "lab1_axi_interface_0/R_ADDR_1",
+          "c_addsub_0/A"
+        ]
+      },
+      "lab1_axi_interface_0_R_ADDR_2": {
+        "ports": [
+          "lab1_axi_interface_0/R_ADDR_2",
+          "c_addsub_0/B"
         ]
       },
       "reset_rtl_1": {
@@ -171,6 +157,12 @@
         "ports": [
           "sys_clock",
           "clk_wiz/clk_in1"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "led"
         ]
       }
     }

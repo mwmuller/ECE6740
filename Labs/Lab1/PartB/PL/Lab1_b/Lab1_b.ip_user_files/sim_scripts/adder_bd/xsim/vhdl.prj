@@ -1,0 +1,9 @@
+vhdl xil_defaultlib  \
+"../../../../../tmp_edit_project.gen/sources_1/ip/adder_bd_c_addsub_0_0/sim/adder_bd_c_addsub_0_0.vhd" \
+"../../../bd/adder_bd/ipshared/886e/hdl/lab1_axi_interface_v1_0_S00_AXI.vhd" \
+"../../../bd/adder_bd/ipshared/886e/hdl/lab1_axi_interface_v1_0.vhd" \
+"../../../bd/adder_bd/ip/adder_bd_lab1_axi_interface_0_0/sim/adder_bd_lab1_axi_interface_0_0.vhd" \
+"../../../bd/adder_bd/sim/adder_bd.vhd" \
+
+# Do not sort compile order
+nosort
