@@ -1,0 +1,8 @@
+AXI Interface parts Modified:
+Added 3 custome registers
+R_ADDR_1/R_ADDR_2 -> these were outputs of the axi interface and were 
+assigned the slv_reg0/slv_reg1 registers, respectively, at the end of the axi component.
+
+R_ADDR_SUM was added to the register mux portion of the axi interface. This took the place
+of slv_reg2 and was used to write to the reg_data_out output inside the axi.
+

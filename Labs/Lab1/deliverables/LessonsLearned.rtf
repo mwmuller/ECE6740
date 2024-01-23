@@ -1,0 +1,11 @@
+When first approaching this project with Vivado/vitis 2023.2, it was difficult to manuever the project
+and learn the tools. Downgrading to 2022.1 and redoing the lab helped tremendously. Initially, my axi
+component + addr didn't have the proper outputs to interface with the Zynq Processor. This was
+resolved by making the S00_Axi interface an external connection in my IP so it could be connected
+at the top level from the Zynq Processor. The registers for both a/b in the adder were not visible
+nor mutable, at first. This was later determined to be a fault of the implementation of the output
+registers inside the axi peripheral. (R_ADDR_1 and R_ADDR_2). Once these were properly assigned slave registers,
+the intended outputs on UART were seen!
+
+Lots of learning the tools and understanding how the axi peripheral operates, but now I could
+re-create the lab, with the rolled back vivado version, with relative ease! 
