@@ -2,17 +2,17 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Mon Jan 22 20:25:08 2024
-# Process ID: 18260
-# Current directory: F:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1
+# Start of session at: Mon Jan 22 22:47:23 2024
+# Process ID: 3588
+# Current directory: F:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1
 # Command line: vivado.exe -log uart_bd_axi_addr_wrapper_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_bd_axi_addr_wrapper_0_1.tcl
-# Log file: F:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1/uart_bd_axi_addr_wrapper_0_1.vds
-# Journal file: F:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1\vivado.jou
-# Running On: DESKTOP-LF8951D, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 16, Host memory: 34276 MB
+# Log file: F:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1/uart_bd_axi_addr_wrapper_0_1.vds
+# Journal file: F:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1\vivado.jou
+# Running On: DESKTOP-NE4QLD0, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 25690 MB
 #-----------------------------------------------------------
 source uart_bd_axi_addr_wrapper_0_1.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/MastersProgram/ECE6740/IPRepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/ECE6740/IPRepo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2022.1/data/ip'.
 Command: synth_design -top uart_bd_axi_addr_wrapper_0_1 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -21,32 +21,32 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 6180
+INFO: [Synth 8-7075] Helper process launched with PID 2568
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1277.027 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1278.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'uart_bd_axi_addr_wrapper_0_1' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/synth/uart_bd_axi_addr_wrapper_0_1.vhd:83]
-INFO: [Synth 8-3491] module 'axi_addr_wrapper' declared at 'f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr_wrapper.vhd:14' bound to instance 'U0' of component 'axi_addr_wrapper' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/synth/uart_bd_axi_addr_wrapper_0_1.vhd:144]
-INFO: [Synth 8-638] synthesizing module 'axi_addr_wrapper' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr_wrapper.vhd:41]
-INFO: [Synth 8-3491] module 'axi_addr' declared at 'f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr.vhd:14' bound to instance 'axi_addr_i' of component 'axi_addr' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr_wrapper.vhd:69]
-INFO: [Synth 8-638] synthesizing module 'axi_addr' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr.vhd:45]
-INFO: [Synth 8-3491] module 'axi_addr_Lab1_AxiInterface_Ad_0_0' declared at 'f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/synth/axi_addr_Lab1_AxiInterface_Ad_0_0.vhd:56' bound to instance 'Lab1_AxiInterface_Ad_0' of component 'axi_addr_Lab1_AxiInterface_Ad_0_0' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr.vhd:163]
-INFO: [Synth 8-638] synthesizing module 'axi_addr_Lab1_AxiInterface_Ad_0_0' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/synth/axi_addr_Lab1_AxiInterface_Ad_0_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'uart_bd_axi_addr_wrapper_0_1' [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/synth/uart_bd_axi_addr_wrapper_0_1.vhd:83]
+INFO: [Synth 8-3491] module 'axi_addr_wrapper' declared at 'f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr_wrapper.vhd:14' bound to instance 'U0' of component 'axi_addr_wrapper' [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/synth/uart_bd_axi_addr_wrapper_0_1.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'axi_addr_wrapper' [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr_wrapper.vhd:41]
+INFO: [Synth 8-3491] module 'axi_addr' declared at 'f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr.vhd:14' bound to instance 'axi_addr_i' of component 'axi_addr' [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr_wrapper.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'axi_addr' [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr.vhd:45]
+INFO: [Synth 8-3491] module 'axi_addr_Lab1_AxiInterface_Ad_0_0' declared at 'f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/synth/axi_addr_Lab1_AxiInterface_Ad_0_0.vhd:56' bound to instance 'Lab1_AxiInterface_Ad_0' of component 'axi_addr_Lab1_AxiInterface_Ad_0_0' [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'axi_addr_Lab1_AxiInterface_Ad_0_0' [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/synth/axi_addr_Lab1_AxiInterface_Ad_0_0.vhd:85]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'Lab1_AxiInterface_Adder_v1_0' declared at 'f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0.vhd:5' bound to instance 'U0' of component 'Lab1_AxiInterface_Adder_v1_0' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/synth/axi_addr_Lab1_AxiInterface_Ad_0_0.vhd:154]
-INFO: [Synth 8-638] synthesizing module 'Lab1_AxiInterface_Adder_v1_0' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0.vhd:51]
+INFO: [Synth 8-3491] module 'Lab1_AxiInterface_Adder_v1_0' declared at 'f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0.vhd:5' bound to instance 'U0' of component 'Lab1_AxiInterface_Adder_v1_0' [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/synth/axi_addr_Lab1_AxiInterface_Ad_0_0.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'Lab1_AxiInterface_Adder_v1_0' [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0.vhd:51]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'Lab1_AxiInterface_Adder_v1_0_S00_AXI' declared at 'f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:5' bound to instance 'Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst' of component 'Lab1_AxiInterface_Adder_v1_0_S00_AXI' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0.vhd:90]
-INFO: [Synth 8-638] synthesizing module 'Lab1_AxiInterface_Adder_v1_0_S00_AXI' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:88]
-INFO: [Synth 8-226] default block is never used [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:226]
-INFO: [Synth 8-226] default block is never used [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:356]
-INFO: [Synth 8-256] done synthesizing module 'Lab1_AxiInterface_Adder_v1_0_S00_AXI' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:88]
-INFO: [Synth 8-256] done synthesizing module 'Lab1_AxiInterface_Adder_v1_0' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0.vhd:51]
-INFO: [Synth 8-256] done synthesizing module 'axi_addr_Lab1_AxiInterface_Ad_0_0' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/synth/axi_addr_Lab1_AxiInterface_Ad_0_0.vhd:85]
-INFO: [Synth 8-3491] module 'axi_addr_c_addsub_0_0' declared at 'f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_c_addsub_0_0/synth/axi_addr_c_addsub_0_0.vhd:59' bound to instance 'c_addsub_0' of component 'axi_addr_c_addsub_0_0' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr.vhd:190]
-INFO: [Synth 8-638] synthesizing module 'axi_addr_c_addsub_0_0' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_c_addsub_0_0/synth/axi_addr_c_addsub_0_0.vhd:69]
+INFO: [Synth 8-3491] module 'Lab1_AxiInterface_Adder_v1_0_S00_AXI' declared at 'f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:5' bound to instance 'Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst' of component 'Lab1_AxiInterface_Adder_v1_0_S00_AXI' [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'Lab1_AxiInterface_Adder_v1_0_S00_AXI' [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:88]
+INFO: [Synth 8-226] default block is never used [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:226]
+INFO: [Synth 8-226] default block is never used [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:356]
+INFO: [Synth 8-256] done synthesizing module 'Lab1_AxiInterface_Adder_v1_0_S00_AXI' (0#1) [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'Lab1_AxiInterface_Adder_v1_0' (0#1) [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'axi_addr_Lab1_AxiInterface_Ad_0_0' (0#1) [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/synth/axi_addr_Lab1_AxiInterface_Ad_0_0.vhd:85]
+INFO: [Synth 8-3491] module 'axi_addr_c_addsub_0_0' declared at 'f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_c_addsub_0_0/synth/axi_addr_c_addsub_0_0.vhd:59' bound to instance 'c_addsub_0' of component 'axi_addr_c_addsub_0_0' [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'axi_addr_c_addsub_0_0' [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_c_addsub_0_0/synth/axi_addr_c_addsub_0_0.vhd:69]
 	Parameter C_VERBOSITY bound to: 0 - type: integer 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
@@ -73,17 +73,17 @@ INFO: [Synth 8-638] synthesizing module 'axi_addr_c_addsub_0_0' [f:/MastersProgr
 	Parameter C_HAS_SCLR bound to: 0 - type: integer 
 	Parameter C_HAS_SSET bound to: 0 - type: integer 
 	Parameter C_HAS_SINIT bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'c_addsub_v12_0_14' declared at 'f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_c_addsub_0_0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_14' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_c_addsub_0_0/synth/axi_addr_c_addsub_0_0.vhd:137]
-INFO: [Synth 8-256] done synthesizing module 'axi_addr_c_addsub_0_0' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_c_addsub_0_0/synth/axi_addr_c_addsub_0_0.vhd:69]
-INFO: [Synth 8-3491] module 'axi_addr_xlslice_0_0' declared at 'f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_xlslice_0_0/synth/axi_addr_xlslice_0_0.v:53' bound to instance 'xlslice_0' of component 'axi_addr_xlslice_0_0' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr.vhd:198]
-INFO: [Synth 8-6157] synthesizing module 'axi_addr_xlslice_0_0' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_xlslice_0_0/synth/axi_addr_xlslice_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_xlslice_0_0/hdl/xlslice_v1_0_vl_rfs.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_xlslice_0_0/hdl/xlslice_v1_0_vl_rfs.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'axi_addr_xlslice_0_0' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_xlslice_0_0/synth/axi_addr_xlslice_0_0.v:53]
-INFO: [Synth 8-256] done synthesizing module 'axi_addr' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'axi_addr_wrapper' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr_wrapper.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'uart_bd_axi_addr_wrapper_0_1' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/synth/uart_bd_axi_addr_wrapper_0_1.vhd:83]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:221]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_14' declared at 'f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_c_addsub_0_0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_14' [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_c_addsub_0_0/synth/axi_addr_c_addsub_0_0.vhd:137]
+INFO: [Synth 8-256] done synthesizing module 'axi_addr_c_addsub_0_0' (0#1) [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_c_addsub_0_0/synth/axi_addr_c_addsub_0_0.vhd:69]
+INFO: [Synth 8-3491] module 'axi_addr_xlslice_0_0' declared at 'f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_xlslice_0_0/synth/axi_addr_xlslice_0_0.v:53' bound to instance 'xlslice_0' of component 'axi_addr_xlslice_0_0' [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr.vhd:198]
+INFO: [Synth 8-6157] synthesizing module 'axi_addr_xlslice_0_0' [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_xlslice_0_0/synth/axi_addr_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_xlslice_0_0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (0#1) [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_xlslice_0_0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'axi_addr_xlslice_0_0' (0#1) [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_xlslice_0_0/synth/axi_addr_xlslice_0_0.v:53]
+INFO: [Synth 8-256] done synthesizing module 'axi_addr' (0#1) [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'axi_addr_wrapper' (0#1) [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr_wrapper.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'uart_bd_axi_addr_wrapper_0_1' (0#1) [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/synth/uart_bd_axi_addr_wrapper_0_1.vhd:83]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:221]
 WARNING: [Synth 8-7129] Port Din[31] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[30] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[29] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
@@ -136,68 +136,65 @@ WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module Lab1_AxiInterface_Adder_v
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module Lab1_AxiInterface_Adder_v1_0_S00_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module Lab1_AxiInterface_Adder_v1_0_S00_AXI is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1277.027 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1278.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1277.027 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1278.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1277.027 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1278.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1277.027 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1278.582 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_ooc.xdc] for cell 'U0/axi_addr_i'
-Finished Parsing XDC File [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_ooc.xdc] for cell 'U0/axi_addr_i'
-Parsing XDC File [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/PYNQ-Z1_C.xdc] for cell 'U0'
-WARNING: [Vivado 12-584] No ports matched 'ck_io[28]'. [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/PYNQ-Z1_C.xdc:108]
-WARNING: [Vivado 12-584] No ports matched 'ck_io[35]'. [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/PYNQ-Z1_C.xdc:109]
-Finished Parsing XDC File [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/PYNQ-Z1_C.xdc] for cell 'U0'
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/PYNQ-Z1_C.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/uart_bd_axi_addr_wrapper_0_1_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/PYNQ-Z1_C.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/uart_bd_axi_addr_wrapper_0_1_propImpl.xdc].
+Parsing XDC File [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_ooc.xdc] for cell 'U0/axi_addr_i'
+Finished Parsing XDC File [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_ooc.xdc] for cell 'U0/axi_addr_i'
+Parsing XDC File [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/PYNQ-Z1_C.xdc] for cell 'U0'
+WARNING: [Vivado 12-584] No ports matched 'ck_io[28]'. [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/PYNQ-Z1_C.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'ck_io[35]'. [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/PYNQ-Z1_C.xdc:109]
+Finished Parsing XDC File [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/PYNQ-Z1_C.xdc] for cell 'U0'
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/PYNQ-Z1_C.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/uart_bd_axi_addr_wrapper_0_1_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/PYNQ-Z1_C.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/uart_bd_axi_addr_wrapper_0_1_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/uart_bd_axi_addr_wrapper_0_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [F:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [F:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1/dont_touch.xdc]
+Parsing XDC File [F:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1356.270 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1360.566 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1357.637 ; gain = 1.367
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1360.887 ; gain = 0.320
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1357.637 ; gain = 80.609
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1360.887 ; gain = 82.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1357.637 ; gain = 80.609
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1360.887 ; gain = 82.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  F:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1/dont_touch.xdc, line 18).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  F:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1/dont_touch.xdc, line 18).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/axi_addr_i/Lab1_AxiInterface_Ad_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/axi_addr_i/c_addsub_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/axi_addr_i/xlslice_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1357.637 ; gain = 80.609
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1360.887 ; gain = 82.305
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'R_ADDR_1_reg' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:358]
-WARNING: [Synth 8-327] inferring latch for variable 'R_ADDR_2_reg' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:360]
-WARNING: [Synth 8-327] inferring latch for variable 'reg_data_out_reg' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:362]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1357.637 ; gain = 80.609
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1360.887 ; gain = 82.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -259,25 +256,25 @@ WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module axi_addr_Lab1_AxiInterf
 WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module axi_addr_Lab1_AxiInterface_Ad_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module axi_addr_Lab1_AxiInterface_Ad_0_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1357.637 ; gain = 80.609
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1360.887 ; gain = 82.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1357.637 ; gain = 80.609
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1360.887 ; gain = 82.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1357.637 ; gain = 80.609
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1360.887 ; gain = 82.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1357.637 ; gain = 80.609
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1360.887 ; gain = 82.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -295,37 +292,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.637 ; gain = 80.609
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1360.887 ; gain = 82.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.637 ; gain = 80.609
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1360.887 ; gain = 82.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.637 ; gain = 80.609
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1360.887 ; gain = 82.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.637 ; gain = 80.609
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1360.887 ; gain = 82.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.637 ; gain = 80.609
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1360.887 ; gain = 82.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.637 ; gain = 80.609
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1360.887 ; gain = 82.305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -342,42 +339,40 @@ Report Cell Usage:
 |      |Cell  |Count |
 +------+------+------+
 |1     |LUT1  |     1|
-|2     |LUT2  |    35|
-|3     |LUT3  |    33|
+|2     |LUT2  |    33|
+|3     |LUT3  |     1|
 |4     |LUT4  |    18|
-|5     |LUT6  |     4|
+|5     |LUT6  |    36|
 |6     |MUXCY |    31|
 |7     |XORCY |    32|
 |8     |FDRE  |   167|
 |9     |FDSE  |     3|
-|10    |LD    |    96|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.637 ; gain = 80.609
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1360.887 ; gain = 82.305
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 44 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 1357.637 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.637 ; gain = 80.609
+Synthesis finished with 0 errors, 0 critical warnings and 41 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 1360.887 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1360.887 ; gain = 82.305
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1357.637 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 159 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1360.887 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1357.637 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1360.887 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 104 instances were transformed.
+  A total of 8 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 8 instances
-  LD => LDCE: 96 instances
 
-Synth Design complete, checksum: 3deb2fba
+Synth Design complete, checksum: 330673a0
 INFO: [Common 17-83] Releasing license: Synthesis
-49 Infos, 99 Warnings, 0 Critical Warnings and 0 Errors encountered.
+49 Infos, 96 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1357.637 ; gain = 80.609
-INFO: [Common 17-1381] The checkpoint 'F:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1/uart_bd_axi_addr_wrapper_0_1.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP uart_bd_axi_addr_wrapper_0_1, cache-ID = aa1295ea5a029a3f
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1360.887 ; gain = 82.305
+INFO: [Common 17-1381] The checkpoint 'F:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1/uart_bd_axi_addr_wrapper_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP uart_bd_axi_addr_wrapper_0_1, cache-ID = 6ddcd7568abc86bf
 INFO: [Coretcl 2-1174] Renamed 13 cell refs.
-INFO: [Common 17-1381] The checkpoint 'F:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1/uart_bd_axi_addr_wrapper_0_1.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'F:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1/uart_bd_axi_addr_wrapper_0_1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file uart_bd_axi_addr_wrapper_0_1_utilization_synth.rpt -pb uart_bd_axi_addr_wrapper_0_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Jan 22 20:25:49 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 22 22:48:10 2024...

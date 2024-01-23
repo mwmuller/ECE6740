@@ -21,4 +21,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_axi
 # IP: bd/uart_bd/ip/uart_bd_auto_pc_0/uart_bd_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_auto_pc_0 || ORIG_REF_NAME==uart_bd_auto_pc_0} -quiet] -quiet
 
-# XDC: f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/uart_bd_ooc.xdc
+# XDC: f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/uart_bd_ooc.xdc

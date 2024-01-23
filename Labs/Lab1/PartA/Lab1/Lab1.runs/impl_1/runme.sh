@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/impl_1'
+HD_PWD='F:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log uart_bd_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source uart_bd_wrapper.tcl -notrace
 
 

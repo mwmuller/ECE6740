@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="60" Path="F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.xpr">
+<Project Version="7" Minor="60" Path="F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="8735a9d9074148618820cde867955b3f"/>
@@ -43,7 +43,7 @@
     <Option Name="SimulatorGccVersionRiviera" Val="9.3.0"/>
     <Option Name="SimulatorGccVersionActiveHdl" Val="9.3.0"/>
     <Option Name="TargetLanguage" Val="VHDL"/>
-    <Option Name="BoardPart" Val="www.digilentinc.com:pynq-z1:part0:1.0"/>
+    <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
@@ -197,11 +197,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="axi_addr_Lab1_AxiInterface_Ad_0_0_synth_1" Type="Ft3:Synth" SrcSet="axi_addr_Lab1_AxiInterface_Ad_0_0" Part="xc7z020clg400-1" ConstrsSet="axi_addr_Lab1_AxiInterface_Ad_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/axi_addr_Lab1_AxiInterface_Ad_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/axi_addr_Lab1_AxiInterface_Ad_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/axi_addr_Lab1_AxiInterface_Ad_0_0_synth_1">
+    <Run Id="axi_addr_Lab1_AxiInterface_Ad_0_0_synth_1" Type="Ft3:Synth" SrcSet="axi_addr_Lab1_AxiInterface_Ad_0_0" Part="xc7z020clg400-1" ConstrsSet="axi_addr_Lab1_AxiInterface_Ad_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/axi_addr_Lab1_AxiInterface_Ad_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PPRDIR/../../../../../../MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/utils_1/imports/axi_addr_Lab1_AxiInterface_Ad_0_0_synth_1" AutoRQSDir="$PPRDIR/../../../../../../MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/utils_1/imports/axi_addr_Lab1_AxiInterface_Ad_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -209,7 +207,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/impl_1">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../../../MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/utils_1/imports/impl_1" AutoRQSDir="$PPRDIR/../../../../../../MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
@@ -227,11 +225,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="axi_addr_Lab1_AxiInterface_Ad_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="axi_addr_Lab1_AxiInterface_Ad_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="axi_addr_Lab1_AxiInterface_Ad_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/axi_addr_Lab1_AxiInterface_Ad_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/axi_addr_Lab1_AxiInterface_Ad_0_0_impl_1">
+    <Run Id="axi_addr_Lab1_AxiInterface_Ad_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="axi_addr_Lab1_AxiInterface_Ad_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="axi_addr_Lab1_AxiInterface_Ad_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../../../../../MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/utils_1/imports/axi_addr_Lab1_AxiInterface_Ad_0_0_impl_1" AutoRQSDir="$PPRDIR/../../../../../../MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/utils_1/imports/axi_addr_Lab1_AxiInterface_Ad_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -247,9 +243,7 @@
       <RQSFiles/>
     </Run>
   </Runs>
-  <Board>
-    <Jumpers/>
-  </Board>
+  <Board/>
   <DashboardSummary Version="1" Minor="0">
     <Dashboards>
       <Dashboard Name="default_dashboard">

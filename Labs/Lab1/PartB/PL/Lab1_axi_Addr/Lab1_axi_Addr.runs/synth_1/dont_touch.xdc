@@ -6,13 +6,13 @@
 # Block Designs: bd/axi_addr/axi_addr.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==axi_addr || ORIG_REF_NAME==axi_addr} -quiet] -quiet
 
-# IP: bd/axi_addr/ip/axi_addr_Lab1_AxiInterface_Ad_0_0/axi_addr_Lab1_AxiInterface_Ad_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==axi_addr_Lab1_AxiInterface_Ad_0_0 || ORIG_REF_NAME==axi_addr_Lab1_AxiInterface_Ad_0_0} -quiet] -quiet
-
 # IP: bd/axi_addr/ip/axi_addr_c_addsub_0_0/axi_addr_c_addsub_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==axi_addr_c_addsub_0_0 || ORIG_REF_NAME==axi_addr_c_addsub_0_0} -quiet] -quiet
 
 # IP: bd/axi_addr/ip/axi_addr_xlslice_0_0/axi_addr_xlslice_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==axi_addr_xlslice_0_0 || ORIG_REF_NAME==axi_addr_xlslice_0_0} -quiet] -quiet
 
-# XDC: f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/axi_addr_ooc.xdc
+# IP: bd/axi_addr/ip/axi_addr_Lab1_AxiInterface_Ad_0_0/axi_addr_Lab1_AxiInterface_Ad_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==axi_addr_Lab1_AxiInterface_Ad_0_0 || ORIG_REF_NAME==axi_addr_Lab1_AxiInterface_Ad_0_0} -quiet] -quiet
+
+# XDC: f:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/axi_addr_ooc.xdc

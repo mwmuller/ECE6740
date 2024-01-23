@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Mon Jan 22 15:27:28 2024
-| Host         : DESKTOP-LF8951D running 64-bit major release  (build 9200)
+| Date         : Mon Jan 22 22:48:04 2024
+| Host         : DESKTOP-NE4QLD0 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file uart_bd_rst_ps7_0_100M_0_utilization_synth.rpt -pb uart_bd_rst_ps7_0_100M_0_utilization_synth.pb
 | Design       : uart_bd_rst_ps7_0_100M_0
 | Device       : xc7z020clg400-1

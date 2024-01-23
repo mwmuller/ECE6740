@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/impl_1'
+HD_PWD='F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

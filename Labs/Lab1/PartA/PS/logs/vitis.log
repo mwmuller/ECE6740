@@ -1,0 +1,674 @@
+15:20:16 INFO  : updated workspace path: F:\ECE6740\Labs\Lab1\PS
+15:20:16 INFO  : created .gitignore file for the project F:\ECE6740\Labs\Lab1\PS
+15:20:16 INFO  : updated workspace path: F:\ECE6740\Labs\Lab1\PS
+15:20:17 INFO  : Successfully created repository data at C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul6450401070729172775
+15:20:17 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul2144400047187308101 -r C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul6450401070729172775\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:20:18 INFO  : Embedded Template List generated successfully
+15:20:18 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\repo.py -st   C:\Xilinx\Vitis\2023.2\data\embeddedsw && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:20:19 INFO  : Successfully created repository data at F:\ECE6740\Labs\Lab1\PS
+15:20:19 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul1536511717173592047 -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:20:20 INFO  : Embedded Template List generated successfully
+15:20:20 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul2135766026173485811 -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:20:20 INFO  : Embedded Template List generated successfully
+15:20:30 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul3710798552399770772 -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:20:30 INFO  : Marking the target connection as default Local
+15:20:30 INFO  : Marking the target connection as default Linux Agent
+15:20:30 INFO  : Marking the target connection as default XRTServer
+15:20:30 INFO  : Marking the target connection as default LinuxEmulation
+15:20:30 INFO  : Marking the target connection as default QEMU
+15:20:30 INFO  : created .gitignore file for the project F:\ECE6740
+15:51:11 INFO  : updated workspace path: F:\ECE6740\Labs\Lab1\PS
+15:51:11 INFO  : created .gitignore file for the project F:\ECE6740\Labs\Lab1\PS
+15:51:11 INFO  : updated workspace path: F:\ECE6740\Labs\Lab1\PS
+15:51:11 INFO  : created .gitignore file for the project F:\ECE6740\Labs\Lab1\PS
+15:51:12 INFO  : Successfully created repository data at C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul847693829890858478
+15:51:12 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul6440720760806308061 -r C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul847693829890858478\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:51:13 INFO  : Embedded Template List generated successfully
+15:51:13 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul1938228961744401108 -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:51:13 INFO  : Embedded Template List generated successfully
+15:51:13 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul14680948093908641863 -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:51:13 INFO  : Embedded Template List generated successfully
+15:52:49 INFO  : Found no platform with name 'uart_bd_zynqSDK' in install repositories
+15:52:55 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && xsct.bat C:\Xilinx\Vitis\2023.2\vitisng-server\scripts\platformutil.tcl F:\ECE6740\Labs\Lab1\uart_bd_zynqSDK.xsa F:\ECE6740\Labs\Lab1\PS\.rigel_lopper_temp_platform\uart_bd_zynqSDK\hw\sdt && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:53:01 INFO  : ECHO is off.
+15:53:01 INFO  : ECHO is off.
+15:53:01 INFO  : INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vitis/2023.2/data/embeddedsw) loading 0 seconds
+15:53:01 INFO  : WARNING: [Common 17-673] Cannot get value of property 'C_QSPI_MODE' because this property is not valid in conjunction with other property setting on this object.
+15:53:01 INFO  : WARNING: [Common 17-673] Cannot get value of property 'C_EMIO_GPIO_WIDTH' because this property is not valid in conjunction with other property setting on this object.
+15:53:01 INFO  : WARNING: [Common 17-673] Cannot get value of property 'C_MIO_GPIO_MASK' because this property is not valid in conjunction with other property setting on this object.
+15:53:01 INFO  : SDT generated successfully
+15:53:01 INFO  : Lopper command for cpu List generation: lopper -O F:\ECE6740\Labs\Lab1\PS\.rigel_lopper -f -i C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Lib\site-packages\lopper\lops\lop-cpulist.dts F:\ECE6740\Labs\Lab1\PS\.rigel_lopper_temp_platform\uart_bd_zynqSDK\hw\sdt\system-top.dts
+15:53:01 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && lopper -O F:\ECE6740\Labs\Lab1\PS\.rigel_lopper -f -i C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Lib\site-packages\lopper\lops\lop-cpulist.dts F:\ECE6740\Labs\Lab1\PS\.rigel_lopper_temp_platform\uart_bd_zynqSDK\hw\sdt\system-top.dts && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:53:01 INFO  : ps7_cortexa9_0
+15:53:01 INFO  : ps7_cortexa9_1
+15:53:01 INFO  : CPU List generated successfully
+15:53:46 INFO  : Platform  UARTPlat creation started.
+15:53:46 INFO  : Found no platform with name 'uart_bd_zynqSDK' in install repositories
+15:53:46 INFO  : Lopper command for cpu List generation: lopper -O F:\ECE6740\Labs\Lab1\PS\.rigel_lopper -f -i C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Lib\site-packages\lopper\lops\lop-cpulist.dts F:\ECE6740\Labs\Lab1\PS\UARTPlat\hw\sdt\system-top.dts
+15:53:46 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && lopper -O F:\ECE6740\Labs\Lab1\PS\.rigel_lopper -f -i C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Lib\site-packages\lopper\lops\lop-cpulist.dts F:\ECE6740\Labs\Lab1\PS\UARTPlat\hw\sdt\system-top.dts && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:53:47 INFO  : ps7_cortexa9_0
+15:53:47 INFO  : ps7_cortexa9_1
+15:53:47 INFO  : CPU List generated successfully
+15:53:47 INFO  : SDT generated successfully.
+15:53:47 INFO  : created .gitignore file for the project F:\ECE6740\Labs\Lab1\PS\UARTPlat
+15:53:47 INFO  : ZYNQ: Using the QEMU args from install at  : C:\Xilinx\Vitis\2023.2\data\emulation\platforms\zynq\sw\a9_linux\qemu\qemu_args.txt
+15:53:47 INFO  : ZYNQ: Using the QEMU args from install at  : C:\Xilinx\Vitis\2023.2\data\emulation\platforms\zynq\sw\a9_standalone\qemu\qemu_args.txt
+15:53:47 INFO  : ZYNQ: Using the QEMU args from install at  : C:\Xilinx\Vitis\2023.2\data\emulation\platforms\zynq\sw\a9_standalone\qemu\qemu_args.txt
+15:53:47 INFO  : lopper command to generate BSP :python C:\Xilinx\Vitis\2023.2\data\embeddedsw/scripts/pyesw//create_bsp.py -w F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp -p ps7_cortexa9_0 -o standalone -s F:\ECE6740\Labs\Lab1\PS\UARTPlat\hw\sdt\system-top.dts -t zynq_fsbl -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml
+15:53:47 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\create_bsp.py -w F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp -p ps7_cortexa9_0 -o standalone -s F:\ECE6740\Labs\Lab1\PS\UARTPlat\hw\sdt\system-top.dts -t zynq_fsbl -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:53:47 INFO  : lopper command to generate BSP :python C:\Xilinx\Vitis\2023.2\data\embeddedsw/scripts/pyesw//create_bsp.py -w F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp -p ps7_cortexa9_0 -o standalone -s F:\ECE6740\Labs\Lab1\PS\UARTPlat\hw\sdt\system-top.dts -t empty_application -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml
+15:53:47 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\create_bsp.py -w F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp -p ps7_cortexa9_0 -o standalone -s F:\ECE6740\Labs\Lab1\PS\UARTPlat\hw\sdt\system-top.dts -t empty_application -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:53:59 INFO  : -- The C compiler identification is GNU 12.2.0
+15:53:59 INFO  : -- The CXX compiler identification is GNU 12.2.0
+15:53:59 INFO  : -- Detecting C compiler ABI info
+15:53:59 INFO  : -- Detecting C compiler ABI info - done
+15:53:59 INFO  : -- Check for working C compiler: C:/Xilinx/Vitis/2023.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe - skipped
+15:53:59 INFO  : -- Detecting C compile features
+15:53:59 INFO  : -- Detecting C compile features - done
+15:53:59 INFO  : -- Detecting CXX compiler ABI info
+15:53:59 INFO  : -- Detecting CXX compiler ABI info - done
+15:53:59 INFO  : -- Check for working CXX compiler: C:/Xilinx/Vitis/2023.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-g++.exe - skipped
+15:53:59 INFO  : -- Detecting CXX compile features
+15:53:59 INFO  : -- Detecting CXX compile features - done
+15:53:59 INFO  : -- Configuring done
+15:53:59 INFO  : -- Generating done
+15:53:59 INFO  : CMake Warning:
+15:53:59 INFO  :   Manually-specified variables were not used by the project:
+15:53:59 INFO  : 
+15:53:59 INFO  :     CMAKE_LIBRARY_PATH
+15:53:59 INFO  : 
+15:53:59 INFO  : 
+15:53:59 INFO  : -- Build files have been written to: F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp
+15:53:59 INFO  : Successfully created Domain at F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+15:53:59 INFO  : Successfully Generated Domain F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+15:53:59 INFO  : Domain standalone_ps7_cortexa9_0 added successfully.
+15:53:59 INFO  : -- The C compiler identification is GNU 12.2.0
+15:53:59 INFO  : -- The CXX compiler identification is GNU 12.2.0
+15:53:59 INFO  : -- Detecting C compiler ABI info
+15:53:59 INFO  : -- Detecting C compiler ABI info - done
+15:53:59 INFO  : -- Check for working C compiler: C:/Xilinx/Vitis/2023.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe - skipped
+15:53:59 INFO  : -- Detecting C compile features
+15:53:59 INFO  : -- Detecting C compile features - done
+15:53:59 INFO  : -- Detecting CXX compiler ABI info
+15:53:59 INFO  : -- Detecting CXX compiler ABI info - done
+15:53:59 INFO  : -- Check for working CXX compiler: C:/Xilinx/Vitis/2023.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-g++.exe - skipped
+15:53:59 INFO  : -- Detecting CXX compile features
+15:53:59 INFO  : -- Detecting CXX compile features - done
+15:53:59 INFO  : -- Configuring done
+15:53:59 INFO  : -- Generating done
+15:53:59 INFO  : CMake Warning:
+15:53:59 INFO  :   Manually-specified variables were not used by the project:
+15:53:59 INFO  : 
+15:53:59 INFO  :     CMAKE_LIBRARY_PATH
+15:53:59 INFO  : 
+15:53:59 INFO  : 
+15:53:59 INFO  : -- Build files have been written to: F:/ECE6740/Labs/Lab1/PS/UARTPlat/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
+15:53:59 INFO  : Successfully created Domain at F:/ECE6740/Labs/Lab1/PS/UARTPlat/zynq_fsbl/zynq_fsbl_bsp
+15:53:59 INFO  : Successfully Generated Domain F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp
+15:53:59 INFO  : lopper command to create baremetal application :python C:\Xilinx\Vitis\2023.2\data\embeddedsw/scripts/pyesw//create_app.py -s F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl -t zynq_fsbl -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp -n fsbl -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml
+15:53:59 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\validate_bsp.py -t zynq_fsbl -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:54:00 INFO  : Successfully validated template zynq_fsbl
+15:54:00 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\create_app.py -s F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl -t zynq_fsbl -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp -n fsbl -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:54:03 INFO  : Successfully Created Application sources at F:/ECE6740/Labs/Lab1/PS/UARTPlat/zynq_fsbl
+15:54:03 INFO  : Successfully created Application F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl
+15:54:03 INFO  : Platform FSBL Boot domain added successfully.
+15:54:03 INFO  : Platform creation finished successfully.
+15:54:03 INFO  : Platform Quick Build initiated.
+15:54:03 INFO  : Generating Export directory
+15:54:03 INFO  : Generated platform metadata for creating application(s) based on platform UARTPlat.
+15:54:24 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && lopper -O  . F:\ECE6740\Labs\Lab1\PS\UARTPlat\hw\sdt\system-top.dts -- baremetal_getsupported_comp_xlnx ps7_cortexa9_0 F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:54:25 INFO  : Supported Library List generated.
+15:54:49 INFO  : Updating Examples in Driver F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+15:54:49 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\load_example.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:54:54 INFO  : -- The C compiler identification is GNU 12.2.0
+15:54:54 INFO  : -- The CXX compiler identification is GNU 12.2.0
+15:54:54 INFO  : -- Detecting C compiler ABI info
+15:54:54 INFO  : -- Detecting C compiler ABI info - done
+15:54:54 INFO  : -- Check for working C compiler: C:/Xilinx/Vitis/2023.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe - skipped
+15:54:54 INFO  : -- Detecting C compile features
+15:54:54 INFO  : -- Detecting C compile features - done
+15:54:54 INFO  : -- Detecting CXX compiler ABI info
+15:54:54 INFO  : -- Detecting CXX compiler ABI info - done
+15:54:54 INFO  : -- Check for working CXX compiler: C:/Xilinx/Vitis/2023.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-g++.exe - skipped
+15:54:54 INFO  : -- Detecting CXX compile features
+15:54:54 INFO  : -- Detecting CXX compile features - done
+15:54:54 INFO  : -- Configuring done
+15:54:54 INFO  : -- Generating done
+15:54:54 INFO  : CMake Warning:
+15:54:54 INFO  :   Manually-specified variables were not used by the project:
+15:54:54 INFO  : 
+15:54:54 INFO  :     CMAKE_LIBRARY_PATH
+15:54:54 INFO  : 
+15:54:54 INFO  : 
+15:54:54 INFO  : -- Build files have been written to: F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/exmetadata
+15:54:54 INFO  : Updated Examples in Driver
+15:56:20 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\validate_bsp.py -t empty_application -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\export\UARTPlat\sw\standalone_ps7_cortexa9_0 -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:56:21 INFO  : Successfully validated template empty_application
+15:56:39 INFO  : Lopper command for cpu List generation: lopper -O F:\ECE6740\Labs\Lab1\PS\.rigel_lopper -f -i C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Lib\site-packages\lopper\lops\lop-cpulist.dts F:\ECE6740\Labs\Lab1\PS\UARTPlat\export\UARTPlat\hw\sdt\system-top.dts
+15:56:39 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && lopper -O F:\ECE6740\Labs\Lab1\PS\.rigel_lopper -f -i C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Lib\site-packages\lopper\lops\lop-cpulist.dts F:\ECE6740\Labs\Lab1\PS\UARTPlat\export\UARTPlat\hw\sdt\system-top.dts && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:56:40 INFO  : ps7_cortexa9_0
+15:56:40 INFO  : ps7_cortexa9_1
+15:56:40 INFO  : CPU List generated successfully
+15:56:40 INFO  : Lopper command for peripheral List generation: lopper -O F:\ECE6740\Labs\Lab1\PS\.rigel_lopper -f F:\ECE6740\Labs\Lab1\PS\UARTPlat\export\UARTPlat\hw\sdt\system-top.dts  -- baremetaldrvlist_xlnx ps7_cortexa9_0 F:\ECE6740\Labs\Lab1\PS\.repo.yaml
+15:56:40 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && lopper -O F:\ECE6740\Labs\Lab1\PS\.rigel_lopper -f F:\ECE6740\Labs\Lab1\PS\UARTPlat\export\UARTPlat\hw\sdt\system-top.dts  -- baremetaldrvlist_xlnx ps7_cortexa9_0 F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:56:41 INFO  : Peripheral List generated successfully
+15:56:47 INFO  : lopper command to create baremetal application :python C:\Xilinx\Vitis\2023.2\data\embeddedsw/scripts/pyesw//create_app.py -s F:\ECE6740\Labs\Lab1\PS\Hello_world\src -t empty_application -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\export\UARTPlat\sw\standalone_ps7_cortexa9_0 -n Hello_world -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml
+15:56:47 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\validate_bsp.py -t empty_application -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\export\UARTPlat\sw\standalone_ps7_cortexa9_0 -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:56:47 INFO  : Successfully validated template empty_application
+15:56:47 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\create_app.py -s F:\ECE6740\Labs\Lab1\PS\Hello_world\src -t empty_application -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\export\UARTPlat\sw\standalone_ps7_cortexa9_0 -n Hello_world -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:56:52 INFO  : CMake Warning:
+15:56:52 INFO  :   Manually-specified variables were not used by the project:
+15:56:52 INFO  : 
+15:56:52 INFO  :     CMAKE_LIBRARY_PATH
+15:56:52 INFO  : 
+15:56:52 INFO  : 
+15:56:52 INFO  : Successfully Created Application sources at F:/ECE6740/Labs/Lab1/PS/Hello_world/src
+15:56:52 INFO  : Successfully created Application F:\ECE6740\Labs\Lab1\PS\Hello_world\src
+15:56:52 INFO  : created .gitignore file for the project F:\ECE6740\Labs\Lab1\PS\Hello_world
+15:56:52 INFO  : The hardware specification used by project 'F:\ECE6740\Labs\Lab1\PS\Hello_world' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+15:56:52 INFO  : The updated bitstream files are copied from platform to folder 'F:\ECE6740\Labs\Lab1\PS\Hello_world\_ide\bitstream' in project 'F:\ECE6740\Labs\Lab1\PS\Hello_world'.
+15:56:52 INFO  : The updated ps init files are copied from platform to folder 'F:\ECE6740\Labs\Lab1\PS\Hello_world\_ide\psinit' in project 'F:\ECE6740\Labs\Lab1\PS\Hello_world'.
+15:58:48 INFO  : BSP build will be initiated for Domain zynq_fsbl
+15:58:48 INFO  : Generating BSP for the domain F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp
+15:58:48 INFO  : lopper command to build BSP :python C:\Xilinx\Vitis\2023.2\data\embeddedsw/scripts/pyesw//build_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp
+15:58:48 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:58:48 INFO  : BSP build will be initiated for Domain standalone_ps7_cortexa9_0
+15:58:48 INFO  : Generating BSP for the domain F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+15:58:48 INFO  : lopper command to build BSP :python C:\Xilinx\Vitis\2023.2\data\embeddedsw/scripts/pyesw//build_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+15:58:48 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:59:02 INFO  : Domain build successfully
+15:59:02 INFO  : Domain build successfully
+15:59:02 INFO  : Generating Boot ELFs
+15:59:02 INFO  : lopper command to build baremetal application :python C:\Xilinx\Vitis\2023.2\data\embeddedsw/scripts/pyesw//build_app.py -s F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl -b F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\build
+15:59:02 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_app.py -s F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl -b F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\build && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:59:05 INFO  : Successfully building the baremetal applicationF:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\build
+15:59:05 INFO  : Generating Export directory
+15:59:05 INFO  : Platform Build Finished successfully.
+15:59:05 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_app.py -s f:\ECE6740\Labs\Lab1\PS\Hello_world\src -b f:\ECE6740\Labs\Lab1\PS\Hello_world\build && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+15:59:22 INFO  : XSDB server has started successfully from frontend.
+15:59:22 INFO  : It has taken  2secs.
+15:59:23 INFO  : Connection to XSDB Server established.
+15:59:23 INFO  : It has taken  1secs.
+15:59:25 INFO  : Done
+15:59:25 INFO  : connect -url tcp:127.0.0.1:3121
+15:59:27 INFO  : bpremove -all
+15:59:28 INFO  : Context for 'APU' is selected.
+15:59:28 INFO  : System reset is completed.
+15:59:31 INFO  : 'after 3000' command is executed.
+15:59:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017B78983A" && level==0 && jtag_device_ctx=="jsn-Xilinx PYNQ-Z1-003017B78983A-23727093-0"}' command is executed.
+15:59:33 INFO  : Device configured successfully with "F:/ECE6740/Labs/Lab1/PS/Hello_world/_ide/bitstream/uart_bd_zynqSDK.bit"
+15:59:33 INFO  : targets -set -nocase -filter {name =~"APU*"}
+15:59:33 INFO  : loadhw -hw F:/ECE6740/Labs/Lab1/PS/UARTPlat/export/UARTPlat/hw/uart_bd_zynqSDK.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+15:59:33 INFO  : configparams force-mem-access 1
+15:59:33 INFO  : targets -set -nocase -filter {name =~"APU*"}
+15:59:33 INFO  : source F:/ECE6740/Labs/Lab1/PS/Hello_world/_ide/psinit/ps7_init.tcl
+15:59:34 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+15:59:34 ERROR : Failed to initialize the hardware Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+16:04:55 INFO  : connect -url tcp:127.0.0.1:3121
+16:04:55 INFO  : bpremove -all
+16:04:55 INFO  : Context for 'APU' is selected.
+16:04:55 INFO  : System reset is completed.
+16:04:58 INFO  : 'after 3000' command is executed.
+16:04:58 INFO  : connect -url tcp:127.0.0.1:3121
+16:04:58 INFO  : bpremove -all
+16:04:58 INFO  : Context for 'APU' is selected.
+16:04:58 INFO  : System reset is completed.
+16:05:01 INFO  : 'after 3000' command is executed.
+16:05:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017B78983A" && level==0 && jtag_device_ctx=="jsn-Xilinx PYNQ-Z1-003017B78983A-23727093-0"}' command is executed.
+16:05:04 INFO  : Device configured successfully with "F:/ECE6740/Labs/Lab1/PS/Hello_world/_ide/bitstream/uart_bd_zynqSDK.bit"
+16:05:04 INFO  : targets -set -nocase -filter {name =~"APU*"}
+16:05:04 INFO  : loadhw -hw F:/ECE6740/Labs/Lab1/PS/UARTPlat/export/UARTPlat/hw/uart_bd_zynqSDK.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+16:05:04 INFO  : configparams force-mem-access 1
+16:05:04 INFO  : targets -set -nocase -filter {name =~"APU*"}
+16:05:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017B78983A" && level==0 && jtag_device_ctx=="jsn-Xilinx PYNQ-Z1-003017B78983A-23727093-0"}' command is executed.
+16:05:06 INFO  : Device configured successfully with "F:/ECE6740/Labs/Lab1/PS/Hello_world/_ide/bitstream/uart_bd_zynqSDK.bit"
+16:05:06 INFO  : source F:/ECE6740/Labs/Lab1/PS/Hello_world/_ide/psinit/ps7_init.tcl
+16:05:06 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+16:05:06 ERROR : Failed to initialize the hardware Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+16:05:06 INFO  : targets -set -nocase -filter {name =~"APU*"}
+16:05:06 INFO  : loadhw -hw F:/ECE6740/Labs/Lab1/PS/UARTPlat/export/UARTPlat/hw/uart_bd_zynqSDK.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+16:05:06 INFO  : configparams force-mem-access 1
+16:05:06 INFO  : targets -set -nocase -filter {name =~"APU*"}
+16:05:06 INFO  : source F:/ECE6740/Labs/Lab1/PS/Hello_world/_ide/psinit/ps7_init.tcl
+16:05:07 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+16:05:07 ERROR : Failed to initialize the hardware Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+16:09:01 INFO  : connect -url tcp:127.0.0.1:3121
+16:09:01 INFO  : bpremove -all
+16:09:01 INFO  : Context for 'APU' is selected.
+16:09:01 INFO  : System reset is completed.
+16:09:04 INFO  : 'after 3000' command is executed.
+16:09:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017B78983A" && level==0 && jtag_device_ctx=="jsn-Xilinx PYNQ-Z1-003017B78983A-23727093-0"}' command is executed.
+16:09:06 INFO  : Device configured successfully with "F:/ECE6740/Labs/Lab1/PS/Hello_world/_ide/bitstream/uart_bd_zynqSDK.bit"
+16:09:06 INFO  : targets -set -nocase -filter {name =~"APU*"}
+16:09:06 INFO  : loadhw -hw F:/ECE6740/Labs/Lab1/PS/UARTPlat/export/UARTPlat/hw/uart_bd_zynqSDK.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+16:09:06 INFO  : configparams force-mem-access 1
+16:09:06 INFO  : targets -set -nocase -filter {name =~"APU*"}
+16:09:06 INFO  : source F:/ECE6740/Labs/Lab1/PS/Hello_world/_ide/psinit/ps7_init.tcl
+16:09:07 INFO  : ps7_init
+16:09:07 INFO  : ps7_post_config
+16:09:07 INFO  : targets -set -nocase -filter {name =~ "*A9*#0"}
+16:09:07 INFO  : rst -processor
+16:09:07 INFO  : dow F:/ECE6740/Labs/Lab1/PS/Hello_world/build/Hello_world.elf
+16:09:07 INFO  : con
+16:09:07 INFO  : configparams force-mem-access 0
+16:09:08 INFO  : Testing the connection for 127.0.0.1
+16:09:42 INFO  : connect -url tcp:127.0.0.1:3121
+16:09:42 INFO  : bpremove -all
+16:09:43 INFO  : Context for 'APU' is selected.
+16:09:43 INFO  : System reset is completed.
+16:09:46 INFO  : 'after 3000' command is executed.
+16:09:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017B78983A" && level==0 && jtag_device_ctx=="jsn-Xilinx PYNQ-Z1-003017B78983A-23727093-0"}' command is executed.
+16:09:48 INFO  : Device configured successfully with "F:/ECE6740/Labs/Lab1/PS/Hello_world/_ide/bitstream/uart_bd_zynqSDK.bit"
+16:09:48 INFO  : targets -set -nocase -filter {name =~"APU*"}
+16:09:48 INFO  : loadhw -hw F:/ECE6740/Labs/Lab1/PS/UARTPlat/export/UARTPlat/hw/uart_bd_zynqSDK.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+16:09:48 INFO  : configparams force-mem-access 1
+16:09:48 INFO  : targets -set -nocase -filter {name =~"APU*"}
+16:09:48 INFO  : source F:/ECE6740/Labs/Lab1/PS/Hello_world/_ide/psinit/ps7_init.tcl
+16:09:48 INFO  : ps7_init
+16:09:48 INFO  : ps7_post_config
+16:09:48 INFO  : targets -set -nocase -filter {name =~ "*A9*#0"}
+16:09:48 INFO  : rst -processor
+16:09:49 INFO  : dow F:/ECE6740/Labs/Lab1/PS/Hello_world/build/Hello_world.elf
+16:09:49 INFO  : bpadd main
+16:09:49 INFO  : con
+16:09:49 INFO  : configparams force-mem-access 0
+16:09:50 INFO  : Testing the connection for 127.0.0.1
+16:10:18 INFO  : disconnect
+16:10:19 ERROR : no channel specified
+16:10:19 ERROR : Error in handling the notification no channel specified
+16:10:22 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_app.py -s f:\ECE6740\Labs\Lab1\PS\Hello_world\src -b f:\ECE6740\Labs\Lab1\PS\Hello_world\build && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:10:49 INFO  : connect -url tcp:127.0.0.1:3121
+16:10:49 INFO  : bpremove -all
+16:10:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017B78983A" && level==0 && jtag_device_ctx=="jsn-Xilinx PYNQ-Z1-003017B78983A-23727093-0"}' command is executed.
+16:10:51 INFO  : Device configured successfully with "F:/ECE6740/Labs/Lab1/PS/Hello_world/_ide/bitstream/uart_bd_zynqSDK.bit"
+16:10:51 INFO  : targets -set -nocase -filter {name =~"APU*"}
+16:10:53 INFO  : loadhw -hw F:/ECE6740/Labs/Lab1/PS/UARTPlat/export/UARTPlat/hw/uart_bd_zynqSDK.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+16:10:53 INFO  : configparams force-mem-access 1
+16:10:53 INFO  : targets -set -nocase -filter {name =~"APU*"}
+16:10:53 INFO  : source F:/ECE6740/Labs/Lab1/PS/Hello_world/_ide/psinit/ps7_init.tcl
+16:10:54 INFO  : ps7_init
+16:10:54 INFO  : ps7_post_config
+16:10:54 INFO  : targets -set -nocase -filter {name =~ "*A9*#0"}
+16:10:54 INFO  : rst -processor
+16:10:54 INFO  : dow F:/ECE6740/Labs/Lab1/PS/Hello_world/build/Hello_world.elf
+16:10:54 INFO  : con
+16:10:54 INFO  : configparams force-mem-access 0
+16:10:55 INFO  : Testing the connection for 127.0.0.1
+16:11:22 INFO  : disconnect
+16:11:26 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_app.py -s f:\ECE6740\Labs\Lab1\PS\Hello_world\src -b f:\ECE6740\Labs\Lab1\PS\Hello_world\build && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:11:40 INFO  : connect -url tcp:127.0.0.1:3121
+16:11:41 INFO  : Testing the connection for 127.0.0.1
+16:12:03 INFO  : connect -url tcp:127.0.0.1:3121
+16:12:04 INFO  : Testing the connection for 127.0.0.1
+16:12:59 INFO  : BSP build will be initiated for Domain zynq_fsbl
+16:12:59 INFO  : Generating BSP for the domain F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp
+16:12:59 INFO  : lopper command to build BSP :python C:\Xilinx\Vitis\2023.2\data\embeddedsw/scripts/pyesw//build_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp
+16:12:59 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:12:59 INFO  : BSP build will be initiated for Domain standalone_ps7_cortexa9_0
+16:12:59 INFO  : Generating BSP for the domain F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+16:12:59 INFO  : lopper command to build BSP :python C:\Xilinx\Vitis\2023.2\data\embeddedsw/scripts/pyesw//build_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+16:12:59 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:13:14 INFO  : Domain build successfully
+16:13:14 INFO  : Domain build successfully
+16:13:14 INFO  : Generating Boot ELFs
+16:13:14 INFO  : lopper command to build baremetal application :python C:\Xilinx\Vitis\2023.2\data\embeddedsw/scripts/pyesw//build_app.py -s F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl -b F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\build
+16:13:14 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_app.py -s F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl -b F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\build && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:13:15 INFO  : Successfully building the baremetal applicationF:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\build
+16:13:15 INFO  : Generating Export directory
+16:13:15 INFO  : Platform Build Finished successfully.
+16:13:20 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_app.py -s f:\ECE6740\Labs\Lab1\PS\Hello_world\src -b f:\ECE6740\Labs\Lab1\PS\Hello_world\build && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:13:31 INFO  : connect -url tcp:127.0.0.1:3121
+16:13:32 INFO  : Testing the connection for 127.0.0.1
+16:13:41 INFO  : disconnect
+16:13:45 INFO  : connect -url tcp:127.0.0.1:3121
+16:13:46 INFO  : Testing the connection for 127.0.0.1
+16:14:38 INFO  : disconnect
+16:14:53 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && lopper -O  . F:\ECE6740\Labs\Lab1\PS\UARTPlat\hw\sdt\system-top.dts -- baremetal_getsupported_comp_xlnx ps7_cortexa9_0 F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:14:54 INFO  : Supported Library List generated.
+16:15:08 INFO  : Adding Library to the given BSP F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+16:15:08 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\config_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp -al  xilflash C:\Xilinx\Vitis\2023.2\data\embeddedsw\lib\sw_services\xilflash_v4_10 -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:15:09 INFO  : Library added to BSP successfully
+16:15:09 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && lopper -O  . F:\ECE6740\Labs\Lab1\PS\UARTPlat\hw\sdt\system-top.dts -- baremetal_getsupported_comp_xlnx ps7_cortexa9_0 F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:15:10 INFO  : Supported Library List generated.
+16:15:12 INFO  : Removing Library from the given BSP F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+16:15:12 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\config_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp -rl xiltimer -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:15:15 ERROR : make: Entering directory 'F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src'
+16:15:15 ERROR : cd F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp && make  -f CMakeFiles/Makefile2 libsrc/xiltimer/src/clean
+16:15:15 ERROR : make[1]: Entering directory 'F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp'
+16:15:15 ERROR : make[1]: *** No rule to make target 'libsrc/xiltimer/src/clean'.  Stop.
+16:15:15 ERROR : make[1]: Leaving directory 'F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp'
+16:15:15 ERROR : make: *** [Makefile:145: clean] Error 2
+16:15:15 ERROR : make: Leaving directory 'F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src'
+16:15:15 ERROR : Traceback (most recent call last):
+16:15:15 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\utils.py", line 354, in runcmd
+16:15:15 ERROR :     subprocess.check_call(cmd, cwd=cwd, shell=True)
+16:15:15 ERROR :   File "C:\Xilinx\Vivado\2023.2\tps\win64\python-3.8.3\lib\subprocess.py", line 364, in check_call
+16:15:15 ERROR :     raise CalledProcessError(retcode, cmd)
+16:15:15 ERROR : subprocess.CalledProcessError: Command 'make -C xiltimer\src clean' returned non-zero exit status 2.
+16:15:15 ERROR : 
+16:15:15 ERROR : During handling of the above exception, another exception occurred:
+16:15:15 ERROR : 
+16:15:15 ERROR : Traceback (most recent call last):
+16:15:15 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\config_bsp.py", line 225, in <module>
+16:15:15 ERROR :     configure_bsp(args)
+16:15:15 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\config_bsp.py", line 64, in configure_bsp
+16:15:15 ERROR :     obj.remove_lib(obj.rmlib)
+16:15:15 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\library_utils.py", line 437, in remove_lib
+16:15:15 ERROR :     utils.runcmd(f"make -C {os.path.join(lib, 'src')} clean", cwd=base_lib_build_dir)
+16:15:15 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\utils.py", line 357, in runcmd
+16:15:15 ERROR :     raise Exception(f"{exc.cmd} failed")
+16:15:15 ERROR : Exception: make -C xiltimer\src clean failed
+16:15:15 ERROR : Error in deleting library 'xiltimer'.
+16:15:15 ERROR : Error in deleting library 'xiltimer'. Error in CMake Build files generation, refer to Vitis Log for details.
+16:15:18 INFO  : BSP build will be initiated for Domain zynq_fsbl
+16:15:18 INFO  : Generating BSP for the domain F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp
+16:15:18 INFO  : lopper command to build BSP :python C:\Xilinx\Vitis\2023.2\data\embeddedsw/scripts/pyesw//build_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp
+16:15:18 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:15:18 INFO  : BSP build will be initiated for Domain standalone_ps7_cortexa9_0
+16:15:18 INFO  : Generating BSP for the domain F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+16:15:18 INFO  : lopper command to build BSP :python C:\Xilinx\Vitis\2023.2\data\embeddedsw/scripts/pyesw//build_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+16:15:18 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:15:30 INFO  : Domain build successfully
+16:15:30 INFO  : Domain build successfully
+16:15:30 INFO  : Generating Boot ELFs
+16:15:30 INFO  : lopper command to build baremetal application :python C:\Xilinx\Vitis\2023.2\data\embeddedsw/scripts/pyesw//build_app.py -s F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl -b F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\build
+16:15:30 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_app.py -s F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl -b F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\build && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:15:31 INFO  : Successfully building the baremetal applicationF:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\build
+16:15:31 INFO  : Generating Export directory
+16:15:31 INFO  : Platform Build Finished successfully.
+16:15:31 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_app.py -s f:\ECE6740\Labs\Lab1\PS\Hello_world\src -b f:\ECE6740\Labs\Lab1\PS\Hello_world\build && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:16:57 INFO  : Removing Library from the given BSP F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+16:16:57 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\config_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp -rl xilflash -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:17:00 INFO  : make: Entering directory 'F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xilflash/src'
+16:17:00 INFO  : cd F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp && make  -f CMakeFiles/Makefile2 libsrc/xilflash/src/clean
+16:17:00 INFO  : make[1]: Entering directory 'F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp'
+16:17:00 INFO  : make  -f libsrc/xilflash/src/CMakeFiles/xilflash.dir/build.make libsrc/xilflash/src/CMakeFiles/xilflash.dir/clean
+16:17:00 INFO  : make[2]: Entering directory 'F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp'
+16:17:00 INFO  : cd F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xilflash/src && C:/Xilinx/Vitis/2023.2/tps/win64/cmake-3.24.2/bin/cmake.exe -P CMakeFiles/xilflash.dir/cmake_clean.cmake
+16:17:00 INFO  : make[2]: Leaving directory 'F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp'
+16:17:00 INFO  : make[1]: Leaving directory 'F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp'
+16:17:00 INFO  : make: Leaving directory 'F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xilflash/src'
+16:17:00 INFO  : Library removed from BSP successfully
+16:17:00 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && lopper -O  . F:\ECE6740\Labs\Lab1\PS\UARTPlat\hw\sdt\system-top.dts -- baremetal_getsupported_comp_xlnx ps7_cortexa9_0 F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:17:01 INFO  : Supported Library List generated.
+16:17:25 INFO  : connect -url tcp:127.0.0.1:3121
+16:17:26 INFO  : Testing the connection for 127.0.0.1
+16:17:32 INFO  : connect -url tcp:127.0.0.1:3121
+16:17:33 INFO  : Testing the connection for 127.0.0.1
+16:17:53 INFO  : connect -url tcp:127.0.0.1:3121
+16:17:54 INFO  : Testing the connection for 127.0.0.1
+16:18:04 INFO  : disconnect
+16:18:09 INFO  : connect -url tcp:127.0.0.1:3121
+16:18:10 INFO  : Testing the connection for 127.0.0.1
+16:18:20 INFO  : disconnect
+16:18:24 INFO  : connect -url tcp:127.0.0.1:3121
+16:18:25 INFO  : Testing the connection for 127.0.0.1
+16:19:14 INFO  : connect -url tcp:127.0.0.1:3121
+16:19:15 INFO  : Testing the connection for 127.0.0.1
+16:19:28 INFO  : disconnect
+16:20:50 ERROR : no channel specified
+16:20:50 ERROR : Error in handling the notification no channel specified
+16:20:53 INFO  : connect -url tcp:127.0.0.1:3121
+16:20:54 INFO  : Testing the connection for 127.0.0.1
+16:21:07 INFO  : connection terminated
+16:21:07 INFO  : connection terminated
+16:21:07 INFO  : scheduling shutdown timer for 2 seconds ...
+16:21:07 INFO  : scheduling shutdown timer for 2 seconds ...
+16:21:09 INFO  : Terminating Vitis C++ Server
+16:21:09 INFO  : Terminating Vitis C++ Server
+16:21:09 INFO  : Vitis C++ Server terminated
+16:21:35 INFO  : updated workspace path: F:\ECE6740\Labs\Lab1\PS
+16:21:35 INFO  : created .gitignore file for the project F:\ECE6740\Labs\Lab1\PS
+16:21:35 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul1690591276436047745 -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:21:35 INFO  : Found no platform with name 'UARTPlat' in install repositories
+16:21:35 INFO  : updated workspace path: F:\ECE6740\Labs\Lab1\PS
+16:21:35 INFO  : Embedded Template List generated successfully
+16:21:36 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul14115080320792103600 -r F:\ECE6740\Labs\Lab1\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:21:36 INFO  : Embedded Template List generated successfully
+16:21:43 INFO  : XSDB server has started successfully from frontend.
+16:21:43 INFO  : It has taken  2secs.
+16:21:44 INFO  : Connection to XSDB Server established.
+16:21:44 INFO  : It has taken  1secs.
+16:21:46 INFO  : Done
+16:21:46 INFO  : connect -url tcp:127.0.0.1:3121
+16:21:47 INFO  : Testing the connection for 127.0.0.1
+16:23:22 INFO  : The updated bitstream files are copied from platform to folder 'F:\ECE6740\Labs\Lab1\PS\Hello_world\_ide\bitstream' in project 'F:\ECE6740\Labs\Lab1\PS\Hello_world'.
+16:23:22 INFO  : The updated ps init files are copied from platform to folder 'F:\ECE6740\Labs\Lab1\PS\Hello_world\_ide\psinit' in project 'F:\ECE6740\Labs\Lab1\PS\Hello_world'.
+16:23:26 INFO  : connect -url tcp:127.0.0.1:3121
+16:23:27 INFO  : Testing the connection for 127.0.0.1
+16:23:52 INFO  : The updated bitstream files are copied from platform to folder 'F:\ECE6740\Labs\Lab1\PS\Hello_world\_ide\bitstream' in project 'F:\ECE6740\Labs\Lab1\PS\Hello_world'.
+16:23:52 INFO  : The updated ps init files are copied from platform to folder 'F:\ECE6740\Labs\Lab1\PS\Hello_world\_ide\psinit' in project 'F:\ECE6740\Labs\Lab1\PS\Hello_world'.
+16:24:24 INFO  : BSP build will be initiated for Domain zynq_fsbl
+16:24:24 INFO  : Generating BSP for the domain F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp
+16:24:24 INFO  : lopper command to build BSP :python C:\Xilinx\Vitis\2023.2\data\embeddedsw/scripts/pyesw//build_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp
+16:24:24 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:24:24 INFO  : BSP build will be initiated for Domain standalone_ps7_cortexa9_0
+16:24:24 INFO  : Generating BSP for the domain F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+16:24:24 INFO  : lopper command to build BSP :python C:\Xilinx\Vitis\2023.2\data\embeddedsw/scripts/pyesw//build_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+16:24:24 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_bsp.py -d F:\ECE6740\Labs\Lab1\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:24:38 INFO  : Domain build successfully
+16:24:38 INFO  : Domain build successfully
+16:24:38 INFO  : Generating Boot ELFs
+16:24:38 INFO  : lopper command to build baremetal application :python C:\Xilinx\Vitis\2023.2\data\embeddedsw/scripts/pyesw//build_app.py -s F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl -b F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\build
+16:24:38 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_app.py -s F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl -b F:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\build && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:24:39 INFO  : Successfully building the baremetal applicationF:\ECE6740\Labs\Lab1\PS\UARTPlat\zynq_fsbl\build
+16:24:39 INFO  : Generating Export directory
+16:24:39 INFO  : Platform Build Finished successfully.
+16:24:39 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_app.py -s f:\ECE6740\Labs\Lab1\PS\Hello_world\src -b f:\ECE6740\Labs\Lab1\PS\Hello_world\build && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:24:48 INFO  : connect -url tcp:127.0.0.1:3121
+16:24:51 INFO  : bpremove -all
+16:24:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017B78983A" && level==0 && jtag_device_ctx=="jsn-Xilinx PYNQ-Z1-003017B78983A-23727093-0"}' command is executed.
+16:24:53 INFO  : Device configured successfully with "F:/ECE6740/Labs/Lab1/PS/Hello_world/_ide/bitstream/uart_bd_zynqSDK.bit"
+16:24:53 INFO  : targets -set -nocase -filter {name =~"APU*"}
+16:24:53 INFO  : loadhw -hw F:/ECE6740/Labs/Lab1/PS/UARTPlat/export/UARTPlat/hw/uart_bd_zynqSDK.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+16:24:53 INFO  : configparams force-mem-access 1
+16:24:53 INFO  : targets -set -nocase -filter {name =~"APU*"}
+16:24:53 INFO  : source F:/ECE6740/Labs/Lab1/PS/Hello_world/_ide/psinit/ps7_init.tcl
+16:24:54 INFO  : ps7_init
+16:24:54 INFO  : ps7_post_config
+16:24:54 INFO  : targets -set -nocase -filter {name =~ "*A9*#0"}
+16:24:54 INFO  : rst -processor
+16:24:54 INFO  : dow F:/ECE6740/Labs/Lab1/PS/Hello_world/build/Hello_world.elf
+16:24:54 INFO  : con
+16:24:54 INFO  : configparams force-mem-access 0
+16:24:55 INFO  : Testing the connection for 127.0.0.1
+16:26:49 INFO  : connect -url tcp:127.0.0.1:3121
+16:26:49 INFO  : bpremove -all
+16:26:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017B78983A" && level==0 && jtag_device_ctx=="jsn-Xilinx PYNQ-Z1-003017B78983A-23727093-0"}' command is executed.
+16:26:51 INFO  : Device configured successfully with "F:/ECE6740/Labs/Lab1/PS/Hello_world/_ide/bitstream/uart_bd_zynqSDK.bit"
+16:26:51 INFO  : targets -set -nocase -filter {name =~"APU*"}
+16:26:51 INFO  : loadhw -hw F:/ECE6740/Labs/Lab1/PS/UARTPlat/export/UARTPlat/hw/uart_bd_zynqSDK.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+16:26:51 INFO  : configparams force-mem-access 1
+16:26:51 INFO  : targets -set -nocase -filter {name =~"APU*"}
+16:26:51 INFO  : source F:/ECE6740/Labs/Lab1/PS/Hello_world/_ide/psinit/ps7_init.tcl
+16:26:52 INFO  : ps7_init
+16:26:52 INFO  : ps7_post_config
+16:26:52 INFO  : targets -set -nocase -filter {name =~ "*A9*#0"}
+16:26:52 INFO  : rst -processor
+16:26:52 INFO  : dow F:/ECE6740/Labs/Lab1/PS/Hello_world/build/Hello_world.elf
+16:26:52 INFO  : con
+16:26:52 INFO  : configparams force-mem-access 0
+16:26:53 INFO  : Testing the connection for 127.0.0.1
+16:32:47 INFO  : connection terminated
+16:32:47 INFO  : connection terminated
+16:32:47 INFO  : scheduling shutdown timer for 2 seconds ...
+16:32:49 INFO  : Terminating Vitis C++ Server
+16:32:49 INFO  : Vitis C++ Server terminated
+19:52:47 INFO  : updated workspace path: F:\ECE6740\Labs\Lab1\PartA\PS
+19:52:47 INFO  : created .gitignore file for the project F:\ECE6740\Labs\Lab1\PartA\PS
+19:52:47 INFO  : updated workspace path: F:\ECE6740\Labs\Lab1\PartA\PS
+19:52:47 INFO  : created .gitignore file for the project F:\ECE6740\Labs\Lab1\PartA\PS
+19:52:47 INFO  : Found no platform with name 'UARTPlat' in install repositories
+19:52:48 INFO  : Successfully created repository data at C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul9766055429900704597
+19:52:48 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul3762443964673218073 -r C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul9766055429900704597\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+19:52:48 INFO  : Embedded Template List generated successfully
+19:52:48 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul9747205130208551399 -r F:\ECE6740\Labs\Lab1\PartA\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+19:52:49 INFO  : Embedded Template List generated successfully
+19:52:49 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul1063229975238326836 -r F:\ECE6740\Labs\Lab1\PartA\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+19:52:49 INFO  : Embedded Template List generated successfully
+19:54:04 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && lopper -O  . F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\hw\sdt\system-top.dts -- baremetal_getsupported_comp_xlnx ps7_cortexa9_0 F:\ECE6740\Labs\Lab1\PartA\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+19:54:04 INFO  : Supported Library List generated.
+19:54:08 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && lopper -O  . F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\hw\sdt\system-top.dts -- baremetal_getsupported_comp_xlnx ps7_cortexa9_0 F:\ECE6740\Labs\Lab1\PartA\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+19:54:09 INFO  : Supported Library List generated.
+19:54:15 INFO  : Updating the given parameters of library in BSP F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+19:54:15 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\config_bsp.py -d F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp -st standalone standalone_stdin:"ps7_coresight_comp_0" -r F:\ECE6740\Labs\Lab1\PartA\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+19:54:15 ERROR : CMake Error: The current CMakeCache.txt directory F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeCache.txt is different than the directory f:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+19:54:15 ERROR : CMake Error: The source "F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/CMakeLists.txt" does not match the source "F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+19:54:15 ERROR : Traceback (most recent call last):
+19:54:15 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\utils.py", line 354, in runcmd
+19:54:15 ERROR :     subprocess.check_call(cmd, cwd=cwd, shell=True)
+19:54:15 ERROR :   File "C:\Xilinx\Vivado\2023.2\tps\win64\python-3.8.3\lib\subprocess.py", line 364, in check_call
+19:54:15 ERROR :     raise CalledProcessError(retcode, cmd)
+19:54:15 ERROR : subprocess.CalledProcessError: Command 'cmake F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp  -DCMAKE_LIBRARY_PATH=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\lib             -DCMAKE_INCLUDE_PATH=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\include             -DCMAKE_MODULE_PATH=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp             -DCMAKE_TOOLCHAIN_FILE=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\cortexa9_toolchain.cmake             -DCMAKE_SPECS_FILE=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\Xilinx.spec             -DCMAKE_VERBOSE_MAKEFILE=ON -DNON_YOCTO=ON -DSUBDIR_LIST="standalone"  -Dstandalone_stdin="ps7_coresight_comp_0"' returned non-zero exit status 1.
+19:54:15 ERROR : 
+19:54:15 ERROR : During handling of the above exception, another exception occurred:
+19:54:15 ERROR : 
+19:54:15 ERROR : Traceback (most recent call last):
+19:54:15 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\config_bsp.py", line 225, in <module>
+19:54:15 ERROR :     configure_bsp(args)
+19:54:15 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\config_bsp.py", line 102, in configure_bsp
+19:54:15 ERROR :     utils.runcmd(f'cmake {obj.domain_path} {obj.cmake_paths_append} -DNON_YOCTO=ON -DSUBDIR_LIST="{lib_name}" {cmake_cmd_append}', cwd=build_metadata)
+19:54:15 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\utils.py", line 357, in runcmd
+19:54:15 ERROR :     raise Exception(f"{exc.cmd} failed")
+19:54:15 ERROR : Exception: cmake F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp  -DCMAKE_LIBRARY_PATH=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\lib             -DCMAKE_INCLUDE_PATH=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\include             -DCMAKE_MODULE_PATH=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp             -DCMAKE_TOOLCHAIN_FILE=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\cortexa9_toolchain.cmake             -DCMAKE_SPECS_FILE=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\Xilinx.spec             -DCMAKE_VERBOSE_MAKEFILE=ON -DNON_YOCTO=ON -DSUBDIR_LIST="standalone"  -Dstandalone_stdin="ps7_coresight_comp_0" failed
+19:54:15 ERROR : Error in updating parameters for 'standalone'.
+19:54:15 ERROR : Error in updating parameters for 'standalone'. CMake Error: The current CMakeCache.txt directory F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeCache.txt is different than the directory f:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txtCMake Error: The source "F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/CMakeLists.txt" does not match the source "F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.Error in CMake Build files generation, refer to Vitis Log for details.
+19:54:16 INFO  : Updating the given parameters of library in BSP F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+19:54:16 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\config_bsp.py -d F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp -st standalone standalone_stdout:"ps7_coresight_comp_0" -r F:\ECE6740\Labs\Lab1\PartA\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+19:54:17 ERROR : CMake Error: The current CMakeCache.txt directory F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeCache.txt is different than the directory f:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+19:54:17 ERROR : CMake Error: The source "F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/CMakeLists.txt" does not match the source "F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+19:54:17 ERROR : Traceback (most recent call last):
+19:54:17 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\utils.py", line 354, in runcmd
+19:54:17 ERROR :     subprocess.check_call(cmd, cwd=cwd, shell=True)
+19:54:17 ERROR :   File "C:\Xilinx\Vivado\2023.2\tps\win64\python-3.8.3\lib\subprocess.py", line 364, in check_call
+19:54:17 ERROR :     raise CalledProcessError(retcode, cmd)
+19:54:17 ERROR : subprocess.CalledProcessError: Command 'cmake F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp  -DCMAKE_LIBRARY_PATH=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\lib             -DCMAKE_INCLUDE_PATH=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\include             -DCMAKE_MODULE_PATH=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp             -DCMAKE_TOOLCHAIN_FILE=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\cortexa9_toolchain.cmake             -DCMAKE_SPECS_FILE=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\Xilinx.spec             -DCMAKE_VERBOSE_MAKEFILE=ON -DNON_YOCTO=ON -DSUBDIR_LIST="standalone"  -Dstandalone_stdout="ps7_coresight_comp_0"' returned non-zero exit status 1.
+19:54:17 ERROR : 
+19:54:17 ERROR : During handling of the above exception, another exception occurred:
+19:54:17 ERROR : 
+19:54:17 ERROR : Traceback (most recent call last):
+19:54:17 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\config_bsp.py", line 225, in <module>
+19:54:17 ERROR :     configure_bsp(args)
+19:54:17 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\config_bsp.py", line 102, in configure_bsp
+19:54:17 ERROR :     utils.runcmd(f'cmake {obj.domain_path} {obj.cmake_paths_append} -DNON_YOCTO=ON -DSUBDIR_LIST="{lib_name}" {cmake_cmd_append}', cwd=build_metadata)
+19:54:17 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\utils.py", line 357, in runcmd
+19:54:17 ERROR :     raise Exception(f"{exc.cmd} failed")
+19:54:17 ERROR : Exception: cmake F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp  -DCMAKE_LIBRARY_PATH=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\lib             -DCMAKE_INCLUDE_PATH=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\include             -DCMAKE_MODULE_PATH=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp             -DCMAKE_TOOLCHAIN_FILE=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\cortexa9_toolchain.cmake             -DCMAKE_SPECS_FILE=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\Xilinx.spec             -DCMAKE_VERBOSE_MAKEFILE=ON -DNON_YOCTO=ON -DSUBDIR_LIST="standalone"  -Dstandalone_stdout="ps7_coresight_comp_0" failed
+19:54:17 ERROR : Error in updating parameters for 'standalone'.
+19:54:17 ERROR : Error in updating parameters for 'standalone'. CMake Error: The current CMakeCache.txt directory F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeCache.txt is different than the directory f:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txtCMake Error: The source "F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/CMakeLists.txt" does not match the source "F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.Error in CMake Build files generation, refer to Vitis Log for details.
+19:54:25 INFO  : Updating the given parameters of library in BSP F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+19:54:25 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\config_bsp.py -d F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp -st standalone standalone_stdin:"ps7_coresight_comp_0" -r F:\ECE6740\Labs\Lab1\PartA\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+19:54:26 ERROR : CMake Error: The current CMakeCache.txt directory F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeCache.txt is different than the directory f:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+19:54:26 ERROR : CMake Error: The source "F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/CMakeLists.txt" does not match the source "F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+19:54:26 ERROR : Traceback (most recent call last):
+19:54:26 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\utils.py", line 354, in runcmd
+19:54:26 ERROR :     subprocess.check_call(cmd, cwd=cwd, shell=True)
+19:54:26 ERROR :   File "C:\Xilinx\Vivado\2023.2\tps\win64\python-3.8.3\lib\subprocess.py", line 364, in check_call
+19:54:26 ERROR :     raise CalledProcessError(retcode, cmd)
+19:54:26 ERROR : subprocess.CalledProcessError: Command 'cmake F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp  -DCMAKE_LIBRARY_PATH=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\lib             -DCMAKE_INCLUDE_PATH=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\include             -DCMAKE_MODULE_PATH=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp             -DCMAKE_TOOLCHAIN_FILE=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\cortexa9_toolchain.cmake             -DCMAKE_SPECS_FILE=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\Xilinx.spec             -DCMAKE_VERBOSE_MAKEFILE=ON -DNON_YOCTO=ON -DSUBDIR_LIST="standalone"  -Dstandalone_stdin="ps7_coresight_comp_0"' returned non-zero exit status 1.
+19:54:26 ERROR : 
+19:54:26 ERROR : During handling of the above exception, another exception occurred:
+19:54:26 ERROR : 
+19:54:26 ERROR : Traceback (most recent call last):
+19:54:26 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\config_bsp.py", line 225, in <module>
+19:54:26 ERROR :     configure_bsp(args)
+19:54:26 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\config_bsp.py", line 102, in configure_bsp
+19:54:26 ERROR :     utils.runcmd(f'cmake {obj.domain_path} {obj.cmake_paths_append} -DNON_YOCTO=ON -DSUBDIR_LIST="{lib_name}" {cmake_cmd_append}', cwd=build_metadata)
+19:54:26 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\utils.py", line 357, in runcmd
+19:54:26 ERROR :     raise Exception(f"{exc.cmd} failed")
+19:54:26 ERROR : Exception: cmake F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp  -DCMAKE_LIBRARY_PATH=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\lib             -DCMAKE_INCLUDE_PATH=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\include             -DCMAKE_MODULE_PATH=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp             -DCMAKE_TOOLCHAIN_FILE=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\cortexa9_toolchain.cmake             -DCMAKE_SPECS_FILE=F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp\Xilinx.spec             -DCMAKE_VERBOSE_MAKEFILE=ON -DNON_YOCTO=ON -DSUBDIR_LIST="standalone"  -Dstandalone_stdin="ps7_coresight_comp_0" failed
+19:54:26 ERROR : Error in updating parameters for 'standalone'.
+19:54:26 ERROR : Error in updating parameters for 'standalone'. CMake Error: The current CMakeCache.txt directory F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeCache.txt is different than the directory f:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txtCMake Error: The source "F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/CMakeLists.txt" does not match the source "F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.Error in CMake Build files generation, refer to Vitis Log for details.
+19:54:31 INFO  : BSP build will be initiated for Domain zynq_fsbl
+19:54:31 INFO  : Generating BSP for the domain F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp
+19:54:31 INFO  : lopper command to build BSP :python C:\Xilinx\Vitis\2023.2\data\embeddedsw/scripts/pyesw//build_bsp.py -d F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp
+19:54:31 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_bsp.py -d F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+19:54:31 INFO  : BSP build will be initiated for Domain standalone_ps7_cortexa9_0
+19:54:31 INFO  : Generating BSP for the domain F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+19:54:31 INFO  : lopper command to build BSP :python C:\Xilinx\Vitis\2023.2\data\embeddedsw/scripts/pyesw//build_bsp.py -d F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp
+19:54:31 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_bsp.py -d F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+19:54:31 ERROR : CMake Error: The current CMakeCache.txt directory F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/CMakeCache.txt is different than the directory f:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+19:54:31 ERROR : CMake Error: The source "F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/CMakeLists.txt" does not match the source "F:/ECE6740/Labs/Lab1/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+19:54:31 ERROR : Traceback (most recent call last):
+19:54:31 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\utils.py", line 354, in runcmd
+19:54:31 ERROR :     subprocess.check_call(cmd, cwd=cwd, shell=True)
+19:54:31 ERROR :   File "C:\Xilinx\Vivado\2023.2\tps\win64\python-3.8.3\lib\subprocess.py", line 364, in check_call
+19:54:31 ERROR :     raise CalledProcessError(retcode, cmd)
+19:54:31 ERROR : subprocess.CalledProcessError: Command 'cmake -G "Unix Makefiles" F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp -DNON_YOCTO=ON -DSUBDIR_LIST="ALL"  -DCMAKE_LIBRARY_PATH=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/lib             -DCMAKE_INCLUDE_PATH=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include             -DCMAKE_MODULE_PATH=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp             -DCMAKE_TOOLCHAIN_FILE=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/cortexa9_toolchain.cmake             -DCMAKE_SPECS_FILE=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/Xilinx.spec             -DCMAKE_VERBOSE_MAKEFILE=ON' returned non-zero exit status 1.
+19:54:31 ERROR : 
+19:54:31 ERROR : During handling of the above exception, another exception occurred:
+19:54:31 ERROR : 
+19:54:31 ERROR : Traceback (most recent call last):
+19:54:31 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_bsp.py", line 104, in <module>
+19:54:31 ERROR :     generate_bsp(args)
+19:54:31 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_bsp.py", line 86, in generate_bsp
+19:54:31 ERROR :     obj.build_bsp()
+19:54:31 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_bsp.py", line 65, in build_bsp
+19:54:31 ERROR :     utils.runcmd(f'cmake -G "Unix Makefiles" {self.domain_path} -DNON_YOCTO=ON -DSUBDIR_LIST="ALL" {self.cmake_paths_append}', cwd=build_libxil)
+19:54:31 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\utils.py", line 357, in runcmd
+19:54:31 ERROR :     raise Exception(f"{exc.cmd} failed")
+19:54:31 ERROR : Exception: cmake -G "Unix Makefiles" F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp -DNON_YOCTO=ON -DSUBDIR_LIST="ALL"  -DCMAKE_LIBRARY_PATH=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/lib             -DCMAKE_INCLUDE_PATH=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include             -DCMAKE_MODULE_PATH=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp             -DCMAKE_TOOLCHAIN_FILE=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/cortexa9_toolchain.cmake             -DCMAKE_SPECS_FILE=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/Xilinx.spec             -DCMAKE_VERBOSE_MAKEFILE=ON failed
+19:54:31 ERROR : Domain build is not successful. Domain path 'F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\ps7_cortexa9_0\standalone_ps7_cortexa9_0\bsp'.
+19:54:31 ERROR : CMake Error: The current CMakeCache.txt directory F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/CMakeCache.txt is different than the directory f:/ECE6740/Labs/Lab1/PS/UARTPlat/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+19:54:31 ERROR : CMake Error: The source "F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/zynq_fsbl/zynq_fsbl_bsp/CMakeLists.txt" does not match the source "F:/ECE6740/Labs/Lab1/PS/UARTPlat/zynq_fsbl/zynq_fsbl_bsp/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+19:54:31 ERROR : Traceback (most recent call last):
+19:54:31 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\utils.py", line 354, in runcmd
+19:54:31 ERROR :     subprocess.check_call(cmd, cwd=cwd, shell=True)
+19:54:31 ERROR :   File "C:\Xilinx\Vivado\2023.2\tps\win64\python-3.8.3\lib\subprocess.py", line 364, in check_call
+19:54:31 ERROR :     raise CalledProcessError(retcode, cmd)
+19:54:31 ERROR : subprocess.CalledProcessError: Command 'cmake -G "Unix Makefiles" F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/zynq_fsbl/zynq_fsbl_bsp -DNON_YOCTO=ON -DSUBDIR_LIST="ALL"  -DCMAKE_LIBRARY_PATH=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/zynq_fsbl/zynq_fsbl_bsp/lib             -DCMAKE_INCLUDE_PATH=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/zynq_fsbl/zynq_fsbl_bsp/include             -DCMAKE_MODULE_PATH=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/zynq_fsbl/zynq_fsbl_bsp             -DCMAKE_TOOLCHAIN_FILE=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/zynq_fsbl/zynq_fsbl_bsp/cortexa9_toolchain.cmake             -DCMAKE_SPECS_FILE=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec             -DCMAKE_VERBOSE_MAKEFILE=ON' returned non-zero exit status 1.
+19:54:31 ERROR : 
+19:54:31 ERROR : During handling of the above exception, another exception occurred:
+19:54:31 ERROR : 
+19:54:31 ERROR : Traceback (most recent call last):
+19:54:31 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_bsp.py", line 104, in <module>
+19:54:31 ERROR :     generate_bsp(args)
+19:54:31 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_bsp.py", line 86, in generate_bsp
+19:54:31 ERROR :     obj.build_bsp()
+19:54:31 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\build_bsp.py", line 65, in build_bsp
+19:54:31 ERROR :     utils.runcmd(f'cmake -G "Unix Makefiles" {self.domain_path} -DNON_YOCTO=ON -DSUBDIR_LIST="ALL" {self.cmake_paths_append}', cwd=build_libxil)
+19:54:31 ERROR :   File "C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\utils.py", line 357, in runcmd
+19:54:31 ERROR :     raise Exception(f"{exc.cmd} failed")
+19:54:31 ERROR : Exception: cmake -G "Unix Makefiles" F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/zynq_fsbl/zynq_fsbl_bsp -DNON_YOCTO=ON -DSUBDIR_LIST="ALL"  -DCMAKE_LIBRARY_PATH=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/zynq_fsbl/zynq_fsbl_bsp/lib             -DCMAKE_INCLUDE_PATH=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/zynq_fsbl/zynq_fsbl_bsp/include             -DCMAKE_MODULE_PATH=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/zynq_fsbl/zynq_fsbl_bsp             -DCMAKE_TOOLCHAIN_FILE=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/zynq_fsbl/zynq_fsbl_bsp/cortexa9_toolchain.cmake             -DCMAKE_SPECS_FILE=F:/ECE6740/Labs/Lab1/PartA/PS/UARTPlat/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec             -DCMAKE_VERBOSE_MAKEFILE=ON failed
+19:54:31 ERROR : Domain build is not successful. Domain path 'F:\ECE6740\Labs\Lab1\PartA\PS\UARTPlat\zynq_fsbl\zynq_fsbl_bsp'.
+19:54:31 ERROR : Error in generating platform.Error in generating platform 'UARTPlat.'
+19:54:31 ERROR : Error in generating platform.Error in generating platform 'UARTPlat.'
+19:55:20 INFO  : connection terminated
+19:55:20 INFO  : connection terminated
+19:55:20 INFO  : scheduling shutdown timer for 2 seconds ...
+19:55:20 INFO  : scheduling shutdown timer for 2 seconds ...
+19:55:22 INFO  : Terminating Vitis C++ Server
+19:55:22 INFO  : Terminating Vitis C++ Server
+19:55:22 INFO  : Vitis C++ Server terminated
+19:55:22 INFO  : Vitis C++ Server terminated
+19:56:35 INFO  : updated workspace path: F:\ECE6740\Labs\Lab1\PartA\PS
+19:56:35 INFO  : created .gitignore file for the project F:\ECE6740\Labs\Lab1\PartA\PS
+19:56:35 INFO  : updated workspace path: F:\ECE6740\Labs\Lab1\PartA\PS
+19:56:35 INFO  : Found no platform with name 'UARTPlat' in install repositories
+19:56:36 INFO  : Successfully created repository data at C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul13934338837692455355
+19:56:36 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul16888068905329610448 -r C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul13934338837692455355\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+19:56:37 INFO  : Embedded Template List generated successfully
+19:56:37 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul7211246331948972382 -r F:\ECE6740\Labs\Lab1\PartA\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+19:56:37 INFO  : Embedded Template List generated successfully
+19:56:37 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2023.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\mwmul\AppData\Local\Temp\rigel_lopper_mwmul14611292020098813080 -r F:\ECE6740\Labs\Lab1\PartA\PS\.repo.yaml && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+19:56:37 INFO  : Embedded Template List generated successfully
+19:56:41 INFO  : Found no platform with name 'UARTPlat' in install repositories
+19:57:37 INFO  : Found no platform with name 'uart_bd_zynqSDK' in install repositories
+19:57:37 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && xsct.bat C:\Xilinx\Vitis\2023.2\vitisng-server\scripts\platformutil.tcl F:\ECE6740\Labs\Lab1\PartA\uart_bd_zynqSDK.xsa F:\ECE6740\Labs\Lab1\PartA\PS\.rigel_lopper_temp_platform\uart_bd_zynqSDK\hw\sdt && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+19:57:43 INFO  : ECHO is off.
+19:57:43 INFO  : ECHO is off.
+19:57:43 INFO  : INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vitis/2023.2/data/embeddedsw) loading 0 seconds
+19:57:43 INFO  : WARNING: [Common 17-673] Cannot get value of property 'C_QSPI_MODE' because this property is not valid in conjunction with other property setting on this object.
+19:57:43 INFO  : WARNING: [Common 17-673] Cannot get value of property 'C_EMIO_GPIO_WIDTH' because this property is not valid in conjunction with other property setting on this object.
+19:57:43 INFO  : WARNING: [Common 17-673] Cannot get value of property 'C_MIO_GPIO_MASK' because this property is not valid in conjunction with other property setting on this object.
+19:57:43 INFO  : SDT generated successfully
+19:57:43 INFO  : Lopper command for cpu List generation: lopper -O F:\ECE6740\Labs\Lab1\PartA\PS\.rigel_lopper -f -i C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Lib\site-packages\lopper\lops\lop-cpulist.dts F:\ECE6740\Labs\Lab1\PartA\PS\.rigel_lopper_temp_platform\uart_bd_zynqSDK\hw\sdt\system-top.dts
+19:57:43 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && lopper -O F:\ECE6740\Labs\Lab1\PartA\PS\.rigel_lopper -f -i C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Lib\site-packages\lopper\lops\lop-cpulist.dts F:\ECE6740\Labs\Lab1\PartA\PS\.rigel_lopper_temp_platform\uart_bd_zynqSDK\hw\sdt\system-top.dts && C:\Xilinx\Vitis\2023.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+19:57:44 INFO  : ps7_cortexa9_0
+19:57:44 INFO  : ps7_cortexa9_1
+19:57:44 INFO  : CPU List generated successfully
+19:58:07 INFO  : connection terminated
+19:58:07 INFO  : connection terminated
+19:58:07 INFO  : scheduling shutdown timer for 2 seconds ...
+19:58:09 INFO  : Terminating Vitis C++ Server
+19:58:09 INFO  : Vitis C++ Server terminated

@@ -1,8 +1,8 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
---Date        : Mon Jan 22 20:25:02 2024
---Host        : DESKTOP-LF8951D running 64-bit major release  (build 9200)
+--Date        : Mon Jan 22 22:47:07 2024
+--Host        : DESKTOP-NE4QLD0 running 64-bit major release  (build 9200)
 --Command     : generate_target uart_bd_wrapper.bd
 --Design      : uart_bd_wrapper
 --Purpose     : IP block netlist
@@ -41,6 +41,7 @@ end uart_bd_wrapper;
 architecture STRUCTURE of uart_bd_wrapper is
   component uart_bd is
   port (
+    led : out STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -61,8 +62,7 @@ architecture STRUCTURE of uart_bd_wrapper is
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC;
-    led : out STD_LOGIC_VECTOR ( 3 downto 0 )
+    FIXED_IO_ps_porb : inout STD_LOGIC
   );
   end component uart_bd;
 begin

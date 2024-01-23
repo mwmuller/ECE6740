@@ -1,8 +1,8 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
---Date        : Mon Jan 22 20:25:02 2024
---Host        : DESKTOP-LF8951D running 64-bit major release  (build 9200)
+--Date        : Mon Jan 22 22:47:07 2024
+--Host        : DESKTOP-NE4QLD0 running 64-bit major release  (build 9200)
 --Command     : generate_target uart_bd.bd
 --Design      : uart_bd
 --Purpose     : IP block netlist
@@ -620,6 +620,32 @@ entity uart_bd is
 end uart_bd;
 
 architecture STRUCTURE of uart_bd is
+  component uart_bd_axi_addr_wrapper_0_1 is
+  port (
+    S00_AXI_0_araddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    S00_AXI_0_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    S00_AXI_0_arready : out STD_LOGIC;
+    S00_AXI_0_arvalid : in STD_LOGIC;
+    S00_AXI_0_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    S00_AXI_0_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    S00_AXI_0_awready : out STD_LOGIC;
+    S00_AXI_0_awvalid : in STD_LOGIC;
+    S00_AXI_0_bready : in STD_LOGIC;
+    S00_AXI_0_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    S00_AXI_0_bvalid : out STD_LOGIC;
+    S00_AXI_0_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    S00_AXI_0_rready : in STD_LOGIC;
+    S00_AXI_0_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    S00_AXI_0_rvalid : out STD_LOGIC;
+    S00_AXI_0_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    S00_AXI_0_wready : out STD_LOGIC;
+    S00_AXI_0_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    S00_AXI_0_wvalid : in STD_LOGIC;
+    led : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_aclk_0 : in STD_LOGIC;
+    s00_axi_aresetn_0 : in STD_LOGIC
+  );
+  end component uart_bd_axi_addr_wrapper_0_1;
   component uart_bd_processing_system7_0_0 is
   port (
     USB0_PORT_INDCTL : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -703,32 +729,6 @@ architecture STRUCTURE of uart_bd is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component uart_bd_rst_ps7_0_100M_0;
-  component uart_bd_axi_addr_wrapper_0_1 is
-  port (
-    S00_AXI_0_araddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    S00_AXI_0_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    S00_AXI_0_arready : out STD_LOGIC;
-    S00_AXI_0_arvalid : in STD_LOGIC;
-    S00_AXI_0_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    S00_AXI_0_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    S00_AXI_0_awready : out STD_LOGIC;
-    S00_AXI_0_awvalid : in STD_LOGIC;
-    S00_AXI_0_bready : in STD_LOGIC;
-    S00_AXI_0_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    S00_AXI_0_bvalid : out STD_LOGIC;
-    S00_AXI_0_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    S00_AXI_0_rready : in STD_LOGIC;
-    S00_AXI_0_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    S00_AXI_0_rvalid : out STD_LOGIC;
-    S00_AXI_0_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    S00_AXI_0_wready : out STD_LOGIC;
-    S00_AXI_0_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    S00_AXI_0_wvalid : in STD_LOGIC;
-    led : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_aclk_0 : in STD_LOGIC;
-    s00_axi_aresetn_0 : in STD_LOGIC
-  );
-  end component uart_bd_axi_addr_wrapper_0_1;
   signal axi_addr_wrapper_0_led : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );

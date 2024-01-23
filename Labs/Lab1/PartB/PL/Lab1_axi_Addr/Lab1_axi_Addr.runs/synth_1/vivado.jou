@@ -2,12 +2,12 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Mon Jan 22 19:52:39 2024
-# Process ID: 14708
-# Current directory: F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/synth_1
+# Start of session at: Mon Jan 22 22:44:57 2024
+# Process ID: 13168
+# Current directory: F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/synth_1
 # Command line: vivado.exe -log axi_addr_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_addr_wrapper.tcl
-# Log file: F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/synth_1/axi_addr_wrapper.vds
-# Journal file: F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/synth_1\vivado.jou
-# Running On: DESKTOP-LF8951D, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 16, Host memory: 34276 MB
+# Log file: F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/synth_1/axi_addr_wrapper.vds
+# Journal file: F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/synth_1\vivado.jou
+# Running On: DESKTOP-NE4QLD0, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 25690 MB
 #-----------------------------------------------------------
 source axi_addr_wrapper.tcl -notrace

@@ -2,48 +2,46 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Mon Jan 22 19:53:38 2024
-# Process ID: 21528
-# Current directory: F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/impl_1
+# Start of session at: Mon Jan 22 22:45:51 2024
+# Process ID: 10316
+# Current directory: F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/impl_1
 # Command line: vivado.exe -log axi_addr_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source axi_addr_wrapper.tcl -notrace
-# Log file: F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/impl_1/axi_addr_wrapper.vdi
-# Journal file: F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/impl_1\vivado.jou
-# Running On: DESKTOP-LF8951D, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 16, Host memory: 34276 MB
+# Log file: F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/impl_1/axi_addr_wrapper.vdi
+# Journal file: F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/impl_1\vivado.jou
+# Running On: DESKTOP-NE4QLD0, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 25690 MB
 #-----------------------------------------------------------
 source axi_addr_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/MastersProgram/ECE6740/IPRepo'.
-WARNING: [IP_Flow 19-3685] Ignored loading user repository 'f:/MastersProgram/ECE6740/IPRepo/Lab1_AxiInterface_Adder_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/ECE6740/IPRepo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'f:/ECE6740/IPRepo/Lab1_AxiInterface_Adder_1.0'. The path is contained within another repository.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2022.1/data/ip'.
-WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.cache/ip 
 Command: link_design -top axi_addr_wrapper -part xc7z020clg400-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7z020clg400-1
-INFO: [Project 1-454] Reading design checkpoint 'f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/ip/axi_addr_Lab1_AxiInterface_Ad_0_0/axi_addr_Lab1_AxiInterface_Ad_0_0.dcp' for cell 'axi_addr_i/Lab1_AxiInterface_Ad_0'
-INFO: [Project 1-454] Reading design checkpoint 'f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/ip/axi_addr_c_addsub_0_0/axi_addr_c_addsub_0_0.dcp' for cell 'axi_addr_i/c_addsub_0'
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1276.945 ; gain = 0.000
+INFO: [Project 1-454] Reading design checkpoint 'f:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/ip/axi_addr_Lab1_AxiInterface_Ad_0_0/axi_addr_Lab1_AxiInterface_Ad_0_0.dcp' for cell 'axi_addr_i/Lab1_AxiInterface_Ad_0'
+INFO: [Project 1-454] Reading design checkpoint 'f:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/ip/axi_addr_c_addsub_0_0/axi_addr_c_addsub_0_0.dcp' for cell 'axi_addr_i/c_addsub_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1278.488 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2022.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc]
-WARNING: [Vivado 12-584] No ports matched 'ck_io[28]'. [F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc:108]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc:108]
+Parsing XDC File [F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ck_io[28]'. [F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc:108]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ck_io[35]'. [F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc:109]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'ck_io[35]'. [F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc:109]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc]
+Finished Parsing XDC File [F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1276.945 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1278.488 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-12 Infos, 4 Warnings, 2 Critical Warnings and 0 Errors encountered.
+12 Infos, 3 Warnings, 2 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1276.945 ; gain = 0.000
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1278.488 ; gain = 0.000
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -54,35 +52,35 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.812 . Memory (MB): peak = 1276.945 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1278.488 ; gain = 0.000
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 1fc99dde0
+Ending Cache Timing Information Task | Checksum: 193b8e580
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1485.340 ; gain = 208.395
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1488.633 ; gain = 210.145
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 1fc99dde0
+Phase 1 Retarget | Checksum: 193b8e580
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1796.934 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1808.230 ; gain = 0.000
 INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 1fc99dde0
+Phase 2 Constant propagation | Checksum: 193b8e580
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1796.934 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1808.230 ; gain = 0.000
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 21b6dc39c
+Phase 3 Sweep | Checksum: 1e610d5c7
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1796.934 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1808.230 ; gain = 0.000
 INFO: [Opt 31-389] Phase Sweep created 4 cells and removed 10 cells
 
 Phase 4 BUFG optimization
@@ -91,22 +89,22 @@ INFO: [Opt 31-194] Inserted BUFG axi_addr_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiIn
 INFO: [Opt 31-194] Inserted BUFG axi_addr_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/R_ADDR_2_reg[31]_i_1_n_0_BUFG_inst to drive 32 load(s) on clock net axi_addr_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/R_ADDR_2_reg[31]_i_1_n_0_BUFG
 INFO: [Opt 31-194] Inserted BUFG axi_addr_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_araddr[3]_BUFG_inst to drive 35 load(s) on clock net axi_addr_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_araddr_BUFG[3]
 INFO: [Opt 31-193] Inserted 4 BUFG(s) on clock nets
-Phase 4 BUFG optimization | Checksum: 14c5544a2
+Phase 4 BUFG optimization | Checksum: 1e5dbeb4a
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1796.934 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 1808.230 ; gain = 0.000
 INFO: [Opt 31-662] Phase BUFG optimization created 4 cells of which 4 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 14c5544a2
+Phase 5 Shift Register Optimization | Checksum: 1e5dbeb4a
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1796.934 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1808.230 ; gain = 0.000
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 169938c56
+Phase 6 Post Processing Netlist | Checksum: 1e1e954df
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1796.934 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1808.230 ; gain = 0.000
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 Opt_design Change Summary
 =========================
@@ -127,43 +125,43 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1796.934 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: fae510e6
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1808.230 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 162f7d8ab
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1796.934 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 1808.230 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-Ending Power Optimization Task | Checksum: fae510e6
+Ending Power Optimization Task | Checksum: 162f7d8ab
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1796.934 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1808.230 ; gain = 0.000
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: fae510e6
+Ending Final Cleanup Task | Checksum: 162f7d8ab
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.934 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1808.230 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.934 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: fae510e6
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1808.230 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 162f7d8ab
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.934 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1808.230 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-34 Infos, 4 Warnings, 2 Critical Warnings and 0 Errors encountered.
+34 Infos, 3 Warnings, 2 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1796.934 ; gain = 519.988
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1808.230 ; gain = 529.742
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1796.934 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/impl_1/axi_addr_wrapper_opt.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1808.230 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/impl_1/axi_addr_wrapper_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file axi_addr_wrapper_drc_opted.rpt -pb axi_addr_wrapper_drc_opted.pb -rpx axi_addr_wrapper_drc_opted.rpx
 Command: report_drc -file axi_addr_wrapper_drc_opted.rpt -pb axi_addr_wrapper_drc_opted.pb -rpx axi_addr_wrapper_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Vivado_Tcl 2-168] The results of DRC are in file F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/impl_1/axi_addr_wrapper_drc_opted.rpt.
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/impl_1/axi_addr_wrapper_drc_opted.rpt.
 report_drc completed successfully
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
@@ -182,61 +180,61 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1840.223 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1854.500 ; gain = 0.000
 Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 89c68d78
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1840.223 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1840.223 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1854.500 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1854.500 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (46) is greater than number of available sites (25).
 The following are banks with available pins: 
  IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 25 sites available on device, but needs 46 sites.
-	Term: S00_AXI_0_wdata[0]
-	Term: S00_AXI_0_wdata[1]
-	Term: S00_AXI_0_wdata[2]
-	Term: S00_AXI_0_wdata[3]
-	Term: S00_AXI_0_wdata[4]
-	Term: S00_AXI_0_wdata[5]
-	Term: S00_AXI_0_wdata[6]
-	Term: S00_AXI_0_wdata[7]
-	Term: S00_AXI_0_wdata[8]
-	Term: S00_AXI_0_wdata[9]
-	Term: S00_AXI_0_wdata[10]
-	Term: S00_AXI_0_wdata[11]
-	Term: S00_AXI_0_wdata[12]
-	Term: S00_AXI_0_wdata[13]
-	Term: S00_AXI_0_wdata[14]
-	Term: S00_AXI_0_wdata[15]
-	Term: S00_AXI_0_wdata[16]
-	Term: S00_AXI_0_wdata[17]
-	Term: S00_AXI_0_wdata[18]
-	Term: S00_AXI_0_wdata[19]
-	Term: S00_AXI_0_wdata[20]
-	Term: S00_AXI_0_wdata[21]
-	Term: S00_AXI_0_wdata[22]
-	Term: S00_AXI_0_wdata[23]
-	Term: S00_AXI_0_wdata[24]
-	Term: S00_AXI_0_wdata[25]
-	Term: S00_AXI_0_wdata[26]
-	Term: S00_AXI_0_wdata[27]
-	Term: S00_AXI_0_wdata[28]
-	Term: S00_AXI_0_wdata[29]
-	Term: S00_AXI_0_wdata[30]
-	Term: S00_AXI_0_wdata[31]
-	Term: S00_AXI_0_araddr[2]
-	Term: S00_AXI_0_araddr[3]
-	Term: S00_AXI_0_awaddr[2]
-	Term: S00_AXI_0_awaddr[3]
-	Term: S00_AXI_0_wstrb[0]
-	Term: S00_AXI_0_wstrb[1]
-	Term: S00_AXI_0_wstrb[2]
-	Term: S00_AXI_0_wstrb[3]
-	Term: S00_AXI_0_arvalid
-	Term: S00_AXI_0_awvalid
-	Term: S00_AXI_0_bready
-	Term: S00_AXI_0_rready
-	Term: S00_AXI_0_wvalid
+	Term: S00_AXI_wdata[0]
+	Term: S00_AXI_wdata[1]
+	Term: S00_AXI_wdata[2]
+	Term: S00_AXI_wdata[3]
+	Term: S00_AXI_wdata[4]
+	Term: S00_AXI_wdata[5]
+	Term: S00_AXI_wdata[6]
+	Term: S00_AXI_wdata[7]
+	Term: S00_AXI_wdata[8]
+	Term: S00_AXI_wdata[9]
+	Term: S00_AXI_wdata[10]
+	Term: S00_AXI_wdata[11]
+	Term: S00_AXI_wdata[12]
+	Term: S00_AXI_wdata[13]
+	Term: S00_AXI_wdata[14]
+	Term: S00_AXI_wdata[15]
+	Term: S00_AXI_wdata[16]
+	Term: S00_AXI_wdata[17]
+	Term: S00_AXI_wdata[18]
+	Term: S00_AXI_wdata[19]
+	Term: S00_AXI_wdata[20]
+	Term: S00_AXI_wdata[21]
+	Term: S00_AXI_wdata[22]
+	Term: S00_AXI_wdata[23]
+	Term: S00_AXI_wdata[24]
+	Term: S00_AXI_wdata[25]
+	Term: S00_AXI_wdata[26]
+	Term: S00_AXI_wdata[27]
+	Term: S00_AXI_wdata[28]
+	Term: S00_AXI_wdata[29]
+	Term: S00_AXI_wdata[30]
+	Term: S00_AXI_wdata[31]
+	Term: S00_AXI_araddr[2]
+	Term: S00_AXI_araddr[3]
+	Term: S00_AXI_awaddr[2]
+	Term: S00_AXI_awaddr[3]
+	Term: S00_AXI_wstrb[0]
+	Term: S00_AXI_wstrb[1]
+	Term: S00_AXI_wstrb[2]
+	Term: S00_AXI_wstrb[3]
+	Term: S00_AXI_arvalid
+	Term: S00_AXI_awvalid
+	Term: S00_AXI_bready
+	Term: S00_AXI_rready
+	Term: S00_AXI_wvalid
 	Term: s00_axi_aresetn_0
 
 
@@ -244,192 +242,192 @@ Resolution: Consider using Xilinx part with greater number of IO pins
 ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (41) is greater than number of available sites (25).
 The following are banks with available pins: 
  IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 25 sites available on device, but needs 46 sites.
-	Term: S00_AXI_0_wdata[0]
-	Term: S00_AXI_0_wdata[1]
-	Term: S00_AXI_0_wdata[2]
-	Term: S00_AXI_0_wdata[3]
-	Term: S00_AXI_0_wdata[4]
-	Term: S00_AXI_0_wdata[5]
-	Term: S00_AXI_0_wdata[6]
-	Term: S00_AXI_0_wdata[7]
-	Term: S00_AXI_0_wdata[8]
-	Term: S00_AXI_0_wdata[9]
-	Term: S00_AXI_0_wdata[10]
-	Term: S00_AXI_0_wdata[11]
-	Term: S00_AXI_0_wdata[12]
-	Term: S00_AXI_0_wdata[13]
-	Term: S00_AXI_0_wdata[14]
-	Term: S00_AXI_0_wdata[15]
-	Term: S00_AXI_0_wdata[16]
-	Term: S00_AXI_0_wdata[17]
-	Term: S00_AXI_0_wdata[18]
-	Term: S00_AXI_0_wdata[19]
-	Term: S00_AXI_0_wdata[20]
-	Term: S00_AXI_0_wdata[21]
-	Term: S00_AXI_0_wdata[22]
-	Term: S00_AXI_0_wdata[23]
-	Term: S00_AXI_0_wdata[24]
-	Term: S00_AXI_0_wdata[25]
-	Term: S00_AXI_0_wdata[26]
-	Term: S00_AXI_0_wdata[27]
-	Term: S00_AXI_0_wdata[28]
-	Term: S00_AXI_0_wdata[29]
-	Term: S00_AXI_0_wdata[30]
-	Term: S00_AXI_0_wdata[31]
-	Term: S00_AXI_0_araddr[2]
-	Term: S00_AXI_0_araddr[3]
-	Term: S00_AXI_0_awaddr[2]
-	Term: S00_AXI_0_awaddr[3]
-	Term: S00_AXI_0_wstrb[0]
-	Term: S00_AXI_0_wstrb[1]
-	Term: S00_AXI_0_wstrb[2]
-	Term: S00_AXI_0_wstrb[3]
-	Term: S00_AXI_0_arvalid
-	Term: S00_AXI_0_awvalid
-	Term: S00_AXI_0_bready
-	Term: S00_AXI_0_rready
-	Term: S00_AXI_0_wvalid
+	Term: S00_AXI_wdata[0]
+	Term: S00_AXI_wdata[1]
+	Term: S00_AXI_wdata[2]
+	Term: S00_AXI_wdata[3]
+	Term: S00_AXI_wdata[4]
+	Term: S00_AXI_wdata[5]
+	Term: S00_AXI_wdata[6]
+	Term: S00_AXI_wdata[7]
+	Term: S00_AXI_wdata[8]
+	Term: S00_AXI_wdata[9]
+	Term: S00_AXI_wdata[10]
+	Term: S00_AXI_wdata[11]
+	Term: S00_AXI_wdata[12]
+	Term: S00_AXI_wdata[13]
+	Term: S00_AXI_wdata[14]
+	Term: S00_AXI_wdata[15]
+	Term: S00_AXI_wdata[16]
+	Term: S00_AXI_wdata[17]
+	Term: S00_AXI_wdata[18]
+	Term: S00_AXI_wdata[19]
+	Term: S00_AXI_wdata[20]
+	Term: S00_AXI_wdata[21]
+	Term: S00_AXI_wdata[22]
+	Term: S00_AXI_wdata[23]
+	Term: S00_AXI_wdata[24]
+	Term: S00_AXI_wdata[25]
+	Term: S00_AXI_wdata[26]
+	Term: S00_AXI_wdata[27]
+	Term: S00_AXI_wdata[28]
+	Term: S00_AXI_wdata[29]
+	Term: S00_AXI_wdata[30]
+	Term: S00_AXI_wdata[31]
+	Term: S00_AXI_araddr[2]
+	Term: S00_AXI_araddr[3]
+	Term: S00_AXI_awaddr[2]
+	Term: S00_AXI_awaddr[3]
+	Term: S00_AXI_wstrb[0]
+	Term: S00_AXI_wstrb[1]
+	Term: S00_AXI_wstrb[2]
+	Term: S00_AXI_wstrb[3]
+	Term: S00_AXI_arvalid
+	Term: S00_AXI_awvalid
+	Term: S00_AXI_bready
+	Term: S00_AXI_rready
+	Term: S00_AXI_wvalid
 	Term: s00_axi_aresetn_0
 
 
  IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 25 sites available on device, but needs 41 sites.
-	Term: S00_AXI_0_rdata[0]
-	Term: S00_AXI_0_rdata[1]
-	Term: S00_AXI_0_rdata[2]
-	Term: S00_AXI_0_rdata[3]
-	Term: S00_AXI_0_rdata[4]
-	Term: S00_AXI_0_rdata[5]
-	Term: S00_AXI_0_rdata[6]
-	Term: S00_AXI_0_rdata[7]
-	Term: S00_AXI_0_rdata[8]
-	Term: S00_AXI_0_rdata[9]
-	Term: S00_AXI_0_rdata[10]
-	Term: S00_AXI_0_rdata[11]
-	Term: S00_AXI_0_rdata[12]
-	Term: S00_AXI_0_rdata[13]
-	Term: S00_AXI_0_rdata[14]
-	Term: S00_AXI_0_rdata[15]
-	Term: S00_AXI_0_rdata[16]
-	Term: S00_AXI_0_rdata[17]
-	Term: S00_AXI_0_rdata[18]
-	Term: S00_AXI_0_rdata[19]
-	Term: S00_AXI_0_rdata[20]
-	Term: S00_AXI_0_rdata[21]
-	Term: S00_AXI_0_rdata[22]
-	Term: S00_AXI_0_rdata[23]
-	Term: S00_AXI_0_rdata[24]
-	Term: S00_AXI_0_rdata[25]
-	Term: S00_AXI_0_rdata[26]
-	Term: S00_AXI_0_rdata[27]
-	Term: S00_AXI_0_rdata[28]
-	Term: S00_AXI_0_rdata[29]
-	Term: S00_AXI_0_rdata[30]
-	Term: S00_AXI_0_rdata[31]
-	Term: S00_AXI_0_bresp[0]
-	Term: S00_AXI_0_bresp[1]
-	Term: S00_AXI_0_rresp[0]
-	Term: S00_AXI_0_rresp[1]
-	Term: S00_AXI_0_arready
-	Term: S00_AXI_0_awready
-	Term: S00_AXI_0_bvalid
-	Term: S00_AXI_0_rvalid
-	Term: S00_AXI_0_wready
+	Term: S00_AXI_rdata[0]
+	Term: S00_AXI_rdata[1]
+	Term: S00_AXI_rdata[2]
+	Term: S00_AXI_rdata[3]
+	Term: S00_AXI_rdata[4]
+	Term: S00_AXI_rdata[5]
+	Term: S00_AXI_rdata[6]
+	Term: S00_AXI_rdata[7]
+	Term: S00_AXI_rdata[8]
+	Term: S00_AXI_rdata[9]
+	Term: S00_AXI_rdata[10]
+	Term: S00_AXI_rdata[11]
+	Term: S00_AXI_rdata[12]
+	Term: S00_AXI_rdata[13]
+	Term: S00_AXI_rdata[14]
+	Term: S00_AXI_rdata[15]
+	Term: S00_AXI_rdata[16]
+	Term: S00_AXI_rdata[17]
+	Term: S00_AXI_rdata[18]
+	Term: S00_AXI_rdata[19]
+	Term: S00_AXI_rdata[20]
+	Term: S00_AXI_rdata[21]
+	Term: S00_AXI_rdata[22]
+	Term: S00_AXI_rdata[23]
+	Term: S00_AXI_rdata[24]
+	Term: S00_AXI_rdata[25]
+	Term: S00_AXI_rdata[26]
+	Term: S00_AXI_rdata[27]
+	Term: S00_AXI_rdata[28]
+	Term: S00_AXI_rdata[29]
+	Term: S00_AXI_rdata[30]
+	Term: S00_AXI_rdata[31]
+	Term: S00_AXI_bresp[0]
+	Term: S00_AXI_bresp[1]
+	Term: S00_AXI_rresp[0]
+	Term: S00_AXI_rresp[1]
+	Term: S00_AXI_arready
+	Term: S00_AXI_awready
+	Term: S00_AXI_bvalid
+	Term: S00_AXI_rvalid
+	Term: S00_AXI_wready
 
 
 Resolution: Consider using Xilinx part with greater number of IO pins
 ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (87) is greater than number of available sites (25).
 The following are banks with available pins: 
  IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 25 sites available on device, but needs 46 sites.
-	Term: S00_AXI_0_wdata[0]
-	Term: S00_AXI_0_wdata[1]
-	Term: S00_AXI_0_wdata[2]
-	Term: S00_AXI_0_wdata[3]
-	Term: S00_AXI_0_wdata[4]
-	Term: S00_AXI_0_wdata[5]
-	Term: S00_AXI_0_wdata[6]
-	Term: S00_AXI_0_wdata[7]
-	Term: S00_AXI_0_wdata[8]
-	Term: S00_AXI_0_wdata[9]
-	Term: S00_AXI_0_wdata[10]
-	Term: S00_AXI_0_wdata[11]
-	Term: S00_AXI_0_wdata[12]
-	Term: S00_AXI_0_wdata[13]
-	Term: S00_AXI_0_wdata[14]
-	Term: S00_AXI_0_wdata[15]
-	Term: S00_AXI_0_wdata[16]
-	Term: S00_AXI_0_wdata[17]
-	Term: S00_AXI_0_wdata[18]
-	Term: S00_AXI_0_wdata[19]
-	Term: S00_AXI_0_wdata[20]
-	Term: S00_AXI_0_wdata[21]
-	Term: S00_AXI_0_wdata[22]
-	Term: S00_AXI_0_wdata[23]
-	Term: S00_AXI_0_wdata[24]
-	Term: S00_AXI_0_wdata[25]
-	Term: S00_AXI_0_wdata[26]
-	Term: S00_AXI_0_wdata[27]
-	Term: S00_AXI_0_wdata[28]
-	Term: S00_AXI_0_wdata[29]
-	Term: S00_AXI_0_wdata[30]
-	Term: S00_AXI_0_wdata[31]
-	Term: S00_AXI_0_araddr[2]
-	Term: S00_AXI_0_araddr[3]
-	Term: S00_AXI_0_awaddr[2]
-	Term: S00_AXI_0_awaddr[3]
-	Term: S00_AXI_0_wstrb[0]
-	Term: S00_AXI_0_wstrb[1]
-	Term: S00_AXI_0_wstrb[2]
-	Term: S00_AXI_0_wstrb[3]
-	Term: S00_AXI_0_arvalid
-	Term: S00_AXI_0_awvalid
-	Term: S00_AXI_0_bready
-	Term: S00_AXI_0_rready
-	Term: S00_AXI_0_wvalid
+	Term: S00_AXI_wdata[0]
+	Term: S00_AXI_wdata[1]
+	Term: S00_AXI_wdata[2]
+	Term: S00_AXI_wdata[3]
+	Term: S00_AXI_wdata[4]
+	Term: S00_AXI_wdata[5]
+	Term: S00_AXI_wdata[6]
+	Term: S00_AXI_wdata[7]
+	Term: S00_AXI_wdata[8]
+	Term: S00_AXI_wdata[9]
+	Term: S00_AXI_wdata[10]
+	Term: S00_AXI_wdata[11]
+	Term: S00_AXI_wdata[12]
+	Term: S00_AXI_wdata[13]
+	Term: S00_AXI_wdata[14]
+	Term: S00_AXI_wdata[15]
+	Term: S00_AXI_wdata[16]
+	Term: S00_AXI_wdata[17]
+	Term: S00_AXI_wdata[18]
+	Term: S00_AXI_wdata[19]
+	Term: S00_AXI_wdata[20]
+	Term: S00_AXI_wdata[21]
+	Term: S00_AXI_wdata[22]
+	Term: S00_AXI_wdata[23]
+	Term: S00_AXI_wdata[24]
+	Term: S00_AXI_wdata[25]
+	Term: S00_AXI_wdata[26]
+	Term: S00_AXI_wdata[27]
+	Term: S00_AXI_wdata[28]
+	Term: S00_AXI_wdata[29]
+	Term: S00_AXI_wdata[30]
+	Term: S00_AXI_wdata[31]
+	Term: S00_AXI_araddr[2]
+	Term: S00_AXI_araddr[3]
+	Term: S00_AXI_awaddr[2]
+	Term: S00_AXI_awaddr[3]
+	Term: S00_AXI_wstrb[0]
+	Term: S00_AXI_wstrb[1]
+	Term: S00_AXI_wstrb[2]
+	Term: S00_AXI_wstrb[3]
+	Term: S00_AXI_arvalid
+	Term: S00_AXI_awvalid
+	Term: S00_AXI_bready
+	Term: S00_AXI_rready
+	Term: S00_AXI_wvalid
 	Term: s00_axi_aresetn_0
 
 
  IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 25 sites available on device, but needs 41 sites.
-	Term: S00_AXI_0_rdata[0]
-	Term: S00_AXI_0_rdata[1]
-	Term: S00_AXI_0_rdata[2]
-	Term: S00_AXI_0_rdata[3]
-	Term: S00_AXI_0_rdata[4]
-	Term: S00_AXI_0_rdata[5]
-	Term: S00_AXI_0_rdata[6]
-	Term: S00_AXI_0_rdata[7]
-	Term: S00_AXI_0_rdata[8]
-	Term: S00_AXI_0_rdata[9]
-	Term: S00_AXI_0_rdata[10]
-	Term: S00_AXI_0_rdata[11]
-	Term: S00_AXI_0_rdata[12]
-	Term: S00_AXI_0_rdata[13]
-	Term: S00_AXI_0_rdata[14]
-	Term: S00_AXI_0_rdata[15]
-	Term: S00_AXI_0_rdata[16]
-	Term: S00_AXI_0_rdata[17]
-	Term: S00_AXI_0_rdata[18]
-	Term: S00_AXI_0_rdata[19]
-	Term: S00_AXI_0_rdata[20]
-	Term: S00_AXI_0_rdata[21]
-	Term: S00_AXI_0_rdata[22]
-	Term: S00_AXI_0_rdata[23]
-	Term: S00_AXI_0_rdata[24]
-	Term: S00_AXI_0_rdata[25]
-	Term: S00_AXI_0_rdata[26]
-	Term: S00_AXI_0_rdata[27]
-	Term: S00_AXI_0_rdata[28]
-	Term: S00_AXI_0_rdata[29]
-	Term: S00_AXI_0_rdata[30]
-	Term: S00_AXI_0_rdata[31]
-	Term: S00_AXI_0_bresp[0]
-	Term: S00_AXI_0_bresp[1]
-	Term: S00_AXI_0_rresp[0]
-	Term: S00_AXI_0_rresp[1]
-	Term: S00_AXI_0_arready
-	Term: S00_AXI_0_awready
-	Term: S00_AXI_0_bvalid
-	Term: S00_AXI_0_rvalid
-	Term: S00_AXI_0_wready
+	Term: S00_AXI_rdata[0]
+	Term: S00_AXI_rdata[1]
+	Term: S00_AXI_rdata[2]
+	Term: S00_AXI_rdata[3]
+	Term: S00_AXI_rdata[4]
+	Term: S00_AXI_rdata[5]
+	Term: S00_AXI_rdata[6]
+	Term: S00_AXI_rdata[7]
+	Term: S00_AXI_rdata[8]
+	Term: S00_AXI_rdata[9]
+	Term: S00_AXI_rdata[10]
+	Term: S00_AXI_rdata[11]
+	Term: S00_AXI_rdata[12]
+	Term: S00_AXI_rdata[13]
+	Term: S00_AXI_rdata[14]
+	Term: S00_AXI_rdata[15]
+	Term: S00_AXI_rdata[16]
+	Term: S00_AXI_rdata[17]
+	Term: S00_AXI_rdata[18]
+	Term: S00_AXI_rdata[19]
+	Term: S00_AXI_rdata[20]
+	Term: S00_AXI_rdata[21]
+	Term: S00_AXI_rdata[22]
+	Term: S00_AXI_rdata[23]
+	Term: S00_AXI_rdata[24]
+	Term: S00_AXI_rdata[25]
+	Term: S00_AXI_rdata[26]
+	Term: S00_AXI_rdata[27]
+	Term: S00_AXI_rdata[28]
+	Term: S00_AXI_rdata[29]
+	Term: S00_AXI_rdata[30]
+	Term: S00_AXI_rdata[31]
+	Term: S00_AXI_bresp[0]
+	Term: S00_AXI_bresp[1]
+	Term: S00_AXI_rresp[0]
+	Term: S00_AXI_rresp[1]
+	Term: S00_AXI_arready
+	Term: S00_AXI_awready
+	Term: S00_AXI_bvalid
+	Term: S00_AXI_rvalid
+	Term: S00_AXI_wready
 
 
 Resolution: Consider using Xilinx part with greater number of IO pins
@@ -462,17 +460,17 @@ IO Placement:
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: fa64908e
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.375 . Memory (MB): peak = 1840.223 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.418 . Memory (MB): peak = 1854.500 ; gain = 0.000
 Phase 1 Placer Initialization | Checksum: fa64908e
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.375 . Memory (MB): peak = 1840.223 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.418 . Memory (MB): peak = 1854.500 ; gain = 0.000
 ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
 Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
 Ending Placer Task | Checksum: fa64908e
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.376 . Memory (MB): peak = 1840.223 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.420 . Memory (MB): peak = 1854.500 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-50 Infos, 4 Warnings, 2 Critical Warnings and 6 Errors encountered.
+50 Infos, 3 Warnings, 2 Critical Warnings and 6 Errors encountered.
 place_design failed
 ERROR: [Common 17-69] Command failed: Placer could not place all instances
-INFO: [Common 17-206] Exiting Vivado at Mon Jan 22 19:54:01 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 22 22:46:20 2024...

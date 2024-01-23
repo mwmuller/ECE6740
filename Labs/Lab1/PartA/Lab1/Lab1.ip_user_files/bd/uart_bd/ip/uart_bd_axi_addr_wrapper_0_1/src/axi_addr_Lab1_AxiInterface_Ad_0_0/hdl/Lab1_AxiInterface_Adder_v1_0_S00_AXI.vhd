@@ -355,9 +355,9 @@ begin
 	    loc_addr := axi_araddr(ADDR_LSB + OPT_MEM_ADDR_BITS downto ADDR_LSB);
 	    case loc_addr is
 	      when b"00" =>
-	        R_ADDR_1 <= slv_reg0;
+	        reg_data_out <= slv_reg0;
 	      when b"01" =>
-	        R_ADDR_2 <= slv_reg1;
+	        reg_data_out <= slv_reg1;
 	      when b"10" =>
 	        reg_data_out <= R_ADDR_SUM;
 	      when b"11" =>
@@ -387,7 +387,8 @@ begin
 
 
 	-- Add user logic here
-   
+   R_ADDR_1 <= slv_reg0;
+   R_ADDR_2 <= slv_reg1;
 	-- User logic ends
 
 end arch_imp;

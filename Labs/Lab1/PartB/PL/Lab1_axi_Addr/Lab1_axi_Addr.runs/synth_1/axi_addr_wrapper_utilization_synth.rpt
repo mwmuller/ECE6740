@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Mon Jan 22 19:53:16 2024
-| Host         : DESKTOP-LF8951D running 64-bit major release  (build 9200)
+| Date         : Mon Jan 22 22:45:39 2024
+| Host         : DESKTOP-NE4QLD0 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file axi_addr_wrapper_utilization_synth.rpt -pb axi_addr_wrapper_utilization_synth.pb
 | Design       : axi_addr_wrapper
 | Device       : xc7z020clg400-1

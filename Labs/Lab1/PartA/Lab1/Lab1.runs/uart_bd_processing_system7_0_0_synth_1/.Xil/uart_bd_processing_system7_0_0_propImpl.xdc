@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_processing_system7_0_0/uart_bd_processing_system7_0_0.xdc rfile:../../../Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_processing_system7_0_0/uart_bd_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
+set_property SRC_FILE_INFO {cfile:f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_processing_system7_0_0/uart_bd_processing_system7_0_0.xdc rfile:../../../Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_processing_system7_0_0/uart_bd_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
 current_instance inst
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_0 0.3

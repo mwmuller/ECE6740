@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="60" Path="f:/mastersprogram/ece6740/labs/lab1/partb/pl/lab1_axi_addr/lab1_axi_addr.tmp/lab1_axiinterface_adder_v1_0_project/Lab1_AxiInterface_Adder_v1_0_project.xpr">
+<Project Version="7" Minor="60" Path="f:/ece6740/labs/lab1/partb/pl/lab1_axi_addr/lab1_axi_addr.tmp/lab1_axiinterface_adder_v1_0_project/Lab1_AxiInterface_Adder_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="b2d28a51ab7d402486a18d1910694086"/>
+    <Option Name="Id" Val="20113d1ed7d144fa850101bb48e56937"/>
     <Option Name="Part" Val="xc7z020clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -43,12 +43,12 @@
     <Option Name="SimulatorGccVersionRiviera" Val="9.3.0"/>
     <Option Name="SimulatorGccVersionActiveHdl" Val="9.3.0"/>
     <Option Name="TargetLanguage" Val="VHDL"/>
-    <Option Name="BoardPart" Val="www.digilentinc.com:pynq-z1:part0:1.0"/>
+    <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../MastersProgram/ECE6740/IPRepo"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../MastersProgram/ECE6740/IPRepo/Lab1_AxiInterface_Adder_1.0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../ECE6740/IPRepo"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../ECE6740/IPRepo/Lab1_AxiInterface_Adder_1.0"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>
@@ -59,7 +59,6 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="DSABoardId" Val="pynq-z1"/>
     <Option Name="WTXSimLaunchSim" Val="0"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
@@ -91,27 +90,27 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../../../../../../../../../MastersProgram/ECE6740/IPRepo/Lab1_AxiInterface_Adder_1.0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd">
+      <File Path="$PPRDIR/../../../../../../../../ECE6740/IPRepo/Lab1_AxiInterface_Adder_1.0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd">
         <FileInfo>
           <Attr Name="Library" Val="xil_defaultlib"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../../MastersProgram/ECE6740/IPRepo/Lab1_AxiInterface_Adder_1.0/hdl/Lab1_AxiInterface_Adder_v1_0.vhd">
+      <File Path="$PPRDIR/../../../../../../../../ECE6740/IPRepo/Lab1_AxiInterface_Adder_1.0/hdl/Lab1_AxiInterface_Adder_v1_0.vhd">
         <FileInfo>
           <Attr Name="Library" Val="xil_defaultlib"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../../MastersProgram/ECE6740/IPRepo/Lab1_AxiInterface_Adder_1.0/component.xml">
+      <File Path="$PPRDIR/../../../../../../../../ECE6740/IPRepo/Lab1_AxiInterface_Adder_1.0/component.xml">
         <FileInfo SFType="IPXACT"/>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="Lab1_AxiInterface_Adder_v1_0"/>
-        <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../../../../../MastersProgram/ECE6740/IPRepo/Lab1_AxiInterface_Adder_1.0/hdl/Lab1_AxiInterface_Adder_v1_0.vhd"/>
+        <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../../../../ECE6740/IPRepo/Lab1_AxiInterface_Adder_1.0/hdl/Lab1_AxiInterface_Adder_v1_0.vhd"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
@@ -193,9 +192,7 @@
       <RQSFiles/>
     </Run>
   </Runs>
-  <Board>
-    <Jumpers/>
-  </Board>
+  <Board/>
   <DashboardSummary Version="1" Minor="0">
     <Dashboards>
       <Dashboard Name="default_dashboard">

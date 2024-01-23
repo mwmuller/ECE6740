@@ -94,7 +94,7 @@
   "../../../../Lab1.gen/sources_1/bd/uart_bd/ipshared/90c8/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/uart_bd/ip/uart_bd_auto_pc_0/sim/uart_bd_auto_pc_0.v" \
+  "../../../bd/uart_bd/ip/uart_bd_auto_pc_0_1/sim/uart_bd_auto_pc_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/uart_bd/sim/uart_bd.vhd" \

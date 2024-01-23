@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/synth_1/axi_addr_wrapper.tcl"
+  variable script "F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/synth_1/axi_addr_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -77,24 +77,23 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.cache/wt [current_project]
-set_property parent.project_path F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.xpr [current_project]
+set_property webtalk.parent_dir F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.cache/wt [current_project]
+set_property parent.project_path F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
 set_property ip_repo_paths {
-  f:/MastersProgram/ECE6740/IPRepo
-  f:/MastersProgram/ECE6740/IPRepo/Lab1_AxiInterface_Adder_1.0
+  f:/ECE6740/IPRepo
+  f:/ECE6740/IPRepo/Lab1_AxiInterface_Adder_1.0
 } [current_project]
 update_ip_catalog
-set_property ip_output_repo f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.cache/ip [current_project]
+set_property ip_output_repo f:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/hdl/axi_addr_wrapper.vhd
-add_files F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/sources_1/bd/axi_addr/axi_addr.bd
-set_property used_in_implementation false [get_files -all f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/ip/axi_addr_c_addsub_0_0/axi_addr_c_addsub_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/axi_addr_ooc.xdc]
+read_vhdl -library xil_defaultlib F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/hdl/axi_addr_wrapper.vhd
+add_files F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/sources_1/bd/axi_addr/axi_addr.bd
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/ip/axi_addr_c_addsub_0_0/axi_addr_c_addsub_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/axi_addr_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -105,14 +104,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc
-set_property used_in_implementation false [get_files F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc]
+read_xdc F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc
+set_property used_in_implementation false [get_files F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/utils_1/imports/synth_1/axi_addr_wrapper.dcp
+read_checkpoint -auto_incremental -incremental F:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/utils_1/imports/synth_1/axi_addr_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
