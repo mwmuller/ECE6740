@@ -6,7 +6,7 @@
 <Project Version="7" Minor="60" Path="f:/mastersprogram/ece6740/labs/lab1/partb/pl/lab1_axi_addr/lab1_axi_addr.tmp/lab1_axiinterface_adder_v1_0_project/Lab1_AxiInterface_Adder_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="3dd5c927174f4a3db9279fd22bce50ec"/>
+    <Option Name="Id" Val="7f51842d93c144fb9be9d3abba5b6107"/>
     <Option Name="Part" Val="xc7z020clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -47,6 +47,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../MastersProgram/ECE6740/IPRepo"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../MastersProgram/ECE6740/IPRepo/Lab1_AxiInterface_Adder_1.0"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>

@@ -1,0 +1,96 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jan 22 18:53:01 2024
+| Host         : DESKTOP-LF8951D running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    18 |
+|    Minimum number of control sets                        |    18 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    10 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    18 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |    12 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             132 |           37 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              10 |            5 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             128 |           23 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|                                                  Clock Signal                                                 |                                            Enable Signal                                            |                                          Set/Reset Signal                                          | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  s00_axi_aclk_0_IBUF_BUFG                                                                                     | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/slv_reg1[15]_i_1_n_0 | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_awready_i_1_n_0 |                1 |              8 |         8.00 |
+|  s00_axi_aclk_0_IBUF_BUFG                                                                                     | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/slv_reg1[31]_i_1_n_0 | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_awready_i_1_n_0 |                2 |              8 |         4.00 |
+|  s00_axi_aclk_0_IBUF_BUFG                                                                                     | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/slv_reg1[23]_i_1_n_0 | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_awready_i_1_n_0 |                1 |              8 |         8.00 |
+|  s00_axi_aclk_0_IBUF_BUFG                                                                                     | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/slv_reg1[7]_i_1_n_0  | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_awready_i_1_n_0 |                1 |              8 |         8.00 |
+|  s00_axi_aclk_0_IBUF_BUFG                                                                                     | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/slv_reg3[15]_i_1_n_0 | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_awready_i_1_n_0 |                2 |              8 |         4.00 |
+|  s00_axi_aclk_0_IBUF_BUFG                                                                                     | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/slv_reg3[23]_i_1_n_0 | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_awready_i_1_n_0 |                2 |              8 |         4.00 |
+|  s00_axi_aclk_0_IBUF_BUFG                                                                                     | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/slv_reg3[31]_i_1_n_0 | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_awready_i_1_n_0 |                2 |              8 |         4.00 |
+|  s00_axi_aclk_0_IBUF_BUFG                                                                                     | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/slv_reg3[7]_i_1_n_0  | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_awready_i_1_n_0 |                2 |              8 |         4.00 |
+|  s00_axi_aclk_0_IBUF_BUFG                                                                                     | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/p_1_in[7]            | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_awready_i_1_n_0 |                1 |              8 |         8.00 |
+|  s00_axi_aclk_0_IBUF_BUFG                                                                                     | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/p_1_in[15]           | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_awready_i_1_n_0 |                1 |              8 |         8.00 |
+|  s00_axi_aclk_0_IBUF_BUFG                                                                                     | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/p_1_in[23]           | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_awready_i_1_n_0 |                1 |              8 |         8.00 |
+|  s00_axi_aclk_0_IBUF_BUFG                                                                                     | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/p_1_in[31]           | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_awready_i_1_n_0 |                1 |              8 |         8.00 |
+|  s00_axi_aclk_0_IBUF_BUFG                                                                                     |                                                                                                     | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_awready_i_1_n_0 |                5 |             10 |         2.00 |
+|  s00_axi_aclk_0_IBUF_BUFG                                                                                     | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/slv_reg_rden         | design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_awready_i_1_n_0 |                6 |             32 |         5.33 |
+|  design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/R_ADDR_1_reg[31]_i_1_n_0_BUFG |                                                                                                     |                                                                                                    |               10 |             32 |         3.20 |
+|  design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/R_ADDR_2_reg[31]_i_1_n_0_BUFG |                                                                                                     |                                                                                                    |                8 |             32 |         4.00 |
+|  design_1_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_araddr_BUFG[3]            |                                                                                                     |                                                                                                    |               10 |             32 |         3.20 |
+|  s00_axi_aclk_0_IBUF_BUFG                                                                                     |                                                                                                     |                                                                                                    |                9 |             36 |         4.00 |
++---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

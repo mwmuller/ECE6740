@@ -1,0 +1,253 @@
+
+*** Running vivado
+    with args -log design_1_Lab1_AxiInterface_Ad_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_Lab1_AxiInterface_Ad_0_0.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_Lab1_AxiInterface_Ad_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/MastersProgram/ECE6740/IPRepo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.cache/ip 
+Command: synth_design -top design_1_Lab1_AxiInterface_Ad_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23152
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1275.176 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_Lab1_AxiInterface_Ad_0_0' [f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.gen/sources_1/bd/design_1/ip/design_1_Lab1_AxiInterface_Ad_0_0/synth/design_1_Lab1_AxiInterface_Ad_0_0.vhd:85]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'Lab1_AxiInterface_Adder_v1_0' declared at 'f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.gen/sources_1/bd/design_1/ipshared/5108/hdl/Lab1_AxiInterface_Adder_v1_0.vhd:5' bound to instance 'U0' of component 'Lab1_AxiInterface_Adder_v1_0' [f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.gen/sources_1/bd/design_1/ip/design_1_Lab1_AxiInterface_Ad_0_0/synth/design_1_Lab1_AxiInterface_Ad_0_0.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'Lab1_AxiInterface_Adder_v1_0' [f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.gen/sources_1/bd/design_1/ipshared/5108/hdl/Lab1_AxiInterface_Adder_v1_0.vhd:51]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'Lab1_AxiInterface_Adder_v1_0_S00_AXI' declared at 'f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.gen/sources_1/bd/design_1/ipshared/5108/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:5' bound to instance 'Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst' of component 'Lab1_AxiInterface_Adder_v1_0_S00_AXI' [f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.gen/sources_1/bd/design_1/ipshared/5108/hdl/Lab1_AxiInterface_Adder_v1_0.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'Lab1_AxiInterface_Adder_v1_0_S00_AXI' [f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.gen/sources_1/bd/design_1/ipshared/5108/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:88]
+INFO: [Synth 8-226] default block is never used [f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.gen/sources_1/bd/design_1/ipshared/5108/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:226]
+INFO: [Synth 8-226] default block is never used [f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.gen/sources_1/bd/design_1/ipshared/5108/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:356]
+WARNING: [Synth 8-614] signal 'R_ADDR_SUM' is read in the process but is not in the sensitivity list [f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.gen/sources_1/bd/design_1/ipshared/5108/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:351]
+INFO: [Synth 8-256] done synthesizing module 'Lab1_AxiInterface_Adder_v1_0_S00_AXI' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.gen/sources_1/bd/design_1/ipshared/5108/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'Lab1_AxiInterface_Adder_v1_0' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.gen/sources_1/bd/design_1/ipshared/5108/hdl/Lab1_AxiInterface_Adder_v1_0.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'design_1_Lab1_AxiInterface_Ad_0_0' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.gen/sources_1/bd/design_1/ip/design_1_Lab1_AxiInterface_Ad_0_0/synth/design_1_Lab1_AxiInterface_Ad_0_0.vhd:85]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.gen/sources_1/bd/design_1/ipshared/5108/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:221]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module Lab1_AxiInterface_Adder_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module Lab1_AxiInterface_Adder_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module Lab1_AxiInterface_Adder_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module Lab1_AxiInterface_Adder_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module Lab1_AxiInterface_Adder_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module Lab1_AxiInterface_Adder_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1275.176 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1275.176 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1275.176 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1275.176 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1290.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1290.926 ; gain = 0.164
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1290.926 ; gain = 15.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1290.926 ; gain = 15.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1290.926 ; gain = 15.750
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'R_ADDR_1_reg' [f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.gen/sources_1/bd/design_1/ipshared/5108/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:358]
+WARNING: [Synth 8-327] inferring latch for variable 'R_ADDR_2_reg' [f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.gen/sources_1/bd/design_1/ipshared/5108/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:360]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_data_out_reg' [f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.gen/sources_1/bd/design_1/ipshared/5108/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:362]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1290.926 ; gain = 15.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 3     
+	   4 Input   32 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module design_1_Lab1_AxiInterface_Ad_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module design_1_Lab1_AxiInterface_Ad_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module design_1_Lab1_AxiInterface_Ad_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module design_1_Lab1_AxiInterface_Ad_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module design_1_Lab1_AxiInterface_Ad_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module design_1_Lab1_AxiInterface_Ad_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1290.926 ; gain = 15.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1290.926 ; gain = 15.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1290.926 ; gain = 15.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1290.926 ; gain = 15.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1290.926 ; gain = 15.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1290.926 ; gain = 15.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1290.926 ; gain = 15.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1290.926 ; gain = 15.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1290.926 ; gain = 15.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1290.926 ; gain = 15.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     3|
+|3     |LUT3 |    33|
+|4     |LUT4 |    18|
+|5     |LUT6 |     4|
+|6     |FDRE |   135|
+|7     |FDSE |     3|
+|8     |LD   |    96|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1290.926 ; gain = 15.750
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1290.926 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1290.926 ; gain = 15.750
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1299.082 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1304.750 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 96 instances were transformed.
+  LD => LDCE: 96 instances
+
+Synth Design complete, checksum: 588606b2
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1304.750 ; gain = 29.574
+INFO: [Common 17-1381] The checkpoint 'F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.runs/design_1_Lab1_AxiInterface_Ad_0_0_synth_1/design_1_Lab1_AxiInterface_Ad_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_Lab1_AxiInterface_Ad_0_0, cache-ID = 1b775fbef1f4734c
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint 'F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/NewInterfaceOnly/NewInterfaceOnly.runs/design_1_Lab1_AxiInterface_Ad_0_0_synth_1/design_1_Lab1_AxiInterface_Ad_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_Lab1_AxiInterface_Ad_0_0_utilization_synth.rpt -pb design_1_Lab1_AxiInterface_Ad_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 22 18:51:48 2024...

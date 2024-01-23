@@ -80,22 +80,21 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.cache/wt [current_project]
 set_property parent.project_path F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.xpr [current_project]
-set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
-set_property ip_repo_paths f:/MastersProgram/ECE6740/IPRepo/Lab1_AxiInterface_Adder_1.0 [current_project]
+set_property ip_repo_paths {
+  f:/MastersProgram/ECE6740/IPRepo
+  f:/MastersProgram/ECE6740/IPRepo/Lab1_AxiInterface_Adder_1.0
+} [current_project]
 update_ip_catalog
 set_property ip_output_repo f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/hdl/axi_addr_wrapper.vhd
+read_vhdl -library xil_defaultlib F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/hdl/axi_addr_wrapper.vhd
 add_files F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/sources_1/bd/axi_addr/axi_addr.bd
 set_property used_in_implementation false [get_files -all f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/ip/axi_addr_c_addsub_0_0/axi_addr_c_addsub_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/ip/axi_addr_clk_wiz_0/axi_addr_clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/ip/axi_addr_clk_wiz_0/axi_addr_clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/ip/axi_addr_clk_wiz_0/axi_addr_clk_wiz_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/axi_addr_ooc.xdc]
 
 OPTRACE "Adding files" END { }

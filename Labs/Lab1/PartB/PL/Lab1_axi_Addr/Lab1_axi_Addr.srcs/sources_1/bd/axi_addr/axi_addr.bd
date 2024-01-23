@@ -1,41 +1,129 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xB7FD9D367717C17",
+      "boundary_crc": "0xE3DEF00EBCBB8603",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../Lab1_axi_Addr.gen/sources_1/bd/axi_addr",
       "name": "axi_addr",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2022.1",
-      "validated": "true"
+      "tool_version": "2022.1"
     },
     "design_tree": {
       "Lab1_AxiInterface_Ad_0": "",
       "c_addsub_0": "",
-      "clk_wiz": "",
       "xlslice_0": "",
-      "xlconstant_0": ""
+      "xlconstant_0": "",
+      "clk_wiz": ""
+    },
+    "interface_ports": {
+      "S00_AXI_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+        "parameters": {
+          "ADDR_WIDTH": {
+            "value": "16"
+          },
+          "ARUSER_WIDTH": {
+            "value": "0"
+          },
+          "AWUSER_WIDTH": {
+            "value": "0"
+          },
+          "BUSER_WIDTH": {
+            "value": "0"
+          },
+          "DATA_WIDTH": {
+            "value": "32"
+          },
+          "HAS_BRESP": {
+            "value": "1"
+          },
+          "HAS_BURST": {
+            "value": "0"
+          },
+          "HAS_CACHE": {
+            "value": "0"
+          },
+          "HAS_LOCK": {
+            "value": "0"
+          },
+          "HAS_PROT": {
+            "value": "1"
+          },
+          "HAS_QOS": {
+            "value": "0"
+          },
+          "HAS_REGION": {
+            "value": "0"
+          },
+          "HAS_RRESP": {
+            "value": "1"
+          },
+          "HAS_WSTRB": {
+            "value": "1"
+          },
+          "ID_WIDTH": {
+            "value": "0"
+          },
+          "MAX_BURST_LENGTH": {
+            "value": "1"
+          },
+          "NUM_READ_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_READ_THREADS": {
+            "value": "1"
+          },
+          "NUM_WRITE_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_WRITE_THREADS": {
+            "value": "1"
+          },
+          "PROTOCOL": {
+            "value": "AXI4LITE"
+          },
+          "READ_WRITE_MODE": {
+            "value": "READ_WRITE"
+          },
+          "RUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "RUSER_WIDTH": {
+            "value": "0"
+          },
+          "SUPPORTS_NARROW_BURST": {
+            "value": "0"
+          },
+          "WUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "WUSER_WIDTH": {
+            "value": "0"
+          }
+        },
+        "address_space_ref": "S00_AXI_0",
+        "base_address": {
+          "minimum": "0x00000000",
+          "maximum": "0x0000FFFF",
+          "width": "16"
+        }
+      }
     },
     "ports": {
+      "led": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
       "sys_clock": {
         "type": "clk",
         "direction": "I",
         "parameters": {
-          "CLK_DOMAIN": {
-            "value": "axi_addr_sys_clock",
-            "value_src": "default"
-          },
           "FREQ_HZ": {
             "value": "125000000"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
           },
           "PHASE": {
             "value": "0.0"
@@ -46,19 +134,10 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
           "POLARITY": {
             "value": "ACTIVE_HIGH"
           }
         }
-      },
-      "led": {
-        "direction": "O",
-        "left": "3",
-        "right": "0"
       }
     },
     "components": {
@@ -91,20 +170,6 @@
           }
         }
       },
-      "clk_wiz": {
-        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
-        "xci_name": "axi_addr_clk_wiz_0",
-        "xci_path": "ip\\axi_addr_clk_wiz_0\\axi_addr_clk_wiz_0.xci",
-        "inst_hier_path": "clk_wiz",
-        "parameters": {
-          "CLK_IN1_BOARD_INTERFACE": {
-            "value": "sys_clock"
-          },
-          "USE_BOARD_FLOW": {
-            "value": "true"
-          }
-        }
-      },
       "xlslice_0": {
         "vlnv": "xilinx.com:ip:xlslice:1.0",
         "xci_name": "axi_addr_xlslice_0_0",
@@ -121,9 +186,31 @@
       },
       "xlconstant_0": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "xci_name": "axi_addr_xlconstant_0_0",
-        "xci_path": "ip\\axi_addr_xlconstant_0_0\\axi_addr_xlconstant_0_0.xci",
+        "xci_name": "axi_addr_xlconstant_0_1",
+        "xci_path": "ip\\axi_addr_xlconstant_0_1\\axi_addr_xlconstant_0_1.xci",
         "inst_hier_path": "xlconstant_0"
+      },
+      "clk_wiz": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "axi_addr_clk_wiz_0",
+        "xci_path": "ip\\axi_addr_clk_wiz_0\\axi_addr_clk_wiz_0.xci",
+        "inst_hier_path": "clk_wiz",
+        "parameters": {
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "S00_AXI_0_1": {
+        "interface_ports": [
+          "S00_AXI_0",
+          "Lab1_AxiInterface_Ad_0/S00_AXI"
+        ]
       }
     },
     "nets": {
@@ -146,17 +233,17 @@
           "xlslice_0/Din"
         ]
       },
-      "clk_wiz_clk_out1": {
-        "ports": [
-          "clk_wiz/clk_out1",
-          "c_addsub_0/CLK",
-          "Lab1_AxiInterface_Ad_0/s00_axi_aclk"
-        ]
-      },
       "reset_rtl_1": {
         "ports": [
           "reset_rtl",
           "clk_wiz/reset"
+        ]
+      },
+      "s00_axi_aclk_0_1": {
+        "ports": [
+          "clk_wiz/clk_out1",
+          "Lab1_AxiInterface_Ad_0/s00_axi_aclk",
+          "c_addsub_0/CLK"
         ]
       },
       "sys_clock_1": {
@@ -176,6 +263,25 @@
           "xlslice_0/Dout",
           "led"
         ]
+      }
+    },
+    "addressing": {
+      "/": {
+        "address_spaces": {
+          "S00_AXI_0": {
+            "range": "64K",
+            "width": "16",
+            "segments": {
+              "SEG_Lab1_AxiInterface_Ad_0_S00_AXI_reg": {
+                "address_block": "/Lab1_AxiInterface_Ad_0/S00_AXI/S00_AXI_reg",
+                "offset": "0x0000",
+                "range": "4K",
+                "offset_base_param": "C_S00_AXI_BASEADDR",
+                "offset_high_param": "C_S00_AXI_HIGHADDR"
+              }
+            }
+          }
+        }
       }
     }
   }
