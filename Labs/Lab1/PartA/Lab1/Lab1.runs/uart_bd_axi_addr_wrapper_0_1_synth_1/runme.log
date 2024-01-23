@@ -20,9 +20,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 26672
+INFO: [Synth 8-7075] Helper process launched with PID 6180
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1276.465 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1277.027 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'uart_bd_axi_addr_wrapper_0_1' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/synth/uart_bd_axi_addr_wrapper_0_1.vhd:83]
 INFO: [Synth 8-3491] module 'axi_addr_wrapper' declared at 'f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ipshared/ff0c/src/axi_addr_wrapper.vhd:14' bound to instance 'U0' of component 'axi_addr_wrapper' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/synth/uart_bd_axi_addr_wrapper_0_1.vhd:144]
@@ -41,7 +41,6 @@ INFO: [Synth 8-3491] module 'Lab1_AxiInterface_Adder_v1_0_S00_AXI' declared at '
 INFO: [Synth 8-638] synthesizing module 'Lab1_AxiInterface_Adder_v1_0_S00_AXI' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:88]
 INFO: [Synth 8-226] default block is never used [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:226]
 INFO: [Synth 8-226] default block is never used [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:356]
-WARNING: [Synth 8-614] signal 'R_ADDR_SUM' is read in the process but is not in the sensitivity list [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:351]
 INFO: [Synth 8-256] done synthesizing module 'Lab1_AxiInterface_Adder_v1_0_S00_AXI' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:88]
 INFO: [Synth 8-256] done synthesizing module 'Lab1_AxiInterface_Adder_v1_0' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0.vhd:51]
 INFO: [Synth 8-256] done synthesizing module 'axi_addr_Lab1_AxiInterface_Ad_0_0' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/synth/axi_addr_Lab1_AxiInterface_Ad_0_0.vhd:85]
@@ -136,18 +135,18 @@ WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module Lab1_AxiInterface_Adder_v
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module Lab1_AxiInterface_Adder_v1_0_S00_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module Lab1_AxiInterface_Adder_v1_0_S00_AXI is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1276.465 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1277.027 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1276.465 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1277.027 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1276.465 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1277.027 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1276.465 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1277.027 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -167,21 +166,21 @@ Parsing XDC File [F:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_
 Finished Parsing XDC File [F:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1357.969 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1356.270 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1361.012 ; gain = 3.043
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1357.637 ; gain = 1.367
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1361.012 ; gain = 84.547
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1357.637 ; gain = 80.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1361.012 ; gain = 84.547
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1357.637 ; gain = 80.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -191,13 +190,13 @@ Applied set_property KEEP_HIERARCHY = SOFT for U0/axi_addr_i/Lab1_AxiInterface_A
 Applied set_property KEEP_HIERARCHY = SOFT for U0/axi_addr_i/c_addsub_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/axi_addr_i/xlslice_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1361.012 ; gain = 84.547
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1357.637 ; gain = 80.609
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-327] inferring latch for variable 'R_ADDR_1_reg' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:358]
 WARNING: [Synth 8-327] inferring latch for variable 'R_ADDR_2_reg' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:360]
 WARNING: [Synth 8-327] inferring latch for variable 'reg_data_out_reg' [f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd:362]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1361.012 ; gain = 84.547
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1357.637 ; gain = 80.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -259,25 +258,25 @@ WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module axi_addr_Lab1_AxiInterf
 WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module axi_addr_Lab1_AxiInterface_Ad_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module axi_addr_Lab1_AxiInterface_Ad_0_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1361.012 ; gain = 84.547
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1357.637 ; gain = 80.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1361.012 ; gain = 84.547
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1357.637 ; gain = 80.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1361.012 ; gain = 84.547
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1357.637 ; gain = 80.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1361.012 ; gain = 84.547
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1357.637 ; gain = 80.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -295,37 +294,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1361.012 ; gain = 84.547
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.637 ; gain = 80.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1361.012 ; gain = 84.547
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.637 ; gain = 80.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1361.012 ; gain = 84.547
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.637 ; gain = 80.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1361.012 ; gain = 84.547
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.637 ; gain = 80.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1361.012 ; gain = 84.547
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.637 ; gain = 80.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1361.012 ; gain = 84.547
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.637 ; gain = 80.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -353,18 +352,18 @@ Report Cell Usage:
 |10    |LD    |    96|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1361.012 ; gain = 84.547
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.637 ; gain = 80.609
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 44 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 1361.012 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1361.012 ; gain = 84.547
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 1357.637 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.637 ; gain = 80.609
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1361.012 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1357.637 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 159 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1361.012 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1357.637 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 104 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 8 instances
@@ -372,12 +371,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 Synth Design complete, checksum: 3deb2fba
 INFO: [Common 17-83] Releasing license: Synthesis
-49 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+49 Infos, 99 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1361.012 ; gain = 84.547
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1357.637 ; gain = 80.609
 INFO: [Common 17-1381] The checkpoint 'F:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1/uart_bd_axi_addr_wrapper_0_1.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP uart_bd_axi_addr_wrapper_0_1, cache-ID = 6b8e2161a9df5edf
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP uart_bd_axi_addr_wrapper_0_1, cache-ID = aa1295ea5a029a3f
 INFO: [Coretcl 2-1174] Renamed 13 cell refs.
 INFO: [Common 17-1381] The checkpoint 'F:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.runs/uart_bd_axi_addr_wrapper_0_1_synth_1/uart_bd_axi_addr_wrapper_0_1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file uart_bd_axi_addr_wrapper_0_1_utilization_synth.rpt -pb uart_bd_axi_addr_wrapper_0_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Jan 22 19:40:45 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 22 20:25:49 2024...

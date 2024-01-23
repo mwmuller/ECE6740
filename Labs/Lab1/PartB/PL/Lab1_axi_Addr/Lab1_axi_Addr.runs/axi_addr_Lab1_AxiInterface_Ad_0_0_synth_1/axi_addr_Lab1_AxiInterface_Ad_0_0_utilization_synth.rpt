@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Mon Jan 22 14:53:38 2024
+| Date         : Mon Jan 22 20:27:52 2024
 | Host         : DESKTOP-LF8951D running 64-bit major release  (build 9200)
 | Command      : report_utilization -file axi_addr_Lab1_AxiInterface_Ad_0_0_utilization_synth.rpt -pb axi_addr_Lab1_AxiInterface_Ad_0_0_utilization_synth.pb
 | Design       : axi_addr_Lab1_AxiInterface_Ad_0_0

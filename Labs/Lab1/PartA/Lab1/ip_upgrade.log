@@ -1,0 +1,37 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jan 22 20:24:58 2024
+| Host         : DESKTOP-LF8951D running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_bd_axi_addr_wrapper_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uart_bd_axi_addr_wrapper_0_1 (xilinx.com:user:axi_addr_wrapper:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Jan 22 20:04:49 2024
+| Host         : DESKTOP-LF8951D running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_bd_axi_addr_wrapper_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uart_bd_axi_addr_wrapper_0_1 (xilinx.com:user:axi_addr_wrapper:1.0 (Rev. 2)) to Vivado generation flows.
+

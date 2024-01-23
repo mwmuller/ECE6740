@@ -1,0 +1,11 @@
+vhdl xil_defaultlib  \
+"../../../bd/uart_bd/ip/uart_bd_rst_ps7_0_100M_0/sim/uart_bd_rst_ps7_0_100M_0.vhd" \
+"../../../bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_c_addsub_0_0/sim/axi_addr_c_addsub_0_0.vhd" \
+"../../../bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd" \
+"../../../bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/hdl/Lab1_AxiInterface_Adder_v1_0.vhd" \
+"../../../bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_Lab1_AxiInterface_Ad_0_0/sim/axi_addr_Lab1_AxiInterface_Ad_0_0.vhd" \
+"../../../bd/uart_bd/ipshared/ff0c/src/axi_addr_wrapper.vhd" \
+"../../../bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/sim/uart_bd_axi_addr_wrapper_0_1.vhd" \
+"../../../bd/uart_bd/sim/uart_bd.vhd" \
+
+nosort

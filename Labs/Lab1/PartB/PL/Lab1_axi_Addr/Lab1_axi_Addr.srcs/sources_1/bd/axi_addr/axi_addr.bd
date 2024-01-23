@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xEC2B987007D923FC",
+      "boundary_crc": "0x89F92D1056E1EF2F",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../Lab1_axi_Addr.gen/sources_1/bd/axi_addr",
       "name": "axi_addr",
@@ -11,12 +11,12 @@
       "validated": "true"
     },
     "design_tree": {
-      "Lab1_AxiInterface_Ad_0": "",
       "c_addsub_0": "",
-      "xlslice_0": ""
+      "xlslice_0": "",
+      "Lab1_AxiInterface_Ad_0": ""
     },
     "interface_ports": {
-      "S00_AXI_0": {
+      "S00_AXI": {
         "mode": "Slave",
         "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
         "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
@@ -119,7 +119,7 @@
             "value": "0"
           }
         },
-        "address_space_ref": "S00_AXI_0",
+        "address_space_ref": "S00_AXI",
         "base_address": {
           "minimum": "0x00000000",
           "maximum": "0x0000FFFF",
@@ -138,8 +138,7 @@
         "direction": "I",
         "parameters": {
           "ASSOCIATED_BUSIF": {
-            "value": "S00_AXI_0",
-            "value_src": "default"
+            "value": "S00_AXI"
           },
           "ASSOCIATED_RESET": {
             "value": "s00_axi_aresetn_0",
@@ -183,12 +182,6 @@
       }
     },
     "components": {
-      "Lab1_AxiInterface_Ad_0": {
-        "vlnv": "xilinx.com:user:Lab1_AxiInterface_Adder:1.0",
-        "xci_name": "axi_addr_Lab1_AxiInterface_Ad_0_0",
-        "xci_path": "ip\\axi_addr_Lab1_AxiInterface_Ad_0_0\\axi_addr_Lab1_AxiInterface_Ad_0_0.xci",
-        "inst_hier_path": "Lab1_AxiInterface_Ad_0"
-      },
       "c_addsub_0": {
         "vlnv": "xilinx.com:ip:c_addsub:12.0",
         "xci_name": "axi_addr_c_addsub_0_0",
@@ -225,12 +218,18 @@
             "value": "4"
           }
         }
+      },
+      "Lab1_AxiInterface_Ad_0": {
+        "vlnv": "xilinx.com:user:Lab1_AxiInterface_Adder:1.0",
+        "xci_name": "axi_addr_Lab1_AxiInterface_Ad_0_0",
+        "xci_path": "ip\\axi_addr_Lab1_AxiInterface_Ad_0_0\\axi_addr_Lab1_AxiInterface_Ad_0_0.xci",
+        "inst_hier_path": "Lab1_AxiInterface_Ad_0"
       }
     },
     "interface_nets": {
       "S00_AXI_0_1": {
         "interface_ports": [
-          "S00_AXI_0",
+          "S00_AXI",
           "Lab1_AxiInterface_Ad_0/S00_AXI"
         ]
       }
@@ -251,15 +250,15 @@
       "c_addsub_0_S": {
         "ports": [
           "c_addsub_0/S",
-          "Lab1_AxiInterface_Ad_0/R_ADDR_SUM",
-          "xlslice_0/Din"
+          "xlslice_0/Din",
+          "Lab1_AxiInterface_Ad_0/R_ADDR_SUM"
         ]
       },
       "s00_axi_aclk_0_1": {
         "ports": [
           "s00_axi_aclk_0",
-          "Lab1_AxiInterface_Ad_0/s00_axi_aclk",
-          "c_addsub_0/CLK"
+          "c_addsub_0/CLK",
+          "Lab1_AxiInterface_Ad_0/s00_axi_aclk"
         ]
       },
       "s00_axi_aresetn_0_1": {
@@ -278,7 +277,7 @@
     "addressing": {
       "/": {
         "address_spaces": {
-          "S00_AXI_0": {
+          "S00_AXI": {
             "range": "64K",
             "width": "16",
             "segments": {

@@ -22,7 +22,7 @@ Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-454] Reading design checkpoint 'f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/ip/axi_addr_Lab1_AxiInterface_Ad_0_0/axi_addr_Lab1_AxiInterface_Ad_0_0.dcp' for cell 'axi_addr_i/Lab1_AxiInterface_Ad_0'
 INFO: [Project 1-454] Reading design checkpoint 'f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/ip/axi_addr_c_addsub_0_0/axi_addr_c_addsub_0_0.dcp' for cell 'axi_addr_i/c_addsub_0'
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1277.234 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1276.945 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2022.1
@@ -36,13 +36,13 @@ CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1277.234 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1276.945 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 12 Infos, 4 Warnings, 2 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1277.234 ; gain = 0.000
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1276.945 ; gain = 0.000
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -53,13 +53,13 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.807 . Memory (MB): peak = 1277.234 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.812 . Memory (MB): peak = 1276.945 ; gain = 0.000
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 1ef740cde
+Ending Cache Timing Information Task | Checksum: 1fc99dde0
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1484.875 ; gain = 207.641
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1485.340 ; gain = 208.395
 
 Starting Logic Optimization Task
 
@@ -67,22 +67,22 @@ Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 In IDDR TRANSFORM
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 18e120466
+Phase 1 Retarget | Checksum: 1fc99dde0
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1794.812 ; gain = 0.000
-INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 1 cells
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1796.934 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 18e120466
+Phase 2 Constant propagation | Checksum: 1fc99dde0
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1794.812 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1796.934 ; gain = 0.000
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 13eef52a7
+Phase 3 Sweep | Checksum: 21b6dc39c
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1794.812 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1796.934 ; gain = 0.000
 INFO: [Opt 31-389] Phase Sweep created 4 cells and removed 10 cells
 
 Phase 4 BUFG optimization
@@ -91,22 +91,22 @@ INFO: [Opt 31-194] Inserted BUFG axi_addr_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiIn
 INFO: [Opt 31-194] Inserted BUFG axi_addr_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/R_ADDR_2_reg[31]_i_1_n_0_BUFG_inst to drive 32 load(s) on clock net axi_addr_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/R_ADDR_2_reg[31]_i_1_n_0_BUFG
 INFO: [Opt 31-194] Inserted BUFG axi_addr_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_araddr[3]_BUFG_inst to drive 35 load(s) on clock net axi_addr_i/Lab1_AxiInterface_Ad_0/U0/Lab1_AxiInterface_Adder_v1_0_S00_AXI_inst/axi_araddr_BUFG[3]
 INFO: [Opt 31-193] Inserted 4 BUFG(s) on clock nets
-Phase 4 BUFG optimization | Checksum: 1431c586f
+Phase 4 BUFG optimization | Checksum: 14c5544a2
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 1794.812 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1796.934 ; gain = 0.000
 INFO: [Opt 31-662] Phase BUFG optimization created 4 cells of which 4 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 1431c586f
+Phase 5 Shift Register Optimization | Checksum: 14c5544a2
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1794.812 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1796.934 ; gain = 0.000
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: f5836856
+Phase 6 Post Processing Netlist | Checksum: 169938c56
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1794.812 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1796.934 ; gain = 0.000
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 Opt_design Change Summary
 =========================
@@ -115,7 +115,7 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |               0  |               1  |                                              0  |
+|  Retarget                     |               0  |               0  |                                              0  |
 |  Constant propagation         |               0  |               0  |                                              0  |
 |  Sweep                        |               4  |              10  |                                              0  |
 |  BUFG optimization            |               4  |               0  |                                              0  |
@@ -127,36 +127,36 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1794.812 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 2341a04a2
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1796.934 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: fae510e6
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 1794.812 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1796.934 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-Ending Power Optimization Task | Checksum: 2341a04a2
+Ending Power Optimization Task | Checksum: fae510e6
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1794.812 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1796.934 ; gain = 0.000
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 2341a04a2
+Ending Final Cleanup Task | Checksum: fae510e6
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1794.812 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.934 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1794.812 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 2341a04a2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.934 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: fae510e6
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1794.812 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.934 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 34 Infos, 4 Warnings, 2 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1794.812 ; gain = 517.578
+opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1796.934 ; gain = 519.988
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1794.812 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1796.934 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'F:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.runs/impl_1/axi_addr_wrapper_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file axi_addr_wrapper_drc_opted.rpt -pb axi_addr_wrapper_drc_opted.pb -rpx axi_addr_wrapper_drc_opted.rpx
 Command: report_drc -file axi_addr_wrapper_drc_opted.rpt -pb axi_addr_wrapper_drc_opted.pb -rpx axi_addr_wrapper_drc_opted.rpx
@@ -182,16 +182,16 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1838.098 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 142d469aa
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1840.223 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 89c68d78
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1838.098 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1838.098 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1840.223 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1840.223 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (45) is greater than number of available sites (25).
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (46) is greater than number of available sites (25).
 The following are banks with available pins: 
- IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 25 sites available on device, but needs 45 sites.
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 25 sites available on device, but needs 46 sites.
 	Term: S00_AXI_0_wdata[0]
 	Term: S00_AXI_0_wdata[1]
 	Term: S00_AXI_0_wdata[2]
@@ -237,12 +237,13 @@ The following are banks with available pins:
 	Term: S00_AXI_0_bready
 	Term: S00_AXI_0_rready
 	Term: S00_AXI_0_wvalid
+	Term: s00_axi_aresetn_0
 
 
 Resolution: Consider using Xilinx part with greater number of IO pins
 ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (41) is greater than number of available sites (25).
 The following are banks with available pins: 
- IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 25 sites available on device, but needs 45 sites.
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 25 sites available on device, but needs 46 sites.
 	Term: S00_AXI_0_wdata[0]
 	Term: S00_AXI_0_wdata[1]
 	Term: S00_AXI_0_wdata[2]
@@ -288,6 +289,7 @@ The following are banks with available pins:
 	Term: S00_AXI_0_bready
 	Term: S00_AXI_0_rready
 	Term: S00_AXI_0_wvalid
+	Term: s00_axi_aresetn_0
 
 
  IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 25 sites available on device, but needs 41 sites.
@@ -335,9 +337,9 @@ The following are banks with available pins:
 
 
 Resolution: Consider using Xilinx part with greater number of IO pins
-ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (86) is greater than number of available sites (25).
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (87) is greater than number of available sites (25).
 The following are banks with available pins: 
- IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 25 sites available on device, but needs 45 sites.
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 25 sites available on device, but needs 46 sites.
 	Term: S00_AXI_0_wdata[0]
 	Term: S00_AXI_0_wdata[1]
 	Term: S00_AXI_0_wdata[2]
@@ -383,6 +385,7 @@ The following are banks with available pins:
 	Term: S00_AXI_0_bready
 	Term: S00_AXI_0_rready
 	Term: S00_AXI_0_wvalid
+	Term: s00_axi_aresetn_0
 
 
  IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 25 sites available on device, but needs 41 sites.
@@ -457,19 +460,19 @@ IO Placement:
 |        | led[3]               | LVCMOS33        | IOB_X1Y104           | M14                  |                      |
 +--------+----------------------+-----------------+----------------------+----------------------+----------------------+
 
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 13063a544
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: fa64908e
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.361 . Memory (MB): peak = 1838.098 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 13063a544
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.375 . Memory (MB): peak = 1840.223 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: fa64908e
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.361 . Memory (MB): peak = 1838.098 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.375 . Memory (MB): peak = 1840.223 ; gain = 0.000
 ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
 Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
-Ending Placer Task | Checksum: 13063a544
+Ending Placer Task | Checksum: fa64908e
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.362 . Memory (MB): peak = 1838.098 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.376 . Memory (MB): peak = 1840.223 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 50 Infos, 4 Warnings, 2 Critical Warnings and 6 Errors encountered.
 place_design failed
 ERROR: [Common 17-69] Command failed: Placer could not place all instances
-INFO: [Common 17-206] Exiting Vivado at Mon Jan 22 18:24:48 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 22 19:54:01 2024...

@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../bd/axi_addr/ip/axi_addr_xlslice_0_0/sim/axi_addr_xlslice_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
