@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
---Date        : Mon Jan 22 19:05:24 2024
+--Date        : Mon Jan 22 19:39:39 2024
 --Host        : DESKTOP-LF8951D running 64-bit major release  (build 9200)
 --Command     : generate_target uart_bd.bd
 --Design      : uart_bd
@@ -614,7 +614,7 @@ entity uart_bd is
     led : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of uart_bd : entity is "uart_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=uart_bd,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_board_cnt=1,da_clkrst_cnt=2,da_ps7_cnt=2,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of uart_bd : entity is "uart_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=uart_bd,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_board_cnt=1,da_clkrst_cnt=2,da_ps7_cnt=2,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of uart_bd : entity is "uart_bd.hwdef";
 end uart_bd;
@@ -703,7 +703,7 @@ architecture STRUCTURE of uart_bd is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component uart_bd_rst_ps7_0_100M_0;
-  component uart_bd_design_1_wrapper_0_0 is
+  component uart_bd_axi_addr_wrapper_0_1 is
   port (
     S00_AXI_0_araddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
     S00_AXI_0_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -728,8 +728,8 @@ architecture STRUCTURE of uart_bd is
     s00_axi_aclk_0 : in STD_LOGIC;
     s00_axi_aresetn_0 : in STD_LOGIC
   );
-  end component uart_bd_design_1_wrapper_0_0;
-  signal design_1_wrapper_0_led : STD_LOGIC_VECTOR ( 3 downto 0 );
+  end component uart_bd_axi_addr_wrapper_0_1;
+  signal axi_addr_wrapper_0_led : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -843,8 +843,8 @@ architecture STRUCTURE of uart_bd is
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
 begin
-  led(3 downto 0) <= design_1_wrapper_0_led(3 downto 0);
-design_1_wrapper_0: component uart_bd_design_1_wrapper_0_0
+  led(3 downto 0) <= axi_addr_wrapper_0_led(3 downto 0);
+axi_addr_wrapper_0: component uart_bd_axi_addr_wrapper_0_1
      port map (
       S00_AXI_0_araddr(3 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(3 downto 0),
       S00_AXI_0_arprot(2 downto 0) => ps7_0_axi_periph_M00_AXI_ARPROT(2 downto 0),
@@ -865,7 +865,7 @@ design_1_wrapper_0: component uart_bd_design_1_wrapper_0_0
       S00_AXI_0_wready => ps7_0_axi_periph_M00_AXI_WREADY,
       S00_AXI_0_wstrb(3 downto 0) => ps7_0_axi_periph_M00_AXI_WSTRB(3 downto 0),
       S00_AXI_0_wvalid => ps7_0_axi_periph_M00_AXI_WVALID,
-      led(3 downto 0) => design_1_wrapper_0_led(3 downto 0),
+      led(3 downto 0) => axi_addr_wrapper_0_led(3 downto 0),
       s00_axi_aclk_0 => processing_system7_0_FCLK_CLK0,
       s00_axi_aresetn_0 => rst_ps7_0_100M_peripheral_aresetn(0)
     );

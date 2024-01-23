@@ -18,7 +18,7 @@
         }
       },
       "rst_ps7_0_100M": "",
-      "design_1_wrapper_0": ""
+      "axi_addr_wrapper_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -2058,11 +2058,11 @@
         "xci_path": "ip\\uart_bd_rst_ps7_0_100M_0\\uart_bd_rst_ps7_0_100M_0.xci",
         "inst_hier_path": "rst_ps7_0_100M"
       },
-      "design_1_wrapper_0": {
-        "vlnv": "xilinx.com:user:design_1_wrapper:1.0",
-        "xci_name": "uart_bd_design_1_wrapper_0_0",
-        "xci_path": "ip\\uart_bd_design_1_wrapper_0_0\\uart_bd_design_1_wrapper_0_0.xci",
-        "inst_hier_path": "design_1_wrapper_0",
+      "axi_addr_wrapper_0": {
+        "vlnv": "xilinx.com:user:axi_addr_wrapper:1.0",
+        "xci_name": "uart_bd_axi_addr_wrapper_0_1",
+        "xci_path": "ip\\uart_bd_axi_addr_wrapper_0_1\\uart_bd_axi_addr_wrapper_0_1.xci",
+        "inst_hier_path": "axi_addr_wrapper_0",
         "interface_ports": {
           "S00_AXI_0": {
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
@@ -2094,14 +2094,14 @@
       "ps7_0_axi_periph_M00_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M00_AXI",
-          "design_1_wrapper_0/S00_AXI_0"
+          "axi_addr_wrapper_0/S00_AXI_0"
         ]
       }
     },
     "nets": {
-      "design_1_wrapper_0_led": {
+      "axi_addr_wrapper_0_led": {
         "ports": [
-          "design_1_wrapper_0/led",
+          "axi_addr_wrapper_0/led",
           "led"
         ]
       },
@@ -2113,7 +2113,7 @@
           "rst_ps7_0_100M/slowest_sync_clk",
           "ps7_0_axi_periph/M00_ACLK",
           "ps7_0_axi_periph/ACLK",
-          "design_1_wrapper_0/s00_axi_aclk_0"
+          "axi_addr_wrapper_0/s00_axi_aclk_0"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2128,7 +2128,7 @@
           "ps7_0_axi_periph/S00_ARESETN",
           "ps7_0_axi_periph/M00_ARESETN",
           "ps7_0_axi_periph/ARESETN",
-          "design_1_wrapper_0/s00_axi_aresetn_0"
+          "axi_addr_wrapper_0/s00_axi_aresetn_0"
         ]
       }
     },
@@ -2137,8 +2137,8 @@
         "address_spaces": {
           "Data": {
             "segments": {
-              "SEG_design_1_wrapper_0_reg0": {
-                "address_block": "/design_1_wrapper_0/S00_AXI_0/reg0",
+              "SEG_axi_addr_wrapper_0_reg0": {
+                "address_block": "/axi_addr_wrapper_0/S00_AXI_0/reg0",
                 "offset": "0x40000000",
                 "range": "4K"
               }

@@ -2,7 +2,7 @@
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>xilinx.com</spirit:vendor>
   <spirit:library>user</spirit:library>
-  <spirit:name>design_1_wrapper</spirit:name>
+  <spirit:name>axi_addr_wrapper</spirit:name>
   <spirit:version>1.0</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
@@ -189,12 +189,12 @@
         <spirit:displayName>Synthesis</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
         <spirit:language>VHDL</spirit:language>
-        <spirit:modelName>design_1_wrapper</spirit:modelName>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_ip_c_addsub_12_0__ref_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
+        <spirit:modelName>axi_addr_wrapper</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_user_Lab1_AxiInterface_Adder_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_ip_c_addsub_12_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_ip_xlslice_1_0__ref_view_fileset</spirit:localName>
@@ -205,7 +205,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>edd15700</spirit:value>
+            <spirit:value>9297d467</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -214,12 +214,12 @@
         <spirit:displayName>Simulation</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
         <spirit:language>VHDL</spirit:language>
-        <spirit:modelName>design_1_wrapper</spirit:modelName>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_c_addsub_12_0__ref_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
+        <spirit:modelName>axi_addr_wrapper</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_Lab1_AxiInterface_Adder_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_c_addsub_12_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_xlslice_1_0__ref_view_fileset</spirit:localName>
@@ -230,7 +230,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>95ea8031</spirit:value>
+            <spirit:value>ed3e6188</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -620,57 +620,57 @@
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/design_1_c_addsub_0_0/design_1_c_addsub_0_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_c_addsub_0</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/design_1_Lab1_AxiInterface_Ad_0_0/design_1_Lab1_AxiInterface_Ad_0_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_Lab1_AxiInterface_Ad_0</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/design_1_xlslice_0_0/design_1_xlslice_0_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_xlslice_0</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/design_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/design_1_ooc.xdc</spirit:name>
+        <spirit:name>src/axi_addr_ooc.xdc</spirit:name>
         <spirit:userFileType>xdc</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>SCOPED_TO_REF_design_1</spirit:userFileType>
+        <spirit:userFileType>SCOPED_TO_REF_axi_addr</spirit:userFileType>
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/design_1_wrapper.vhd</spirit:name>
+        <spirit:name>src/axi_addr_xlslice_0_0/axi_addr_xlslice_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_addr_i/xlslice_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/axi_addr_c_addsub_0_0/axi_addr_c_addsub_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_addr_i/c_addsub_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/axi_addr_Lab1_AxiInterface_Ad_0_0/axi_addr_Lab1_AxiInterface_Ad_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_addr_i/Lab1_AxiInterface_Ad_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/axi_addr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_77b51f3c</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/axi_addr_wrapper.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_dd6e69d8</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_c_addsub_12_0__ref_view_fileset</spirit:name>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_user_Lab1_AxiInterface_Adder_1_0__ref_view_fileset</spirit:name>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xsi:type="xilinx:componentRefType" xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="c_addsub" xilinx:version="12.0">
+          <xilinx:componentRef xsi:type="xilinx:componentRefType" xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="Lab1_AxiInterface_Adder" xilinx:version="1.0">
             <xilinx:mode xilinx:name="create_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
       </spirit:vendorExtensions>
     </spirit:fileSet>
     <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_user_Lab1_AxiInterface_Adder_1_0__ref_view_fileset</spirit:name>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_c_addsub_12_0__ref_view_fileset</spirit:name>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="Lab1_AxiInterface_Adder" xilinx:version="1.0">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="c_addsub" xilinx:version="12.0">
             <xilinx:mode xilinx:name="create_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -689,49 +689,44 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>src/design_1_c_addsub_0_0/design_1_c_addsub_0_0.xci</spirit:name>
+        <spirit:name>src/axi_addr_xlslice_0_0/axi_addr_xlslice_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_c_addsub_0</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_addr_i/xlslice_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/design_1_Lab1_AxiInterface_Ad_0_0/design_1_Lab1_AxiInterface_Ad_0_0.xci</spirit:name>
+        <spirit:name>src/axi_addr_c_addsub_0_0/axi_addr_c_addsub_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_Lab1_AxiInterface_Ad_0</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_addr_i/c_addsub_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/design_1_xlslice_0_0/design_1_xlslice_0_0.xci</spirit:name>
+        <spirit:name>src/axi_addr_Lab1_AxiInterface_Ad_0_0/axi_addr_Lab1_AxiInterface_Ad_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_xlslice_0</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_addr_i/Lab1_AxiInterface_Ad_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>sim/design_1.vhd</spirit:name>
+        <spirit:name>src/axi_addr_wrapper.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
-      <spirit:file>
-        <spirit:name>src/design_1_wrapper.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_c_addsub_12_0__ref_view_fileset</spirit:name>
-      <spirit:vendorExtensions>
-        <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="c_addsub" xilinx:version="12.0">
-            <xilinx:mode xilinx:name="create_mode"/>
-          </xilinx:componentRef>
-        </xilinx:subCoreRef>
-      </spirit:vendorExtensions>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_Lab1_AxiInterface_Adder_1_0__ref_view_fileset</spirit:name>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
           <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="Lab1_AxiInterface_Adder" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_c_addsub_12_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="c_addsub" xilinx:version="12.0">
             <xilinx:mode xilinx:name="create_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -750,18 +745,18 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/design_1_wrapper_v1_0.tcl</spirit:name>
+        <spirit:name>xgui/axi_addr_wrapper_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_f64a5dae</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>design_1_wrapper_v1_0</spirit:description>
+  <spirit:description>axi_addr_wrapper_v1_0</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">design_1_wrapper_v1_0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">axi_addr_wrapper_v1_0</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
@@ -772,18 +767,18 @@
       <xilinx:taxonomies>
         <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
       </xilinx:taxonomies>
-      <xilinx:displayName>design_1_wrapper_v1_0</xilinx:displayName>
+      <xilinx:displayName>axi_addr_wrapper_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
       <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-01-22T23:56:02Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2024-01-23T00:37:05Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2022.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="75045ca9"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="4afed1cc"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="264e0188"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c873712e"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="49be4618"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="c6cb8ed4"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="d8d852b6"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

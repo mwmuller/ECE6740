@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Mon Jan 22 19:06:50 2024
+| Date         : Mon Jan 22 19:41:26 2024
 | Host         : DESKTOP-LF8951D running 64-bit major release  (build 9200)
 | Command      : report_utilization -file uart_bd_wrapper_utilization_synth.rpt -pb uart_bd_wrapper_utilization_synth.pb
 | Design       : uart_bd_wrapper
@@ -159,7 +159,7 @@ Table of Contents
 +--------------------------------+------+
 | uart_bd_rst_ps7_0_100M_0       |    1 |
 | uart_bd_processing_system7_0_0 |    1 |
-| uart_bd_design_1_wrapper_0_0   |    1 |
+| uart_bd_axi_addr_wrapper_0_1   |    1 |
 | uart_bd_auto_pc_0              |    1 |
 +--------------------------------+------+
 

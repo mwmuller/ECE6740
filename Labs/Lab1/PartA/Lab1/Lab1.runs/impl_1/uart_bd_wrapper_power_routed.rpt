@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date             : Mon Jan 22 19:08:01 2024
+| Date             : Mon Jan 22 19:42:37 2024
 | Host             : DESKTOP-LF8951D running 64-bit major release  (build 9200)
 | Command          : report_power -file uart_bd_wrapper_power_routed.rpt -pb uart_bd_wrapper_power_summary_routed.pb -rpx uart_bd_wrapper_power_routed.rpx
 | Design           : uart_bd_wrapper
@@ -152,7 +152,7 @@ Table of Contents
 +--------------------------+-----------+
 | uart_bd_wrapper          |     1.262 |
 |   uart_bd_i              |     1.262 |
-|     design_1_wrapper_0   |     0.001 |
+|     axi_addr_wrapper_0   |     0.001 |
 |       U0                 |     0.001 |
 |     processing_system7_0 |     1.256 |
 |       inst               |     1.256 |

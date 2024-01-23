@@ -15,8 +15,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_ps7
 # IP: bd/uart_bd/ip/uart_bd_rst_ps7_0_100M_0/uart_bd_rst_ps7_0_100M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_rst_ps7_0_100M_0 || ORIG_REF_NAME==uart_bd_rst_ps7_0_100M_0} -quiet] -quiet
 
-# IP: bd/uart_bd/ip/uart_bd_design_1_wrapper_0_0/uart_bd_design_1_wrapper_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_design_1_wrapper_0_0 || ORIG_REF_NAME==uart_bd_design_1_wrapper_0_0} -quiet] -quiet
+# IP: bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/uart_bd_axi_addr_wrapper_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_axi_addr_wrapper_0_1 || ORIG_REF_NAME==uart_bd_axi_addr_wrapper_0_1} -quiet] -quiet
 
 # IP: bd/uart_bd/ip/uart_bd_auto_pc_0/uart_bd_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_auto_pc_0 || ORIG_REF_NAME==uart_bd_auto_pc_0} -quiet] -quiet

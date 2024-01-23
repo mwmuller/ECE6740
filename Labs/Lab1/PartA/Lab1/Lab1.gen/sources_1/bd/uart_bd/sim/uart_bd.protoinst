@@ -3,7 +3,7 @@
 	"modules": {
 		"uart_bd": {
 			"proto_instances": {
-				"/design_1_wrapper_0/S00_AXI_0": {
+				"/axi_addr_wrapper_0/S00_AXI_0": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
 						"ARADDR": { "actual": "S00_AXI_0_araddr"},

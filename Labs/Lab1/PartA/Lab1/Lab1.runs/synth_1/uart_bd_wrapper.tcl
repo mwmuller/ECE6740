@@ -95,8 +95,8 @@ set_property used_in_implementation false [get_files -all f:/MastersProgram/ECE6
 set_property used_in_implementation false [get_files -all f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_rst_ps7_0_100M_0/uart_bd_rst_ps7_0_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_rst_ps7_0_100M_0/uart_bd_rst_ps7_0_100M_0.xdc]
 set_property used_in_implementation false [get_files -all f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_rst_ps7_0_100M_0/uart_bd_rst_ps7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_design_1_wrapper_0_0/src/PYNQ-Z1_C.xdc]
-set_property used_in_implementation false [get_files -all f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_design_1_wrapper_0_0/src/design_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/PYNQ-Z1_C.xdc]
+set_property used_in_implementation false [get_files -all f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/src/axi_addr_ooc.xdc]
 set_property used_in_implementation false [get_files -all f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_auto_pc_0/uart_bd_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/uart_bd_ooc.xdc]
 

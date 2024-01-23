@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
---Date        : Mon Jan 22 18:23:39 2024
+--Date        : Mon Jan 22 19:36:47 2024
 --Host        : DESKTOP-LF8951D running 64-bit major release  (build 9200)
 --Command     : generate_target axi_addr.bd
 --Design      : axi_addr
@@ -33,10 +33,11 @@ entity axi_addr is
     S00_AXI_0_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     S00_AXI_0_wvalid : in STD_LOGIC;
     led : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_aclk_0 : in STD_LOGIC
+    s00_axi_aclk_0 : in STD_LOGIC;
+    s00_axi_aresetn_0 : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of axi_addr : entity is "axi_addr,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=axi_addr,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=4,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_board_cnt=4,da_clkrst_cnt=2,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of axi_addr : entity is "axi_addr,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=axi_addr,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=3,numReposBlks=3,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_board_cnt=6,da_clkrst_cnt=3,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of axi_addr : entity is "axi_addr.hwdef";
 end axi_addr;
@@ -85,11 +86,6 @@ architecture STRUCTURE of axi_addr is
     Dout : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component axi_addr_xlslice_0_0;
-  component axi_addr_xlconstant_0_1 is
-  port (
-    dout : out STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component axi_addr_xlconstant_0_1;
   signal Lab1_AxiInterface_Ad_0_R_ADDR_1 : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal Lab1_AxiInterface_Ad_0_R_ADDR_2 : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal S00_AXI_0_1_ARADDR : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -113,7 +109,7 @@ architecture STRUCTURE of axi_addr is
   signal S00_AXI_0_1_WVALID : STD_LOGIC;
   signal c_addsub_0_S : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal s00_axi_aclk_0_1 : STD_LOGIC;
-  signal xlconstant_0_dout : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal s00_axi_aresetn_0_1 : STD_LOGIC;
   signal xlslice_0_Dout : STD_LOGIC_VECTOR ( 3 downto 0 );
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of S00_AXI_0_arready : signal is "xilinx.com:interface:aximm:1.0 S00_AXI_0 ARREADY";
@@ -128,7 +124,9 @@ architecture STRUCTURE of axi_addr is
   attribute X_INTERFACE_INFO of S00_AXI_0_wvalid : signal is "xilinx.com:interface:aximm:1.0 S00_AXI_0 WVALID";
   attribute X_INTERFACE_INFO of s00_axi_aclk_0 : signal is "xilinx.com:signal:clock:1.0 CLK.S00_AXI_ACLK_0 CLK";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of s00_axi_aclk_0 : signal is "XIL_INTERFACENAME CLK.S00_AXI_ACLK_0, ASSOCIATED_BUSIF S00_AXI_0, CLK_DOMAIN axi_addr_s00_axi_aclk_0, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0";
+  attribute X_INTERFACE_PARAMETER of s00_axi_aclk_0 : signal is "XIL_INTERFACENAME CLK.S00_AXI_ACLK_0, ASSOCIATED_BUSIF S00_AXI_0, ASSOCIATED_RESET s00_axi_aresetn_0, CLK_DOMAIN axi_addr_s00_axi_aclk_0, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0";
+  attribute X_INTERFACE_INFO of s00_axi_aresetn_0 : signal is "xilinx.com:signal:reset:1.0 RST.S00_AXI_ARESETN_0 RST";
+  attribute X_INTERFACE_PARAMETER of s00_axi_aresetn_0 : signal is "XIL_INTERFACENAME RST.S00_AXI_ARESETN_0, INSERT_VIP 0, POLARITY ACTIVE_LOW";
   attribute X_INTERFACE_INFO of S00_AXI_0_araddr : signal is "xilinx.com:interface:aximm:1.0 S00_AXI_0 ARADDR";
   attribute X_INTERFACE_PARAMETER of S00_AXI_0_araddr : signal is "XIL_INTERFACENAME S00_AXI_0, ADDR_WIDTH 16, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN axi_addr_s00_axi_aclk_0, DATA_WIDTH 32, FREQ_HZ 100000000, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 0, HAS_LOCK 0, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 1, NUM_READ_OUTSTANDING 1, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 1, NUM_WRITE_THREADS 1, PHASE 0.0, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0";
   attribute X_INTERFACE_INFO of S00_AXI_0_arprot : signal is "xilinx.com:interface:aximm:1.0 S00_AXI_0 ARPROT";
@@ -161,6 +159,7 @@ begin
   S00_AXI_0_wready <= S00_AXI_0_1_WREADY;
   led(3 downto 0) <= xlslice_0_Dout(3 downto 0);
   s00_axi_aclk_0_1 <= s00_axi_aclk_0;
+  s00_axi_aresetn_0_1 <= s00_axi_aresetn_0;
 Lab1_AxiInterface_Ad_0: component axi_addr_Lab1_AxiInterface_Ad_0_0
      port map (
       R_ADDR_1(31 downto 0) => Lab1_AxiInterface_Ad_0_R_ADDR_1(31 downto 0),
@@ -168,7 +167,7 @@ Lab1_AxiInterface_Ad_0: component axi_addr_Lab1_AxiInterface_Ad_0_0
       R_ADDR_SUM(31 downto 0) => c_addsub_0_S(31 downto 0),
       s00_axi_aclk => s00_axi_aclk_0_1,
       s00_axi_araddr(3 downto 0) => S00_AXI_0_1_ARADDR(3 downto 0),
-      s00_axi_aresetn => xlconstant_0_dout(0),
+      s00_axi_aresetn => s00_axi_aresetn_0_1,
       s00_axi_arprot(2 downto 0) => S00_AXI_0_1_ARPROT(2 downto 0),
       s00_axi_arready => S00_AXI_0_1_ARREADY,
       s00_axi_arvalid => S00_AXI_0_1_ARVALID,
@@ -195,10 +194,6 @@ c_addsub_0: component axi_addr_c_addsub_0_0
       CE => '1',
       CLK => s00_axi_aclk_0_1,
       S(31 downto 0) => c_addsub_0_S(31 downto 0)
-    );
-xlconstant_0: component axi_addr_xlconstant_0_1
-     port map (
-      dout(0) => xlconstant_0_dout(0)
     );
 xlslice_0: component axi_addr_xlslice_0_0
      port map (

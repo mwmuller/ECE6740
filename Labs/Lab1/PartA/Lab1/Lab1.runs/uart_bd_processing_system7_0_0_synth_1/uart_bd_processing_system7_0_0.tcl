@@ -81,14 +81,17 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir F:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.cache/wt [current_project]
 set_property parent.project_path F:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
+set_property ip_repo_paths f:/MastersProgram/ECE6740/IPRepo [current_project]
+update_ip_catalog
 set_property ip_output_repo f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.srcs/sources_1/bd/uart_bd/ip/uart_bd_processing_system7_0_0/uart_bd_processing_system7_0_0.xci
+read_ip -quiet F:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.srcs/sources_1/bd/uart_bd/ip/uart_bd_processing_system7_0_0/uart_bd_processing_system7_0_0.xci
 set_property used_in_implementation false [get_files -all f:/MastersProgram/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_processing_system7_0_0/uart_bd_processing_system7_0_0.xdc]
 
 OPTRACE "Adding files" END { }

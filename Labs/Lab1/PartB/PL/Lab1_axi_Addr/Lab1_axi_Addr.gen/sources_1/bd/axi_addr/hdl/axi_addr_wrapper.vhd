@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
---Date        : Mon Jan 22 18:23:39 2024
+--Date        : Mon Jan 22 19:36:47 2024
 --Host        : DESKTOP-LF8951D running 64-bit major release  (build 9200)
 --Command     : generate_target axi_addr_wrapper.bd
 --Design      : axi_addr_wrapper
@@ -33,7 +33,8 @@ entity axi_addr_wrapper is
     S00_AXI_0_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     S00_AXI_0_wvalid : in STD_LOGIC;
     led : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_aclk_0 : in STD_LOGIC
+    s00_axi_aclk_0 : in STD_LOGIC;
+    s00_axi_aresetn_0 : in STD_LOGIC
   );
 end axi_addr_wrapper;
 
@@ -60,7 +61,8 @@ architecture STRUCTURE of axi_addr_wrapper is
     S00_AXI_0_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     S00_AXI_0_rvalid : out STD_LOGIC;
     S00_AXI_0_rready : in STD_LOGIC;
-    s00_axi_aclk_0 : in STD_LOGIC
+    s00_axi_aclk_0 : in STD_LOGIC;
+    s00_axi_aresetn_0 : in STD_LOGIC
   );
   end component axi_addr;
 begin
@@ -86,6 +88,7 @@ axi_addr_i: component axi_addr
       S00_AXI_0_wstrb(3 downto 0) => S00_AXI_0_wstrb(3 downto 0),
       S00_AXI_0_wvalid => S00_AXI_0_wvalid,
       led(3 downto 0) => led(3 downto 0),
-      s00_axi_aclk_0 => s00_axi_aclk_0
+      s00_axi_aclk_0 => s00_axi_aclk_0,
+      s00_axi_aresetn_0 => s00_axi_aresetn_0
     );
 end STRUCTURE;

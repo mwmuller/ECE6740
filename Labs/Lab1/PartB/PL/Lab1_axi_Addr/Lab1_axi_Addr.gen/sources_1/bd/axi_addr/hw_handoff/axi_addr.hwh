@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jan 22 18:23:39 2024" VIVADOVERSION="2022.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jan 22 19:36:47 2024" VIVADOVERSION="2022.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="www.digilentinc.com:pynq-z1:part0:1.0" DEVICE="7z020" NAME="axi_addr" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -110,6 +110,11 @@
         <CONNECTION INSTANCE="c_addsub_0" PORT="CLK"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="I" NAME="s00_axi_aresetn_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_s00_axi_aresetn_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Lab1_AxiInterface_Ad_0" PORT="s00_axi_aresetn"/>
+      </CONNECTIONS>
+    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>
@@ -207,9 +212,9 @@
             <CONNECTION INSTANCE="External_Ports" PORT="s00_axi_aclk_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s00_axi_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="xlconstant_0_dout">
+        <PORT DIR="I" NAME="s00_axi_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_s00_axi_aresetn_0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="s00_axi_aresetn_0"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="3" NAME="s00_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Lab1_AxiInterface_Ad_0_s00_axi_awaddr">
@@ -447,23 +452,6 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="Lab1_AxiInterface_Ad_0" PORT="R_ADDR_SUM"/>
             <CONNECTION INSTANCE="xlslice_0" PORT="Din"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE COREREVISION="7" FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
-        <PARAMETER NAME="Component_Name" VALUE="axi_addr_xlconstant_0_1"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Lab1_AxiInterface_Ad_0" PORT="s00_axi_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
