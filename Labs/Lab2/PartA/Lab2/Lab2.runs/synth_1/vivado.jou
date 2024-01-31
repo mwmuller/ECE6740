@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Jan 30 19:59:04 2024
+# Process ID: 26892
+# Current directory: F:/MastersProgram/ECE6740/Labs/Lab2/PartA/Lab2/Lab2.runs/synth_1
+# Command line: vivado.exe -log sqrt.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sqrt.tcl
+# Log file: F:/MastersProgram/ECE6740/Labs/Lab2/PartA/Lab2/Lab2.runs/synth_1/sqrt.vds
+# Journal file: F:/MastersProgram/ECE6740/Labs/Lab2/PartA/Lab2/Lab2.runs/synth_1\vivado.jou
+# Running On: DESKTOP-LF8951D, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 16, Host memory: 34276 MB
+#-----------------------------------------------------------
+source sqrt.tcl -notrace
