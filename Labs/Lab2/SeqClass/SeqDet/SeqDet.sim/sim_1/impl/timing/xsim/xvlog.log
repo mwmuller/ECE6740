@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/SeqDet/SeqDet.sim/sim_1/impl/timing/xsim/seq_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-311] analyzing module clock_pulse
+INFO: [VRFC 10-311] analyzing module seqDeta
+INFO: [VRFC 10-311] analyzing module seqdeta_top
+INFO: [VRFC 10-311] analyzing module glbl

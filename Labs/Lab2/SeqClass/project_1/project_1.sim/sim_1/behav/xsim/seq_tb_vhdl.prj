@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/imports/Example 60/clkdiv.vhd" \
+"../../../../project_1.srcs/sources_1/imports/Example 60/clock_pulse.vhd" \
+"../../../../project_1.srcs/sources_1/imports/Example 60/seqdeta.vhd" \
+"../../../../project_1.srcs/sources_1/imports/Example 60/seqdeta_top.vhd" \
+"../../../../project_1.srcs/sim_1/new/seq_tb.vhd" \
+
+# Do not sort compile order
+nosort
