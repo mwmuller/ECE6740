@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sqrt_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="sqrt_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="687.500 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,062.501 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="31" />
+   <wvobject fp_name="/sqrt_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/clr" type="logic">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/strt" type="logic">
+      <obj_property name="ElementShortName">strt</obj_property>
+      <obj_property name="ObjectShortName">strt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/sw" type="array">
+      <obj_property name="ElementShortName">sw[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt2/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt2/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt2/ald" type="logic">
+      <obj_property name="ElementShortName">ald</obj_property>
+      <obj_property name="ObjectShortName">ald</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt2/sqld" type="logic">
+      <obj_property name="ElementShortName">sqld</obj_property>
+      <obj_property name="ObjectShortName">sqld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt2/dld" type="logic">
+      <obj_property name="ElementShortName">dld</obj_property>
+      <obj_property name="ObjectShortName">dld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt2/outld" type="logic">
+      <obj_property name="ElementShortName">outld</obj_property>
+      <obj_property name="ObjectShortName">outld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt2/sw" type="array">
+      <obj_property name="ElementShortName">sw[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt2/lteflg" type="logic">
+      <obj_property name="ElementShortName">lteflg</obj_property>
+      <obj_property name="ObjectShortName">lteflg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt2/root" type="array">
+      <obj_property name="ElementShortName">root[7:0]</obj_property>
+      <obj_property name="ObjectShortName">root[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt2/a" type="array">
+      <obj_property name="ElementShortName">a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">a[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt2/sq" type="array">
+      <obj_property name="ElementShortName">sq[16:0]</obj_property>
+      <obj_property name="ObjectShortName">sq[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt2/s" type="array">
+      <obj_property name="ElementShortName">s[16:0]</obj_property>
+      <obj_property name="ObjectShortName">s[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt2/del" type="array">
+      <obj_property name="ElementShortName">del[8:0]</obj_property>
+      <obj_property name="ObjectShortName">del[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt2/del2" type="array">
+      <obj_property name="ElementShortName">del2[8:0]</obj_property>
+      <obj_property name="ObjectShortName">del2[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt2/outin" type="array">
+      <obj_property name="ElementShortName">outin[7:0]</obj_property>
+      <obj_property name="ObjectShortName">outin[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt1/clr" type="logic">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt1/strt" type="logic">
+      <obj_property name="ElementShortName">strt</obj_property>
+      <obj_property name="ObjectShortName">strt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt1/lteflg" type="logic">
+      <obj_property name="ElementShortName">lteflg</obj_property>
+      <obj_property name="ObjectShortName">lteflg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt1/ald" type="logic">
+      <obj_property name="ElementShortName">ald</obj_property>
+      <obj_property name="ObjectShortName">ald</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt1/sqld" type="logic">
+      <obj_property name="ElementShortName">sqld</obj_property>
+      <obj_property name="ObjectShortName">sqld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt1/dld" type="logic">
+      <obj_property name="ElementShortName">dld</obj_property>
+      <obj_property name="ObjectShortName">dld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt1/outld" type="logic">
+      <obj_property name="ElementShortName">outld</obj_property>
+      <obj_property name="ObjectShortName">outld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt1/present_state" type="other">
+      <obj_property name="ElementShortName">present_state</obj_property>
+      <obj_property name="ObjectShortName">present_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/uut/sqrt1/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sqrt_tb/root" type="array">
+      <obj_property name="ElementShortName">root[7:0]</obj_property>
+      <obj_property name="ObjectShortName">root[7:0]</obj_property>
+   </wvobject>
+</wave_config>

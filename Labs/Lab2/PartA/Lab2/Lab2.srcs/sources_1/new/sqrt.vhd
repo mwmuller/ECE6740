@@ -59,8 +59,9 @@ component sqrtCtl is
         sqld : in std_logic;
         dld : in std_logic;
         outld : in std_logic;
-        root : out std_logic_vector(7 downto 0);
-        sw : in std_logic_vector(15 downto 0));
+        sw : in std_logic_vector(15 downto 0);
+        lteflg : out STD_LOGIC;
+        root : out std_logic_vector(7 downto 0));
    end component; 
    
     signal lteflg, dld, outld, sqld, ald : std_logic;
@@ -72,7 +73,7 @@ begin
         
     sqrt2: sqrtPath port map
         (clk => clk, reset => clr, ald => ald, sqld => sqld, 
-        dld => dld, outld => outld, root => root, sw => sw);     
+        dld => dld, outld => outld, sw => sw, lteflg => lteflg, root=>root);     
 
 
 end Behavioral;

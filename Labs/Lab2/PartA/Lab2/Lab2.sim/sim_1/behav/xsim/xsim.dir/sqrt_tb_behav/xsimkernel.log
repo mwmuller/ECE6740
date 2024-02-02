@@ -1,0 +1,4 @@
+Running: xsim.dir/sqrt_tb_behav/xsimk.exe -simmode gui -wdb sqrt_tb_behav.wdb -simrunnum 0 -socket 62226
+Design successfully loaded
+Design Loading Memory Usage: 7128 KB (Peak: 7128 KB)
+Design Loading CPU Usage: 15 ms
