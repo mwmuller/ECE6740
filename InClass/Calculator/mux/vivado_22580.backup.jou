@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Jan 23 20:50:53 2024
+# Process ID: 22580
+# Current directory: F:/ECE6740/InClass/Calculator/mux
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23056 F:\ECE6740\InClass\Calculator\mux\mux.xpr
+# Log file: F:/ECE6740/InClass/Calculator/mux/vivado.log
+# Journal file: F:/ECE6740/InClass/Calculator/mux\vivado.jou
+# Running On: DESKTOP-NE4QLD0, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 25690 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/ECE6740/InClass/Calculator/mux/mux.xpr
+close_project
