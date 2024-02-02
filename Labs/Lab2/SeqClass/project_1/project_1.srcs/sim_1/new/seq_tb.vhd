@@ -68,47 +68,47 @@ uut: seqdeta_top PORT MAP (clk, btn, ld);
 	btn(1) <= '1';	
 	wait for clk_period*3;
 	btn(0) <= '0';
-	wait for clk_period;
+	wait for clk_period*3;
 	btn(1) <= '0';	
-	wait for clk_period;
+	wait for clk_period*3;
 	-- Enter sequence
 	btn(0) <= '0';
 	wait for clk_period*3;
 	btn(1) <= '1';	
 	wait for clk_period*3;
 	btn(0) <= '0';
-	wait for clk_period;
+	wait for clk_period*3;
 	btn(1) <= '0';	
-	wait for clk_period;
+	wait for clk_period*3;
 	-- Enter sequence
 	btn(0) <= '1';
 	wait for clk_period*3;
 	btn(1) <= '1';	
 	wait for clk_period*3;
 	btn(0) <= '0';
-	wait for clk_period;
+	wait for clk_period*3;
 	btn(1) <= '0';	
-	wait for clk_period;
+	wait for clk_period*3;
 	-- Enter sequence
 	btn(0) <= '1';
 	wait for clk_period*3;
 	btn(1) <= '1';	
 	wait for clk_period*3;
 	btn(0) <= '0';
-	wait for clk_period;
+	wait for clk_period*3;
 	btn(1) <= '0';	
-	wait for clk_period;
+	wait for clk_period*3;
 	-- Enter sequence
 	btn(0) <= '0';
 	wait for clk_period*3;
 	btn(1) <= '1';	
 	wait for clk_period*3;
 	btn(0) <= '0';
-	wait for clk_period;
+	wait for clk_period*3;
 	btn(1) <= '0';	
-	wait for clk_period;
+	wait for clk_period*3;
 	-- Enter sequence
-
+    wait for 100 ns;
    end process;
 
 end Behavioral;

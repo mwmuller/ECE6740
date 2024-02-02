@@ -60,7 +60,7 @@ fsm : process(present_state, din)
                 if din = '0' then
                     next_state <= s0;
                 else
-                    next_state <= s3;
+                    next_state <= s1;
                 end if; 
             when others =>
                 null;
