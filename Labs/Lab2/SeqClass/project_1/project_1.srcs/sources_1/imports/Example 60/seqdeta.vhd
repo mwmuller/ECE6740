@@ -57,11 +57,7 @@ fsm : process(present_state, din)
                     next_state <= s2;
                 end if; 
             when s5 =>
-                if din = '0' then
-                    next_state <= s0;
-                else
-                    next_state <= s1;
-                end if; 
+                next_state <= s5; -- wait here for clear
             when others =>
                 null;
         end case; 

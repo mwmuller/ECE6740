@@ -5,8 +5,10 @@ use IEEE.STD_LOGIC_1164.all;
 entity seqdeta_top is
 	 port(
 		 mclk : in STD_LOGIC;
+		 clr : in std_logic;
 		 btn : in STD_LOGIC_VECTOR(3 downto 0);
-		 ld : out STD_LOGIC_VECTOR(0 downto 0)
+		 ld : out STD_LOGIC_VECTOR(0 downto 0);
+		 start : out std_logic
 	     );
 end seqdeta_top;
 
@@ -34,10 +36,16 @@ component clkdiv is
 		 clk190 : out STD_LOGIC 
 	     );
 end component;
-signal clr, clrout, clkp, btn01, outp, clk190: STD_LOGIC;
-
-begin
-  clr <= btn(3);  
+component seqRead16 is
+    Port ( clk : in STD_LOGIC;
+           clr : in STD_LOGIC;
+           data_in : in STD_LOGIC;
+           register_out : out STD_LOGIC_VECTOR(15 downto 0);
+           reset_fsm : out std_logic); -- used to start the sqrt and reset the fsm
+end component;
+signal clrout, clkp, btn01, outp, clk190: STD_LOGIC;
+signal register_sig_out : std_logic_vector(15 downto 0);
+begin  
   btn01 <= btn(0) or btn(1);
 
   SeqInut : clock_pulse -- monitor the input value
@@ -61,5 +69,11 @@ begin
   	   din => btn(1),
   	   dout => ld(0)
      );
-
+   U4: seqRead16 port map (
+    clk => outp,
+    clr => clr,
+    data_in => btn(1),
+    register_out => register_sig_out
+   );
+    
 end seqdeta_top;
