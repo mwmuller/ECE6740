@@ -59,7 +59,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="pynq-z1"/>
-    <Option Name="WTXSimLaunchSim" Val="54"/>
+    <Option Name="WTXSimLaunchSim" Val="93"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -90,6 +90,14 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/imports/Example 60/clkdiv.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/mike4/Downloads/Example 60/clkdiv.vhd"/>
+          <Attr Name="ImportTime" Val="1264537028"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/Example 60/clock_pulse.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="C:/Users/mike4/Downloads/Example 60/clock_pulse.vhd"/>
@@ -114,11 +122,9 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/Example 60/clkdiv.vhd">
+      <File Path="$PSRCDIR/sources_1/new/clock_pulse_not.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="C:/Users/mike4/Downloads/Example 60/clkdiv.vhd"/>
-          <Attr Name="ImportTime" Val="1264537028"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>

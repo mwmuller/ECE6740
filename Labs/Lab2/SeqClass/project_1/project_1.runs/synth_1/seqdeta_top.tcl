@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.runs/synth_1/seqdeta_top.tcl"
+  variable script "F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.runs/synth_1/seqdeta_top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,28 +70,28 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.cache/wt [current_project]
-set_property parent.project_path F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.xpr [current_project]
+set_property webtalk.parent_dir F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.cache/wt [current_project]
+set_property parent.project_path F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
-set_property ip_repo_paths f:/MastersProgram/ECE6740/IPRepo [current_project]
+set_property ip_repo_paths f:/ECE6740/IPRepo [current_project]
 update_ip_catalog
-set_property ip_output_repo f:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.cache/ip [current_project]
+set_property ip_output_repo f:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  {F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/clock_pulse.vhd}
-  {F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta.vhd}
-  {F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta_top.vhd}
+  {F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/clkdiv.vhd}
+  {F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/clock_pulse.vhd}
+  {F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta.vhd}
+  {F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta_top.vhd}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -102,12 +102,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc
-set_property used_in_implementation false [get_files F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc]
+read_xdc F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc
+set_property used_in_implementation false [get_files F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/utils_1/imports/synth_1/seqdeta_top.dcp
+read_checkpoint -auto_incremental -incremental F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/utils_1/imports/synth_1/seqdeta_top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1706751599" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/seqdeta_top.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1706838938" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/seqdeta_top.dcp">
   <File Type="PA-TCL" Name="seqdeta_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="seqdeta_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="seqdeta_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="seqdeta_top.vds"/>
   <File Type="RDS-UTIL" Name="seqdeta_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="seqdeta_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="seqdeta_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="seqdeta_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="seqdeta_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Example 60/clkdiv.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/mike4/Downloads/Example 60/clkdiv.vhd"/>
+        <Attr Name="ImportTime" Val="1264537028"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/Example 60/clock_pulse.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="C:/Users/mike4/Downloads/Example 60/clock_pulse.vhd"/>
@@ -32,11 +43,9 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/Example 60/clkdiv.vhd">
+    <File Path="$PSRCDIR/sources_1/new/clock_pulse_not.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="C:/Users/mike4/Downloads/Example 60/clkdiv.vhd"/>
-        <Attr Name="ImportTime" Val="1264537028"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

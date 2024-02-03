@@ -2,12 +2,12 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Wed Jan 31 20:40:02 2024
-# Process ID: 30140
-# Current directory: F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.runs/synth_1
+# Start of session at: Thu Feb  1 20:55:40 2024
+# Process ID: 94852
+# Current directory: F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log seqdeta_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source seqdeta_top.tcl
-# Log file: F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.runs/synth_1/seqdeta_top.vds
-# Journal file: F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.runs/synth_1\vivado.jou
-# Running On: DESKTOP-LF8951D, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 16, Host memory: 34276 MB
+# Log file: F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.runs/synth_1/seqdeta_top.vds
+# Journal file: F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.runs/synth_1\vivado.jou
+# Running On: DESKTOP-NE4QLD0, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 25690 MB
 #-----------------------------------------------------------
 source seqdeta_top.tcl -notrace

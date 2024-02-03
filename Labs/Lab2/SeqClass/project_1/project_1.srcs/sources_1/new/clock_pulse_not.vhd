@@ -2,16 +2,16 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 
-entity clock_pulse is
+entity clock_pulse_not is
 	 port(
 		 inp : in STD_LOGIC;
 		 cclk : in STD_LOGIC;
 		 clr : in STD_LOGIC;
 		 outp : out STD_LOGIC
 	     );
-end clock_pulse;
+end clock_pulse_not;
 
-architecture clock_pulse of clock_pulse is
+architecture clock_pulse_not of clock_pulse_not is
 signal delay1, delay2, delay3: STD_LOGIC;
 begin
 	process(cclk, clr)
@@ -27,4 +27,4 @@ begin
 		end if;							 
 	end process;
 	outp <= delay1 and delay2 and not delay3;
-end clock_pulse;
+end clock_pulse_not;

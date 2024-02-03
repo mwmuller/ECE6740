@@ -11,10 +11,10 @@
 
 source seqdeta_top.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/MastersProgram/ECE6740/IPRepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/ECE6740/IPRepo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2022.1/data/ip'.
-Command: read_checkpoint -auto_incremental -incremental F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/utils_1/imports/synth_1/seqdeta_top.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/utils_1/imports/synth_1/seqdeta_top.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/utils_1/imports/synth_1/seqdeta_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/utils_1/imports/synth_1/seqdeta_top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top seqdeta_top -part xc7z020clg400-1
 Starting synth_design
@@ -25,86 +25,89 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16168
+INFO: [Synth 8-7075] Helper process launched with PID 95428
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1274.523 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1280.316 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'seqdeta_top' [F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta_top.vhd:13]
-INFO: [Synth 8-3491] module 'clock_pulse' declared at 'F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/clock_pulse.vhd:5' bound to instance 'U2' of component 'clock_pulse' [F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta_top.vhd:35]
-INFO: [Synth 8-638] synthesizing module 'clock_pulse' [F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/clock_pulse.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'clock_pulse' (0#1) [F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/clock_pulse.vhd:14]
-INFO: [Synth 8-3491] module 'seqdeta' declared at 'F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta.vhd:5' bound to instance 'U3' of component 'seqdeta' [F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta_top.vhd:43]
-INFO: [Synth 8-638] synthesizing module 'seqdeta' [F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'seqdeta' (0#1) [F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'seqdeta_top' (0#1) [F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta_top.vhd:13]
-WARNING: [Synth 8-7129] Port mclk in module seqdeta_top is either unconnected or has no load
+INFO: [Synth 8-638] synthesizing module 'seqdeta_top' [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta_top.vhd:13]
+INFO: [Synth 8-3491] module 'clock_pulse' declared at 'F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/clock_pulse.vhd:5' bound to instance 'SeqInut' of component 'clock_pulse' [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta_top.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'clock_pulse' [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/clock_pulse.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'clock_pulse' (0#1) [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/clock_pulse.vhd:14]
+INFO: [Synth 8-3491] module 'clkdiv' declared at 'F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/clkdiv.vhd:6' bound to instance 'lockinInput' of component 'clkdiv' [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta_top.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/clkdiv.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (0#1) [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/clkdiv.vhd:14]
+INFO: [Synth 8-3491] module 'seqdeta' declared at 'F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta.vhd:5' bound to instance 'U3' of component 'seqdeta' [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta_top.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'seqdeta' [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'seqdeta' (0#1) [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'seqdeta_top' (0#1) [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta_top.vhd:13]
 WARNING: [Synth 8-7129] Port btn[2] in module seqdeta_top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1274.523 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1280.316 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1274.523 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1280.316 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1274.523 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1280.316 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1274.523 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1280.316 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc]
-WARNING: [Vivado 12-584] No ports matched 'ck_io[28]'. [F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc:108]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc:108]
+Parsing XDC File [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ck_io[28]'. [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc:108]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ck_io[35]'. [F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc:109]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'ck_io[35]'. [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc:109]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc]
+Finished Parsing XDC File [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/constrs_1/imports/zybo_master/PYNQ-Z1_C.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1283.328 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1320.137 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1283.328 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1320.137 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1283.328 ; gain = 8.805
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1320.137 ; gain = 39.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1283.328 ; gain = 8.805
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1320.137 ; gain = 39.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1283.328 ; gain = 8.805
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1320.137 ; gain = 39.820
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'present_state_reg' in module 'seqdeta'
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta.vhd:21]
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta.vhd:21]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta.vhd:22]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta.vhd:22]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                      s0 |                              000 |                              000
-                      s1 |                              001 |                              001
-                      s2 |                              010 |                              010
-                      s3 |                              011 |                              011
-                      s4 |                              100 |                              100
+                      s0 |                           000001 |                              000
+                      s1 |                           000010 |                              001
+                      s2 |                           000100 |                              010
+                      s3 |                           001000 |                              011
+                      s4 |                           010000 |                              100
+                      s5 |                           100000 |                              101
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'sequential' in module 'seqdeta'
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta.vhd:21]
+INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'one-hot' in module 'seqdeta'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta.vhd:22]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1283.328 ; gain = 8.805
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1320.137 ; gain = 39.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -113,10 +116,10 @@ Detailed RTL Component Info :
 +---Registers : 
 	                1 Bit    Registers := 3     
 +---Muxes : 
-	   5 Input    3 Bit        Muxes := 2     
-	   2 Input    3 Bit        Muxes := 5     
-	   2 Input    1 Bit        Muxes := 1     
-	   5 Input    1 Bit        Muxes := 2     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 6     
+	   6 Input    3 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -133,28 +136,27 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port mclk in module seqdeta_top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port btn[2] in module seqdeta_top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1283.328 ; gain = 8.805
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1320.137 ; gain = 39.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1283.328 ; gain = 8.805
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1320.137 ; gain = 39.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1283.328 ; gain = 8.805
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1320.137 ; gain = 39.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1283.328 ; gain = 8.805
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1320.137 ; gain = 39.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -172,37 +174,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1284.980 ; gain = 10.457
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1320.137 ; gain = 39.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1284.980 ; gain = 10.457
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1320.137 ; gain = 39.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1284.980 ; gain = 10.457
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1320.137 ; gain = 39.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1284.980 ; gain = 10.457
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1320.137 ; gain = 39.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1284.980 ; gain = 10.457
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1320.137 ; gain = 39.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1284.980 ; gain = 10.457
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1320.137 ; gain = 39.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -215,40 +217,46 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |BUFG |     1|
-|2     |LUT3 |     3|
-|3     |LUT4 |     3|
-|4     |FDCE |     6|
-|5     |LD   |     3|
-|6     |IBUF |     3|
-|7     |OBUF |     1|
-+------+-----+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     5|
+|3     |LUT1   |     1|
+|4     |LUT2   |     3|
+|5     |LUT3   |     2|
+|6     |LUT4   |     1|
+|7     |LUT5   |     1|
+|8     |LUT6   |     1|
+|9     |FDCE   |    26|
+|10    |FDPE   |     1|
+|11    |LD     |     6|
+|12    |IBUF   |     4|
+|13    |OBUF   |     1|
++------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1284.980 ; gain = 10.457
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1320.137 ; gain = 39.820
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1284.980 ; gain = 1.652
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1284.980 ; gain = 10.457
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1320.137 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1320.137 ; gain = 39.820
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1297.062 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1320.137 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1303.695 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1320.137 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 3 instances were transformed.
-  LD => LDCE: 3 instances
+  A total of 6 instances were transformed.
+  LD => LDCE: 6 instances
 
-Synth Design complete, checksum: ad942d2a
+Synth Design complete, checksum: a96585
 INFO: [Common 17-83] Releasing license: Synthesis
-33 Infos, 10 Warnings, 2 Critical Warnings and 0 Errors encountered.
+36 Infos, 8 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1303.695 ; gain = 29.172
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1320.137 ; gain = 39.820
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-INFO: [Common 17-1381] The checkpoint 'F:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.runs/synth_1/seqdeta_top.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.runs/synth_1/seqdeta_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file seqdeta_top_utilization_synth.rpt -pb seqdeta_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 31 20:40:37 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  1 20:56:15 2024...

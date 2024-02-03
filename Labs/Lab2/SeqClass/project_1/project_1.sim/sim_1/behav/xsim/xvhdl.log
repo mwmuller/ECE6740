@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sources_1/imports/Example 60/seqdeta.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'seqdeta'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs/sim_1/new/seq_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'seq_tb'

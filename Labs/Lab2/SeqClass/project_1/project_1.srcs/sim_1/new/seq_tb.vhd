@@ -46,6 +46,7 @@ architecture Behavioral of seq_tb is
 signal clk : std_logic := '0';
    signal clr : std_logic := '0';
    constant clk_period : time := 20 ns;
+   constant divPeriod : time := 5 ms;
    signal btn : std_logic_vector(3 downto 0);
    signal ld : std_logic_vector(0 downto 0);
 begin
@@ -62,53 +63,60 @@ uut: seqdeta_top PORT MAP (clk, btn, ld);
 
    main_stim: process
    begin
+   
+    btn(3) <= '1';
+    wait for clk_period;
+    btn(3) <='0';
+    wait for clk_period;
+    
+    
+	-- cycle for button press
+	btn(1) <= '1';
+	btn(0) <= '1';	-- clking
+	wait for divPeriod*3;
+	btn(0) <= '0';	
+	wait for divPeriod*3;
 	
-	btn(0) <= '1';
-	wait for clk_period*3;
-	btn(1) <= '1';	
-	wait for clk_period*3;
+	btn(1) <= '0';
+	btn(0) <= '1';	-- clking
+	wait for divPeriod*3;
 	btn(0) <= '0';
-	wait for clk_period*3;
-	btn(1) <= '0';	
-	wait for clk_period*3;
-	-- Enter sequence
+	wait for divPeriod*3;
+	
+	btn(1) <= '1';
+	btn(0) <= '1';	-- clking
+	wait for divPeriod*3;
 	btn(0) <= '0';
-	wait for clk_period*3;
-	btn(1) <= '1';	
-	wait for clk_period*3;
+	wait for divPeriod*3;
+	
+	btn(1) <= '0';
+	btn(0) <= '1';	-- clking
+	wait for divPeriod*3;
 	btn(0) <= '0';
-	wait for clk_period*3;
-	btn(1) <= '0';	
-	wait for clk_period*3;
-	-- Enter sequence
-	btn(0) <= '1';
-	wait for clk_period*3;
-	btn(1) <= '1';	
-	wait for clk_period*3;
+	wait for divPeriod*3;
+	
+	btn(1) <= '1';
+	btn(0) <= '1';	-- clking
+	wait for divPeriod*3;
 	btn(0) <= '0';
-	wait for clk_period*3;
-	btn(1) <= '0';	
-	wait for clk_period*3;
-	-- Enter sequence
-	btn(0) <= '1';
-	wait for clk_period*3;
-	btn(1) <= '1';	
-	wait for clk_period*3;
+	-- End cycle
+	wait for divPeriod*3;
+	
+	btn(1) <= '1';
+	btn(0) <= '1';	-- clking
+	wait for divPeriod*3;
 	btn(0) <= '0';
-	wait for clk_period*3;
-	btn(1) <= '0';	
-	wait for clk_period*3;
-	-- Enter sequence
+	-- End cycle
+	wait for divPeriod*3;
+	
+	btn(1) <= '0';
+	btn(0) <= '1';	-- clking
+	wait for divPeriod*3;
 	btn(0) <= '0';
-	wait for clk_period*3;
-	btn(1) <= '1';	
-	wait for clk_period*3;
-	btn(0) <= '0';
-	wait for clk_period*3;
-	btn(1) <= '0';	
-	wait for clk_period*3;
-	-- Enter sequence
-    wait for 100 ns;
+	-- End cycle
+	wait for divPeriod*3;
+	
+	wait for divPeriod*10;
    end process;
 
 end Behavioral;

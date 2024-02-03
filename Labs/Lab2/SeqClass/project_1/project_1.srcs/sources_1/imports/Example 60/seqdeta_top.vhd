@@ -27,32 +27,38 @@ component clock_pulse is
 		 outp : out STD_LOGIC       
            );
 end component;
-signal clr, clrout, clkp, btn01, outp: STD_LOGIC;
+component clkdiv is
+	 port(
+		 mclk : in STD_LOGIC;
+		 clr : in STD_LOGIC;
+		 clk190 : out STD_LOGIC 
+	     );
+end component;
+signal clr, clrout, clkp, btn01, outp, clk190: STD_LOGIC;
 
 begin
   clr <= btn(3);  
   btn01 <= btn(0) or btn(1);
 
-  SeqInut : clock_pulse
+  SeqInut : clock_pulse -- monitor the input value
      port map (
   	   inp => btn(0),
-  	   cclk => mclk,
-  	   clr => clrout,
+  	   cclk => clk190,
+  	   clr => clr,
  	    outp => outp
      );
- lockinInput : clock_pulse
+ lockinInput : clkdiv
      port map (
-  	   inp => btn(1),
-  	   cclk => mclk,
-  	   clr => btn(2),
- 	    outp => clrout
+  	   mclk=>mclk,
+  	   clr => clr,
+ 	   clk190 => clk190
      );
 
   U3: seqdeta
      port map (
-  	   clk => clrout,
+  	   clk => outp,
   	   clr => clr,
-  	   din => outp,
+  	   din => btn(1),
   	   dout => ld(0)
      );
 
