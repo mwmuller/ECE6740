@@ -1,0 +1,48 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Feb  4 14:27:28 2024
+| Host         : DESKTOP-LF8951D running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0 (xilinx.com:user:mypi_axi_sqrt_bd:1.0 (Rev. 2)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'done_int'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Feb  4 10:35:42 2024
+| Host         : DESKTOP-LF8951D running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Lab2_Axi_Int_seq_sqrt_AXI_Seq_Sqrt_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of Lab2_Axi_Int_seq_sqrt_AXI_Seq_Sqrt_0_0 (xilinx.com:user:AXI_Seq_Sqrt:1.0 (Rev. 1)) to Vivado generation flows.
+

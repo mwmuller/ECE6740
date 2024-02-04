@@ -1,0 +1,41 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Feb  4 14:30:40 2024
+| Host         : DESKTOP-LF8951D running 64-bit major release  (build 9200)
+| Command      : report_drc -file Lab2_Axi_Int_seq_sqrt_wrapper_drc_routed.rpt -pb Lab2_Axi_Int_seq_sqrt_wrapper_drc_routed.pb -rpx Lab2_Axi_Int_seq_sqrt_wrapper_drc_routed.rpx
+| Design       : Lab2_Axi_Int_seq_sqrt_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++----------+----------+-------------------+------------+
+| Rule     | Severity | Description       | Violations |
++----------+----------+-------------------+------------+
+| PDRC-153 | Warning  | Gated clock check | 1          |
++----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net Lab2_Axi_Int_seq_sqrt_i/mypi_axi_sqrt_bd_0/U0/mypi_seqdeta_top_0/U0/U3/FSM_sequential_next_state_reg[2]_i_2_n_0 is a gated clock net sourced by a combinational pin Lab2_Axi_Int_seq_sqrt_i/mypi_axi_sqrt_bd_0/U0/mypi_seqdeta_top_0/U0/U3/FSM_sequential_next_state_reg[2]_i_2/O, cell Lab2_Axi_Int_seq_sqrt_i/mypi_axi_sqrt_bd_0/U0/mypi_seqdeta_top_0/U0/U3/FSM_sequential_next_state_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

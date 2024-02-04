@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt auto -L xil_defaultlib -L secureip -L xpm --snapshot axi_sqrt_bd xil_defaultlib.axi_sqrt_bd -log elaborate.log

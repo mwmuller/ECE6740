@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER mypi_axi_seq_sqrt
+	OPTION supported_peripherals = (mypi_axi_seq_sqrt);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = mypi_axi_seq_sqrt;
+END DRIVER

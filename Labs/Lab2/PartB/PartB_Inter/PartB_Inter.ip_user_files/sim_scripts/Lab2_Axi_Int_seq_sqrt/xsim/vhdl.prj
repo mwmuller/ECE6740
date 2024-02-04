@@ -1,0 +1,20 @@
+vhdl xil_defaultlib  \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0/sim/Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/clkdiv.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/clock_pulse.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/regr.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/seqRead16.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/seqdeta.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/sqrt.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/sqrtPath.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/sqrtctl.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/seqdeta_top.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/sim/axi_sqrt_bd_mypi_seqdeta_top_0_0.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_axi_seq_sqrt_0_0/hdl/mypi_axi_seq_sqrt_v1_0_S00_AXI.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_axi_seq_sqrt_0_0/hdl/mypi_axi_seq_sqrt_v1_0.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_axi_seq_sqrt_0_0/sim/axi_sqrt_bd_mypi_axi_seq_sqrt_0_0.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ipshared/52bb/sim/axi_sqrt_bd.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/sim/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/sim/Lab2_Axi_Int_seq_sqrt.vhd" \
+
+nosort

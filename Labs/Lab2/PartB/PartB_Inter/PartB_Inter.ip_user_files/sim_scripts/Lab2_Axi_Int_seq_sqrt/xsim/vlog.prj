@@ -1,0 +1,7 @@
+verilog xil_defaultlib --include "F:/Xilinx/Vivado/2022.1/data/xilinx_vip/include" --include "../../../../PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/ipshared/ec67/hdl" --include "../../../../PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/ipshared/5765/hdl" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_processing_system7_0_0/sim/Lab2_Axi_Int_seq_sqrt_processing_system7_0_0.v" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_auto_pc_0/sim/Lab2_Axi_Int_seq_sqrt_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
