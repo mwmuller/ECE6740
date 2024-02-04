@@ -6,9 +6,7 @@ entity seqdeta_top is
 	 port(
 		 mclk : in STD_LOGIC;
 		 clr : in std_logic;
-		 btn : in STD_LOGIC_VECTOR(3 downto 0);
-		 start : out std_logic -- starts the sqrt comp
-	     );
+		 btn : in STD_LOGIC_VECTOR(3 downto 0));
 end seqdeta_top;
 
 architecture seqdeta_top of seqdeta_top is

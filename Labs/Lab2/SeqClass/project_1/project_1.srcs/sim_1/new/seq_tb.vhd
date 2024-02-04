@@ -40,9 +40,7 @@ architecture Behavioral of seq_tb is
     port(
 		 mclk : in STD_LOGIC;
 		 clr : in std_logic;
-		 btn : in STD_LOGIC_VECTOR(3 downto 0);
-		 start : out std_logic
-	     );
+		 btn : in STD_LOGIC_VECTOR(3 downto 0));
     end component;
 signal clk : std_logic := '0';
    signal clr : std_logic := '0';
@@ -50,9 +48,8 @@ signal clk : std_logic := '0';
    constant divPeriod : time := 5 ms;
    signal btn : std_logic_vector(3 downto 0);
    signal ld : std_logic_vector(0 downto 0);
-   signal start : std_logic;
 begin
-uut: seqdeta_top PORT MAP (clk, clr, btn, start);       
+uut: seqdeta_top PORT MAP (clk, clr, btn);       
 
 
    clk_process :process
