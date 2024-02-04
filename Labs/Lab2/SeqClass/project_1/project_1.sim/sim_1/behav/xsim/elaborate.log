@@ -15,6 +15,14 @@ Compiling package ieee.std_logic_unsigned
 Compiling architecture clock_pulse of entity xil_defaultlib.clock_pulse [clock_pulse_default]
 Compiling architecture clkdiv of entity xil_defaultlib.clkdiv [clkdiv_default]
 Compiling architecture behavioral of entity xil_defaultlib.seqdeta [seqdeta_default]
+Compiling architecture behavioral of entity xil_defaultlib.seqRead16 [seqread16_default]
+Compiling architecture behavioral of entity xil_defaultlib.sqrtctl [sqrtctl_default]
+Compiling architecture behavioral of entity xil_defaultlib.regr [\regr(n=16,bit0='0',bit1='0')\]
+Compiling architecture behavioral of entity xil_defaultlib.regr [\regr(n=17,bit0='1',bit1='0')\]
+Compiling architecture behavioral of entity xil_defaultlib.regr [\regr(n=9,bit0='1',bit1='1')\]
+Compiling architecture behavioral of entity xil_defaultlib.regr [\regr(n=8,bit0='0',bit1='0')\]
+Compiling architecture behavioral of entity xil_defaultlib.sqrtPath [sqrtpath_default]
+Compiling architecture behavioral of entity xil_defaultlib.sqrt [sqrt_default]
 Compiling architecture seqdeta_top of entity xil_defaultlib.seqdeta_top [seqdeta_top_default]
 Compiling architecture behavioral of entity xil_defaultlib.seq_tb
 Built simulation snapshot seq_tb_behav
