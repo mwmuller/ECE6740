@@ -1,0 +1,21 @@
+Axi Interface Modification:
+I added 2 input registers. One for the root (8 bits) and another for the input (16 bits)
+This was done by changing where the reg_data_out mux reads from to read the root/input
+for slv_reg0/1 respectively.
+
+Lessons Learned:
+Wow, did I make a ton of mistakes on this lab. 
+1) For the clock divider, I didn't set the "clr"
+input high to start my TB and spent too long looking into other components. Once this was corrected
+the component functioned properly in the TB
+
+2) Going through the steps of properly packaging helped me realized I was trying to package a component + source files + block design into
+a single IP which caused a lot of dependecies and issues later. Doing these steps individually helped me make changes easier later.
+
+3) I realized a bit later that the XScu_Gic class only needs to be instantiated once. And then we can find the interrupt pin ID (IRQ_F2P[0:0] in this case)
+from the xparameters.x file for reference. 
+
+4) Setting the priority for the interrupt to only trigger on rising edge was easier than resetting the "done" pin from the SQRT component
+once we read in the value. I would like to remove the need to reset the circuit with "btn3" before each use. But I didn't have time :(
+
+Great lab, lots of learning curves and I feel much better going into lab 3!
