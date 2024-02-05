@@ -166,6 +166,9 @@
           }
         }
       },
+      "done_int": {
+        "direction": "O"
+      },
       "s00_axi_aresetn_0": {
         "type": "rst",
         "direction": "I",
@@ -179,9 +182,6 @@
             "value_src": "default"
           }
         }
-      },
-      "done_int": {
-        "direction": "O"
       }
     },
     "components": {
@@ -213,10 +213,22 @@
           "mypi_seqdeta_top_0/btn"
         ]
       },
+      "mypi_seqdeta_top_0_din": {
+        "ports": [
+          "mypi_seqdeta_top_0/din",
+          "mypi_axi_seq_sqrt_0/S_DIN_IN"
+        ]
+      },
       "mypi_seqdeta_top_0_done": {
         "ports": [
           "mypi_seqdeta_top_0/done",
           "done_int"
+        ]
+      },
+      "mypi_seqdeta_top_0_root": {
+        "ports": [
+          "mypi_seqdeta_top_0/root",
+          "mypi_axi_seq_sqrt_0/S_ROOT_IN"
         ]
       },
       "s00_axi_aclk_0_1": {
@@ -229,8 +241,7 @@
       "s00_axi_aresetn_0_1": {
         "ports": [
           "s00_axi_aresetn_0",
-          "mypi_axi_seq_sqrt_0/s00_axi_aresetn",
-          "mypi_seqdeta_top_0/clr"
+          "mypi_axi_seq_sqrt_0/s00_axi_aresetn"
         ]
       }
     },

@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
---Date        : Sun Feb  4 14:26:57 2024
+--Date        : Mon Feb  5 15:04:48 2024
 --Host        : DESKTOP-LF8951D running 64-bit major release  (build 9200)
 --Command     : generate_target axi_sqrt_bd.bd
 --Design      : axi_sqrt_bd
@@ -46,6 +46,10 @@ end axi_sqrt_bd;
 architecture STRUCTURE of axi_sqrt_bd is
   component axi_sqrt_bd_mypi_axi_seq_sqrt_0_0 is
   port (
+    S_ROOT_IN : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    S_DIN_IN : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    s00_axi_aclk : in STD_LOGIC;
+    s00_axi_aresetn : in STD_LOGIC;
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s00_axi_awvalid : in STD_LOGIC;
@@ -64,16 +68,15 @@ architecture STRUCTURE of axi_sqrt_bd is
     s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s00_axi_rvalid : out STD_LOGIC;
-    s00_axi_rready : in STD_LOGIC;
-    s00_axi_aclk : in STD_LOGIC;
-    s00_axi_aresetn : in STD_LOGIC
+    s00_axi_rready : in STD_LOGIC
   );
   end component axi_sqrt_bd_mypi_axi_seq_sqrt_0_0;
   component axi_sqrt_bd_mypi_seqdeta_top_0_0 is
   port (
     mclk : in STD_LOGIC;
-    clr : in STD_LOGIC;
     btn : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    root : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    din : out STD_LOGIC_VECTOR ( 15 downto 0 );
     done : out STD_LOGIC
   );
   end component axi_sqrt_bd_mypi_seqdeta_top_0_0;
@@ -97,7 +100,9 @@ architecture STRUCTURE of axi_sqrt_bd is
   signal S00_AXI_0_1_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal S00_AXI_0_1_WVALID : STD_LOGIC;
   signal btn_0_1 : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal mypi_seqdeta_top_0_din : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal mypi_seqdeta_top_0_done : STD_LOGIC;
+  signal mypi_seqdeta_top_0_root : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal s00_axi_aclk_0_1 : STD_LOGIC;
   signal s00_axi_aresetn_0_1 : STD_LOGIC;
   attribute X_INTERFACE_INFO : string;
@@ -152,6 +157,8 @@ begin
   s00_axi_aresetn_0_1 <= s00_axi_aresetn_0;
 mypi_axi_seq_sqrt_0: component axi_sqrt_bd_mypi_axi_seq_sqrt_0_0
      port map (
+      S_DIN_IN(15 downto 0) => mypi_seqdeta_top_0_din(15 downto 0),
+      S_ROOT_IN(7 downto 0) => mypi_seqdeta_top_0_root(7 downto 0),
       s00_axi_aclk => s00_axi_aclk_0_1,
       s00_axi_araddr(3 downto 0) => S00_AXI_0_1_ARADDR(3 downto 0),
       s00_axi_aresetn => s00_axi_aresetn_0_1,
@@ -177,8 +184,9 @@ mypi_axi_seq_sqrt_0: component axi_sqrt_bd_mypi_axi_seq_sqrt_0_0
 mypi_seqdeta_top_0: component axi_sqrt_bd_mypi_seqdeta_top_0_0
      port map (
       btn(3 downto 0) => btn_0_1(3 downto 0),
-      clr => s00_axi_aresetn_0_1,
+      din(15 downto 0) => mypi_seqdeta_top_0_din(15 downto 0),
       done => mypi_seqdeta_top_0_done,
-      mclk => s00_axi_aclk_0_1
+      mclk => s00_axi_aclk_0_1,
+      root(7 downto 0) => mypi_seqdeta_top_0_root(7 downto 0)
     );
 end STRUCTURE;

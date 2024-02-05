@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Sun Feb  4 14:30:05 2024
+| Date         : Mon Feb  5 15:07:53 2024
 | Host         : DESKTOP-LF8951D running 64-bit major release  (build 9200)
 | Command      : report_drc -file Lab2_Axi_Int_seq_sqrt_wrapper_drc_opted.rpt -pb Lab2_Axi_Int_seq_sqrt_wrapper_drc_opted.pb -rpx Lab2_Axi_Int_seq_sqrt_wrapper_drc_opted.rpx
 | Design       : Lab2_Axi_Int_seq_sqrt_wrapper

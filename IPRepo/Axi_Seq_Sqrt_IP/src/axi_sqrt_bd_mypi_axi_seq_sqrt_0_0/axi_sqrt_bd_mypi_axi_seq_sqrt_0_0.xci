@@ -68,7 +68,7 @@
         <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.USE_RDI_CUSTOMIZATION">TRUE</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.USE_RDI_GENERATION">TRUE</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPCONTEXT">IP_Integrator</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPREVISION">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPREVISION">7</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.MANAGED">TRUE</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.OUTPUTDIR">./</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.SELECTEDSIMMODEL"/>
@@ -119,6 +119,10 @@
               &quot;schema&quot;: &quot;xilinx.com:schema:json_boundary:1.0&quot;,
               &quot;boundary&quot;: {
                 &quot;ports&quot;: {
+                  &quot;S_ROOT_IN&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;size_left&quot;: &quot;7&quot;, &quot;size_right&quot;: &quot;0&quot; } ],
+                  &quot;S_DIN_IN&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;size_left&quot;: &quot;15&quot;, &quot;size_right&quot;: &quot;0&quot; } ],
+                  &quot;s00_axi_aclk&quot;: [ { &quot;direction&quot;: &quot;in&quot; } ],
+                  &quot;s00_axi_aresetn&quot;: [ { &quot;direction&quot;: &quot;in&quot; } ],
                   &quot;s00_axi_awaddr&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;size_left&quot;: &quot;3&quot;, &quot;size_right&quot;: &quot;0&quot; } ],
                   &quot;s00_axi_awprot&quot;: [ { &quot;direction&quot;: &quot;in&quot;, &quot;size_left&quot;: &quot;2&quot;, &quot;size_right&quot;: &quot;0&quot; } ],
                   &quot;s00_axi_awvalid&quot;: [ { &quot;direction&quot;: &quot;in&quot; } ],
@@ -137,9 +141,7 @@
                   &quot;s00_axi_rdata&quot;: [ { &quot;direction&quot;: &quot;out&quot;, &quot;size_left&quot;: &quot;31&quot;, &quot;size_right&quot;: &quot;0&quot; } ],
                   &quot;s00_axi_rresp&quot;: [ { &quot;direction&quot;: &quot;out&quot;, &quot;size_left&quot;: &quot;1&quot;, &quot;size_right&quot;: &quot;0&quot; } ],
                   &quot;s00_axi_rvalid&quot;: [ { &quot;direction&quot;: &quot;out&quot; } ],
-                  &quot;s00_axi_rready&quot;: [ { &quot;direction&quot;: &quot;in&quot; } ],
-                  &quot;s00_axi_aclk&quot;: [ { &quot;direction&quot;: &quot;in&quot; } ],
-                  &quot;s00_axi_aresetn&quot;: [ { &quot;direction&quot;: &quot;in&quot; } ]
+                  &quot;s00_axi_rready&quot;: [ { &quot;direction&quot;: &quot;in&quot; } ]
                 },
                 &quot;interfaces&quot;: {
                   &quot;S00_AXI&quot;: {

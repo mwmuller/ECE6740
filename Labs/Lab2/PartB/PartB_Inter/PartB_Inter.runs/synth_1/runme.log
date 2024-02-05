@@ -25,25 +25,25 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 4176
+INFO: [Synth 8-7075] Helper process launched with PID 37104
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1276.652 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1275.766 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Lab2_Axi_Int_seq_sqrt_wrapper' [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/hdl/Lab2_Axi_Int_seq_sqrt_wrapper.vhd:41]
 INFO: [Synth 8-3491] module 'Lab2_Axi_Int_seq_sqrt' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/synth/Lab2_Axi_Int_seq_sqrt.vhd:591' bound to instance 'Lab2_Axi_Int_seq_sqrt_i' of component 'Lab2_Axi_Int_seq_sqrt' [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/hdl/Lab2_Axi_Int_seq_sqrt_wrapper.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'Lab2_Axi_Int_seq_sqrt' [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/synth/Lab2_Axi_Int_seq_sqrt.vhd:622]
-INFO: [Synth 8-3491] module 'Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0' declared at 'F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.runs/synth_1/.Xil/Vivado-29956-DESKTOP-LF8951D/realtime/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0_stub.vhdl:5' bound to instance 'mypi_axi_sqrt_bd_0' of component 'Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0' [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/synth/Lab2_Axi_Int_seq_sqrt.vhd:851]
-INFO: [Synth 8-638] synthesizing module 'Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0' [F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.runs/synth_1/.Xil/Vivado-29956-DESKTOP-LF8951D/realtime/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0_stub.vhdl:34]
-INFO: [Synth 8-3491] module 'Lab2_Axi_Int_seq_sqrt_processing_system7_0_0' declared at 'F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.runs/synth_1/.Xil/Vivado-29956-DESKTOP-LF8951D/realtime/Lab2_Axi_Int_seq_sqrt_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'Lab2_Axi_Int_seq_sqrt_processing_system7_0_0' [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/synth/Lab2_Axi_Int_seq_sqrt.vhd:877]
-INFO: [Synth 8-638] synthesizing module 'Lab2_Axi_Int_seq_sqrt_processing_system7_0_0' [F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.runs/synth_1/.Xil/Vivado-29956-DESKTOP-LF8951D/realtime/Lab2_Axi_Int_seq_sqrt_processing_system7_0_0_stub.vhdl:77]
+INFO: [Synth 8-3491] module 'Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2' declared at 'F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.runs/synth_1/.Xil/Vivado-35992-DESKTOP-LF8951D/realtime/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2_stub.vhdl:5' bound to instance 'mypi_axi_sqrt_bd_0' of component 'Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2' [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/synth/Lab2_Axi_Int_seq_sqrt.vhd:851]
+INFO: [Synth 8-638] synthesizing module 'Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2' [F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.runs/synth_1/.Xil/Vivado-35992-DESKTOP-LF8951D/realtime/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'Lab2_Axi_Int_seq_sqrt_processing_system7_0_0' declared at 'F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.runs/synth_1/.Xil/Vivado-35992-DESKTOP-LF8951D/realtime/Lab2_Axi_Int_seq_sqrt_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'Lab2_Axi_Int_seq_sqrt_processing_system7_0_0' [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/synth/Lab2_Axi_Int_seq_sqrt.vhd:877]
+INFO: [Synth 8-638] synthesizing module 'Lab2_Axi_Int_seq_sqrt_processing_system7_0_0' [F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.runs/synth_1/.Xil/Vivado-35992-DESKTOP-LF8951D/realtime/Lab2_Axi_Int_seq_sqrt_processing_system7_0_0_stub.vhdl:77]
 INFO: [Synth 8-638] synthesizing module 'Lab2_Axi_Int_seq_sqrt_ps7_0_axi_periph_0' [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/synth/Lab2_Axi_Int_seq_sqrt.vhd:398]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_QXJGSF' [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/synth/Lab2_Axi_Int_seq_sqrt.vhd:80]
-INFO: [Synth 8-3491] module 'Lab2_Axi_Int_seq_sqrt_auto_pc_0' declared at 'F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.runs/synth_1/.Xil/Vivado-29956-DESKTOP-LF8951D/realtime/Lab2_Axi_Int_seq_sqrt_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'Lab2_Axi_Int_seq_sqrt_auto_pc_0' [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/synth/Lab2_Axi_Int_seq_sqrt.vhd:263]
-INFO: [Synth 8-638] synthesizing module 'Lab2_Axi_Int_seq_sqrt_auto_pc_0' [F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.runs/synth_1/.Xil/Vivado-29956-DESKTOP-LF8951D/realtime/Lab2_Axi_Int_seq_sqrt_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'Lab2_Axi_Int_seq_sqrt_auto_pc_0' declared at 'F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.runs/synth_1/.Xil/Vivado-35992-DESKTOP-LF8951D/realtime/Lab2_Axi_Int_seq_sqrt_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'Lab2_Axi_Int_seq_sqrt_auto_pc_0' [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/synth/Lab2_Axi_Int_seq_sqrt.vhd:263]
+INFO: [Synth 8-638] synthesizing module 'Lab2_Axi_Int_seq_sqrt_auto_pc_0' [F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.runs/synth_1/.Xil/Vivado-35992-DESKTOP-LF8951D/realtime/Lab2_Axi_Int_seq_sqrt_auto_pc_0_stub.vhdl:70]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_QXJGSF' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/synth/Lab2_Axi_Int_seq_sqrt.vhd:80]
 INFO: [Synth 8-256] done synthesizing module 'Lab2_Axi_Int_seq_sqrt_ps7_0_axi_periph_0' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/synth/Lab2_Axi_Int_seq_sqrt.vhd:398]
-INFO: [Synth 8-3491] module 'Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0' declared at 'F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.runs/synth_1/.Xil/Vivado-29956-DESKTOP-LF8951D/realtime/Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0' [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/synth/Lab2_Axi_Int_seq_sqrt.vhd:1012]
-INFO: [Synth 8-638] synthesizing module 'Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0' [F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.runs/synth_1/.Xil/Vivado-29956-DESKTOP-LF8951D/realtime/Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0' declared at 'F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.runs/synth_1/.Xil/Vivado-35992-DESKTOP-LF8951D/realtime/Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0' [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/synth/Lab2_Axi_Int_seq_sqrt.vhd:1012]
+INFO: [Synth 8-638] synthesizing module 'Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0' [F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.runs/synth_1/.Xil/Vivado-35992-DESKTOP-LF8951D/realtime/Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0_stub.vhdl:21]
 INFO: [Synth 8-256] done synthesizing module 'Lab2_Axi_Int_seq_sqrt' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/synth/Lab2_Axi_Int_seq_sqrt.vhd:622]
 INFO: [Synth 8-256] done synthesizing module 'Lab2_Axi_Int_seq_sqrt_wrapper' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/hdl/Lab2_Axi_Int_seq_sqrt_wrapper.vhd:41]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_QXJGSF is either unconnected or has no load
@@ -51,18 +51,18 @@ WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_QXJGSF is eith
 WARNING: [Synth 8-7129] Port ACLK in module Lab2_Axi_Int_seq_sqrt_ps7_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ARESETN in module Lab2_Axi_Int_seq_sqrt_ps7_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1276.652 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1275.766 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1276.652 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1275.766 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1276.652 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1275.766 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1276.652 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1275.766 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -73,9 +73,13 @@ Parsing XDC File [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_In
 Finished Parsing XDC File [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_auto_pc_0/Lab2_Axi_Int_seq_sqrt_auto_pc_0/Lab2_Axi_Int_seq_sqrt_auto_pc_0_in_context.xdc] for cell 'Lab2_Axi_Int_seq_sqrt_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0/Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0/Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0_in_context.xdc] for cell 'Lab2_Axi_Int_seq_sqrt_i/rst_ps7_0_100M'
 Finished Parsing XDC File [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0/Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0/Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0_in_context.xdc] for cell 'Lab2_Axi_Int_seq_sqrt_i/rst_ps7_0_100M'
-Parsing XDC File [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0_in_context.xdc] for cell 'Lab2_Axi_Int_seq_sqrt_i/mypi_axi_sqrt_bd_0'
-Finished Parsing XDC File [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0_in_context.xdc] for cell 'Lab2_Axi_Int_seq_sqrt_i/mypi_axi_sqrt_bd_0'
+Parsing XDC File [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2_in_context.xdc] for cell 'Lab2_Axi_Int_seq_sqrt_i/mypi_axi_sqrt_bd_0'
+Finished Parsing XDC File [f:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2_in_context.xdc] for cell 'Lab2_Axi_Int_seq_sqrt_i/mypi_axi_sqrt_bd_0'
 Parsing XDC File [F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.srcs/constrs_1/imports/ECE6740/PYNQ-Z1_C.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.srcs/constrs_1/imports/ECE6740/PYNQ-Z1_C.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.srcs/constrs_1/imports/ECE6740/PYNQ-Z1_C.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.srcs/constrs_1/imports/ECE6740/PYNQ-Z1_C.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.srcs/constrs_1/imports/ECE6740/PYNQ-Z1_C.xdc:30]
 WARNING: [Vivado 12-584] No ports matched 'ck_io[28]'. [F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.srcs/constrs_1/imports/ECE6740/PYNQ-Z1_C.xdc:108]
 WARNING: [Vivado 12-584] No ports matched 'ck_io[35]'. [F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.srcs/constrs_1/imports/ECE6740/PYNQ-Z1_C.xdc:109]
 Finished Parsing XDC File [F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.srcs/constrs_1/imports/ECE6740/PYNQ-Z1_C.xdc]
@@ -86,22 +90,22 @@ Parsing XDC File [F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_In
 Finished Parsing XDC File [F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1276.652 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1275.766 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1276.652 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1275.766 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1276.652 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1275.766 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1276.652 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1275.766 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -373,10 +377,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for Lab2_Axi_Int_seq_sqrt_i/ps7_0_axi
 Applied set_property KEEP_HIERARCHY = SOFT for Lab2_Axi_Int_seq_sqrt_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Lab2_Axi_Int_seq_sqrt_i/mypi_axi_sqrt_bd_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1276.652 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1275.766 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1276.652 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1275.766 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -403,25 +407,25 @@ WARNING: [Synth 8-7129] Port ARESETN in module Lab2_Axi_Int_seq_sqrt_ps7_0_axi_p
 WARNING: [Synth 8-7129] Port M00_ACLK in module Lab2_Axi_Int_seq_sqrt_ps7_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M00_ARESETN in module Lab2_Axi_Int_seq_sqrt_ps7_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1276.652 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1275.766 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1276.652 ; gain = 0.000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1275.766 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1276.652 ; gain = 0.000
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1275.766 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1276.652 ; gain = 0.000
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1275.766 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -439,37 +443,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1281.867 ; gain = 5.215
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1279.246 ; gain = 3.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1281.867 ; gain = 5.215
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1279.246 ; gain = 3.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1281.867 ; gain = 5.215
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1279.246 ; gain = 3.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1281.867 ; gain = 5.215
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1279.246 ; gain = 3.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1281.867 ; gain = 5.215
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1279.246 ; gain = 3.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1281.867 ; gain = 5.215
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1279.246 ; gain = 3.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -480,7 +484,7 @@ Report BlackBoxes:
 |      |BlackBox name                                |Instances |
 +------+---------------------------------------------+----------+
 |1     |Lab2_Axi_Int_seq_sqrt_auto_pc_0              |         1|
-|2     |Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0   |         1|
+|2     |Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2   |         1|
 |3     |Lab2_Axi_Int_seq_sqrt_processing_system7_0_0 |         1|
 |4     |Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0       |         1|
 +------+---------------------------------------------+----------+
@@ -490,30 +494,30 @@ Report Cell Usage:
 |      |Cell                                              |Count |
 +------+--------------------------------------------------+------+
 |1     |Lab2_Axi_Int_seq_sqrt_auto_pc_0_bbox              |     1|
-|2     |Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0_bbox   |     1|
+|2     |Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2_bbox   |     1|
 |3     |Lab2_Axi_Int_seq_sqrt_processing_system7_0_0_bbox |     1|
 |4     |Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0_bbox       |     1|
 |5     |IBUF                                              |     4|
 +------+--------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1281.867 ; gain = 5.215
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 1279.246 ; gain = 3.480
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1281.867 ; gain = 5.215
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1281.867 ; gain = 5.215
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1279.246 ; gain = 3.480
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1279.246 ; gain = 3.480
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1293.961 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1291.367 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1299.543 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1297.957 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 4884471d
+Synth Design complete, checksum: 98b3bf2b
 INFO: [Common 17-83] Releasing license: Synthesis
-39 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+39 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1299.543 ; gain = 22.891
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1297.957 ; gain = 22.191
 INFO: [Common 17-1381] The checkpoint 'F:/MastersProgram/ECE6740/Labs/Lab2/PartB/PartB_Inter/PartB_Inter.runs/synth_1/Lab2_Axi_Int_seq_sqrt_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Lab2_Axi_Int_seq_sqrt_wrapper_utilization_synth.rpt -pb Lab2_Axi_Int_seq_sqrt_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Feb  4 14:29:22 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  5 15:07:17 2024...

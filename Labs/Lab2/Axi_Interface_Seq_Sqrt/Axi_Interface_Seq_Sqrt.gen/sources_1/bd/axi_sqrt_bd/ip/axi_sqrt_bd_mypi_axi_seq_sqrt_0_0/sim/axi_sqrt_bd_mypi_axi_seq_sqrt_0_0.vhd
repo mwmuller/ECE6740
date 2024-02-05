@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:mypi_axi_seq_sqrt:1.0
--- IP Revision: 1
+-- IP Revision: 7
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -55,6 +55,10 @@ USE ieee.numeric_std.ALL;
 
 ENTITY axi_sqrt_bd_mypi_axi_seq_sqrt_0_0 IS
   PORT (
+    S_ROOT_IN : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    S_DIN_IN : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    s00_axi_aclk : IN STD_LOGIC;
+    s00_axi_aresetn : IN STD_LOGIC;
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     s00_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     s00_axi_awvalid : IN STD_LOGIC;
@@ -73,9 +77,7 @@ ENTITY axi_sqrt_bd_mypi_axi_seq_sqrt_0_0 IS
     s00_axi_rdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     s00_axi_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     s00_axi_rvalid : OUT STD_LOGIC;
-    s00_axi_rready : IN STD_LOGIC;
-    s00_axi_aclk : IN STD_LOGIC;
-    s00_axi_aresetn : IN STD_LOGIC
+    s00_axi_rready : IN STD_LOGIC
   );
 END axi_sqrt_bd_mypi_axi_seq_sqrt_0_0;
 
@@ -88,6 +90,10 @@ ARCHITECTURE axi_sqrt_bd_mypi_axi_seq_sqrt_0_0_arch OF axi_sqrt_bd_mypi_axi_seq_
       C_S00_AXI_ADDR_WIDTH : INTEGER
     );
     PORT (
+      S_ROOT_IN : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+      S_DIN_IN : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+      s00_axi_aclk : IN STD_LOGIC;
+      s00_axi_aresetn : IN STD_LOGIC;
       s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       s00_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
       s00_axi_awvalid : IN STD_LOGIC;
@@ -106,9 +112,7 @@ ARCHITECTURE axi_sqrt_bd_mypi_axi_seq_sqrt_0_0_arch OF axi_sqrt_bd_mypi_axi_seq_
       s00_axi_rdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       s00_axi_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
       s00_axi_rvalid : OUT STD_LOGIC;
-      s00_axi_rready : IN STD_LOGIC;
-      s00_axi_aclk : IN STD_LOGIC;
-      s00_axi_aresetn : IN STD_LOGIC
+      s00_axi_rready : IN STD_LOGIC
     );
   END COMPONENT mypi_axi_seq_sqrt_v1_0;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -145,6 +149,10 @@ BEGIN
       C_S00_AXI_ADDR_WIDTH => 4
     )
     PORT MAP (
+      S_ROOT_IN => S_ROOT_IN,
+      S_DIN_IN => S_DIN_IN,
+      s00_axi_aclk => s00_axi_aclk,
+      s00_axi_aresetn => s00_axi_aresetn,
       s00_axi_awaddr => s00_axi_awaddr,
       s00_axi_awprot => s00_axi_awprot,
       s00_axi_awvalid => s00_axi_awvalid,
@@ -163,8 +171,6 @@ BEGIN
       s00_axi_rdata => s00_axi_rdata,
       s00_axi_rresp => s00_axi_rresp,
       s00_axi_rvalid => s00_axi_rvalid,
-      s00_axi_rready => s00_axi_rready,
-      s00_axi_aclk => s00_axi_aclk,
-      s00_axi_aresetn => s00_axi_aresetn
+      s00_axi_rready => s00_axi_rready
     );
 END axi_sqrt_bd_mypi_axi_seq_sqrt_0_0_arch;

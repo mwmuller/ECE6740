@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
---Date        : Sun Feb  4 14:26:57 2024
+--Date        : Mon Feb  5 15:04:48 2024
 --Host        : DESKTOP-LF8951D running 64-bit major release  (build 9200)
 --Command     : generate_target axi_sqrt_bd_wrapper.bd
 --Design      : axi_sqrt_bd_wrapper
@@ -44,6 +44,7 @@ architecture STRUCTURE of axi_sqrt_bd_wrapper is
   port (
     btn : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s00_axi_aclk_0 : in STD_LOGIC;
+    done_int : out STD_LOGIC;
     s00_axi_aresetn_0 : in STD_LOGIC;
     S00_AXI_0_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
     S00_AXI_0_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -63,8 +64,7 @@ architecture STRUCTURE of axi_sqrt_bd_wrapper is
     S00_AXI_0_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     S00_AXI_0_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     S00_AXI_0_rvalid : out STD_LOGIC;
-    S00_AXI_0_rready : in STD_LOGIC;
-    done_int : out STD_LOGIC
+    S00_AXI_0_rready : in STD_LOGIC
   );
   end component axi_sqrt_bd;
 begin

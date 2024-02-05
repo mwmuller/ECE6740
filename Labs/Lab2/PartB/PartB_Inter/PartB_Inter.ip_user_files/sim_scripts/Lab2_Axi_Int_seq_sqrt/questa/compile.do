@@ -67,21 +67,21 @@ vcom -work proc_sys_reset_v5_0_13  -93 \
 
 vcom -work xil_defaultlib  -93 \
 "../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0/sim/Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0.vhd" \
-"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/clkdiv.vhd" \
-"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/clock_pulse.vhd" \
-"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/regr.vhd" \
-"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/seqRead16.vhd" \
-"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/seqdeta.vhd" \
-"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/sqrt.vhd" \
-"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/sqrtPath.vhd" \
-"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/sqrtctl.vhd" \
-"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/seqdeta_top.vhd" \
-"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/sim/axi_sqrt_bd_mypi_seqdeta_top_0_0.vhd" \
-"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_axi_seq_sqrt_0_0/hdl/mypi_axi_seq_sqrt_v1_0_S00_AXI.vhd" \
-"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_axi_seq_sqrt_0_0/hdl/mypi_axi_seq_sqrt_v1_0.vhd" \
-"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/src/axi_sqrt_bd_mypi_axi_seq_sqrt_0_0/sim/axi_sqrt_bd_mypi_axi_seq_sqrt_0_0.vhd" \
-"../../../bd/Lab2_Axi_Int_seq_sqrt/ipshared/52bb/sim/axi_sqrt_bd.vhd" \
-"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/sim/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/clkdiv.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/clock_pulse.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/regr.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/seqRead16.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/seqdeta.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/sqrt.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/sqrtPath.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/sqrtctl.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/src/seqdeta_top.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/src/axi_sqrt_bd_mypi_seqdeta_top_0_0/sim/axi_sqrt_bd_mypi_seqdeta_top_0_0.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/src/axi_sqrt_bd_mypi_axi_seq_sqrt_0_0/hdl/mypi_axi_seq_sqrt_v1_0_S00_AXI.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/src/axi_sqrt_bd_mypi_axi_seq_sqrt_0_0/hdl/mypi_axi_seq_sqrt_v1_0.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/src/axi_sqrt_bd_mypi_axi_seq_sqrt_0_0/sim/axi_sqrt_bd_mypi_axi_seq_sqrt_0_0.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ipshared/f5bd/sim/axi_sqrt_bd.vhd" \
+"../../../bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/sim/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2.vhd" \
 
 vlog -work generic_baseblocks_v2_1_0  -incr -mfcu "+incdir+../../../../PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/ipshared/ec67/hdl" "+incdir+../../../../PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/ipshared/5765/hdl" "+incdir+F:/Xilinx/Vivado/2022.1/data/xilinx_vip/include" \
 "../../../../PartB_Inter.gen/sources_1/bd/Lab2_Axi_Int_seq_sqrt/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \

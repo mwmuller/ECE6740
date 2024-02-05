@@ -26,6 +26,6 @@ begin
 		end if;
 	end process;
 
-	clk190 <= q(17);	-- 190 Hz
+	clk190 <= q(19);	-- 190 Hz
 
 end clkdiv;

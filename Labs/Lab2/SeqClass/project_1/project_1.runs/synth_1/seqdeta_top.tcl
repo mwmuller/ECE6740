@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -83,7 +82,12 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
 set_property ip_repo_paths {
-  f:/mastersprogram/ece6740/labs/lab2/seqclass/project_1/project_1.srcs
+  f:/MastersProgram/ECE6740/IPRepo/Axi_InterfaceLab2_seq_sqrt/mypi_axi_seq_sqrt_1.0
+  f:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/ip_repo/myip_1.0
+  f:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/ip_repo/myip_axi_interface_seq_sqrt_1.0
+  f:/MastersProgram/ECE6740/IPRepo/Axi_Seq_Sqrt/myip_axi_seq_sqrt_1.0
+  f:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/ip_repo/mypi_seq_sqrt_1.0
+  f:/MastersProgram/ECE6740/Labs/Lab2/SeqClass/project_1/project_1.srcs
   f:/MastersProgram/ECE6740/IPRepo
 } [current_project]
 update_ip_catalog

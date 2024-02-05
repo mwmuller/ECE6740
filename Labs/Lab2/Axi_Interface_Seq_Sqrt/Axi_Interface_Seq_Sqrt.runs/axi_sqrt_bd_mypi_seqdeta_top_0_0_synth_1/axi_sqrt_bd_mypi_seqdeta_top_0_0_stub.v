@@ -1,7 +1,7 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-// Date        : Sun Feb  4 14:26:19 2024
+// Date        : Mon Feb  5 15:05:28 2024
 // Host        : DESKTOP-LF8951D running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ axi_sqrt_bd_mypi_seqdeta_top_0_0_stub.v
@@ -14,10 +14,11 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* x_core_info = "seqdeta_top,Vivado 2022.1" *)
-module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix(mclk, clr, btn, done)
-/* synthesis syn_black_box black_box_pad_pin="mclk,clr,btn[3:0],done" */;
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix(mclk, btn, root, din, done)
+/* synthesis syn_black_box black_box_pad_pin="mclk,btn[3:0],root[7:0],din[15:0],done" */;
   input mclk;
-  input clr;
   input [3:0]btn;
+  output [7:0]root;
+  output [15:0]din;
   output done;
 endmodule

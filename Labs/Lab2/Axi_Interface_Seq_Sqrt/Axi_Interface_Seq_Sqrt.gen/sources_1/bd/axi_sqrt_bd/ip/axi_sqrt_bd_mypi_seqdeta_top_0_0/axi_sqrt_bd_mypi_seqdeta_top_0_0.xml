@@ -17,11 +17,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Feb 04 19:25:40 UTC 2024</spirit:value>
+            <spirit:value>Mon Feb 05 20:04:48 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:16b162de</spirit:value>
+            <spirit:value>9:4dcee7cf</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -32,7 +32,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:16b162de</spirit:value>
+            <spirit:value>9:4dcee7cf</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -48,11 +48,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Feb 04 19:25:40 UTC 2024</spirit:value>
+            <spirit:value>Mon Feb 05 20:04:48 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:16b162de</spirit:value>
+            <spirit:value>9:4dcee7cf</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -67,11 +67,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Feb 04 19:25:40 UTC 2024</spirit:value>
+            <spirit:value>Mon Feb 05 20:04:48 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c2000ba1</spirit:value>
+            <spirit:value>9:1d2d7e7e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -87,11 +87,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Feb 04 19:25:40 UTC 2024</spirit:value>
+            <spirit:value>Mon Feb 05 20:04:48 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c2000ba1</spirit:value>
+            <spirit:value>9:1d2d7e7e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -105,11 +105,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sun Feb 04 19:26:20 UTC 2024</spirit:value>
+            <spirit:value>Mon Feb 05 20:05:28 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:16b162de</spirit:value>
+            <spirit:value>9:4dcee7cf</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -129,19 +129,6 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>clr</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic</spirit:typeName>
-              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
         <spirit:name>btn</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
@@ -152,6 +139,40 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>root</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>din</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
               <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
               <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
@@ -181,39 +202,39 @@
         <spirit:userFileType>xdc</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/614c/src/clkdiv.vhd</spirit:name>
+        <spirit:name>../../ipshared/e8d9/src/clkdiv.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/614c/src/clock_pulse.vhd</spirit:name>
+        <spirit:name>../../ipshared/e8d9/src/clock_pulse.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/614c/src/regr.vhd</spirit:name>
+        <spirit:name>../../ipshared/e8d9/src/regr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/614c/src/seqRead16.vhd</spirit:name>
+        <spirit:name>../../ipshared/e8d9/src/seqRead16.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/614c/src/seqdeta.vhd</spirit:name>
+        <spirit:name>../../ipshared/e8d9/src/seqdeta.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/614c/src/sqrt.vhd</spirit:name>
+        <spirit:name>../../ipshared/e8d9/src/sqrt.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/614c/src/sqrtPath.vhd</spirit:name>
+        <spirit:name>../../ipshared/e8d9/src/sqrtPath.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/614c/src/sqrtctl.vhd</spirit:name>
+        <spirit:name>../../ipshared/e8d9/src/sqrtctl.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/614c/src/seqdeta_top.vhd</spirit:name>
+        <spirit:name>../../ipshared/e8d9/src/seqdeta_top.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -228,39 +249,39 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/614c/src/clkdiv.vhd</spirit:name>
+        <spirit:name>../../ipshared/e8d9/src/clkdiv.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/614c/src/clock_pulse.vhd</spirit:name>
+        <spirit:name>../../ipshared/e8d9/src/clock_pulse.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/614c/src/regr.vhd</spirit:name>
+        <spirit:name>../../ipshared/e8d9/src/regr.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/614c/src/seqRead16.vhd</spirit:name>
+        <spirit:name>../../ipshared/e8d9/src/seqRead16.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/614c/src/seqdeta.vhd</spirit:name>
+        <spirit:name>../../ipshared/e8d9/src/seqdeta.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/614c/src/sqrt.vhd</spirit:name>
+        <spirit:name>../../ipshared/e8d9/src/sqrt.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/614c/src/sqrtPath.vhd</spirit:name>
+        <spirit:name>../../ipshared/e8d9/src/sqrtPath.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/614c/src/sqrtctl.vhd</spirit:name>
+        <spirit:name>../../ipshared/e8d9/src/sqrtctl.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/614c/src/seqdeta_top.vhd</spirit:name>
+        <spirit:name>../../ipshared/e8d9/src/seqdeta_top.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -320,12 +341,12 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>mypi_seqdeta_top</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreRevision>8</xilinx:coreRevision>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2022.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="f68a2d8e"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="94f73a0e"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3c5f609c"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="06f310d1"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="4701d901"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

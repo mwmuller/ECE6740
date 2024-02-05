@@ -1,7 +1,7 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-// Date        : Sun Feb  4 14:26:20 2024
+// Date        : Mon Feb  5 15:05:28 2024
 // Host        : DESKTOP-LF8951D running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ip/axi_sqrt_bd_mypi_seqdeta_top_0_0/axi_sqrt_bd_mypi_seqdeta_top_0_0_sim_netlist.v
@@ -17,37 +17,41 @@
 (* NotValidForBitStream *)
 module axi_sqrt_bd_mypi_seqdeta_top_0_0
    (mclk,
-    clr,
     btn,
+    root,
+    din,
     done);
   input mclk;
-  input clr;
   input [3:0]btn;
+  output [7:0]root;
+  output [15:0]din;
   output done;
 
   wire [3:0]btn;
-  wire clr;
+  wire [15:0]din;
   wire done;
   wire mclk;
+  wire [7:0]root;
 
   axi_sqrt_bd_mypi_seqdeta_top_0_0_seqdeta_top U0
-       (.btn({1'b0,1'b0,btn[1:0]}),
-        .clr(clr),
+       (.btn({btn[3],1'b0,btn[1:0]}),
+        .din(din),
         .done(done),
-        .mclk(mclk));
+        .mclk(mclk),
+        .root(root));
 endmodule
 
 (* ORIG_REF_NAME = "clkdiv" *) 
 module axi_sqrt_bd_mypi_seqdeta_top_0_0_clkdiv
    (S,
     mclk,
-    clr);
+    btn);
   output [0:0]S;
   input mclk;
-  input clr;
+  input [0:0]btn;
 
   wire [0:0]S;
-  wire clr;
+  wire [0:0]btn;
   wire mclk;
   wire \q[0]_i_2_n_0 ;
   wire \q_reg[0]_i_1_n_0 ;
@@ -113,7 +117,7 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_clkdiv
   FDCE \q_reg[0] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn),
         .D(\q_reg[0]_i_1_n_7 ),
         .Q(\q_reg_n_0_[0] ));
   CARRY4 \q_reg[0]_i_1 
@@ -126,19 +130,19 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_clkdiv
   FDCE \q_reg[10] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn),
         .D(\q_reg[8]_i_1_n_5 ),
         .Q(\q_reg_n_0_[10] ));
   FDCE \q_reg[11] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn),
         .D(\q_reg[8]_i_1_n_4 ),
         .Q(\q_reg_n_0_[11] ));
   FDCE \q_reg[12] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn),
         .D(\q_reg[12]_i_1_n_7 ),
         .Q(\q_reg_n_0_[12] ));
   CARRY4 \q_reg[12]_i_1 
@@ -151,25 +155,25 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_clkdiv
   FDCE \q_reg[13] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn),
         .D(\q_reg[12]_i_1_n_6 ),
         .Q(\q_reg_n_0_[13] ));
   FDCE \q_reg[14] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn),
         .D(\q_reg[12]_i_1_n_5 ),
         .Q(\q_reg_n_0_[14] ));
   FDCE \q_reg[15] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn),
         .D(\q_reg[12]_i_1_n_4 ),
         .Q(\q_reg_n_0_[15] ));
   FDCE \q_reg[16] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn),
         .D(\q_reg[16]_i_1_n_7 ),
         .Q(\q_reg_n_0_[16] ));
   CARRY4 \q_reg[16]_i_1 
@@ -182,31 +186,31 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_clkdiv
   FDCE \q_reg[17] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn),
         .D(\q_reg[16]_i_1_n_6 ),
         .Q(S));
   FDCE \q_reg[1] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn),
         .D(\q_reg[0]_i_1_n_6 ),
         .Q(\q_reg_n_0_[1] ));
   FDCE \q_reg[2] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn),
         .D(\q_reg[0]_i_1_n_5 ),
         .Q(\q_reg_n_0_[2] ));
   FDCE \q_reg[3] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn),
         .D(\q_reg[0]_i_1_n_4 ),
         .Q(\q_reg_n_0_[3] ));
   FDCE \q_reg[4] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn),
         .D(\q_reg[4]_i_1_n_7 ),
         .Q(\q_reg_n_0_[4] ));
   CARRY4 \q_reg[4]_i_1 
@@ -219,25 +223,25 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_clkdiv
   FDCE \q_reg[5] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn),
         .D(\q_reg[4]_i_1_n_6 ),
         .Q(\q_reg_n_0_[5] ));
   FDCE \q_reg[6] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn),
         .D(\q_reg[4]_i_1_n_5 ),
         .Q(\q_reg_n_0_[6] ));
   FDCE \q_reg[7] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn),
         .D(\q_reg[4]_i_1_n_4 ),
         .Q(\q_reg_n_0_[7] ));
   FDCE \q_reg[8] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn),
         .D(\q_reg[8]_i_1_n_7 ),
         .Q(\q_reg_n_0_[8] ));
   CARRY4 \q_reg[8]_i_1 
@@ -250,55 +254,52 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_clkdiv
   FDCE \q_reg[9] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn),
         .D(\q_reg[8]_i_1_n_6 ),
         .Q(\q_reg_n_0_[9] ));
 endmodule
 
 (* ORIG_REF_NAME = "clock_pulse" *) 
 module axi_sqrt_bd_mypi_seqdeta_top_0_0_clock_pulse
-   (clk,
+   (outp,
     btn,
-    S,
-    clr);
-  output clk;
-  input [0:0]btn;
+    S);
+  output outp;
+  input [1:0]btn;
   input [0:0]S;
-  input clr;
 
   wire [0:0]S;
-  wire [0:0]btn;
-  wire clk;
-  wire clr;
+  wire [1:0]btn;
   wire delay1;
   wire delay2;
   wire delay3;
+  wire outp;
 
-  LUT3 #(
-    .INIT(8'h40)) 
-    \FSM_sequential_present_state[2]_i_1 
-       (.I0(delay3),
-        .I1(delay1),
-        .I2(delay2),
-        .O(clk));
   FDCE delay1_reg
        (.C(S),
         .CE(1'b1),
-        .CLR(clr),
-        .D(btn),
+        .CLR(btn[1]),
+        .D(btn[0]),
         .Q(delay1));
   FDCE delay2_reg
        (.C(S),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn[1]),
         .D(delay1),
         .Q(delay2));
   FDCE delay3_reg
        (.C(S),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn[1]),
         .D(delay2),
         .Q(delay3));
+  LUT3 #(
+    .INIT(8'h08)) 
+    \register_data[15]_i_2 
+       (.I0(delay2),
+        .I1(delay1),
+        .I2(delay3),
+        .O(outp));
 endmodule
 
 (* ORIG_REF_NAME = "regr" *) 
@@ -307,26 +308,26 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_regr
     Q,
     \q_reg[15]_0 ,
     out,
-    E,
-    D,
+    \q_reg[0]_0 ,
+    din,
     mclk,
-    clr);
+    btn);
   output [3:0]DI;
   output [15:0]Q;
   output [3:0]\q_reg[15]_0 ;
   input [15:0]out;
-  input [0:0]E;
-  input [15:0]D;
+  input [0:0]\q_reg[0]_0 ;
+  input [15:0]din;
   input mclk;
-  input clr;
+  input [0:0]btn;
 
-  wire [15:0]D;
   wire [3:0]DI;
-  wire [0:0]E;
   wire [15:0]Q;
-  wire clr;
+  wire [0:0]btn;
+  wire [15:0]din;
   wire mclk;
   wire [15:0]out;
+  wire [0:0]\q_reg[0]_0 ;
   wire [3:0]\q_reg[15]_0 ;
 
   LUT4 #(
@@ -395,99 +396,99 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_regr
         .O(DI[0]));
   FDCE \q_reg[0] 
        (.C(mclk),
-        .CE(E),
-        .CLR(clr),
-        .D(D[0]),
+        .CE(\q_reg[0]_0 ),
+        .CLR(btn),
+        .D(din[0]),
         .Q(Q[0]));
   FDCE \q_reg[10] 
        (.C(mclk),
-        .CE(E),
-        .CLR(clr),
-        .D(D[10]),
+        .CE(\q_reg[0]_0 ),
+        .CLR(btn),
+        .D(din[10]),
         .Q(Q[10]));
   FDCE \q_reg[11] 
        (.C(mclk),
-        .CE(E),
-        .CLR(clr),
-        .D(D[11]),
+        .CE(\q_reg[0]_0 ),
+        .CLR(btn),
+        .D(din[11]),
         .Q(Q[11]));
   FDCE \q_reg[12] 
        (.C(mclk),
-        .CE(E),
-        .CLR(clr),
-        .D(D[12]),
+        .CE(\q_reg[0]_0 ),
+        .CLR(btn),
+        .D(din[12]),
         .Q(Q[12]));
   FDCE \q_reg[13] 
        (.C(mclk),
-        .CE(E),
-        .CLR(clr),
-        .D(D[13]),
+        .CE(\q_reg[0]_0 ),
+        .CLR(btn),
+        .D(din[13]),
         .Q(Q[13]));
   FDCE \q_reg[14] 
        (.C(mclk),
-        .CE(E),
-        .CLR(clr),
-        .D(D[14]),
+        .CE(\q_reg[0]_0 ),
+        .CLR(btn),
+        .D(din[14]),
         .Q(Q[14]));
   FDCE \q_reg[15] 
        (.C(mclk),
-        .CE(E),
-        .CLR(clr),
-        .D(D[15]),
+        .CE(\q_reg[0]_0 ),
+        .CLR(btn),
+        .D(din[15]),
         .Q(Q[15]));
   FDCE \q_reg[1] 
        (.C(mclk),
-        .CE(E),
-        .CLR(clr),
-        .D(D[1]),
+        .CE(\q_reg[0]_0 ),
+        .CLR(btn),
+        .D(din[1]),
         .Q(Q[1]));
   FDCE \q_reg[2] 
        (.C(mclk),
-        .CE(E),
-        .CLR(clr),
-        .D(D[2]),
+        .CE(\q_reg[0]_0 ),
+        .CLR(btn),
+        .D(din[2]),
         .Q(Q[2]));
   FDCE \q_reg[3] 
        (.C(mclk),
-        .CE(E),
-        .CLR(clr),
-        .D(D[3]),
+        .CE(\q_reg[0]_0 ),
+        .CLR(btn),
+        .D(din[3]),
         .Q(Q[3]));
   FDCE \q_reg[4] 
        (.C(mclk),
-        .CE(E),
-        .CLR(clr),
-        .D(D[4]),
+        .CE(\q_reg[0]_0 ),
+        .CLR(btn),
+        .D(din[4]),
         .Q(Q[4]));
   FDCE \q_reg[5] 
        (.C(mclk),
-        .CE(E),
-        .CLR(clr),
-        .D(D[5]),
+        .CE(\q_reg[0]_0 ),
+        .CLR(btn),
+        .D(din[5]),
         .Q(Q[5]));
   FDCE \q_reg[6] 
        (.C(mclk),
-        .CE(E),
-        .CLR(clr),
-        .D(D[6]),
+        .CE(\q_reg[0]_0 ),
+        .CLR(btn),
+        .D(din[6]),
         .Q(Q[6]));
   FDCE \q_reg[7] 
        (.C(mclk),
-        .CE(E),
-        .CLR(clr),
-        .D(D[7]),
+        .CE(\q_reg[0]_0 ),
+        .CLR(btn),
+        .D(din[7]),
         .Q(Q[7]));
   FDCE \q_reg[8] 
        (.C(mclk),
-        .CE(E),
-        .CLR(clr),
-        .D(D[8]),
+        .CE(\q_reg[0]_0 ),
+        .CLR(btn),
+        .D(din[8]),
         .Q(Q[8]));
   FDCE \q_reg[9] 
        (.C(mclk),
-        .CE(E),
-        .CLR(clr),
-        .D(D[9]),
+        .CE(\q_reg[0]_0 ),
+        .CLR(btn),
+        .D(din[9]),
         .Q(Q[9]));
 endmodule
 
@@ -497,9 +498,9 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_regr__parameterized1
     S,
     \q_reg[15]_0 ,
     \q_reg[16]_0 ,
-    \q_reg[16]_1 ,
+    dld,
     mclk,
-    clr,
+    btn,
     O,
     \q_reg[8]_0 ,
     Q,
@@ -508,9 +509,9 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_regr__parameterized1
   output [3:0]S;
   output [3:0]\q_reg[15]_0 ;
   output [0:0]\q_reg[16]_0 ;
-  input [0:0]\q_reg[16]_1 ;
+  input dld;
   input mclk;
-  input clr;
+  input [0:0]btn;
   input [3:0]O;
   input [3:0]\q_reg[8]_0 ;
   input [15:0]Q;
@@ -520,10 +521,11 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_regr__parameterized1
   wire [3:0]O;
   wire [15:0]Q;
   wire [3:0]S;
-  wire clr;
+  wire [0:0]btn;
+  wire dld;
   wire mclk;
   wire [15:0]out;
-  wire \q[0]_i_1_n_0 ;
+  wire \q[0]_i_1__0_n_0 ;
   wire [16:16]q_reg;
   wire \q_reg[13]_i_1_n_1 ;
   wire \q_reg[13]_i_1_n_2 ;
@@ -534,7 +536,6 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_regr__parameterized1
   wire \q_reg[13]_i_1_n_7 ;
   wire [3:0]\q_reg[15]_0 ;
   wire [0:0]\q_reg[16]_0 ;
-  wire [0:0]\q_reg[16]_1 ;
   wire [3:0]\q_reg[8]_0 ;
   wire \q_reg[9]_i_1_n_0 ;
   wire \q_reg[9]_i_1_n_1 ;
@@ -617,37 +618,37 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_regr__parameterized1
         .O(S[0]));
   LUT1 #(
     .INIT(2'h1)) 
-    \q[0]_i_1 
+    \q[0]_i_1__0 
        (.I0(out[0]),
-        .O(\q[0]_i_1_n_0 ));
+        .O(\q[0]_i_1__0_n_0 ));
   FDPE \q_reg[0] 
        (.C(mclk),
-        .CE(\q_reg[16]_1 ),
-        .D(\q[0]_i_1_n_0 ),
-        .PRE(clr),
+        .CE(dld),
+        .D(\q[0]_i_1__0_n_0 ),
+        .PRE(btn),
         .Q(out[0]));
   FDCE \q_reg[10] 
        (.C(mclk),
-        .CE(\q_reg[16]_1 ),
-        .CLR(clr),
+        .CE(dld),
+        .CLR(btn),
         .D(\q_reg[9]_i_1_n_6 ),
         .Q(out[10]));
   FDCE \q_reg[11] 
        (.C(mclk),
-        .CE(\q_reg[16]_1 ),
-        .CLR(clr),
+        .CE(dld),
+        .CLR(btn),
         .D(\q_reg[9]_i_1_n_5 ),
         .Q(out[11]));
   FDCE \q_reg[12] 
        (.C(mclk),
-        .CE(\q_reg[16]_1 ),
-        .CLR(clr),
+        .CE(dld),
+        .CLR(btn),
         .D(\q_reg[9]_i_1_n_4 ),
         .Q(out[12]));
   FDCE \q_reg[13] 
        (.C(mclk),
-        .CE(\q_reg[16]_1 ),
-        .CLR(clr),
+        .CE(dld),
+        .CLR(btn),
         .D(\q_reg[13]_i_1_n_7 ),
         .Q(out[13]));
   (* ADDER_THRESHOLD = "11" *) 
@@ -660,74 +661,74 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_regr__parameterized1
         .S({q_reg,out[15:13]}));
   FDCE \q_reg[14] 
        (.C(mclk),
-        .CE(\q_reg[16]_1 ),
-        .CLR(clr),
+        .CE(dld),
+        .CLR(btn),
         .D(\q_reg[13]_i_1_n_6 ),
         .Q(out[14]));
   FDCE \q_reg[15] 
        (.C(mclk),
-        .CE(\q_reg[16]_1 ),
-        .CLR(clr),
+        .CE(dld),
+        .CLR(btn),
         .D(\q_reg[13]_i_1_n_5 ),
         .Q(out[15]));
   FDCE \q_reg[16] 
        (.C(mclk),
-        .CE(\q_reg[16]_1 ),
-        .CLR(clr),
+        .CE(dld),
+        .CLR(btn),
         .D(\q_reg[13]_i_1_n_4 ),
         .Q(q_reg));
   FDCE \q_reg[1] 
        (.C(mclk),
-        .CE(\q_reg[16]_1 ),
-        .CLR(clr),
+        .CE(dld),
+        .CLR(btn),
         .D(O[0]),
         .Q(out[1]));
   FDCE \q_reg[2] 
        (.C(mclk),
-        .CE(\q_reg[16]_1 ),
-        .CLR(clr),
+        .CE(dld),
+        .CLR(btn),
         .D(O[1]),
         .Q(out[2]));
   FDCE \q_reg[3] 
        (.C(mclk),
-        .CE(\q_reg[16]_1 ),
-        .CLR(clr),
+        .CE(dld),
+        .CLR(btn),
         .D(O[2]),
         .Q(out[3]));
   FDCE \q_reg[4] 
        (.C(mclk),
-        .CE(\q_reg[16]_1 ),
-        .CLR(clr),
+        .CE(dld),
+        .CLR(btn),
         .D(O[3]),
         .Q(out[4]));
   FDCE \q_reg[5] 
        (.C(mclk),
-        .CE(\q_reg[16]_1 ),
-        .CLR(clr),
+        .CE(dld),
+        .CLR(btn),
         .D(\q_reg[8]_0 [0]),
         .Q(out[5]));
   FDCE \q_reg[6] 
        (.C(mclk),
-        .CE(\q_reg[16]_1 ),
-        .CLR(clr),
+        .CE(dld),
+        .CLR(btn),
         .D(\q_reg[8]_0 [1]),
         .Q(out[6]));
   FDCE \q_reg[7] 
        (.C(mclk),
-        .CE(\q_reg[16]_1 ),
-        .CLR(clr),
+        .CE(dld),
+        .CLR(btn),
         .D(\q_reg[8]_0 [2]),
         .Q(out[7]));
   FDCE \q_reg[8] 
        (.C(mclk),
-        .CE(\q_reg[16]_1 ),
-        .CLR(clr),
+        .CE(dld),
+        .CLR(btn),
         .D(\q_reg[8]_0 [3]),
         .Q(out[8]));
   FDCE \q_reg[9] 
        (.C(mclk),
-        .CE(\q_reg[16]_1 ),
-        .CLR(clr),
+        .CE(dld),
+        .CLR(btn),
         .D(\q_reg[9]_i_1_n_7 ),
         .Q(out[9]));
   (* ADDER_THRESHOLD = "11" *) 
@@ -742,37 +743,47 @@ endmodule
 
 (* ORIG_REF_NAME = "regr" *) 
 module axi_sqrt_bd_mypi_seqdeta_top_0_0_regr__parameterized3
-   (O,
+   (D,
+    O,
     CO,
     \q_reg[8]_0 ,
     out,
-    \q_reg[8]_1 ,
+    dld,
     mclk,
-    clr);
+    btn);
+  output [7:0]D;
   output [3:0]O;
   output [0:0]CO;
   output [3:0]\q_reg[8]_0 ;
   input [8:0]out;
-  input [0:0]\q_reg[8]_1 ;
+  input dld;
   input mclk;
-  input clr;
+  input [0:0]btn;
 
   wire [0:0]CO;
+  wire [7:0]D;
+  wire [8:1]L;
   wire [3:0]O;
-  wire clr;
+  wire [0:0]btn;
+  wire dld;
   wire mclk;
   wire [8:0]out;
-  wire [8:1]plusOp;
+  wire [8:7]plusOp;
   wire \q[1]_i_2_n_0 ;
   wire \q[1]_i_3_n_0 ;
   wire \q[1]_i_4_n_0 ;
   wire \q[1]_i_5_n_0 ;
+  wire \q[2]_i_1_n_0 ;
+  wire \q[3]_i_1_n_0 ;
+  wire \q[4]_i_1_n_0 ;
+  wire \q[5]_i_1_n_0 ;
   wire \q[5]_i_2_n_0 ;
   wire \q[5]_i_3_n_0 ;
   wire \q[5]_i_4_n_0 ;
   wire \q[5]_i_5_n_0 ;
+  wire \q[6]_i_1__0_n_0 ;
+  wire \q[7]_i_2_n_0 ;
   wire \q[8]_i_3_n_0 ;
-  wire [8:1]q_reg;
   wire \q_reg[1]_i_1_n_0 ;
   wire \q_reg[1]_i_1_n_1 ;
   wire \q_reg[1]_i_1_n_2 ;
@@ -781,230 +792,363 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_regr__parameterized3
   wire \q_reg[5]_i_1_n_2 ;
   wire \q_reg[5]_i_1_n_3 ;
   wire [3:0]\q_reg[8]_0 ;
-  wire [0:0]\q_reg[8]_1 ;
 
   LUT1 #(
     .INIT(2'h1)) 
+    \q[0]_i_1 
+       (.I0(L[1]),
+        .O(D[0]));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT2 #(
+    .INIT(4'h9)) 
     \q[1]_i_1 
-       (.I0(q_reg[1]),
-        .O(plusOp[1]));
+       (.I0(L[2]),
+        .I1(L[1]),
+        .O(D[1]));
   LUT2 #(
     .INIT(4'h6)) 
     \q[1]_i_2 
-       (.I0(q_reg[4]),
+       (.I0(L[4]),
         .I1(out[4]),
         .O(\q[1]_i_2_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
     \q[1]_i_3 
-       (.I0(q_reg[3]),
+       (.I0(L[3]),
         .I1(out[3]),
         .O(\q[1]_i_3_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
     \q[1]_i_4 
-       (.I0(q_reg[2]),
+       (.I0(L[2]),
         .I1(out[2]),
         .O(\q[1]_i_4_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
     \q[1]_i_5 
-       (.I0(q_reg[1]),
+       (.I0(L[1]),
         .I1(out[1]),
         .O(\q[1]_i_5_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \q[2]_i_1 
-       (.I0(q_reg[1]),
-        .I1(q_reg[2]),
-        .O(plusOp[2]));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+       (.I0(L[1]),
+        .I1(L[2]),
+        .O(\q[2]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
-    .INIT(8'h78)) 
+    .INIT(8'hA9)) 
+    \q[2]_i_1__0 
+       (.I0(L[3]),
+        .I1(L[2]),
+        .I2(L[1]),
+        .O(D[2]));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  LUT3 #(
+    .INIT(8'h6A)) 
     \q[3]_i_1 
-       (.I0(q_reg[2]),
-        .I1(q_reg[1]),
-        .I2(q_reg[3]),
-        .O(plusOp[3]));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+       (.I0(L[3]),
+        .I1(L[2]),
+        .I2(L[1]),
+        .O(\q[3]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT4 #(
-    .INIT(16'h7F80)) 
+    .INIT(16'hAAA9)) 
+    \q[3]_i_1__0 
+       (.I0(L[4]),
+        .I1(L[1]),
+        .I2(L[2]),
+        .I3(L[3]),
+        .O(D[3]));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  LUT4 #(
+    .INIT(16'h6AAA)) 
     \q[4]_i_1 
-       (.I0(q_reg[3]),
-        .I1(q_reg[1]),
-        .I2(q_reg[2]),
-        .I3(q_reg[4]),
-        .O(plusOp[4]));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+       (.I0(L[4]),
+        .I1(L[3]),
+        .I2(L[1]),
+        .I3(L[2]),
+        .O(\q[4]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT5 #(
-    .INIT(32'h7FFF8000)) 
+    .INIT(32'hAAAAAAA9)) 
+    \q[4]_i_1__0 
+       (.I0(L[5]),
+        .I1(L[3]),
+        .I2(L[2]),
+        .I3(L[1]),
+        .I4(L[4]),
+        .O(D[4]));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT5 #(
+    .INIT(32'h6AAAAAAA)) 
     \q[5]_i_1 
-       (.I0(q_reg[4]),
-        .I1(q_reg[2]),
-        .I2(q_reg[1]),
-        .I3(q_reg[3]),
-        .I4(q_reg[5]),
-        .O(plusOp[5]));
+       (.I0(L[5]),
+        .I1(L[4]),
+        .I2(L[2]),
+        .I3(L[1]),
+        .I4(L[3]),
+        .O(\q[5]_i_1_n_0 ));
+  LUT6 #(
+    .INIT(64'hAAAAAAAAAAAAAAA9)) 
+    \q[5]_i_1__0 
+       (.I0(L[6]),
+        .I1(L[4]),
+        .I2(L[1]),
+        .I3(L[2]),
+        .I4(L[3]),
+        .I5(L[5]),
+        .O(D[5]));
   LUT2 #(
     .INIT(4'h6)) 
     \q[5]_i_2 
-       (.I0(q_reg[8]),
+       (.I0(L[8]),
         .I1(out[8]),
         .O(\q[5]_i_2_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
     \q[5]_i_3 
-       (.I0(q_reg[7]),
+       (.I0(L[7]),
         .I1(out[7]),
         .O(\q[5]_i_3_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
     \q[5]_i_4 
-       (.I0(q_reg[6]),
+       (.I0(L[6]),
         .I1(out[6]),
         .O(\q[5]_i_4_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
     \q[5]_i_5 
-       (.I0(q_reg[5]),
+       (.I0(L[5]),
         .I1(out[5]),
         .O(\q[5]_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'h7FFFFFFF80000000)) 
-    \q[6]_i_1 
-       (.I0(q_reg[5]),
-        .I1(q_reg[3]),
-        .I2(q_reg[1]),
-        .I3(q_reg[2]),
-        .I4(q_reg[4]),
-        .I5(q_reg[6]),
-        .O(plusOp[6]));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT2 #(
-    .INIT(4'h9)) 
+    .INIT(4'h6)) 
+    \q[6]_i_1 
+       (.I0(L[7]),
+        .I1(\q[7]_i_2_n_0 ),
+        .O(D[6]));
+  LUT6 #(
+    .INIT(64'h6AAAAAAAAAAAAAAA)) 
+    \q[6]_i_1__0 
+       (.I0(L[6]),
+        .I1(L[5]),
+        .I2(L[3]),
+        .I3(L[1]),
+        .I4(L[2]),
+        .I5(L[4]),
+        .O(\q[6]_i_1__0_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  LUT2 #(
+    .INIT(4'h6)) 
     \q[7]_i_1 
-       (.I0(\q[8]_i_3_n_0 ),
-        .I1(q_reg[7]),
-        .O(plusOp[7]));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
-  LUT3 #(
-    .INIT(8'hD2)) 
-    \q[8]_i_2 
-       (.I0(q_reg[7]),
+       (.I0(L[7]),
         .I1(\q[8]_i_3_n_0 ),
-        .I2(q_reg[8]),
+        .O(plusOp[7]));
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  LUT3 #(
+    .INIT(8'h9A)) 
+    \q[7]_i_1__0 
+       (.I0(L[8]),
+        .I1(L[7]),
+        .I2(\q[7]_i_2_n_0 ),
+        .O(D[7]));
+  LUT6 #(
+    .INIT(64'h0000000000000001)) 
+    \q[7]_i_2 
+       (.I0(L[6]),
+        .I1(L[4]),
+        .I2(L[1]),
+        .I3(L[2]),
+        .I4(L[3]),
+        .I5(L[5]),
+        .O(\q[7]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  LUT3 #(
+    .INIT(8'h6A)) 
+    \q[8]_i_2 
+       (.I0(L[8]),
+        .I1(\q[8]_i_3_n_0 ),
+        .I2(L[7]),
         .O(plusOp[8]));
   LUT6 #(
-    .INIT(64'h7FFFFFFFFFFFFFFF)) 
+    .INIT(64'h8000000000000000)) 
     \q[8]_i_3 
-       (.I0(q_reg[5]),
-        .I1(q_reg[3]),
-        .I2(q_reg[1]),
-        .I3(q_reg[2]),
-        .I4(q_reg[4]),
-        .I5(q_reg[6]),
+       (.I0(L[6]),
+        .I1(L[5]),
+        .I2(L[3]),
+        .I3(L[1]),
+        .I4(L[2]),
+        .I5(L[4]),
         .O(\q[8]_i_3_n_0 ));
   FDPE \q_reg[1] 
        (.C(mclk),
-        .CE(\q_reg[8]_1 ),
-        .D(plusOp[1]),
-        .PRE(clr),
-        .Q(q_reg[1]));
+        .CE(dld),
+        .D(D[0]),
+        .PRE(btn),
+        .Q(L[1]));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \q_reg[1]_i_1 
        (.CI(1'b0),
         .CO({\q_reg[1]_i_1_n_0 ,\q_reg[1]_i_1_n_1 ,\q_reg[1]_i_1_n_2 ,\q_reg[1]_i_1_n_3 }),
         .CYINIT(out[0]),
-        .DI(q_reg[4:1]),
+        .DI(L[4:1]),
         .O(O),
         .S({\q[1]_i_2_n_0 ,\q[1]_i_3_n_0 ,\q[1]_i_4_n_0 ,\q[1]_i_5_n_0 }));
   FDCE \q_reg[2] 
        (.C(mclk),
-        .CE(\q_reg[8]_1 ),
-        .CLR(clr),
-        .D(plusOp[2]),
-        .Q(q_reg[2]));
+        .CE(dld),
+        .CLR(btn),
+        .D(\q[2]_i_1_n_0 ),
+        .Q(L[2]));
   FDCE \q_reg[3] 
        (.C(mclk),
-        .CE(\q_reg[8]_1 ),
-        .CLR(clr),
-        .D(plusOp[3]),
-        .Q(q_reg[3]));
+        .CE(dld),
+        .CLR(btn),
+        .D(\q[3]_i_1_n_0 ),
+        .Q(L[3]));
   FDCE \q_reg[4] 
        (.C(mclk),
-        .CE(\q_reg[8]_1 ),
-        .CLR(clr),
-        .D(plusOp[4]),
-        .Q(q_reg[4]));
+        .CE(dld),
+        .CLR(btn),
+        .D(\q[4]_i_1_n_0 ),
+        .Q(L[4]));
   FDCE \q_reg[5] 
        (.C(mclk),
-        .CE(\q_reg[8]_1 ),
-        .CLR(clr),
-        .D(plusOp[5]),
-        .Q(q_reg[5]));
+        .CE(dld),
+        .CLR(btn),
+        .D(\q[5]_i_1_n_0 ),
+        .Q(L[5]));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \q_reg[5]_i_1 
        (.CI(\q_reg[1]_i_1_n_0 ),
         .CO({CO,\q_reg[5]_i_1_n_1 ,\q_reg[5]_i_1_n_2 ,\q_reg[5]_i_1_n_3 }),
         .CYINIT(1'b0),
-        .DI(q_reg[8:5]),
+        .DI(L[8:5]),
         .O(\q_reg[8]_0 ),
         .S({\q[5]_i_2_n_0 ,\q[5]_i_3_n_0 ,\q[5]_i_4_n_0 ,\q[5]_i_5_n_0 }));
   FDCE \q_reg[6] 
        (.C(mclk),
-        .CE(\q_reg[8]_1 ),
-        .CLR(clr),
-        .D(plusOp[6]),
-        .Q(q_reg[6]));
+        .CE(dld),
+        .CLR(btn),
+        .D(\q[6]_i_1__0_n_0 ),
+        .Q(L[6]));
   FDCE \q_reg[7] 
        (.C(mclk),
-        .CE(\q_reg[8]_1 ),
-        .CLR(clr),
+        .CE(dld),
+        .CLR(btn),
         .D(plusOp[7]),
-        .Q(q_reg[7]));
+        .Q(L[7]));
   FDCE \q_reg[8] 
        (.C(mclk),
-        .CE(\q_reg[8]_1 ),
-        .CLR(clr),
+        .CE(dld),
+        .CLR(btn),
         .D(plusOp[8]),
-        .Q(q_reg[8]));
+        .Q(L[8]));
+endmodule
+
+(* ORIG_REF_NAME = "regr" *) 
+module axi_sqrt_bd_mypi_seqdeta_top_0_0_regr__parameterized5
+   (root,
+    E,
+    D,
+    mclk,
+    btn);
+  output [7:0]root;
+  input [0:0]E;
+  input [7:0]D;
+  input mclk;
+  input [0:0]btn;
+
+  wire [7:0]D;
+  wire [0:0]E;
+  wire [0:0]btn;
+  wire mclk;
+  wire [7:0]root;
+
+  FDCE \q_reg[0] 
+       (.C(mclk),
+        .CE(E),
+        .CLR(btn),
+        .D(D[0]),
+        .Q(root[0]));
+  FDCE \q_reg[1] 
+       (.C(mclk),
+        .CE(E),
+        .CLR(btn),
+        .D(D[1]),
+        .Q(root[1]));
+  FDCE \q_reg[2] 
+       (.C(mclk),
+        .CE(E),
+        .CLR(btn),
+        .D(D[2]),
+        .Q(root[2]));
+  FDCE \q_reg[3] 
+       (.C(mclk),
+        .CE(E),
+        .CLR(btn),
+        .D(D[3]),
+        .Q(root[3]));
+  FDCE \q_reg[4] 
+       (.C(mclk),
+        .CE(E),
+        .CLR(btn),
+        .D(D[4]),
+        .Q(root[4]));
+  FDCE \q_reg[5] 
+       (.C(mclk),
+        .CE(E),
+        .CLR(btn),
+        .D(D[5]),
+        .Q(root[5]));
+  FDCE \q_reg[6] 
+       (.C(mclk),
+        .CE(E),
+        .CLR(btn),
+        .D(D[6]),
+        .Q(root[6]));
+  FDCE \q_reg[7] 
+       (.C(mclk),
+        .CE(E),
+        .CLR(btn),
+        .D(D[7]),
+        .Q(root[7]));
 endmodule
 
 (* ORIG_REF_NAME = "seqRead16" *) 
 module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqRead16
-   (reset_out,
-    AR,
+   (AR,
     D,
-    reset_out_reg_0,
-    clk,
-    \register_data[15]_i_4_0 ,
-    clr,
+    din,
+    seqout,
+    outp,
     btn,
-    clk_counter0);
-  output reset_out;
+    Q,
+    CO,
+    reset_out_reg_C_0,
+    p_1_in);
   output [0:0]AR;
-  output [15:0]D;
-  input reset_out_reg_0;
-  input clk;
-  input \register_data[15]_i_4_0 ;
-  input clr;
-  input [0:0]btn;
-  input clk_counter0;
+  output [0:0]D;
+  output [15:0]din;
+  input seqout;
+  input outp;
+  input [1:0]btn;
+  input [1:0]Q;
+  input [0:0]CO;
+  input [2:0]reset_out_reg_C_0;
+  input p_1_in;
 
   wire [0:0]AR;
-  wire [15:0]D;
-  wire [0:0]btn;
-  wire clear;
-  wire clk;
-  wire clk_counter0;
-  wire \clk_counter[0]_i_10_n_0 ;
+  wire [0:0]CO;
+  wire [0:0]D;
+  wire [1:0]Q;
+  wire [1:0]btn;
+  wire \clk_counter[0]_i_3_n_0 ;
   wire \clk_counter[0]_i_4_n_0 ;
-  wire \clk_counter[0]_i_5_n_0 ;
-  wire \clk_counter[0]_i_6_n_0 ;
-  wire \clk_counter[0]_i_7_n_0 ;
-  wire \clk_counter[0]_i_8_n_0 ;
-  wire \clk_counter[0]_i_9_n_0 ;
   wire [31:0]clk_counter_reg;
   wire \clk_counter_reg[0]_i_2_n_0 ;
   wire \clk_counter_reg[0]_i_2_n_1 ;
@@ -1069,7 +1213,9 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqRead16
   wire \clk_counter_reg[8]_i_1_n_5 ;
   wire \clk_counter_reg[8]_i_1_n_6 ;
   wire \clk_counter_reg[8]_i_1_n_7 ;
-  wire clr;
+  wire [15:0]din;
+  wire outp;
+  wire p_1_in;
   wire [31:3]register_data1;
   wire \register_data[0]_i_1_n_0 ;
   wire \register_data[10]_i_1_n_0 ;
@@ -1082,8 +1228,10 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqRead16
   wire \register_data[15]_i_11_n_0 ;
   wire \register_data[15]_i_12_n_0 ;
   wire \register_data[15]_i_16_n_0 ;
-  wire \register_data[15]_i_19_n_0 ;
+  wire \register_data[15]_i_17_n_0 ;
   wire \register_data[15]_i_1_n_0 ;
+  wire \register_data[15]_i_20_n_0 ;
+  wire \register_data[15]_i_22_n_0 ;
   wire \register_data[15]_i_23_n_0 ;
   wire \register_data[15]_i_24_n_0 ;
   wire \register_data[15]_i_25_n_0 ;
@@ -1091,10 +1239,8 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqRead16
   wire \register_data[15]_i_27_n_0 ;
   wire \register_data[15]_i_28_n_0 ;
   wire \register_data[15]_i_29_n_0 ;
-  wire \register_data[15]_i_2_n_0 ;
   wire \register_data[15]_i_30_n_0 ;
   wire \register_data[15]_i_31_n_0 ;
-  wire \register_data[15]_i_32_n_0 ;
   wire \register_data[15]_i_33_n_0 ;
   wire \register_data[15]_i_34_n_0 ;
   wire \register_data[15]_i_35_n_0 ;
@@ -1102,6 +1248,7 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqRead16
   wire \register_data[15]_i_37_n_0 ;
   wire \register_data[15]_i_38_n_0 ;
   wire \register_data[15]_i_39_n_0 ;
+  wire \register_data[15]_i_3_n_0 ;
   wire \register_data[15]_i_40_n_0 ;
   wire \register_data[15]_i_41_n_0 ;
   wire \register_data[15]_i_42_n_0 ;
@@ -1110,9 +1257,7 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqRead16
   wire \register_data[15]_i_45_n_0 ;
   wire \register_data[15]_i_46_n_0 ;
   wire \register_data[15]_i_47_n_0 ;
-  wire \register_data[15]_i_4_0 ;
-  wire \register_data[15]_i_4_n_0 ;
-  wire \register_data[15]_i_5_n_0 ;
+  wire \register_data[15]_i_48_n_0 ;
   wire \register_data[15]_i_6_n_0 ;
   wire \register_data[15]_i_7_n_0 ;
   wire \register_data[15]_i_8_n_0 ;
@@ -1136,116 +1281,81 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqRead16
   wire \register_data_reg[15]_i_14_n_1 ;
   wire \register_data_reg[15]_i_14_n_2 ;
   wire \register_data_reg[15]_i_14_n_3 ;
-  wire \register_data_reg[15]_i_15_n_0 ;
-  wire \register_data_reg[15]_i_15_n_1 ;
-  wire \register_data_reg[15]_i_15_n_2 ;
-  wire \register_data_reg[15]_i_15_n_3 ;
-  wire \register_data_reg[15]_i_17_n_0 ;
-  wire \register_data_reg[15]_i_17_n_1 ;
-  wire \register_data_reg[15]_i_17_n_2 ;
-  wire \register_data_reg[15]_i_17_n_3 ;
   wire \register_data_reg[15]_i_18_n_0 ;
   wire \register_data_reg[15]_i_18_n_1 ;
   wire \register_data_reg[15]_i_18_n_2 ;
   wire \register_data_reg[15]_i_18_n_3 ;
-  wire \register_data_reg[15]_i_20_n_0 ;
-  wire \register_data_reg[15]_i_20_n_1 ;
-  wire \register_data_reg[15]_i_20_n_2 ;
-  wire \register_data_reg[15]_i_20_n_3 ;
-  wire \register_data_reg[15]_i_3_n_0 ;
-  wire \register_data_reg[15]_i_3_n_1 ;
-  wire \register_data_reg[15]_i_3_n_2 ;
-  wire \register_data_reg[15]_i_3_n_3 ;
-  wire reset_out;
-  wire reset_out_reg_0;
+  wire \register_data_reg[15]_i_19_n_0 ;
+  wire \register_data_reg[15]_i_19_n_1 ;
+  wire \register_data_reg[15]_i_19_n_2 ;
+  wire \register_data_reg[15]_i_19_n_3 ;
+  wire \register_data_reg[15]_i_21_n_0 ;
+  wire \register_data_reg[15]_i_21_n_1 ;
+  wire \register_data_reg[15]_i_21_n_2 ;
+  wire \register_data_reg[15]_i_21_n_3 ;
+  wire \register_data_reg[15]_i_32_n_0 ;
+  wire \register_data_reg[15]_i_32_n_1 ;
+  wire \register_data_reg[15]_i_32_n_2 ;
+  wire \register_data_reg[15]_i_32_n_3 ;
+  wire \register_data_reg[15]_i_5_n_0 ;
+  wire \register_data_reg[15]_i_5_n_1 ;
+  wire \register_data_reg[15]_i_5_n_2 ;
+  wire \register_data_reg[15]_i_5_n_3 ;
+  wire reset_out_C_i_1_n_0;
+  wire [2:0]reset_out_reg_C_0;
+  wire reset_out_reg_C_n_0;
+  wire reset_out_reg_LDC_i_10_n_0;
+  wire reset_out_reg_LDC_i_1_n_0;
+  wire reset_out_reg_LDC_i_2_n_0;
+  wire reset_out_reg_LDC_i_3_n_0;
+  wire reset_out_reg_LDC_i_4_n_0;
+  wire reset_out_reg_LDC_i_5_n_0;
+  wire reset_out_reg_LDC_i_6_n_0;
+  wire reset_out_reg_LDC_i_7_n_0;
+  wire reset_out_reg_LDC_i_8_n_0;
+  wire reset_out_reg_LDC_i_9_n_0;
+  wire reset_out_reg_LDC_n_0;
+  wire reset_out_reg_P_n_0;
+  wire seqout;
   wire [3:3]\NLW_clk_counter_reg[28]_i_1_CO_UNCONNECTED ;
-  wire [3:0]\NLW_register_data_reg[15]_i_21_CO_UNCONNECTED ;
-  wire [3:1]\NLW_register_data_reg[15]_i_21_O_UNCONNECTED ;
+  wire [3:0]\NLW_register_data_reg[15]_i_15_CO_UNCONNECTED ;
+  wire [3:1]\NLW_register_data_reg[15]_i_15_O_UNCONNECTED ;
 
+  LUT6 #(
+    .INIT(64'hFFFFFFFF00B8FFB8)) 
+    \FSM_sequential_present_state[0]_i_1 
+       (.I0(reset_out_reg_P_n_0),
+        .I1(reset_out_reg_LDC_n_0),
+        .I2(reset_out_reg_C_n_0),
+        .I3(Q[0]),
+        .I4(CO),
+        .I5(Q[1]),
+        .O(D));
+  LUT4 #(
+    .INIT(16'hFEAE)) 
+    \FSM_sequential_present_state[2]_i_1 
+       (.I0(btn[1]),
+        .I1(reset_out_reg_C_n_0),
+        .I2(reset_out_reg_LDC_n_0),
+        .I3(reset_out_reg_P_n_0),
+        .O(AR));
   LUT2 #(
     .INIT(4'hE)) 
-    \FSM_sequential_present_state[2]_i_2 
-       (.I0(clr),
-        .I1(reset_out),
-        .O(AR));
-  LUT6 #(
-    .INIT(64'h0000000000000001)) 
-    \clk_counter[0]_i_10 
-       (.I0(clk_counter_reg[16]),
-        .I1(clk_counter_reg[17]),
-        .I2(clk_counter_reg[14]),
-        .I3(clk_counter_reg[15]),
-        .I4(clk_counter_reg[19]),
-        .I5(clk_counter_reg[18]),
-        .O(\clk_counter[0]_i_10_n_0 ));
-  LUT6 #(
-    .INIT(64'h8000000000000000)) 
     \clk_counter[0]_i_3 
-       (.I0(\clk_counter[0]_i_5_n_0 ),
-        .I1(\clk_counter[0]_i_6_n_0 ),
-        .I2(\clk_counter[0]_i_7_n_0 ),
-        .I3(\clk_counter[0]_i_8_n_0 ),
-        .I4(\clk_counter[0]_i_9_n_0 ),
-        .I5(\clk_counter[0]_i_10_n_0 ),
-        .O(clear));
+       (.I0(btn[1]),
+        .I1(reset_out_reg_LDC_i_1_n_0),
+        .O(\clk_counter[0]_i_3_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \clk_counter[0]_i_4 
        (.I0(clk_counter_reg[0]),
         .O(\clk_counter[0]_i_4_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000000001)) 
-    \clk_counter[0]_i_5 
-       (.I0(clk_counter_reg[28]),
-        .I1(clk_counter_reg[29]),
-        .I2(clk_counter_reg[26]),
-        .I3(clk_counter_reg[27]),
-        .I4(clk_counter_reg[31]),
-        .I5(clk_counter_reg[30]),
-        .O(\clk_counter[0]_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000000001)) 
-    \clk_counter[0]_i_6 
-       (.I0(clk_counter_reg[10]),
-        .I1(clk_counter_reg[11]),
-        .I2(clk_counter_reg[8]),
-        .I3(clk_counter_reg[9]),
-        .I4(clk_counter_reg[13]),
-        .I5(clk_counter_reg[12]),
-        .O(\clk_counter[0]_i_6_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000001000)) 
-    \clk_counter[0]_i_7 
-       (.I0(clk_counter_reg[4]),
-        .I1(clk_counter_reg[5]),
-        .I2(clk_counter_reg[2]),
-        .I3(clk_counter_reg[3]),
-        .I4(clk_counter_reg[7]),
-        .I5(clk_counter_reg[6]),
-        .O(\clk_counter[0]_i_7_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000000001)) 
-    \clk_counter[0]_i_8 
-       (.I0(clk_counter_reg[22]),
-        .I1(clk_counter_reg[23]),
-        .I2(clk_counter_reg[20]),
-        .I3(clk_counter_reg[21]),
-        .I4(clk_counter_reg[25]),
-        .I5(clk_counter_reg[24]),
-        .O(\clk_counter[0]_i_8_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
-  LUT2 #(
-    .INIT(4'h8)) 
-    \clk_counter[0]_i_9 
-       (.I0(clk_counter_reg[0]),
-        .I1(clk_counter_reg[1]),
-        .O(\clk_counter[0]_i_9_n_0 ));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[0] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[0]_i_2_n_7 ),
         .Q(clk_counter_reg[0]));
   (* ADDER_THRESHOLD = "11" *) 
@@ -1259,25 +1369,25 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqRead16
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[10] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[8]_i_1_n_5 ),
         .Q(clk_counter_reg[10]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[11] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[8]_i_1_n_4 ),
         .Q(clk_counter_reg[11]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[12] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[12]_i_1_n_7 ),
         .Q(clk_counter_reg[12]));
   (* ADDER_THRESHOLD = "11" *) 
@@ -1291,33 +1401,33 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqRead16
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[13] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[12]_i_1_n_6 ),
         .Q(clk_counter_reg[13]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[14] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[12]_i_1_n_5 ),
         .Q(clk_counter_reg[14]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[15] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[12]_i_1_n_4 ),
         .Q(clk_counter_reg[15]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[16] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[16]_i_1_n_7 ),
         .Q(clk_counter_reg[16]));
   (* ADDER_THRESHOLD = "11" *) 
@@ -1331,41 +1441,41 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqRead16
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[17] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[16]_i_1_n_6 ),
         .Q(clk_counter_reg[17]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[18] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[16]_i_1_n_5 ),
         .Q(clk_counter_reg[18]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[19] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[16]_i_1_n_4 ),
         .Q(clk_counter_reg[19]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[1] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[0]_i_2_n_6 ),
         .Q(clk_counter_reg[1]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[20] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[20]_i_1_n_7 ),
         .Q(clk_counter_reg[20]));
   (* ADDER_THRESHOLD = "11" *) 
@@ -1379,33 +1489,33 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqRead16
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[21] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[20]_i_1_n_6 ),
         .Q(clk_counter_reg[21]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[22] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[20]_i_1_n_5 ),
         .Q(clk_counter_reg[22]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[23] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[20]_i_1_n_4 ),
         .Q(clk_counter_reg[23]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[24] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[24]_i_1_n_7 ),
         .Q(clk_counter_reg[24]));
   (* ADDER_THRESHOLD = "11" *) 
@@ -1419,33 +1529,33 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqRead16
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[25] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[24]_i_1_n_6 ),
         .Q(clk_counter_reg[25]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[26] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[24]_i_1_n_5 ),
         .Q(clk_counter_reg[26]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[27] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[24]_i_1_n_4 ),
         .Q(clk_counter_reg[27]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[28] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[28]_i_1_n_7 ),
         .Q(clk_counter_reg[28]));
   (* ADDER_THRESHOLD = "11" *) 
@@ -1459,49 +1569,49 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqRead16
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[29] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[28]_i_1_n_6 ),
         .Q(clk_counter_reg[29]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[2] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[0]_i_2_n_5 ),
         .Q(clk_counter_reg[2]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[30] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[28]_i_1_n_5 ),
         .Q(clk_counter_reg[30]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[31] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[28]_i_1_n_4 ),
         .Q(clk_counter_reg[31]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[3] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[0]_i_2_n_4 ),
         .Q(clk_counter_reg[3]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[4] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[4]_i_1_n_7 ),
         .Q(clk_counter_reg[4]));
   (* ADDER_THRESHOLD = "11" *) 
@@ -1515,33 +1625,33 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqRead16
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[5] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[4]_i_1_n_6 ),
         .Q(clk_counter_reg[5]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[6] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[4]_i_1_n_5 ),
         .Q(clk_counter_reg[6]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[7] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[4]_i_1_n_4 ),
         .Q(clk_counter_reg[7]));
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[8] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[8]_i_1_n_7 ),
         .Q(clk_counter_reg[8]));
   (* ADDER_THRESHOLD = "11" *) 
@@ -1555,635 +1665,748 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqRead16
   FDCE #(
     .INIT(1'b0)) 
     \clk_counter_reg[9] 
-       (.C(clk),
-        .CE(clk_counter0),
-        .CLR(clear),
+       (.C(outp),
+        .CE(seqout),
+        .CLR(\clk_counter[0]_i_3_n_0 ),
         .D(\clk_counter_reg[8]_i_1_n_6 ),
         .Q(clk_counter_reg[9]));
-  LUT5 #(
-    .INIT(32'hBFFF8000)) 
+  LUT6 #(
+    .INIT(64'hFFFFEFFF00002000)) 
     \register_data[0]_i_1 
-       (.I0(btn),
-        .I1(\register_data[3]_i_2_n_0 ),
+       (.I0(btn[0]),
+        .I1(p_1_in),
         .I2(clk_counter_reg[1]),
         .I3(clk_counter_reg[0]),
-        .I4(D[0]),
+        .I4(\register_data[3]_i_2_n_0 ),
+        .I5(din[0]),
         .O(\register_data[0]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'hFBFF0800)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFEF00000020)) 
     \register_data[10]_i_1 
-       (.I0(btn),
-        .I1(\register_data[11]_i_2_n_0 ),
-        .I2(clk_counter_reg[1]),
-        .I3(clk_counter_reg[0]),
-        .I4(D[10]),
+       (.I0(btn[0]),
+        .I1(p_1_in),
+        .I2(clk_counter_reg[0]),
+        .I3(clk_counter_reg[1]),
+        .I4(\register_data[11]_i_2_n_0 ),
+        .I5(din[10]),
         .O(\register_data[10]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'hFFFB0008)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFFE00000002)) 
     \register_data[11]_i_1 
-       (.I0(btn),
-        .I1(\register_data[11]_i_2_n_0 ),
-        .I2(clk_counter_reg[1]),
-        .I3(clk_counter_reg[0]),
-        .I4(D[11]),
+       (.I0(btn[0]),
+        .I1(p_1_in),
+        .I2(clk_counter_reg[0]),
+        .I3(clk_counter_reg[1]),
+        .I4(\register_data[11]_i_2_n_0 ),
+        .I5(din[11]),
         .O(\register_data[11]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT5 #(
-    .INIT(32'h80000000)) 
+    .INIT(32'hFFFDFFFF)) 
     \register_data[11]_i_2 
        (.I0(register_data1[3]),
-        .I1(\register_data[15]_i_4_n_0 ),
-        .I2(\register_data[15]_i_5_n_0 ),
-        .I3(\register_data[15]_i_6_n_0 ),
+        .I1(\register_data[15]_i_6_n_0 ),
+        .I2(\register_data[15]_i_7_n_0 ),
+        .I3(\register_data[15]_i_8_n_0 ),
         .I4(clk_counter_reg[2]),
         .O(\register_data[11]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'hBFFF8000)) 
+  LUT6 #(
+    .INIT(64'hFBFFFFFF08000000)) 
     \register_data[12]_i_1 
-       (.I0(btn),
-        .I1(\register_data[15]_i_2_n_0 ),
-        .I2(clk_counter_reg[1]),
-        .I3(clk_counter_reg[0]),
-        .I4(D[12]),
-        .O(\register_data[12]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'hFBFF0800)) 
-    \register_data[13]_i_1 
-       (.I0(btn),
-        .I1(\register_data[15]_i_2_n_0 ),
-        .I2(clk_counter_reg[0]),
+       (.I0(btn[0]),
+        .I1(\register_data[15]_i_3_n_0 ),
+        .I2(p_1_in),
         .I3(clk_counter_reg[1]),
-        .I4(D[13]),
+        .I4(clk_counter_reg[0]),
+        .I5(din[12]),
+        .O(\register_data[12]_i_1_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFBFF00000800)) 
+    \register_data[13]_i_1 
+       (.I0(btn[0]),
+        .I1(\register_data[15]_i_3_n_0 ),
+        .I2(p_1_in),
+        .I3(clk_counter_reg[1]),
+        .I4(clk_counter_reg[0]),
+        .I5(din[13]),
         .O(\register_data[13]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'hFBFF0800)) 
+  LUT6 #(
+    .INIT(64'hFFFFFBFF00000800)) 
     \register_data[14]_i_1 
-       (.I0(btn),
-        .I1(\register_data[15]_i_2_n_0 ),
-        .I2(clk_counter_reg[1]),
+       (.I0(btn[0]),
+        .I1(\register_data[15]_i_3_n_0 ),
+        .I2(p_1_in),
         .I3(clk_counter_reg[0]),
-        .I4(D[14]),
+        .I4(clk_counter_reg[1]),
+        .I5(din[14]),
         .O(\register_data[14]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
-  LUT5 #(
-    .INIT(32'hFFFB0008)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFFB00000008)) 
     \register_data[15]_i_1 
-       (.I0(btn),
-        .I1(\register_data[15]_i_2_n_0 ),
-        .I2(clk_counter_reg[1]),
+       (.I0(btn[0]),
+        .I1(\register_data[15]_i_3_n_0 ),
+        .I2(p_1_in),
         .I3(clk_counter_reg[0]),
-        .I4(D[15]),
+        .I4(clk_counter_reg[1]),
+        .I5(din[15]),
         .O(\register_data[15]_i_1_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_10 
-       (.I0(clk_counter_reg[3]),
+       (.I0(clk_counter_reg[6]),
         .O(\register_data[15]_i_10_n_0 ));
-  LUT5 #(
-    .INIT(32'h00000001)) 
+  LUT1 #(
+    .INIT(2'h1)) 
     \register_data[15]_i_11 
-       (.I0(register_data1[28]),
-        .I1(register_data1[29]),
-        .I2(register_data1[30]),
-        .I3(register_data1[31]),
-        .I4(\register_data[15]_i_4_0 ),
+       (.I0(clk_counter_reg[5]),
         .O(\register_data[15]_i_11_n_0 ));
-  LUT4 #(
-    .INIT(16'h0001)) 
+  LUT1 #(
+    .INIT(2'h1)) 
     \register_data[15]_i_12 
-       (.I0(register_data1[11]),
-        .I1(register_data1[10]),
-        .I2(register_data1[9]),
-        .I3(register_data1[8]),
+       (.I0(clk_counter_reg[3]),
         .O(\register_data[15]_i_12_n_0 ));
   LUT4 #(
-    .INIT(16'h0001)) 
+    .INIT(16'hFFFE)) 
     \register_data[15]_i_16 
-       (.I0(register_data1[19]),
-        .I1(register_data1[18]),
-        .I2(register_data1[17]),
-        .I3(register_data1[16]),
+       (.I0(register_data1[13]),
+        .I1(register_data1[24]),
+        .I2(register_data1[14]),
+        .I3(register_data1[27]),
         .O(\register_data[15]_i_16_n_0 ));
   LUT4 #(
-    .INIT(16'h0001)) 
-    \register_data[15]_i_19 
-       (.I0(register_data1[27]),
+    .INIT(16'hFFFE)) 
+    \register_data[15]_i_17 
+       (.I0(register_data1[11]),
+        .I1(register_data1[15]),
+        .I2(register_data1[18]),
+        .I3(register_data1[25]),
+        .O(\register_data[15]_i_17_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \register_data[15]_i_20 
+       (.I0(register_data1[6]),
+        .I1(register_data1[8]),
+        .I2(register_data1[4]),
+        .I3(register_data1[12]),
+        .O(\register_data[15]_i_20_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \register_data[15]_i_22 
+       (.I0(register_data1[7]),
         .I1(register_data1[26]),
-        .I2(register_data1[25]),
-        .I3(register_data1[24]),
-        .O(\register_data[15]_i_19_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
-  LUT5 #(
-    .INIT(32'h00008000)) 
-    \register_data[15]_i_2 
-       (.I0(register_data1[3]),
-        .I1(\register_data[15]_i_4_n_0 ),
-        .I2(\register_data[15]_i_5_n_0 ),
-        .I3(\register_data[15]_i_6_n_0 ),
-        .I4(clk_counter_reg[2]),
-        .O(\register_data[15]_i_2_n_0 ));
+        .I2(register_data1[19]),
+        .I3(register_data1[22]),
+        .O(\register_data[15]_i_22_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_23 
-       (.I0(clk_counter_reg[10]),
+       (.I0(clk_counter_reg[30]),
         .O(\register_data[15]_i_23_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_24 
-       (.I0(clk_counter_reg[9]),
+       (.I0(clk_counter_reg[29]),
         .O(\register_data[15]_i_24_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_25 
-       (.I0(clk_counter_reg[8]),
+       (.I0(clk_counter_reg[28]),
         .O(\register_data[15]_i_25_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_26 
-       (.I0(clk_counter_reg[7]),
+       (.I0(clk_counter_reg[27]),
         .O(\register_data[15]_i_26_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_27 
-       (.I0(clk_counter_reg[14]),
+       (.I0(clk_counter_reg[26]),
         .O(\register_data[15]_i_27_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_28 
-       (.I0(clk_counter_reg[13]),
+       (.I0(clk_counter_reg[25]),
         .O(\register_data[15]_i_28_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_29 
-       (.I0(clk_counter_reg[12]),
+       (.I0(clk_counter_reg[24]),
         .O(\register_data[15]_i_29_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT5 #(
+    .INIT(32'h00000004)) 
+    \register_data[15]_i_3 
+       (.I0(clk_counter_reg[2]),
+        .I1(register_data1[3]),
+        .I2(\register_data[15]_i_6_n_0 ),
+        .I3(\register_data[15]_i_7_n_0 ),
+        .I4(\register_data[15]_i_8_n_0 ),
+        .O(\register_data[15]_i_3_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_30 
-       (.I0(clk_counter_reg[11]),
+       (.I0(clk_counter_reg[23]),
         .O(\register_data[15]_i_30_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_31 
-       (.I0(clk_counter_reg[18]),
+       (.I0(clk_counter_reg[31]),
         .O(\register_data[15]_i_31_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \register_data[15]_i_32 
-       (.I0(clk_counter_reg[17]),
-        .O(\register_data[15]_i_32_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
     \register_data[15]_i_33 
-       (.I0(clk_counter_reg[16]),
+       (.I0(clk_counter_reg[22]),
         .O(\register_data[15]_i_33_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_34 
-       (.I0(clk_counter_reg[15]),
+       (.I0(clk_counter_reg[21]),
         .O(\register_data[15]_i_34_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_35 
-       (.I0(clk_counter_reg[22]),
+       (.I0(clk_counter_reg[20]),
         .O(\register_data[15]_i_35_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_36 
-       (.I0(clk_counter_reg[21]),
+       (.I0(clk_counter_reg[19]),
         .O(\register_data[15]_i_36_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_37 
-       (.I0(clk_counter_reg[20]),
+       (.I0(clk_counter_reg[10]),
         .O(\register_data[15]_i_37_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_38 
-       (.I0(clk_counter_reg[19]),
+       (.I0(clk_counter_reg[9]),
         .O(\register_data[15]_i_38_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_39 
-       (.I0(clk_counter_reg[26]),
+       (.I0(clk_counter_reg[8]),
         .O(\register_data[15]_i_39_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000000008)) 
-    \register_data[15]_i_4 
-       (.I0(\register_data[15]_i_11_n_0 ),
-        .I1(\register_data[15]_i_12_n_0 ),
-        .I2(register_data1[7]),
-        .I3(register_data1[6]),
-        .I4(register_data1[5]),
-        .I5(register_data1[4]),
-        .O(\register_data[15]_i_4_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_40 
-       (.I0(clk_counter_reg[25]),
+       (.I0(clk_counter_reg[7]),
         .O(\register_data[15]_i_40_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_41 
-       (.I0(clk_counter_reg[24]),
+       (.I0(clk_counter_reg[18]),
         .O(\register_data[15]_i_41_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_42 
-       (.I0(clk_counter_reg[23]),
+       (.I0(clk_counter_reg[17]),
         .O(\register_data[15]_i_42_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_43 
-       (.I0(clk_counter_reg[30]),
+       (.I0(clk_counter_reg[16]),
         .O(\register_data[15]_i_43_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_44 
-       (.I0(clk_counter_reg[29]),
+       (.I0(clk_counter_reg[15]),
         .O(\register_data[15]_i_44_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_45 
-       (.I0(clk_counter_reg[28]),
+       (.I0(clk_counter_reg[14]),
         .O(\register_data[15]_i_45_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_46 
-       (.I0(clk_counter_reg[27]),
+       (.I0(clk_counter_reg[13]),
         .O(\register_data[15]_i_46_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_47 
-       (.I0(clk_counter_reg[31]),
+       (.I0(clk_counter_reg[12]),
         .O(\register_data[15]_i_47_n_0 ));
-  LUT5 #(
-    .INIT(32'h00010000)) 
-    \register_data[15]_i_5 
-       (.I0(register_data1[12]),
-        .I1(register_data1[13]),
-        .I2(register_data1[14]),
-        .I3(register_data1[15]),
-        .I4(\register_data[15]_i_16_n_0 ),
-        .O(\register_data[15]_i_5_n_0 ));
-  LUT5 #(
-    .INIT(32'h00010000)) 
+  LUT1 #(
+    .INIT(2'h1)) 
+    \register_data[15]_i_48 
+       (.I0(clk_counter_reg[11]),
+        .O(\register_data[15]_i_48_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
     \register_data[15]_i_6 
-       (.I0(register_data1[20]),
-        .I1(register_data1[21]),
-        .I2(register_data1[22]),
-        .I3(register_data1[23]),
-        .I4(\register_data[15]_i_19_n_0 ),
+       (.I0(register_data1[29]),
+        .I1(register_data1[23]),
+        .I2(register_data1[31]),
+        .I3(register_data1[30]),
+        .I4(\register_data[15]_i_16_n_0 ),
+        .I5(\register_data[15]_i_17_n_0 ),
         .O(\register_data[15]_i_6_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
     \register_data[15]_i_7 
-       (.I0(clk_counter_reg[4]),
+       (.I0(register_data1[20]),
+        .I1(register_data1[9]),
+        .I2(register_data1[28]),
+        .I3(register_data1[10]),
+        .I4(\register_data[15]_i_20_n_0 ),
         .O(\register_data[15]_i_7_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
     \register_data[15]_i_8 
-       (.I0(clk_counter_reg[6]),
+       (.I0(register_data1[17]),
+        .I1(register_data1[5]),
+        .I2(register_data1[21]),
+        .I3(register_data1[16]),
+        .I4(\register_data[15]_i_22_n_0 ),
         .O(\register_data[15]_i_8_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \register_data[15]_i_9 
-       (.I0(clk_counter_reg[5]),
+       (.I0(clk_counter_reg[4]),
         .O(\register_data[15]_i_9_n_0 ));
-  LUT5 #(
-    .INIT(32'hFBFF0800)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFEF00000020)) 
     \register_data[1]_i_1 
-       (.I0(btn),
-        .I1(\register_data[3]_i_2_n_0 ),
+       (.I0(btn[0]),
+        .I1(p_1_in),
+        .I2(clk_counter_reg[1]),
+        .I3(clk_counter_reg[0]),
+        .I4(\register_data[3]_i_2_n_0 ),
+        .I5(din[1]),
+        .O(\register_data[1]_i_1_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFEF00000020)) 
+    \register_data[2]_i_1 
+       (.I0(btn[0]),
+        .I1(p_1_in),
         .I2(clk_counter_reg[0]),
         .I3(clk_counter_reg[1]),
-        .I4(D[1]),
-        .O(\register_data[1]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'hFBFF0800)) 
-    \register_data[2]_i_1 
-       (.I0(btn),
-        .I1(\register_data[3]_i_2_n_0 ),
-        .I2(clk_counter_reg[1]),
-        .I3(clk_counter_reg[0]),
-        .I4(D[2]),
+        .I4(\register_data[3]_i_2_n_0 ),
+        .I5(din[2]),
         .O(\register_data[2]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'hFFFB0008)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFFE00000002)) 
     \register_data[3]_i_1 
-       (.I0(btn),
-        .I1(\register_data[3]_i_2_n_0 ),
-        .I2(clk_counter_reg[1]),
-        .I3(clk_counter_reg[0]),
-        .I4(D[3]),
+       (.I0(btn[0]),
+        .I1(p_1_in),
+        .I2(clk_counter_reg[0]),
+        .I3(clk_counter_reg[1]),
+        .I4(\register_data[3]_i_2_n_0 ),
+        .I5(din[3]),
         .O(\register_data[3]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT5 #(
-    .INIT(32'h40000000)) 
+    .INIT(32'hFFFEFFFF)) 
     \register_data[3]_i_2 
-       (.I0(register_data1[3]),
-        .I1(\register_data[15]_i_4_n_0 ),
-        .I2(\register_data[15]_i_5_n_0 ),
-        .I3(\register_data[15]_i_6_n_0 ),
+       (.I0(\register_data[15]_i_6_n_0 ),
+        .I1(\register_data[15]_i_7_n_0 ),
+        .I2(\register_data[15]_i_8_n_0 ),
+        .I3(register_data1[3]),
         .I4(clk_counter_reg[2]),
         .O(\register_data[3]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'hBFFF8000)) 
+  LUT6 #(
+    .INIT(64'hFFFFEFFF00002000)) 
     \register_data[4]_i_1 
-       (.I0(btn),
-        .I1(\register_data[7]_i_2_n_0 ),
+       (.I0(btn[0]),
+        .I1(p_1_in),
         .I2(clk_counter_reg[1]),
         .I3(clk_counter_reg[0]),
-        .I4(D[4]),
+        .I4(\register_data[7]_i_2_n_0 ),
+        .I5(din[4]),
         .O(\register_data[4]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'hFBFF0800)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFEF00000020)) 
     \register_data[5]_i_1 
-       (.I0(btn),
-        .I1(\register_data[7]_i_2_n_0 ),
+       (.I0(btn[0]),
+        .I1(p_1_in),
+        .I2(clk_counter_reg[1]),
+        .I3(clk_counter_reg[0]),
+        .I4(\register_data[7]_i_2_n_0 ),
+        .I5(din[5]),
+        .O(\register_data[5]_i_1_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFEF00000020)) 
+    \register_data[6]_i_1 
+       (.I0(btn[0]),
+        .I1(p_1_in),
         .I2(clk_counter_reg[0]),
         .I3(clk_counter_reg[1]),
-        .I4(D[5]),
-        .O(\register_data[5]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'hFBFF0800)) 
-    \register_data[6]_i_1 
-       (.I0(btn),
-        .I1(\register_data[7]_i_2_n_0 ),
-        .I2(clk_counter_reg[1]),
-        .I3(clk_counter_reg[0]),
-        .I4(D[6]),
+        .I4(\register_data[7]_i_2_n_0 ),
+        .I5(din[6]),
         .O(\register_data[6]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'hFFFB0008)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFFE00000002)) 
     \register_data[7]_i_1 
-       (.I0(btn),
-        .I1(\register_data[7]_i_2_n_0 ),
-        .I2(clk_counter_reg[1]),
-        .I3(clk_counter_reg[0]),
-        .I4(D[7]),
+       (.I0(btn[0]),
+        .I1(p_1_in),
+        .I2(clk_counter_reg[0]),
+        .I3(clk_counter_reg[1]),
+        .I4(\register_data[7]_i_2_n_0 ),
+        .I5(din[7]),
         .O(\register_data[7]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT5 #(
-    .INIT(32'h00004000)) 
+    .INIT(32'hFFFFFFFE)) 
     \register_data[7]_i_2 
-       (.I0(register_data1[3]),
-        .I1(\register_data[15]_i_4_n_0 ),
-        .I2(\register_data[15]_i_5_n_0 ),
-        .I3(\register_data[15]_i_6_n_0 ),
-        .I4(clk_counter_reg[2]),
+       (.I0(clk_counter_reg[2]),
+        .I1(\register_data[15]_i_6_n_0 ),
+        .I2(\register_data[15]_i_7_n_0 ),
+        .I3(\register_data[15]_i_8_n_0 ),
+        .I4(register_data1[3]),
         .O(\register_data[7]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'hBFFF8000)) 
+  LUT6 #(
+    .INIT(64'hFFFFEFFF00002000)) 
     \register_data[8]_i_1 
-       (.I0(btn),
-        .I1(\register_data[11]_i_2_n_0 ),
+       (.I0(btn[0]),
+        .I1(p_1_in),
         .I2(clk_counter_reg[1]),
         .I3(clk_counter_reg[0]),
-        .I4(D[8]),
+        .I4(\register_data[11]_i_2_n_0 ),
+        .I5(din[8]),
         .O(\register_data[8]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'hFBFF0800)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFEF00000020)) 
     \register_data[9]_i_1 
-       (.I0(btn),
-        .I1(\register_data[11]_i_2_n_0 ),
-        .I2(clk_counter_reg[0]),
-        .I3(clk_counter_reg[1]),
-        .I4(D[9]),
+       (.I0(btn[0]),
+        .I1(p_1_in),
+        .I2(clk_counter_reg[1]),
+        .I3(clk_counter_reg[0]),
+        .I4(\register_data[11]_i_2_n_0 ),
+        .I5(din[9]),
         .O(\register_data[9]_i_1_n_0 ));
   FDCE #(
     .INIT(1'b0)) 
     \register_data_reg[0] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn[1]),
         .D(\register_data[0]_i_1_n_0 ),
-        .Q(D[0]));
+        .Q(din[0]));
   FDCE #(
     .INIT(1'b0)) 
     \register_data_reg[10] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn[1]),
         .D(\register_data[10]_i_1_n_0 ),
-        .Q(D[10]));
+        .Q(din[10]));
   FDCE #(
     .INIT(1'b0)) 
     \register_data_reg[11] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn[1]),
         .D(\register_data[11]_i_1_n_0 ),
-        .Q(D[11]));
+        .Q(din[11]));
   FDCE #(
     .INIT(1'b0)) 
     \register_data_reg[12] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn[1]),
         .D(\register_data[12]_i_1_n_0 ),
-        .Q(D[12]));
+        .Q(din[12]));
   FDCE #(
     .INIT(1'b0)) 
     \register_data_reg[13] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn[1]),
         .D(\register_data[13]_i_1_n_0 ),
-        .Q(D[13]));
+        .Q(din[13]));
   FDCE #(
     .INIT(1'b0)) 
     \register_data_reg[14] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn[1]),
         .D(\register_data[14]_i_1_n_0 ),
-        .Q(D[14]));
+        .Q(din[14]));
   FDCE #(
     .INIT(1'b0)) 
     \register_data_reg[15] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn[1]),
         .D(\register_data[15]_i_1_n_0 ),
-        .Q(D[15]));
+        .Q(din[15]));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 \register_data_reg[15]_i_13 
-       (.CI(\register_data_reg[15]_i_3_n_0 ),
+       (.CI(\register_data_reg[15]_i_14_n_0 ),
         .CO({\register_data_reg[15]_i_13_n_0 ,\register_data_reg[15]_i_13_n_1 ,\register_data_reg[15]_i_13_n_2 ,\register_data_reg[15]_i_13_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(register_data1[10:7]),
+        .O(register_data1[30:27]),
         .S({\register_data[15]_i_23_n_0 ,\register_data[15]_i_24_n_0 ,\register_data[15]_i_25_n_0 ,\register_data[15]_i_26_n_0 }));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 \register_data_reg[15]_i_14 
-       (.CI(\register_data_reg[15]_i_13_n_0 ),
+       (.CI(\register_data_reg[15]_i_18_n_0 ),
         .CO({\register_data_reg[15]_i_14_n_0 ,\register_data_reg[15]_i_14_n_1 ,\register_data_reg[15]_i_14_n_2 ,\register_data_reg[15]_i_14_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(register_data1[14:11]),
+        .O(register_data1[26:23]),
         .S({\register_data[15]_i_27_n_0 ,\register_data[15]_i_28_n_0 ,\register_data[15]_i_29_n_0 ,\register_data[15]_i_30_n_0 }));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 \register_data_reg[15]_i_15 
-       (.CI(\register_data_reg[15]_i_14_n_0 ),
-        .CO({\register_data_reg[15]_i_15_n_0 ,\register_data_reg[15]_i_15_n_1 ,\register_data_reg[15]_i_15_n_2 ,\register_data_reg[15]_i_15_n_3 }),
+       (.CI(\register_data_reg[15]_i_13_n_0 ),
+        .CO(\NLW_register_data_reg[15]_i_15_CO_UNCONNECTED [3:0]),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(register_data1[18:15]),
-        .S({\register_data[15]_i_31_n_0 ,\register_data[15]_i_32_n_0 ,\register_data[15]_i_33_n_0 ,\register_data[15]_i_34_n_0 }));
-  (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \register_data_reg[15]_i_17 
-       (.CI(\register_data_reg[15]_i_15_n_0 ),
-        .CO({\register_data_reg[15]_i_17_n_0 ,\register_data_reg[15]_i_17_n_1 ,\register_data_reg[15]_i_17_n_2 ,\register_data_reg[15]_i_17_n_3 }),
-        .CYINIT(1'b0),
-        .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(register_data1[22:19]),
-        .S({\register_data[15]_i_35_n_0 ,\register_data[15]_i_36_n_0 ,\register_data[15]_i_37_n_0 ,\register_data[15]_i_38_n_0 }));
+        .O({\NLW_register_data_reg[15]_i_15_O_UNCONNECTED [3:1],register_data1[31]}),
+        .S({1'b0,1'b0,1'b0,\register_data[15]_i_31_n_0 }));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 \register_data_reg[15]_i_18 
-       (.CI(\register_data_reg[15]_i_17_n_0 ),
+       (.CI(\register_data_reg[15]_i_21_n_0 ),
         .CO({\register_data_reg[15]_i_18_n_0 ,\register_data_reg[15]_i_18_n_1 ,\register_data_reg[15]_i_18_n_2 ,\register_data_reg[15]_i_18_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(register_data1[26:23]),
-        .S({\register_data[15]_i_39_n_0 ,\register_data[15]_i_40_n_0 ,\register_data[15]_i_41_n_0 ,\register_data[15]_i_42_n_0 }));
+        .O(register_data1[22:19]),
+        .S({\register_data[15]_i_33_n_0 ,\register_data[15]_i_34_n_0 ,\register_data[15]_i_35_n_0 ,\register_data[15]_i_36_n_0 }));
   (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \register_data_reg[15]_i_20 
-       (.CI(\register_data_reg[15]_i_18_n_0 ),
-        .CO({\register_data_reg[15]_i_20_n_0 ,\register_data_reg[15]_i_20_n_1 ,\register_data_reg[15]_i_20_n_2 ,\register_data_reg[15]_i_20_n_3 }),
+  CARRY4 \register_data_reg[15]_i_19 
+       (.CI(\register_data_reg[15]_i_5_n_0 ),
+        .CO({\register_data_reg[15]_i_19_n_0 ,\register_data_reg[15]_i_19_n_1 ,\register_data_reg[15]_i_19_n_2 ,\register_data_reg[15]_i_19_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(register_data1[30:27]),
-        .S({\register_data[15]_i_43_n_0 ,\register_data[15]_i_44_n_0 ,\register_data[15]_i_45_n_0 ,\register_data[15]_i_46_n_0 }));
+        .O(register_data1[10:7]),
+        .S({\register_data[15]_i_37_n_0 ,\register_data[15]_i_38_n_0 ,\register_data[15]_i_39_n_0 ,\register_data[15]_i_40_n_0 }));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 \register_data_reg[15]_i_21 
-       (.CI(\register_data_reg[15]_i_20_n_0 ),
-        .CO(\NLW_register_data_reg[15]_i_21_CO_UNCONNECTED [3:0]),
+       (.CI(\register_data_reg[15]_i_32_n_0 ),
+        .CO({\register_data_reg[15]_i_21_n_0 ,\register_data_reg[15]_i_21_n_1 ,\register_data_reg[15]_i_21_n_2 ,\register_data_reg[15]_i_21_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\NLW_register_data_reg[15]_i_21_O_UNCONNECTED [3:1],register_data1[31]}),
-        .S({1'b0,1'b0,1'b0,\register_data[15]_i_47_n_0 }));
+        .O(register_data1[18:15]),
+        .S({\register_data[15]_i_41_n_0 ,\register_data[15]_i_42_n_0 ,\register_data[15]_i_43_n_0 ,\register_data[15]_i_44_n_0 }));
   (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \register_data_reg[15]_i_3 
-       (.CI(1'b0),
-        .CO({\register_data_reg[15]_i_3_n_0 ,\register_data_reg[15]_i_3_n_1 ,\register_data_reg[15]_i_3_n_2 ,\register_data_reg[15]_i_3_n_3 }),
+  CARRY4 \register_data_reg[15]_i_32 
+       (.CI(\register_data_reg[15]_i_19_n_0 ),
+        .CO({\register_data_reg[15]_i_32_n_0 ,\register_data_reg[15]_i_32_n_1 ,\register_data_reg[15]_i_32_n_2 ,\register_data_reg[15]_i_32_n_3 }),
         .CYINIT(1'b0),
-        .DI({1'b0,1'b0,\register_data[15]_i_7_n_0 ,1'b0}),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O(register_data1[14:11]),
+        .S({\register_data[15]_i_45_n_0 ,\register_data[15]_i_46_n_0 ,\register_data[15]_i_47_n_0 ,\register_data[15]_i_48_n_0 }));
+  (* ADDER_THRESHOLD = "35" *) 
+  CARRY4 \register_data_reg[15]_i_5 
+       (.CI(1'b0),
+        .CO({\register_data_reg[15]_i_5_n_0 ,\register_data_reg[15]_i_5_n_1 ,\register_data_reg[15]_i_5_n_2 ,\register_data_reg[15]_i_5_n_3 }),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,\register_data[15]_i_9_n_0 ,1'b0}),
         .O(register_data1[6:3]),
-        .S({\register_data[15]_i_8_n_0 ,\register_data[15]_i_9_n_0 ,clk_counter_reg[4],\register_data[15]_i_10_n_0 }));
+        .S({\register_data[15]_i_10_n_0 ,\register_data[15]_i_11_n_0 ,clk_counter_reg[4],\register_data[15]_i_12_n_0 }));
   FDCE #(
     .INIT(1'b0)) 
     \register_data_reg[1] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn[1]),
         .D(\register_data[1]_i_1_n_0 ),
-        .Q(D[1]));
+        .Q(din[1]));
   FDCE #(
     .INIT(1'b0)) 
     \register_data_reg[2] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn[1]),
         .D(\register_data[2]_i_1_n_0 ),
-        .Q(D[2]));
+        .Q(din[2]));
   FDCE #(
     .INIT(1'b0)) 
     \register_data_reg[3] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn[1]),
         .D(\register_data[3]_i_1_n_0 ),
-        .Q(D[3]));
+        .Q(din[3]));
   FDCE #(
     .INIT(1'b0)) 
     \register_data_reg[4] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn[1]),
         .D(\register_data[4]_i_1_n_0 ),
-        .Q(D[4]));
+        .Q(din[4]));
   FDCE #(
     .INIT(1'b0)) 
     \register_data_reg[5] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn[1]),
         .D(\register_data[5]_i_1_n_0 ),
-        .Q(D[5]));
+        .Q(din[5]));
   FDCE #(
     .INIT(1'b0)) 
     \register_data_reg[6] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn[1]),
         .D(\register_data[6]_i_1_n_0 ),
-        .Q(D[6]));
+        .Q(din[6]));
   FDCE #(
     .INIT(1'b0)) 
     \register_data_reg[7] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn[1]),
         .D(\register_data[7]_i_1_n_0 ),
-        .Q(D[7]));
+        .Q(din[7]));
   FDCE #(
     .INIT(1'b0)) 
     \register_data_reg[8] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn[1]),
         .D(\register_data[8]_i_1_n_0 ),
-        .Q(D[8]));
+        .Q(din[8]));
   FDCE #(
     .INIT(1'b0)) 
     \register_data_reg[9] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
-        .CLR(clr),
+        .CLR(btn[1]),
         .D(\register_data[9]_i_1_n_0 ),
-        .Q(D[9]));
-  FDPE #(
-    .INIT(1'b0)) 
-    reset_out_reg
-       (.C(clk),
+        .Q(din[9]));
+  LUT6 #(
+    .INIT(64'h00000000E2000000)) 
+    reset_out_C_i_1
+       (.I0(reset_out_reg_C_n_0),
+        .I1(reset_out_reg_LDC_n_0),
+        .I2(reset_out_reg_P_n_0),
+        .I3(reset_out_reg_C_0[2]),
+        .I4(reset_out_reg_C_0[0]),
+        .I5(reset_out_reg_C_0[1]),
+        .O(reset_out_C_i_1_n_0));
+  FDCE reset_out_reg_C
+       (.C(outp),
         .CE(1'b1),
-        .D(reset_out_reg_0),
-        .PRE(clear),
-        .Q(reset_out));
+        .CLR(reset_out_reg_LDC_i_2_n_0),
+        .D(reset_out_C_i_1_n_0),
+        .Q(reset_out_reg_C_n_0));
+  (* XILINX_LEGACY_PRIM = "LDC" *) 
+  (* XILINX_TRANSFORM_PINMAP = "VCC:GE" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    reset_out_reg_LDC
+       (.CLR(reset_out_reg_LDC_i_2_n_0),
+        .D(1'b1),
+        .G(reset_out_reg_LDC_i_1_n_0),
+        .GE(1'b1),
+        .Q(reset_out_reg_LDC_n_0));
+  LUT6 #(
+    .INIT(64'h0000000000000002)) 
+    reset_out_reg_LDC_i_1
+       (.I0(reset_out_reg_LDC_i_3_n_0),
+        .I1(reset_out_reg_LDC_i_4_n_0),
+        .I2(reset_out_reg_LDC_i_5_n_0),
+        .I3(clk_counter_reg[10]),
+        .I4(clk_counter_reg[16]),
+        .I5(reset_out_reg_LDC_i_6_n_0),
+        .O(reset_out_reg_LDC_i_1_n_0));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    reset_out_reg_LDC_i_10
+       (.I0(clk_counter_reg[17]),
+        .I1(clk_counter_reg[5]),
+        .I2(clk_counter_reg[26]),
+        .I3(clk_counter_reg[24]),
+        .O(reset_out_reg_LDC_i_10_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    reset_out_reg_LDC_i_2
+       (.I0(btn[1]),
+        .I1(reset_out_reg_LDC_i_1_n_0),
+        .O(reset_out_reg_LDC_i_2_n_0));
+  LUT6 #(
+    .INIT(64'h0000000000000001)) 
+    reset_out_reg_LDC_i_3
+       (.I0(reset_out_reg_LDC_i_7_n_0),
+        .I1(clk_counter_reg[19]),
+        .I2(clk_counter_reg[6]),
+        .I3(clk_counter_reg[22]),
+        .I4(clk_counter_reg[3]),
+        .I5(reset_out_reg_LDC_i_8_n_0),
+        .O(reset_out_reg_LDC_i_3_n_0));
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
+    reset_out_reg_LDC_i_4
+       (.I0(clk_counter_reg[27]),
+        .I1(clk_counter_reg[30]),
+        .I2(clk_counter_reg[2]),
+        .I3(clk_counter_reg[31]),
+        .I4(reset_out_reg_LDC_i_9_n_0),
+        .O(reset_out_reg_LDC_i_4_n_0));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    reset_out_reg_LDC_i_5
+       (.I0(clk_counter_reg[18]),
+        .I1(clk_counter_reg[15]),
+        .I2(clk_counter_reg[21]),
+        .I3(clk_counter_reg[9]),
+        .O(reset_out_reg_LDC_i_5_n_0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    reset_out_reg_LDC_i_6
+       (.I0(clk_counter_reg[0]),
+        .I1(clk_counter_reg[1]),
+        .O(reset_out_reg_LDC_i_6_n_0));
+  LUT4 #(
+    .INIT(16'hFFFD)) 
+    reset_out_reg_LDC_i_7
+       (.I0(clk_counter_reg[4]),
+        .I1(clk_counter_reg[23]),
+        .I2(clk_counter_reg[12]),
+        .I3(clk_counter_reg[11]),
+        .O(reset_out_reg_LDC_i_7_n_0));
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
+    reset_out_reg_LDC_i_8
+       (.I0(clk_counter_reg[8]),
+        .I1(clk_counter_reg[25]),
+        .I2(clk_counter_reg[13]),
+        .I3(clk_counter_reg[14]),
+        .I4(reset_out_reg_LDC_i_10_n_0),
+        .O(reset_out_reg_LDC_i_8_n_0));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    reset_out_reg_LDC_i_9
+       (.I0(clk_counter_reg[28]),
+        .I1(clk_counter_reg[7]),
+        .I2(clk_counter_reg[29]),
+        .I3(clk_counter_reg[20]),
+        .O(reset_out_reg_LDC_i_9_n_0));
+  FDPE reset_out_reg_P
+       (.C(outp),
+        .CE(1'b1),
+        .D(reset_out_C_i_1_n_0),
+        .PRE(reset_out_reg_LDC_i_1_n_0),
+        .Q(reset_out_reg_P_n_0));
 endmodule
 
 (* ORIG_REF_NAME = "seqdeta" *) 
 module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqdeta
-   (clk_counter0,
-    \FSM_sequential_present_state_reg[2]_0 ,
-    \FSM_sequential_present_state_reg[1]_0 ,
+   (Q,
+    seqout,
+    p_1_in,
     btn,
-    clr,
-    reset_out,
-    clk,
+    outp,
     AR);
-  output clk_counter0;
-  output \FSM_sequential_present_state_reg[2]_0 ;
-  output \FSM_sequential_present_state_reg[1]_0 ;
+  output [2:0]Q;
+  output seqout;
+  output p_1_in;
   input [0:0]btn;
-  input clr;
-  input reset_out;
-  input clk;
+  input outp;
   input [0:0]AR;
 
   wire [0:0]AR;
   wire \FSM_sequential_next_state_reg[2]_i_2_n_0 ;
-  wire \FSM_sequential_present_state_reg[1]_0 ;
-  wire \FSM_sequential_present_state_reg[2]_0 ;
+  wire [2:0]Q;
   wire [0:0]btn;
-  wire clk;
-  wire clk_counter0;
-  wire clr;
   wire [2:0]next_state;
   wire [2:0]next_state__0;
-  wire [2:0]present_state;
-  wire reset_out;
+  wire outp;
+  wire p_1_in;
+  wire seqout;
 
   (* XILINX_LEGACY_PRIM = "LD" *) 
   (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
@@ -2195,14 +2418,14 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqdeta
         .G(\FSM_sequential_next_state_reg[2]_i_2_n_0 ),
         .GE(1'b1),
         .Q(next_state[0]));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT4 #(
-    .INIT(16'hA6E6)) 
+    .INIT(16'hAE66)) 
     \FSM_sequential_next_state_reg[0]_i_1 
-       (.I0(present_state[2]),
+       (.I0(Q[2]),
         .I1(btn),
-        .I2(present_state[0]),
-        .I3(present_state[1]),
+        .I2(Q[1]),
+        .I3(Q[0]),
         .O(next_state__0[0]));
   (* XILINX_LEGACY_PRIM = "LD" *) 
   (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
@@ -2214,14 +2437,14 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqdeta
         .G(\FSM_sequential_next_state_reg[2]_i_2_n_0 ),
         .GE(1'b1),
         .Q(next_state[1]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
-    .INIT(16'h0C38)) 
+    .INIT(16'h0E30)) 
     \FSM_sequential_next_state_reg[1]_i_1 
-       (.I0(present_state[1]),
-        .I1(btn),
-        .I2(present_state[0]),
-        .I3(present_state[2]),
+       (.I0(Q[1]),
+        .I1(Q[2]),
+        .I2(Q[0]),
+        .I3(btn),
         .O(next_state__0[1]));
   (* XILINX_LEGACY_PRIM = "LD" *) 
   (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
@@ -2233,187 +2456,195 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqdeta
         .G(\FSM_sequential_next_state_reg[2]_i_2_n_0 ),
         .GE(1'b1),
         .Q(next_state[2]));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT4 #(
-    .INIT(16'hC8F0)) 
+    .INIT(16'hE0AA)) 
     \FSM_sequential_next_state_reg[2]_i_1 
-       (.I0(present_state[1]),
-        .I1(present_state[0]),
-        .I2(present_state[2]),
+       (.I0(Q[2]),
+        .I1(Q[1]),
+        .I2(Q[0]),
         .I3(btn),
         .O(next_state__0[2]));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \FSM_sequential_next_state_reg[2]_i_2 
-       (.I0(present_state[1]),
-        .I1(present_state[2]),
+       (.I0(Q[2]),
+        .I1(Q[1]),
         .O(\FSM_sequential_next_state_reg[2]_i_2_n_0 ));
   (* FSM_ENCODED_STATES = "s1:001,s0:000,s3:011,s4:100,s2:010,s5:101" *) 
   FDCE \FSM_sequential_present_state_reg[0] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
         .CLR(AR),
         .D(next_state[0]),
-        .Q(present_state[0]));
+        .Q(Q[0]));
   (* FSM_ENCODED_STATES = "s1:001,s0:000,s3:011,s4:100,s2:010,s5:101" *) 
   FDCE \FSM_sequential_present_state_reg[1] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
         .CLR(AR),
         .D(next_state[1]),
-        .Q(present_state[1]));
+        .Q(Q[1]));
   (* FSM_ENCODED_STATES = "s1:001,s0:000,s3:011,s4:100,s2:010,s5:101" *) 
   FDCE \FSM_sequential_present_state_reg[2] 
-       (.C(clk),
+       (.C(outp),
         .CE(1'b1),
         .CLR(AR),
         .D(next_state[2]),
-        .Q(present_state[2]));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT4 #(
-    .INIT(16'h0040)) 
+        .Q(Q[2]));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT3 #(
+    .INIT(8'h08)) 
     \clk_counter[0]_i_1 
-       (.I0(present_state[1]),
-        .I1(present_state[0]),
-        .I2(present_state[2]),
-        .I3(clr),
-        .O(clk_counter0));
+       (.I0(Q[2]),
+        .I1(Q[0]),
+        .I2(Q[1]),
+        .O(seqout));
   (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT3 #(
-    .INIT(8'hF7)) 
-    \register_data[15]_i_22 
-       (.I0(present_state[2]),
-        .I1(present_state[0]),
-        .I2(present_state[1]),
-        .O(\FSM_sequential_present_state_reg[2]_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT5 #(
-    .INIT(32'hFF400000)) 
-    reset_out_i_1
-       (.I0(present_state[1]),
-        .I1(present_state[0]),
-        .I2(present_state[2]),
-        .I3(clr),
-        .I4(reset_out),
-        .O(\FSM_sequential_present_state_reg[1]_0 ));
+    .INIT(8'hBF)) 
+    \register_data[15]_i_4 
+       (.I0(Q[1]),
+        .I1(Q[0]),
+        .I2(Q[2]),
+        .O(p_1_in));
 endmodule
 
 (* ORIG_REF_NAME = "seqdeta_top" *) 
 module axi_sqrt_bd_mypi_seqdeta_top_0_0_seqdeta_top
    (mclk,
-    clr,
     btn,
+    root,
+    din,
     done);
   input mclk;
-  input clr;
   input [3:0]btn;
+  output [7:0]root;
+  output [15:0]din;
   output done;
 
-  wire U3_n_1;
-  wire U3_n_2;
-  wire U4_n_1;
   wire [3:0]btn;
   wire cclk;
-  wire clk_counter0;
   wire clr;
-  wire [15:0]d;
+  wire [15:0]din;
   wire done;
+  wire lteflg;
   wire mclk;
   wire outp;
-  wire reset_out;
+  wire p_1_in;
+  wire [2:0]present_state;
+  wire [7:0]root;
+  wire seqout;
+  wire [0:0]\sqrt1/next_state ;
+  wire [1:0]\sqrt1/present_state ;
 
   axi_sqrt_bd_mypi_seqdeta_top_0_0_clock_pulse SeqInut
        (.S(cclk),
-        .btn(btn[0]),
-        .clk(outp),
-        .clr(clr));
+        .btn({btn[3],btn[0]}),
+        .outp(outp));
   axi_sqrt_bd_mypi_seqdeta_top_0_0_seqdeta U3
-       (.AR(U4_n_1),
-        .\FSM_sequential_present_state_reg[1]_0 (U3_n_2),
-        .\FSM_sequential_present_state_reg[2]_0 (U3_n_1),
+       (.AR(clr),
+        .Q(present_state),
         .btn(btn[1]),
-        .clk(outp),
-        .clk_counter0(clk_counter0),
-        .clr(clr),
-        .reset_out(reset_out));
+        .outp(outp),
+        .p_1_in(p_1_in),
+        .seqout(seqout));
   axi_sqrt_bd_mypi_seqdeta_top_0_0_seqRead16 U4
-       (.AR(U4_n_1),
-        .D(d),
-        .btn(btn[1]),
-        .clk(outp),
-        .clk_counter0(clk_counter0),
-        .clr(clr),
-        .\register_data[15]_i_4_0 (U3_n_1),
-        .reset_out(reset_out),
-        .reset_out_reg_0(U3_n_2));
+       (.AR(clr),
+        .CO(lteflg),
+        .D(\sqrt1/next_state ),
+        .Q(\sqrt1/present_state ),
+        .btn({btn[3],btn[1]}),
+        .din(din),
+        .outp(outp),
+        .p_1_in(p_1_in),
+        .reset_out_reg_C_0(present_state),
+        .seqout(seqout));
   axi_sqrt_bd_mypi_seqdeta_top_0_0_sqrt U5
-       (.D(d),
-        .clr(clr),
-        .done(done),
+       (.CO(lteflg),
+        .D(\sqrt1/next_state ),
+        .E(done),
+        .Q(\sqrt1/present_state ),
+        .btn(btn[3]),
+        .din(din),
         .mclk(mclk),
-        .reset_out(reset_out));
+        .root(root));
   axi_sqrt_bd_mypi_seqdeta_top_0_0_clkdiv lockinInput
        (.S(cclk),
-        .clr(clr),
+        .btn(btn[3]),
         .mclk(mclk));
 endmodule
 
 (* ORIG_REF_NAME = "sqrt" *) 
 module axi_sqrt_bd_mypi_seqdeta_top_0_0_sqrt
-   (done,
-    reset_out,
+   (CO,
+    E,
+    Q,
+    root,
     mclk,
-    clr,
-    D);
-  output done;
-  input reset_out;
+    btn,
+    D,
+    din);
+  output [0:0]CO;
+  output [0:0]E;
+  output [1:0]Q;
+  output [7:0]root;
   input mclk;
-  input clr;
-  input [15:0]D;
+  input [0:0]btn;
+  input [0:0]D;
+  input [15:0]din;
 
-  wire [15:0]D;
+  wire [0:0]CO;
+  wire [0:0]D;
+  wire [0:0]E;
+  wire [1:0]Q;
   wire ald;
-  wire clr;
-  wire done;
-  wire lteflg;
+  wire [0:0]btn;
+  wire [15:0]din;
+  wire dld;
   wire mclk;
-  wire reset_out;
-  wire sqrt1_n_2;
+  wire [7:0]root;
 
   axi_sqrt_bd_mypi_seqdeta_top_0_0_sqrtctl sqrt1
-       (.CO(lteflg),
-        .E(ald),
-        .\FSM_sequential_present_state_reg[1]_0 (sqrt1_n_2),
-        .clr(clr),
-        .done(done),
-        .mclk(mclk),
-        .reset_out(reset_out));
+       (.D(D),
+        .E(E),
+        .\FSM_sequential_present_state_reg[1]_0 (ald),
+        .Q(Q),
+        .btn(btn),
+        .dld(dld),
+        .mclk(mclk));
   axi_sqrt_bd_mypi_seqdeta_top_0_0_sqrtPath sqrt2
-       (.CO(lteflg),
-        .D(D),
-        .E(ald),
-        .clr(clr),
+       (.CO(CO),
+        .E(E),
+        .btn(btn),
+        .din(din),
+        .dld(dld),
         .mclk(mclk),
-        .\q_reg[16] (sqrt1_n_2));
+        .\q_reg[0] (ald),
+        .root(root));
 endmodule
 
 (* ORIG_REF_NAME = "sqrtPath" *) 
 module axi_sqrt_bd_mypi_seqdeta_top_0_0_sqrtPath
    (CO,
+    root,
     E,
-    D,
     mclk,
-    clr,
-    \q_reg[16] );
+    btn,
+    \q_reg[0] ,
+    din,
+    dld);
   output [0:0]CO;
+  output [7:0]root;
   input [0:0]E;
-  input [15:0]D;
   input mclk;
-  input clr;
-  input [0:0]\q_reg[16] ;
+  input [0:0]btn;
+  input [0:0]\q_reg[0] ;
+  input [15:0]din;
+  input dld;
 
   wire [0:0]CO;
-  wire [15:0]D;
   wire [0:0]E;
   wire [15:0]R;
   wire aReg_n_0;
@@ -2424,16 +2655,22 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_sqrtPath
   wire aReg_n_22;
   wire aReg_n_23;
   wire aReg_n_3;
-  wire clr;
-  wire delReg_n_0;
-  wire delReg_n_1;
+  wire [0:0]btn;
+  wire delReg_n_10;
+  wire delReg_n_11;
+  wire delReg_n_12;
+  wire delReg_n_13;
+  wire delReg_n_14;
+  wire delReg_n_15;
+  wire delReg_n_16;
   wire delReg_n_2;
   wire delReg_n_3;
   wire delReg_n_4;
   wire delReg_n_5;
-  wire delReg_n_6;
-  wire delReg_n_7;
   wire delReg_n_8;
+  wire delReg_n_9;
+  wire [15:0]din;
+  wire dld;
   wire leqOp_carry__0_n_0;
   wire leqOp_carry__0_n_1;
   wire leqOp_carry__0_n_2;
@@ -2443,8 +2680,10 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_sqrtPath
   wire leqOp_carry_n_2;
   wire leqOp_carry_n_3;
   wire mclk;
+  wire [7:0]minusOp;
   wire [15:0]q_reg;
-  wire [0:0]\q_reg[16] ;
+  wire [0:0]\q_reg[0] ;
+  wire [7:0]root;
   wire sqReg_n_16;
   wire sqReg_n_17;
   wire sqReg_n_18;
@@ -2460,22 +2699,23 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_sqrtPath
   wire [3:0]NLW_leqOp_carry__1_O_UNCONNECTED;
 
   axi_sqrt_bd_mypi_seqdeta_top_0_0_regr aReg
-       (.D(D),
-        .DI({aReg_n_0,aReg_n_1,aReg_n_2,aReg_n_3}),
-        .E(E),
+       (.DI({aReg_n_0,aReg_n_1,aReg_n_2,aReg_n_3}),
         .Q(R),
-        .clr(clr),
+        .btn(btn),
+        .din(din),
         .mclk(mclk),
         .out(q_reg),
+        .\q_reg[0]_0 (\q_reg[0] ),
         .\q_reg[15]_0 ({aReg_n_20,aReg_n_21,aReg_n_22,aReg_n_23}));
   axi_sqrt_bd_mypi_seqdeta_top_0_0_regr__parameterized3 delReg
-       (.CO(delReg_n_4),
-        .O({delReg_n_0,delReg_n_1,delReg_n_2,delReg_n_3}),
-        .clr(clr),
+       (.CO(delReg_n_12),
+        .D({minusOp[7:6],delReg_n_2,delReg_n_3,delReg_n_4,delReg_n_5,minusOp[1:0]}),
+        .O({delReg_n_8,delReg_n_9,delReg_n_10,delReg_n_11}),
+        .btn(btn),
+        .dld(dld),
         .mclk(mclk),
         .out(q_reg[8:0]),
-        .\q_reg[8]_0 ({delReg_n_5,delReg_n_6,delReg_n_7,delReg_n_8}),
-        .\q_reg[8]_1 (\q_reg[16] ));
+        .\q_reg[8]_0 ({delReg_n_13,delReg_n_14,delReg_n_15,delReg_n_16}));
   (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 leqOp_carry
        (.CI(1'b0),
@@ -2500,91 +2740,85 @@ module axi_sqrt_bd_mypi_seqdeta_top_0_0_sqrtPath
         .DI({1'b0,1'b0,1'b0,1'b0}),
         .O(NLW_leqOp_carry__1_O_UNCONNECTED[3:0]),
         .S({1'b0,1'b0,1'b0,sqReg_n_24}));
+  axi_sqrt_bd_mypi_seqdeta_top_0_0_regr__parameterized5 outReg
+       (.D({minusOp[7:6],delReg_n_2,delReg_n_3,delReg_n_4,delReg_n_5,minusOp[1:0]}),
+        .E(E),
+        .btn(btn),
+        .mclk(mclk),
+        .root(root));
   axi_sqrt_bd_mypi_seqdeta_top_0_0_regr__parameterized1 sqReg
-       (.CO(delReg_n_4),
-        .O({delReg_n_0,delReg_n_1,delReg_n_2,delReg_n_3}),
+       (.CO(delReg_n_12),
+        .O({delReg_n_8,delReg_n_9,delReg_n_10,delReg_n_11}),
         .Q(R),
         .S({sqReg_n_16,sqReg_n_17,sqReg_n_18,sqReg_n_19}),
-        .clr(clr),
+        .btn(btn),
+        .dld(dld),
         .mclk(mclk),
         .out(q_reg),
         .\q_reg[15]_0 ({sqReg_n_20,sqReg_n_21,sqReg_n_22,sqReg_n_23}),
         .\q_reg[16]_0 (sqReg_n_24),
-        .\q_reg[16]_1 (\q_reg[16] ),
-        .\q_reg[8]_0 ({delReg_n_5,delReg_n_6,delReg_n_7,delReg_n_8}));
+        .\q_reg[8]_0 ({delReg_n_13,delReg_n_14,delReg_n_15,delReg_n_16}));
 endmodule
 
 (* ORIG_REF_NAME = "sqrtctl" *) 
 module axi_sqrt_bd_mypi_seqdeta_top_0_0_sqrtctl
-   (done,
-    E,
+   (E,
+    Q,
     \FSM_sequential_present_state_reg[1]_0 ,
-    reset_out,
-    CO,
+    dld,
     mclk,
-    clr);
-  output done;
+    btn,
+    D);
   output [0:0]E;
+  output [1:0]Q;
   output [0:0]\FSM_sequential_present_state_reg[1]_0 ;
-  input reset_out;
-  input [0:0]CO;
+  output dld;
   input mclk;
-  input clr;
+  input [0:0]btn;
+  input [0:0]D;
 
-  wire [0:0]CO;
+  wire [0:0]D;
   wire [0:0]E;
   wire [0:0]\FSM_sequential_present_state_reg[1]_0 ;
-  wire clr;
-  wire done;
+  wire [1:0]Q;
+  wire [0:0]btn;
+  wire dld;
   wire mclk;
-  wire [0:0]next_state;
-  wire [1:0]present_state;
-  wire reset_out;
 
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
-  LUT4 #(
-    .INIT(16'hAFEE)) 
-    \FSM_sequential_present_state[0]_i_1 
-       (.I0(present_state[1]),
-        .I1(reset_out),
-        .I2(CO),
-        .I3(present_state[0]),
-        .O(next_state));
   (* FSM_ENCODED_STATES = "start:00,test:01,done:11,update:10" *) 
   FDCE \FSM_sequential_present_state_reg[0] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
-        .D(next_state),
-        .Q(present_state[0]));
+        .CLR(btn),
+        .D(D),
+        .Q(Q[0]));
   (* FSM_ENCODED_STATES = "start:00,test:01,done:11,update:10" *) 
   FDCE \FSM_sequential_present_state_reg[1] 
        (.C(mclk),
         .CE(1'b1),
-        .CLR(clr),
-        .D(present_state[0]),
-        .Q(present_state[1]));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+        .CLR(btn),
+        .D(Q[0]),
+        .Q(Q[1]));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT2 #(
     .INIT(4'h8)) 
     done_INST_0
-       (.I0(present_state[0]),
-        .I1(present_state[1]),
-        .O(done));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+       (.I0(Q[1]),
+        .I1(Q[0]),
+        .O(E));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT2 #(
     .INIT(4'h1)) 
     \q[15]_i_1 
-       (.I0(present_state[0]),
-        .I1(present_state[1]),
-        .O(E));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+       (.I0(Q[1]),
+        .I1(Q[0]),
+        .O(\FSM_sequential_present_state_reg[1]_0 ));
   LUT2 #(
     .INIT(4'h2)) 
     \q[8]_i_1 
-       (.I0(present_state[1]),
-        .I1(present_state[0]),
-        .O(\FSM_sequential_present_state_reg[1]_0 ));
+       (.I0(Q[1]),
+        .I1(Q[0]),
+        .O(dld));
 endmodule
 `ifndef GLBL
 `define GLBL

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1707059123" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/seqdeta_top.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1707159993" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/seqdeta_top.dcp">
   <File Type="PA-TCL" Name="seqdeta_top.tcl"/>
   <File Type="REPORTS-TCL" Name="seqdeta_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="seqdeta_top.vds"/>
@@ -80,15 +80,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/AXI_Seq_Sqrt/AXI_Seq_Sqrt.bd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/component.xml">
+    <File Path="$PPRDIR/../../../../IPRepo/Seq_Sqrt_IP/component.xml">
       <FileInfo SFType="IPXACT"/>
     </File>
     <Config>

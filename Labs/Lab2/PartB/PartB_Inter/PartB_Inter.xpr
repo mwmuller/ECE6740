@@ -66,13 +66,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="10"/>
-    <Option Name="WTModelSimExportSim" Val="10"/>
-    <Option Name="WTQuestaExportSim" Val="10"/>
+    <Option Name="WTXSimExportSim" Val="20"/>
+    <Option Name="WTModelSimExportSim" Val="20"/>
+    <Option Name="WTQuestaExportSim" Val="20"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="10"/>
-    <Option Name="WTRivieraExportSim" Val="10"/>
-    <Option Name="WTActivehdlExportSim" Val="10"/>
+    <Option Name="WTVcsExportSim" Val="20"/>
+    <Option Name="WTRivieraExportSim" Val="20"/>
+    <Option Name="WTActivehdlExportSim" Val="20"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -99,11 +99,11 @@
         <CompFileExtendedInfo CompFileName="Lab2_Axi_Int_seq_sqrt.bd" FileRelPathName="ip/Lab2_Axi_Int_seq_sqrt_processing_system7_0_0/Lab2_Axi_Int_seq_sqrt_processing_system7_0_0.xci">
           <Proxy FileSetName="Lab2_Axi_Int_seq_sqrt_processing_system7_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Lab2_Axi_Int_seq_sqrt.bd" FileRelPathName="ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0.xci">
-          <Proxy FileSetName="Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Lab2_Axi_Int_seq_sqrt.bd" FileRelPathName="ip/Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0/Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0.xci">
           <Proxy FileSetName="Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Lab2_Axi_Int_seq_sqrt.bd" FileRelPathName="ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2.xci">
+          <Proxy FileSetName="Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/Lab2_Axi_Int_seq_sqrt/hdl/Lab2_Axi_Int_seq_sqrt_wrapper.vhd">
@@ -134,6 +134,13 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sim_1/new/axi_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="Lab2_Axi_Int_seq_sqrt_wrapper"/>
@@ -175,9 +182,9 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0" RelGenDir="$PGENDIR/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0">
+    <FileSet Name="Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2" RelGenDir="$PGENDIR/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2">
       <Config>
-        <Option Name="TopModule" Val="Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0"/>
+        <Option Name="TopModule" Val="Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -231,9 +238,11 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0_synth_1" Type="Ft3:Synth" SrcSet="Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0" Part="xc7z020clg400-1" ConstrsSet="Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0_synth_1">
+    <Run Id="Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2_synth_1" Type="Ft3:Synth" SrcSet="Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2" Part="xc7z020clg400-1" ConstrsSet="Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -293,9 +302,11 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0_impl_1">
+    <Run Id="Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

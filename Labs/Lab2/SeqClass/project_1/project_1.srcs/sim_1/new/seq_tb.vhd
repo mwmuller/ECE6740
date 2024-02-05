@@ -39,17 +39,18 @@ architecture Behavioral of seq_tb is
     component seqdeta_top is
     port(
 		 mclk : in STD_LOGIC;
-		 clr : in std_logic;
-		 btn : in STD_LOGIC_VECTOR(3 downto 0));
+		 btn : in STD_LOGIC_VECTOR(3 downto 0);
+		 root : out std_logic_vector(7 downto 0);
+		 din : out std_logic_vector(15 downto 0);
+		 done : out std_logic);
     end component;
 signal clk : std_logic := '0';
-   signal clr : std_logic := '0';
    constant clk_period : time := 20 ns;
    constant divPeriod : time := 5 ms;
    signal btn : std_logic_vector(3 downto 0);
    signal ld : std_logic_vector(0 downto 0);
 begin
-uut: seqdeta_top PORT MAP (clk, clr, btn);       
+uut: seqdeta_top PORT MAP (clk, btn);       
 
 
    clk_process :process
@@ -63,9 +64,9 @@ uut: seqdeta_top PORT MAP (clk, clr, btn);
    main_stim: process
    begin
    
-    clr <= '1';
+    btn(3) <= '1';
     wait for clk_period;
-    clr <='0';
+    btn(3) <='0';
     wait for clk_period;
     
     
@@ -127,7 +128,7 @@ uut: seqdeta_top PORT MAP (clk, clr, btn);
     btn(0) <= '1';	-- clking
     wait for divPeriod*3;
     btn(0) <= '0';
-    for i in 0 to 5 loop
+    for i in 0 to 8 loop
         btn(1) <= '0';
         btn(0) <= '1';	-- clking
         wait for divPeriod*3;
@@ -136,13 +137,21 @@ uut: seqdeta_top PORT MAP (clk, clr, btn);
         wait for divPeriod*3;
 	end loop;
         -- End cycle
-    for i in 0 to 5 loop
+        btn(1) <= '1';
+        btn(0) <= '1';	-- clking
+        wait for divPeriod*3;
+        btn(0) <= '0';
+    for i in 0 to 10 loop
         btn(0) <= '1';	-- clking
         wait for divPeriod*3;
         btn(0) <= '0';
         -- End cycle
 	wait for divPeriod*3;
     end loop;
+    btn(3) <= '1';
+    wait for clk_period;
+    btn(3) <='0';
+    wait for clk_period;
 	wait for divPeriod*10;
    end process;
 

@@ -2012,8 +2012,8 @@
       },
       "mypi_axi_sqrt_bd_0": {
         "vlnv": "xilinx.com:user:mypi_axi_sqrt_bd:1.0",
-        "xci_name": "Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0",
-        "xci_path": "ip\\Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0\\Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0.xci",
+        "xci_name": "Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2",
+        "xci_path": "ip\\Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2\\Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2.xci",
         "inst_hier_path": "mypi_axi_sqrt_bd_0",
         "interface_ports": {
           "S00_AXI_0": {
@@ -2051,7 +2051,7 @@
       }
     },
     "nets": {
-      "btn_0_1": {
+      "btn_1": {
         "ports": [
           "btn",
           "mypi_axi_sqrt_bd_0/btn"

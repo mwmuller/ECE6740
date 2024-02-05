@@ -1,7 +1,7 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-// Date        : Sun Feb  4 14:26:19 2024
+// Date        : Mon Feb  5 13:44:27 2024
 // Host        : DESKTOP-LF8951D running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ip/axi_sqrt_bd_mypi_axi_seq_sqrt_0_0/axi_sqrt_bd_mypi_axi_seq_sqrt_0_0_stub.v
@@ -14,12 +14,16 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* x_core_info = "mypi_axi_seq_sqrt_v1_0,Vivado 2022.1" *)
-module axi_sqrt_bd_mypi_axi_seq_sqrt_0_0(s00_axi_awaddr, s00_axi_awprot, 
-  s00_axi_awvalid, s00_axi_awready, s00_axi_wdata, s00_axi_wstrb, s00_axi_wvalid, 
-  s00_axi_wready, s00_axi_bresp, s00_axi_bvalid, s00_axi_bready, s00_axi_araddr, 
-  s00_axi_arprot, s00_axi_arvalid, s00_axi_arready, s00_axi_rdata, s00_axi_rresp, 
-  s00_axi_rvalid, s00_axi_rready, s00_axi_aclk, s00_axi_aresetn)
-/* synthesis syn_black_box black_box_pad_pin="s00_axi_awaddr[3:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[3:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready,s00_axi_aclk,s00_axi_aresetn" */;
+module axi_sqrt_bd_mypi_axi_seq_sqrt_0_0(S_ROOT_IN, S_DIN_IN, s00_axi_aclk, 
+  s00_axi_aresetn, s00_axi_awaddr, s00_axi_awprot, s00_axi_awvalid, s00_axi_awready, 
+  s00_axi_wdata, s00_axi_wstrb, s00_axi_wvalid, s00_axi_wready, s00_axi_bresp, 
+  s00_axi_bvalid, s00_axi_bready, s00_axi_araddr, s00_axi_arprot, s00_axi_arvalid, 
+  s00_axi_arready, s00_axi_rdata, s00_axi_rresp, s00_axi_rvalid, s00_axi_rready)
+/* synthesis syn_black_box black_box_pad_pin="S_ROOT_IN[7:0],S_DIN_IN[15:0],s00_axi_aclk,s00_axi_aresetn,s00_axi_awaddr[3:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[3:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready" */;
+  input [7:0]S_ROOT_IN;
+  input [15:0]S_DIN_IN;
+  input s00_axi_aclk;
+  input s00_axi_aresetn;
   input [3:0]s00_axi_awaddr;
   input [2:0]s00_axi_awprot;
   input s00_axi_awvalid;
@@ -39,6 +43,4 @@ module axi_sqrt_bd_mypi_axi_seq_sqrt_0_0(s00_axi_awaddr, s00_axi_awprot,
   output [1:0]s00_axi_rresp;
   output s00_axi_rvalid;
   input s00_axi_rready;
-  input s00_axi_aclk;
-  input s00_axi_aresetn;
 endmodule

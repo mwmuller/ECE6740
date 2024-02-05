@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="40">
   <CompositeFile CompositeFileTopName="Lab2_Axi_Int_seq_sqrt" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1707074877"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1707074877"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1707074877"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1707074877"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1707163542"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1707163542"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1707163542"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1707163542"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth\Lab2_Axi_Int_seq_sqrt.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>

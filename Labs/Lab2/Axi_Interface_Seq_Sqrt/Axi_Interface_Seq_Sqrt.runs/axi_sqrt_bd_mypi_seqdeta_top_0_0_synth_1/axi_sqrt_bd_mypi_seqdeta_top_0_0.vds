@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Sun Feb  4 14:25:44 2024
-# Process ID: 23228
+# Start of session at: Mon Feb  5 15:04:53 2024
+# Process ID: 17884
 # Current directory: F:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.runs/axi_sqrt_bd_mypi_seqdeta_top_0_0_synth_1
 # Command line: vivado.exe -log axi_sqrt_bd_mypi_seqdeta_top_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_sqrt_bd_mypi_seqdeta_top_0_0.tcl
 # Log file: F:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.runs/axi_sqrt_bd_mypi_seqdeta_top_0_0_synth_1/axi_sqrt_bd_mypi_seqdeta_top_0_0.vds
@@ -24,79 +24,78 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 29740
+INFO: [Synth 8-7075] Helper process launched with PID 30536
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1275.699 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1275.039 ; gain = 0.000
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-9112] actual for formal port 'clr' is neither a static name nor a globally static expression [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqdeta_top.vhd:78]
-INFO: [Synth 8-638] synthesizing module 'axi_sqrt_bd_mypi_seqdeta_top_0_0' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ip/axi_sqrt_bd_mypi_seqdeta_top_0_0/synth/axi_sqrt_bd_mypi_seqdeta_top_0_0.vhd:65]
-INFO: [Synth 8-3491] module 'seqdeta_top' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqdeta_top.vhd:5' bound to instance 'U0' of component 'seqdeta_top' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ip/axi_sqrt_bd_mypi_seqdeta_top_0_0/synth/axi_sqrt_bd_mypi_seqdeta_top_0_0.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'seqdeta_top' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqdeta_top.vhd:13]
-INFO: [Synth 8-3491] module 'clock_pulse' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/clock_pulse.vhd:5' bound to instance 'SeqInut' of component 'clock_pulse' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqdeta_top.vhd:61]
-INFO: [Synth 8-638] synthesizing module 'clock_pulse' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/clock_pulse.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'clock_pulse' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/clock_pulse.vhd:14]
-INFO: [Synth 8-3491] module 'clkdiv' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/clkdiv.vhd:6' bound to instance 'lockinInput' of component 'clkdiv' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqdeta_top.vhd:68]
-INFO: [Synth 8-638] synthesizing module 'clkdiv' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/clkdiv.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'clkdiv' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/clkdiv.vhd:14]
-INFO: [Synth 8-3491] module 'seqdeta' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqdeta.vhd:5' bound to instance 'U3' of component 'seqdeta' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqdeta_top.vhd:75]
-INFO: [Synth 8-638] synthesizing module 'seqdeta' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqdeta.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'seqdeta' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqdeta.vhd:12]
-INFO: [Synth 8-3491] module 'seqRead16' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqRead16.vhd:6' bound to instance 'U4' of component 'seqRead16' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqdeta_top.vhd:82]
-INFO: [Synth 8-638] synthesizing module 'seqRead16' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqRead16.vhd:15]
-WARNING: [Synth 8-614] signal 'clk_counter' is read in the process but is not in the sensitivity list [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqRead16.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'seqRead16' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqRead16.vhd:15]
-INFO: [Synth 8-3491] module 'sqrt' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/sqrt.vhd:34' bound to instance 'U5' of component 'sqrt' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqdeta_top.vhd:91]
-INFO: [Synth 8-638] synthesizing module 'sqrt' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/sqrt.vhd:43]
-INFO: [Synth 8-3491] module 'sqrtctl' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/sqrtctl.vhd:34' bound to instance 'sqrt1' of component 'sqrtCtl' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/sqrt.vhd:70]
-INFO: [Synth 8-638] synthesizing module 'sqrtctl' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/sqrtctl.vhd:45]
-INFO: [Synth 8-226] default block is never used [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/sqrtctl.vhd:63]
-INFO: [Synth 8-226] default block is never used [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/sqrtctl.vhd:90]
-INFO: [Synth 8-256] done synthesizing module 'sqrtctl' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/sqrtctl.vhd:45]
-INFO: [Synth 8-3491] module 'sqrtPath' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/sqrtPath.vhd:34' bound to instance 'sqrt2' of component 'sqrtPath' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/sqrt.vhd:74]
-INFO: [Synth 8-638] synthesizing module 'sqrtPath' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/sqrtPath.vhd:46]
+WARNING: [Synth 8-9112] actual for formal port 'clr' is neither a static name nor a globally static expression [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqdeta_top.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'axi_sqrt_bd_mypi_seqdeta_top_0_0' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ip/axi_sqrt_bd_mypi_seqdeta_top_0_0/synth/axi_sqrt_bd_mypi_seqdeta_top_0_0.vhd:66]
+INFO: [Synth 8-3491] module 'seqdeta_top' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqdeta_top.vhd:5' bound to instance 'U0' of component 'seqdeta_top' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ip/axi_sqrt_bd_mypi_seqdeta_top_0_0/synth/axi_sqrt_bd_mypi_seqdeta_top_0_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'seqdeta_top' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqdeta_top.vhd:14]
+INFO: [Synth 8-3491] module 'clock_pulse' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/clock_pulse.vhd:5' bound to instance 'SeqInut' of component 'clock_pulse' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqdeta_top.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'clock_pulse' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/clock_pulse.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'clock_pulse' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/clock_pulse.vhd:14]
+INFO: [Synth 8-3491] module 'clkdiv' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/clkdiv.vhd:6' bound to instance 'lockinInput' of component 'clkdiv' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqdeta_top.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/clkdiv.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/clkdiv.vhd:14]
+INFO: [Synth 8-3491] module 'seqdeta' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqdeta.vhd:5' bound to instance 'U3' of component 'seqdeta' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqdeta_top.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'seqdeta' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqdeta.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'seqdeta' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqdeta.vhd:12]
+INFO: [Synth 8-3491] module 'seqRead16' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqRead16.vhd:6' bound to instance 'U4' of component 'seqRead16' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqdeta_top.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'seqRead16' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqRead16.vhd:15]
+WARNING: [Synth 8-614] signal 'clk_counter' is read in the process but is not in the sensitivity list [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqRead16.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'seqRead16' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqRead16.vhd:15]
+INFO: [Synth 8-3491] module 'sqrt' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/sqrt.vhd:34' bound to instance 'U5' of component 'sqrt' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqdeta_top.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'sqrt' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/sqrt.vhd:43]
+INFO: [Synth 8-3491] module 'sqrtctl' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/sqrtctl.vhd:34' bound to instance 'sqrt1' of component 'sqrtCtl' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/sqrt.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'sqrtctl' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/sqrtctl.vhd:45]
+INFO: [Synth 8-226] default block is never used [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/sqrtctl.vhd:63]
+INFO: [Synth 8-226] default block is never used [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/sqrtctl.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'sqrtctl' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/sqrtctl.vhd:45]
+INFO: [Synth 8-3491] module 'sqrtPath' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/sqrtPath.vhd:34' bound to instance 'sqrt2' of component 'sqrtPath' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/sqrt.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'sqrtPath' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/sqrtPath.vhd:46]
 	Parameter N bound to: 16 - type: integer 
 	Parameter bit0 bound to: 1'b0 
 	Parameter bit1 bound to: 1'b0 
-INFO: [Synth 8-3491] module 'regr' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/regr.vhd:34' bound to instance 'aReg' of component 'regr' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/sqrtPath.vhd:90]
-INFO: [Synth 8-638] synthesizing module 'regr' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/regr.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'regr' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/regr.vhd:45]
+INFO: [Synth 8-3491] module 'regr' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/regr.vhd:34' bound to instance 'aReg' of component 'regr' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/sqrtPath.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'regr' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/regr.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'regr' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/regr.vhd:45]
 	Parameter N bound to: 17 - type: integer 
 	Parameter bit0 bound to: 1'b1 
 	Parameter bit1 bound to: 1'b0 
-INFO: [Synth 8-3491] module 'regr' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/regr.vhd:34' bound to instance 'sqReg' of component 'regr' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/sqrtPath.vhd:95]
-INFO: [Synth 8-638] synthesizing module 'regr__parameterized1' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/regr.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'regr__parameterized1' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/regr.vhd:45]
+INFO: [Synth 8-3491] module 'regr' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/regr.vhd:34' bound to instance 'sqReg' of component 'regr' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/sqrtPath.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'regr__parameterized1' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/regr.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'regr__parameterized1' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/regr.vhd:45]
 	Parameter N bound to: 9 - type: integer 
 	Parameter bit0 bound to: 1'b1 
 	Parameter bit1 bound to: 1'b1 
-INFO: [Synth 8-3491] module 'regr' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/regr.vhd:34' bound to instance 'delReg' of component 'regr' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/sqrtPath.vhd:99]
-INFO: [Synth 8-638] synthesizing module 'regr__parameterized3' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/regr.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'regr__parameterized3' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/regr.vhd:45]
+INFO: [Synth 8-3491] module 'regr' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/regr.vhd:34' bound to instance 'delReg' of component 'regr' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/sqrtPath.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'regr__parameterized3' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/regr.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'regr__parameterized3' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/regr.vhd:45]
 	Parameter N bound to: 8 - type: integer 
 	Parameter bit0 bound to: 1'b0 
 	Parameter bit1 bound to: 1'b0 
-INFO: [Synth 8-3491] module 'regr' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/regr.vhd:34' bound to instance 'outReg' of component 'regr' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/sqrtPath.vhd:105]
-INFO: [Synth 8-638] synthesizing module 'regr__parameterized5' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/regr.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'regr__parameterized5' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/regr.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'sqrtPath' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/sqrtPath.vhd:46]
-INFO: [Synth 8-256] done synthesizing module 'sqrt' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/sqrt.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'seqdeta_top' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqdeta_top.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'axi_sqrt_bd_mypi_seqdeta_top_0_0' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ip/axi_sqrt_bd_mypi_seqdeta_top_0_0/synth/axi_sqrt_bd_mypi_seqdeta_top_0_0.vhd:65]
-WARNING: [Synth 8-7129] Port btn[3] in module seqdeta_top is either unconnected or has no load
+INFO: [Synth 8-3491] module 'regr' declared at 'f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/regr.vhd:34' bound to instance 'outReg' of component 'regr' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/sqrtPath.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'regr__parameterized5' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/regr.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'regr__parameterized5' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/regr.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'sqrtPath' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/sqrtPath.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'sqrt' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/sqrt.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'seqdeta_top' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqdeta_top.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'axi_sqrt_bd_mypi_seqdeta_top_0_0' (0#1) [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ip/axi_sqrt_bd_mypi_seqdeta_top_0_0/synth/axi_sqrt_bd_mypi_seqdeta_top_0_0.vhd:66]
 WARNING: [Synth 8-7129] Port btn[2] in module seqdeta_top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1275.699 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1275.039 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1275.699 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1275.039 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1275.699 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1275.039 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1275.699 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1275.039 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -113,33 +112,33 @@ Parsing XDC File [F:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi
 Finished Parsing XDC File [F:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.runs/axi_sqrt_bd_mypi_seqdeta_top_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1333.180 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1332.008 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1334.176 ; gain = 0.996
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1332.242 ; gain = 0.234
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1334.176 ; gain = 58.477
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1332.242 ; gain = 57.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1334.176 ; gain = 58.477
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1332.242 ; gain = 57.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  F:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.runs/axi_sqrt_bd_mypi_seqdeta_top_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1334.176 ; gain = 58.477
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1332.242 ; gain = 57.203
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'present_state_reg' in module 'seqdeta'
 INFO: [Synth 8-802] inferred FSM for state register 'present_state_reg' in module 'sqrtctl'
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqdeta.vhd:22]
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqdeta.vhd:22]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqdeta.vhd:22]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqdeta.vhd:22]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -151,7 +150,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' 
                       s5 |                              101 |                              101
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'sequential' in module 'seqdeta'
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/614c/src/seqdeta.vhd:22]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [f:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.gen/sources_1/bd/axi_sqrt_bd/ipshared/e8d9/src/seqdeta.vhd:22]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -162,7 +161,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_r
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'sequential' in module 'sqrtctl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1334.176 ; gain = 58.477
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1332.242 ; gain = 57.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -204,28 +203,27 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port btn[3] in module seqdeta_top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port btn[2] in module seqdeta_top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1334.176 ; gain = 58.477
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1332.242 ; gain = 57.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1334.176 ; gain = 58.477
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1332.242 ; gain = 57.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1334.176 ; gain = 58.477
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1332.242 ; gain = 57.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1334.176 ; gain = 58.477
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1332.242 ; gain = 57.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -243,37 +241,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1334.176 ; gain = 58.477
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1332.242 ; gain = 57.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1334.176 ; gain = 58.477
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1332.242 ; gain = 57.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1334.176 ; gain = 58.477
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1332.242 ; gain = 57.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1334.176 ; gain = 58.477
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1332.242 ; gain = 57.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1334.176 ; gain = 58.477
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1332.242 ; gain = 57.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1334.176 ; gain = 58.477
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1332.242 ; gain = 57.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -291,40 +289,42 @@ Report Cell Usage:
 +------+-------+------+
 |1     |CARRY4 |    28|
 |2     |LUT1   |    34|
-|3     |LUT2   |    16|
-|4     |LUT3   |     4|
-|5     |LUT4   |    25|
-|6     |LUT5   |    25|
-|7     |LUT6   |     9|
-|8     |FDCE   |   113|
+|3     |LUT2   |    19|
+|4     |LUT3   |     7|
+|5     |LUT4   |    30|
+|6     |LUT5   |    10|
+|7     |LUT6   |    25|
+|8     |FDCE   |   122|
 |9     |FDPE   |     3|
 |10    |LD     |     3|
+|11    |LDC    |     1|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1334.176 ; gain = 58.477
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1332.242 ; gain = 57.203
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1334.176 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1334.176 ; gain = 58.477
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1332.242 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1332.242 ; gain = 57.203
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1334.176 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1332.242 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1334.176 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1332.242 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 3 instances were transformed.
+  A total of 4 instances were transformed.
   LD => LDCE: 3 instances
+  LDC => LDCE: 1 instance 
 
-Synth Design complete, checksum: 2509d6f7
+Synth Design complete, checksum: 867ed150
 INFO: [Common 17-83] Releasing license: Synthesis
-62 Infos, 14 Warnings, 2 Critical Warnings and 0 Errors encountered.
+62 Infos, 12 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1334.176 ; gain = 58.477
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1332.242 ; gain = 57.203
 INFO: [Common 17-1381] The checkpoint 'F:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.runs/axi_sqrt_bd_mypi_seqdeta_top_0_0_synth_1/axi_sqrt_bd_mypi_seqdeta_top_0_0.dcp' has been generated.
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-INFO: [Coretcl 2-1174] Renamed 11 cell refs.
+INFO: [Coretcl 2-1174] Renamed 12 cell refs.
 INFO: [Common 17-1381] The checkpoint 'F:/MastersProgram/ECE6740/Labs/Lab2/Axi_Interface_Seq_Sqrt/Axi_Interface_Seq_Sqrt.runs/axi_sqrt_bd_mypi_seqdeta_top_0_0_synth_1/axi_sqrt_bd_mypi_seqdeta_top_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file axi_sqrt_bd_mypi_seqdeta_top_0_0_utilization_synth.rpt -pb axi_sqrt_bd_mypi_seqdeta_top_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Feb  4 14:26:20 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  5 15:05:28 2024...

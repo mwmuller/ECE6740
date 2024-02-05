@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
---Date        : Sun Feb  4 14:27:56 2024
+--Date        : Mon Feb  5 15:05:41 2024
 --Host        : DESKTOP-LF8951D running 64-bit major release  (build 9200)
 --Command     : generate_target Lab2_Axi_Int_seq_sqrt.bd
 --Design      : Lab2_Axi_Int_seq_sqrt
@@ -614,7 +614,7 @@ entity Lab2_Axi_Int_seq_sqrt is
     btn : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of Lab2_Axi_Int_seq_sqrt : entity is "Lab2_Axi_Int_seq_sqrt,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Lab2_Axi_Int_seq_sqrt,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=1,bdsource=USER,da_axi4_cnt=4,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of Lab2_Axi_Int_seq_sqrt : entity is "Lab2_Axi_Int_seq_sqrt,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Lab2_Axi_Int_seq_sqrt,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=1,bdsource=USER,da_axi4_cnt=7,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of Lab2_Axi_Int_seq_sqrt : entity is "Lab2_Axi_Int_seq_sqrt.hwdef";
 end Lab2_Axi_Int_seq_sqrt;
@@ -704,7 +704,7 @@ architecture STRUCTURE of Lab2_Axi_Int_seq_sqrt is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0;
-  component Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0 is
+  component Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2 is
   port (
     S00_AXI_0_araddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
     S00_AXI_0_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -730,8 +730,8 @@ architecture STRUCTURE of Lab2_Axi_Int_seq_sqrt is
     s00_axi_aclk_0 : in STD_LOGIC;
     s00_axi_aresetn_0 : in STD_LOGIC
   );
-  end component Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0;
-  signal btn_0_1 : STD_LOGIC_VECTOR ( 3 downto 0 );
+  end component Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2;
+  signal btn_1 : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal mypi_axi_sqrt_bd_0_done_int : STD_LOGIC;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -847,8 +847,8 @@ architecture STRUCTURE of Lab2_Axi_Int_seq_sqrt is
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
 begin
-  btn_0_1(3 downto 0) <= btn(3 downto 0);
-mypi_axi_sqrt_bd_0: component Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0
+  btn_1(3 downto 0) <= btn(3 downto 0);
+mypi_axi_sqrt_bd_0: component Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2
      port map (
       S00_AXI_0_araddr(3 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(3 downto 0),
       S00_AXI_0_arprot(2 downto 0) => ps7_0_axi_periph_M00_AXI_ARPROT(2 downto 0),
@@ -869,7 +869,7 @@ mypi_axi_sqrt_bd_0: component Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0
       S00_AXI_0_wready => ps7_0_axi_periph_M00_AXI_WREADY,
       S00_AXI_0_wstrb(3 downto 0) => ps7_0_axi_periph_M00_AXI_WSTRB(3 downto 0),
       S00_AXI_0_wvalid => ps7_0_axi_periph_M00_AXI_WVALID,
-      btn(3 downto 0) => btn_0_1(3 downto 0),
+      btn(3 downto 0) => btn_1(3 downto 0),
       done_int => mypi_axi_sqrt_bd_0_done_int,
       s00_axi_aclk_0 => processing_system7_0_FCLK_CLK0,
       s00_axi_aresetn_0 => rst_ps7_0_100M_peripheral_aresetn(0)

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Feb  4 14:26:57 2024" VIVADOVERSION="2022.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Feb  5 15:04:48 2024" VIVADOVERSION="2022.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="www.digilentinc.com:pynq-z1:part0:1.0" DEVICE="7z020" NAME="axi_sqrt_bd" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -15,10 +15,14 @@
         <CONNECTION INSTANCE="mypi_seqdeta_top_0" PORT="mclk"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="O" NAME="done_int" SIGIS="undef" SIGNAME="mypi_seqdeta_top_0_done">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mypi_seqdeta_top_0" PORT="done"/>
+      </CONNECTIONS>
+    </PORT>
     <PORT DIR="I" NAME="s00_axi_aresetn_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_s00_axi_aresetn_0">
       <CONNECTIONS>
         <CONNECTION INSTANCE="mypi_axi_seq_sqrt_0" PORT="s00_axi_aresetn"/>
-        <CONNECTION INSTANCE="mypi_seqdeta_top_0" PORT="clr"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="3" NAME="S00_AXI_0_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="mypi_axi_seq_sqrt_0_s00_axi_awaddr">
@@ -116,11 +120,6 @@
         <CONNECTION INSTANCE="mypi_axi_seq_sqrt_0" PORT="s00_axi_rready"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="done_int" SIGIS="undef" SIGNAME="mypi_seqdeta_top_0_done">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="mypi_seqdeta_top_0" PORT="done"/>
-      </CONNECTIONS>
-    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>
@@ -187,7 +186,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="1" FULLNAME="/mypi_axi_seq_sqrt_0" HWVERSION="1.0" INSTANCE="mypi_axi_seq_sqrt_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mypi_axi_seq_sqrt" VLNV="xilinx.com:user:mypi_axi_seq_sqrt:1.0">
+    <MODULE COREREVISION="7" FULLNAME="/mypi_axi_seq_sqrt_0" HWVERSION="1.0" INSTANCE="mypi_axi_seq_sqrt_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mypi_axi_seq_sqrt" VLNV="xilinx.com:user:mypi_axi_seq_sqrt:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_S00_AXI_DATA_WIDTH" VALUE="32"/>
@@ -198,6 +197,26 @@
         <PARAMETER NAME="C_S00_AXI_HIGHADDR" VALUE="0x00000FFF"/>
       </PARAMETERS>
       <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="S_ROOT_IN" RIGHT="0" SIGIS="undef" SIGNAME="mypi_seqdeta_top_0_root">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mypi_seqdeta_top_0" PORT="root"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="S_DIN_IN" RIGHT="0" SIGIS="undef" SIGNAME="mypi_seqdeta_top_0_din">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mypi_seqdeta_top_0" PORT="din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s00_axi_aclk" SIGIS="clk" SIGNAME="External_Ports_s00_axi_aclk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="s00_axi_aclk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s00_axi_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_s00_axi_aresetn_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="s00_axi_aresetn_0"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="3" NAME="s00_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="mypi_axi_seq_sqrt_0_s00_axi_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_sqrt_bd_imp" PORT="S00_AXI_0_awaddr"/>
@@ -293,16 +312,6 @@
             <CONNECTION INSTANCE="axi_sqrt_bd_imp" PORT="S00_AXI_0_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s00_axi_aclk" SIGIS="clk" SIGNAME="External_Ports_s00_axi_aclk_0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="s00_axi_aclk_0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="s00_axi_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_s00_axi_aresetn_0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="s00_axi_aresetn_0"/>
-          </CONNECTIONS>
-        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="External_Interface_S00_AXI_0" DATAWIDTH="32" NAME="S00_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
@@ -363,7 +372,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2" FULLNAME="/mypi_seqdeta_top_0" HWVERSION="1.0" INSTANCE="mypi_seqdeta_top_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mypi_seqdeta_top" VLNV="xilinx.com:user:mypi_seqdeta_top:1.0">
+    <MODULE COREREVISION="8" FULLNAME="/mypi_seqdeta_top_0" HWVERSION="1.0" INSTANCE="mypi_seqdeta_top_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mypi_seqdeta_top" VLNV="xilinx.com:user:mypi_seqdeta_top:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="axi_sqrt_bd_mypi_seqdeta_top_0_0"/>
@@ -375,14 +384,19 @@
             <CONNECTION INSTANCE="External_Ports" PORT="s00_axi_aclk_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="clr" POLARITY="ACTIVE_LOW" SIGIS="undef" SIGNAME="External_Ports_s00_axi_aresetn_0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="s00_axi_aresetn_0"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" LEFT="3" NAME="btn" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_btn">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="btn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="root" RIGHT="0" SIGIS="undef" SIGNAME="mypi_seqdeta_top_0_root">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mypi_axi_seq_sqrt_0" PORT="S_ROOT_IN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="din" RIGHT="0" SIGIS="undef" SIGNAME="mypi_seqdeta_top_0_din">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mypi_axi_seq_sqrt_0" PORT="S_DIN_IN"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="done" SIGIS="undef" SIGNAME="mypi_seqdeta_top_0_done">

@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:mypi_seqdeta_top:1.0
--- IP Revision: 2
+-- IP Revision: 8
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -56,8 +56,9 @@ USE ieee.numeric_std.ALL;
 ENTITY axi_sqrt_bd_mypi_seqdeta_top_0_0 IS
   PORT (
     mclk : IN STD_LOGIC;
-    clr : IN STD_LOGIC;
     btn : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    root : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+    din : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     done : OUT STD_LOGIC
   );
 END axi_sqrt_bd_mypi_seqdeta_top_0_0;
@@ -68,8 +69,9 @@ ARCHITECTURE axi_sqrt_bd_mypi_seqdeta_top_0_0_arch OF axi_sqrt_bd_mypi_seqdeta_t
   COMPONENT seqdeta_top IS
     PORT (
       mclk : IN STD_LOGIC;
-      clr : IN STD_LOGIC;
       btn : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+      root : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+      din : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       done : OUT STD_LOGIC
     );
   END COMPONENT seqdeta_top;
@@ -78,15 +80,16 @@ ARCHITECTURE axi_sqrt_bd_mypi_seqdeta_top_0_0_arch OF axi_sqrt_bd_mypi_seqdeta_t
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF axi_sqrt_bd_mypi_seqdeta_top_0_0_arch : ARCHITECTURE IS "axi_sqrt_bd_mypi_seqdeta_top_0_0,seqdeta_top,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF axi_sqrt_bd_mypi_seqdeta_top_0_0_arch: ARCHITECTURE IS "axi_sqrt_bd_mypi_seqdeta_top_0_0,seqdeta_top,{x_ipProduct=Vivado 2022.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=mypi_seqdeta_top,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL}";
+  ATTRIBUTE CORE_GENERATION_INFO OF axi_sqrt_bd_mypi_seqdeta_top_0_0_arch: ARCHITECTURE IS "axi_sqrt_bd_mypi_seqdeta_top_0_0,seqdeta_top,{x_ipProduct=Vivado 2022.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=mypi_seqdeta_top,x_ipVersion=1.0,x_ipCoreRevision=8,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF axi_sqrt_bd_mypi_seqdeta_top_0_0_arch: ARCHITECTURE IS "package_project";
 BEGIN
   U0 : seqdeta_top
     PORT MAP (
       mclk => mclk,
-      clr => clr,
       btn => btn,
+      root => root,
+      din => din,
       done => done
     );
 END axi_sqrt_bd_mypi_seqdeta_top_0_0_arch;

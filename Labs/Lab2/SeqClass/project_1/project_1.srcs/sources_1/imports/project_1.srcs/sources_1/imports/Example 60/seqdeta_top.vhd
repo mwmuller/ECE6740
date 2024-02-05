@@ -5,8 +5,10 @@ use IEEE.STD_LOGIC_1164.all;
 entity seqdeta_top is
 	 port(
 		 mclk : in STD_LOGIC;
-		 clr : in std_logic;
-		 btn : in STD_LOGIC_VECTOR(3 downto 0));
+		 btn : in STD_LOGIC_VECTOR(3 downto 0);
+		 root : out std_logic_vector(7 downto 0);
+		 din : out std_logic_vector(15 downto 0);
+		 done : out std_logic);
 end seqdeta_top;
 
 architecture seqdeta_top of seqdeta_top is
@@ -51,10 +53,10 @@ component sqrt is
            root : out STD_LOGIC_VECTOR (7 downto 0));
 end component;
 
-signal clrout, clkp, btn01, outp, clk190, reset_out, seqout, done: STD_LOGIC;
+signal clr, clkp, btn01, outp, clk190, reset_out, seqout: STD_LOGIC;
 signal register_sig_out : std_logic_vector(15 downto 0);
-signal root_out : std_logic_vector(7 downto 0);
 begin  
+  clr <= btn(3);
   btn01 <= btn(0) or btn(1);
 
   SeqInut : clock_pulse -- monitor the input value
@@ -93,7 +95,7 @@ begin
    strt => reset_out,
    sw => register_sig_out,
    done => done,
-   root => root_out
+   root => root
   );
-    
+   din <= register_sig_out;
 end seqdeta_top;

@@ -15,8 +15,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab2_Axi_In
 # IP: bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0/Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0 || ORIG_REF_NAME==Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0} -quiet] -quiet
 
-# IP: bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0 || ORIG_REF_NAME==Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0} -quiet] -quiet
+# IP: bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2/Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2 || ORIG_REF_NAME==Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2} -quiet] -quiet
 
 # IP: bd/Lab2_Axi_Int_seq_sqrt/ip/Lab2_Axi_Int_seq_sqrt_auto_pc_0/Lab2_Axi_Int_seq_sqrt_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Lab2_Axi_Int_seq_sqrt_auto_pc_0 || ORIG_REF_NAME==Lab2_Axi_Int_seq_sqrt_auto_pc_0} -quiet] -quiet

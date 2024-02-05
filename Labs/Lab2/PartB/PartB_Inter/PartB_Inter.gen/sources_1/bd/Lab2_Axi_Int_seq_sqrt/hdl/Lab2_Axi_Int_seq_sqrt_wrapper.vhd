@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
---Date        : Sun Feb  4 14:27:56 2024
+--Date        : Mon Feb  5 15:05:41 2024
 --Host        : DESKTOP-LF8951D running 64-bit major release  (build 9200)
 --Command     : generate_target Lab2_Axi_Int_seq_sqrt_wrapper.bd
 --Design      : Lab2_Axi_Int_seq_sqrt_wrapper
@@ -41,6 +41,7 @@ end Lab2_Axi_Int_seq_sqrt_wrapper;
 architecture STRUCTURE of Lab2_Axi_Int_seq_sqrt_wrapper is
   component Lab2_Axi_Int_seq_sqrt is
   port (
+    btn : in STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -61,8 +62,7 @@ architecture STRUCTURE of Lab2_Axi_Int_seq_sqrt_wrapper is
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC;
-    btn : in STD_LOGIC_VECTOR ( 3 downto 0 )
+    FIXED_IO_ps_porb : inout STD_LOGIC
   );
   end component Lab2_Axi_Int_seq_sqrt;
 begin

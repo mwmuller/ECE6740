@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:mypi_seqdeta_top:1.0
--- IP Revision: 2
+-- IP Revision: 8
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -56,8 +56,9 @@ USE ieee.numeric_std.ALL;
 ENTITY axi_sqrt_bd_mypi_seqdeta_top_0_0 IS
   PORT (
     mclk : IN STD_LOGIC;
-    clr : IN STD_LOGIC;
     btn : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    root : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+    din : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     done : OUT STD_LOGIC
   );
 END axi_sqrt_bd_mypi_seqdeta_top_0_0;
@@ -68,8 +69,9 @@ ARCHITECTURE axi_sqrt_bd_mypi_seqdeta_top_0_0_arch OF axi_sqrt_bd_mypi_seqdeta_t
   COMPONENT seqdeta_top IS
     PORT (
       mclk : IN STD_LOGIC;
-      clr : IN STD_LOGIC;
       btn : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+      root : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+      din : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       done : OUT STD_LOGIC
     );
   END COMPONENT seqdeta_top;
@@ -77,8 +79,9 @@ BEGIN
   U0 : seqdeta_top
     PORT MAP (
       mclk => mclk,
-      clr => clr,
       btn => btn,
+      root => root,
+      din => din,
       done => done
     );
 END axi_sqrt_bd_mypi_seqdeta_top_0_0_arch;

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Sun Feb  4 14:29:22 2024
+| Date         : Mon Feb  5 15:07:17 2024
 | Host         : DESKTOP-LF8951D running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Lab2_Axi_Int_seq_sqrt_wrapper_utilization_synth.rpt -pb Lab2_Axi_Int_seq_sqrt_wrapper_utilization_synth.pb
 | Design       : Lab2_Axi_Int_seq_sqrt_wrapper
@@ -159,7 +159,7 @@ Table of Contents
 +----------------------------------------------+------+
 | Lab2_Axi_Int_seq_sqrt_rst_ps7_0_100M_0       |    1 |
 | Lab2_Axi_Int_seq_sqrt_processing_system7_0_0 |    1 |
-| Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_0   |    1 |
+| Lab2_Axi_Int_seq_sqrt_mypi_axi_sqrt_bd_0_2   |    1 |
 | Lab2_Axi_Int_seq_sqrt_auto_pc_0              |    1 |
 +----------------------------------------------+------+
 
