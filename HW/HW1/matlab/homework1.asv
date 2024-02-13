@@ -1,0 +1,31 @@
+ET = [5,10,15,5, 10,10,10,10, 15,15,5,5]; % define matricies
+P = [3,3,3,2, 2,1,3,2, 1,2,2,3]; % define matricies
+f = [3*ET(:)', 2*P(:)']; % Apply the equation into a single vector
+numCol = 24; % columns in f
+intcon = 1:numCol; % define values to change
+lb = zeros(numCol,1)'; % set lb to 0s
+ub = ones(numCol,1)'; % limit to binary
+x1 = zeros(1,24);
+x2 = zeros(1,24);
+x1(1:12) = 1;
+x2(13:24) = 1;
+Aeq = [];
+Aeq = [x1; x2];
+beq = [1,1];
+b = [];
+b = [1,1,7];
+A = [];
+for n = 1:3
+    scale = (n-1)*4;
+    temp = zeros(1,24);
+    temp(scale+1:scale+4) = 1;
+    temp(scale+13:scale+16) = 1;
+    A = [A; temp];
+end
+b = [2,2,2];
+%Aeq= [Aeq; x1_2; x3_4]
+[x, fval] = intlinprog(f, intcon, A, b,Aeq, beq, lb, ub);
+x_i = find(x == 1);
+display("x index selected: " + x_i);
+display("Index values: " + f(x_i));
+display("Fval: " + fval);
