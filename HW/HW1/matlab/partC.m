@@ -5,12 +5,19 @@ numCol = 12; % columns in f
 intcon = 1:numCol; % define values to change
 lb = zeros(numCol,1)'; % set lb to 0s
 ub = ones(numCol,1)'; % limit to binary
-inputAeq = [1,1,1,1, 0,0,0,0, 0,0,0,0; 0,0,0,0, 1,1,1,1, 0,0,0,0; 0,0,0,0, 0,0,0,0, 1,1,1,1];
-
-Aeq = inputAeq;
-beq = [1,1,1];
+blocks = 3;
+tasks = 4;
+% construct the Aeq
+Aeq = zeros(tasks,numCol);
+for n = 1:tasks
+    for k = 1:blocks
+        scale = n+(tasks*(k-1));
+        Aeq(n, scale) = 1;
+    end
+end
+beq = [1,1,1,1];
 A = P(:)'; 
-b = 4;
+b = 7;
 [x, fval] = intlinprog(f, intcon, A, b,Aeq, beq, lb, ub);
 fprintf("x index selected: ");
 x'
