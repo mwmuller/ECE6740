@@ -45,6 +45,5 @@ for i = 1:length(x)
         y_text = "B3: ";
     end
     y_text = y_text + y_num;
-    text_align
     text(x(i), y(i), {x_text, y_text}, 'HorizontalAlignment', text_align{1}, 'VerticalAlignment', text_align{2});
 end

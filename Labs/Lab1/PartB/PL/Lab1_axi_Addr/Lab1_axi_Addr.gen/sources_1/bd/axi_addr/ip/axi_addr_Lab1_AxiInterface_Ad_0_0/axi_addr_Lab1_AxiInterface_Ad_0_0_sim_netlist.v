@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-// Date        : Mon Jan 22 20:27:52 2024
-// Host        : DESKTOP-LF8951D running 64-bit major release  (build 9200)
+// Date        : Thu Feb 15 20:13:18 2024
+// Host        : DESKTOP-NE4QLD0 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               f:/MastersProgram/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/ip/axi_addr_Lab1_AxiInterface_Ad_0_0/axi_addr_Lab1_AxiInterface_Ad_0_0_sim_netlist.v
+//               f:/ECE6740/Labs/Lab1/PartB/PL/Lab1_axi_Addr/Lab1_axi_Addr.gen/sources_1/bd/axi_addr/ip/axi_addr_Lab1_AxiInterface_Ad_0_0/axi_addr_Lab1_AxiInterface_Ad_0_0_sim_netlist.v
 // Design      : axi_addr_Lab1_AxiInterface_Ad_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -117,10 +117,10 @@ endmodule
 
 (* ORIG_REF_NAME = "Lab1_AxiInterface_Adder_v1_0" *) 
 module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0
-   (R_ADDR_1,
-    R_ADDR_2,
+   (S_AXI_AWREADY,
     S_AXI_WREADY,
-    S_AXI_AWREADY,
+    R_ADDR_1,
+    R_ADDR_2,
     S_AXI_ARREADY,
     s00_axi_rdata,
     s00_axi_rvalid,
@@ -132,15 +132,15 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0
     s00_axi_wdata,
     s00_axi_araddr,
     s00_axi_arvalid,
-    s00_axi_wstrb,
     R_ADDR_SUM,
+    s00_axi_wstrb,
     s00_axi_aresetn,
     s00_axi_bready,
     s00_axi_rready);
+  output S_AXI_AWREADY;
+  output S_AXI_WREADY;
   output [31:0]R_ADDR_1;
   output [31:0]R_ADDR_2;
-  output S_AXI_WREADY;
-  output S_AXI_AWREADY;
   output S_AXI_ARREADY;
   output [31:0]s00_axi_rdata;
   output s00_axi_rvalid;
@@ -152,8 +152,8 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0
   input [31:0]s00_axi_wdata;
   input [1:0]s00_axi_araddr;
   input s00_axi_arvalid;
-  input [3:0]s00_axi_wstrb;
   input [31:0]R_ADDR_SUM;
+  input [3:0]s00_axi_wstrb;
   input s00_axi_aresetn;
   input s00_axi_bready;
   input s00_axi_rready;
@@ -204,10 +204,10 @@ endmodule
 
 (* ORIG_REF_NAME = "Lab1_AxiInterface_Adder_v1_0_S00_AXI" *) 
 module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
-   (R_ADDR_1,
-    R_ADDR_2,
+   (S_AXI_AWREADY,
     S_AXI_WREADY,
-    S_AXI_AWREADY,
+    R_ADDR_1,
+    R_ADDR_2,
     S_AXI_ARREADY,
     s00_axi_rdata,
     s00_axi_rvalid,
@@ -219,15 +219,15 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
     s00_axi_wdata,
     s00_axi_araddr,
     s00_axi_arvalid,
-    s00_axi_wstrb,
     R_ADDR_SUM,
+    s00_axi_wstrb,
     s00_axi_aresetn,
     s00_axi_bready,
     s00_axi_rready);
+  output S_AXI_AWREADY;
+  output S_AXI_WREADY;
   output [31:0]R_ADDR_1;
   output [31:0]R_ADDR_2;
-  output S_AXI_WREADY;
-  output S_AXI_AWREADY;
   output S_AXI_ARREADY;
   output [31:0]s00_axi_rdata;
   output s00_axi_rvalid;
@@ -239,16 +239,14 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
   input [31:0]s00_axi_wdata;
   input [1:0]s00_axi_araddr;
   input s00_axi_arvalid;
-  input [3:0]s00_axi_wstrb;
   input [31:0]R_ADDR_SUM;
+  input [3:0]s00_axi_wstrb;
   input s00_axi_aresetn;
   input s00_axi_bready;
   input s00_axi_rready;
 
   wire [31:0]R_ADDR_1;
-  wire \R_ADDR_1_reg[31]_i_1_n_0 ;
   wire [31:0]R_ADDR_2;
-  wire \R_ADDR_2_reg[31]_i_1_n_0 ;
   wire [31:0]R_ADDR_SUM;
   wire S_AXI_ARREADY;
   wire S_AXI_AWREADY;
@@ -262,45 +260,12 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
   wire \axi_awaddr[2]_i_1_n_0 ;
   wire \axi_awaddr[3]_i_1_n_0 ;
   wire axi_awready0;
-  wire axi_awready_i_1_n_0;
   wire axi_bvalid_i_1_n_0;
   wire axi_rvalid_i_1_n_0;
   wire axi_wready0;
   wire [1:0]p_0_in;
   wire [31:7]p_1_in;
   wire [31:0]reg_data_out;
-  wire \reg_data_out_reg[0]_i_1_n_0 ;
-  wire \reg_data_out_reg[10]_i_1_n_0 ;
-  wire \reg_data_out_reg[11]_i_1_n_0 ;
-  wire \reg_data_out_reg[12]_i_1_n_0 ;
-  wire \reg_data_out_reg[13]_i_1_n_0 ;
-  wire \reg_data_out_reg[14]_i_1_n_0 ;
-  wire \reg_data_out_reg[15]_i_1_n_0 ;
-  wire \reg_data_out_reg[16]_i_1_n_0 ;
-  wire \reg_data_out_reg[17]_i_1_n_0 ;
-  wire \reg_data_out_reg[18]_i_1_n_0 ;
-  wire \reg_data_out_reg[19]_i_1_n_0 ;
-  wire \reg_data_out_reg[1]_i_1_n_0 ;
-  wire \reg_data_out_reg[20]_i_1_n_0 ;
-  wire \reg_data_out_reg[21]_i_1_n_0 ;
-  wire \reg_data_out_reg[22]_i_1_n_0 ;
-  wire \reg_data_out_reg[23]_i_1_n_0 ;
-  wire \reg_data_out_reg[24]_i_1_n_0 ;
-  wire \reg_data_out_reg[25]_i_1_n_0 ;
-  wire \reg_data_out_reg[26]_i_1_n_0 ;
-  wire \reg_data_out_reg[27]_i_1_n_0 ;
-  wire \reg_data_out_reg[28]_i_1_n_0 ;
-  wire \reg_data_out_reg[29]_i_1_n_0 ;
-  wire \reg_data_out_reg[2]_i_1_n_0 ;
-  wire \reg_data_out_reg[30]_i_1_n_0 ;
-  wire \reg_data_out_reg[31]_i_1_n_0 ;
-  wire \reg_data_out_reg[3]_i_1_n_0 ;
-  wire \reg_data_out_reg[4]_i_1_n_0 ;
-  wire \reg_data_out_reg[5]_i_1_n_0 ;
-  wire \reg_data_out_reg[6]_i_1_n_0 ;
-  wire \reg_data_out_reg[7]_i_1_n_0 ;
-  wire \reg_data_out_reg[8]_i_1_n_0 ;
-  wire \reg_data_out_reg[9]_i_1_n_0 ;
   wire s00_axi_aclk;
   wire [1:0]s00_axi_araddr;
   wire s00_axi_aresetn;
@@ -315,8 +280,7 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
   wire [31:0]s00_axi_wdata;
   wire [3:0]s00_axi_wstrb;
   wire s00_axi_wvalid;
-  wire [31:0]slv_reg0;
-  wire [31:0]slv_reg1;
+  wire \slv_reg0[31]_i_1_n_0 ;
   wire \slv_reg1[15]_i_1_n_0 ;
   wire \slv_reg1[23]_i_1_n_0 ;
   wire \slv_reg1[31]_i_1_n_0 ;
@@ -329,658 +293,6 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
   wire slv_reg_rden;
   wire slv_reg_wren__2;
 
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[0] 
-       (.CLR(1'b0),
-        .D(slv_reg0[0]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[0]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[10] 
-       (.CLR(1'b0),
-        .D(slv_reg0[10]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[10]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[11] 
-       (.CLR(1'b0),
-        .D(slv_reg0[11]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[11]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[12] 
-       (.CLR(1'b0),
-        .D(slv_reg0[12]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[12]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[13] 
-       (.CLR(1'b0),
-        .D(slv_reg0[13]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[13]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[14] 
-       (.CLR(1'b0),
-        .D(slv_reg0[14]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[14]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[15] 
-       (.CLR(1'b0),
-        .D(slv_reg0[15]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[15]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[16] 
-       (.CLR(1'b0),
-        .D(slv_reg0[16]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[16]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[17] 
-       (.CLR(1'b0),
-        .D(slv_reg0[17]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[17]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[18] 
-       (.CLR(1'b0),
-        .D(slv_reg0[18]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[18]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[19] 
-       (.CLR(1'b0),
-        .D(slv_reg0[19]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[19]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[1] 
-       (.CLR(1'b0),
-        .D(slv_reg0[1]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[1]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[20] 
-       (.CLR(1'b0),
-        .D(slv_reg0[20]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[20]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[21] 
-       (.CLR(1'b0),
-        .D(slv_reg0[21]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[21]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[22] 
-       (.CLR(1'b0),
-        .D(slv_reg0[22]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[22]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[23] 
-       (.CLR(1'b0),
-        .D(slv_reg0[23]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[23]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[24] 
-       (.CLR(1'b0),
-        .D(slv_reg0[24]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[24]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[25] 
-       (.CLR(1'b0),
-        .D(slv_reg0[25]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[25]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[26] 
-       (.CLR(1'b0),
-        .D(slv_reg0[26]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[26]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[27] 
-       (.CLR(1'b0),
-        .D(slv_reg0[27]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[27]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[28] 
-       (.CLR(1'b0),
-        .D(slv_reg0[28]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[28]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[29] 
-       (.CLR(1'b0),
-        .D(slv_reg0[29]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[29]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[2] 
-       (.CLR(1'b0),
-        .D(slv_reg0[2]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[2]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[30] 
-       (.CLR(1'b0),
-        .D(slv_reg0[30]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[30]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[31] 
-       (.CLR(1'b0),
-        .D(slv_reg0[31]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[31]));
-  LUT2 #(
-    .INIT(4'h1)) 
-    \R_ADDR_1_reg[31]_i_1 
-       (.I0(axi_araddr[2]),
-        .I1(axi_araddr[3]),
-        .O(\R_ADDR_1_reg[31]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[3] 
-       (.CLR(1'b0),
-        .D(slv_reg0[3]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[3]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[4] 
-       (.CLR(1'b0),
-        .D(slv_reg0[4]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[4]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[5] 
-       (.CLR(1'b0),
-        .D(slv_reg0[5]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[5]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[6] 
-       (.CLR(1'b0),
-        .D(slv_reg0[6]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[6]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[7] 
-       (.CLR(1'b0),
-        .D(slv_reg0[7]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[7]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[8] 
-       (.CLR(1'b0),
-        .D(slv_reg0[8]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[8]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_1_reg[9] 
-       (.CLR(1'b0),
-        .D(slv_reg0[9]),
-        .G(\R_ADDR_1_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_1[9]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[0] 
-       (.CLR(1'b0),
-        .D(slv_reg1[0]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[0]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[10] 
-       (.CLR(1'b0),
-        .D(slv_reg1[10]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[10]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[11] 
-       (.CLR(1'b0),
-        .D(slv_reg1[11]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[11]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[12] 
-       (.CLR(1'b0),
-        .D(slv_reg1[12]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[12]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[13] 
-       (.CLR(1'b0),
-        .D(slv_reg1[13]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[13]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[14] 
-       (.CLR(1'b0),
-        .D(slv_reg1[14]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[14]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[15] 
-       (.CLR(1'b0),
-        .D(slv_reg1[15]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[15]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[16] 
-       (.CLR(1'b0),
-        .D(slv_reg1[16]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[16]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[17] 
-       (.CLR(1'b0),
-        .D(slv_reg1[17]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[17]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[18] 
-       (.CLR(1'b0),
-        .D(slv_reg1[18]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[18]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[19] 
-       (.CLR(1'b0),
-        .D(slv_reg1[19]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[19]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[1] 
-       (.CLR(1'b0),
-        .D(slv_reg1[1]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[1]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[20] 
-       (.CLR(1'b0),
-        .D(slv_reg1[20]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[20]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[21] 
-       (.CLR(1'b0),
-        .D(slv_reg1[21]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[21]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[22] 
-       (.CLR(1'b0),
-        .D(slv_reg1[22]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[22]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[23] 
-       (.CLR(1'b0),
-        .D(slv_reg1[23]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[23]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[24] 
-       (.CLR(1'b0),
-        .D(slv_reg1[24]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[24]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[25] 
-       (.CLR(1'b0),
-        .D(slv_reg1[25]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[25]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[26] 
-       (.CLR(1'b0),
-        .D(slv_reg1[26]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[26]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[27] 
-       (.CLR(1'b0),
-        .D(slv_reg1[27]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[27]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[28] 
-       (.CLR(1'b0),
-        .D(slv_reg1[28]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[28]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[29] 
-       (.CLR(1'b0),
-        .D(slv_reg1[29]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[29]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[2] 
-       (.CLR(1'b0),
-        .D(slv_reg1[2]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[2]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[30] 
-       (.CLR(1'b0),
-        .D(slv_reg1[30]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[30]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[31] 
-       (.CLR(1'b0),
-        .D(slv_reg1[31]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[31]));
-  LUT2 #(
-    .INIT(4'h2)) 
-    \R_ADDR_2_reg[31]_i_1 
-       (.I0(axi_araddr[2]),
-        .I1(axi_araddr[3]),
-        .O(\R_ADDR_2_reg[31]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[3] 
-       (.CLR(1'b0),
-        .D(slv_reg1[3]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[3]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[4] 
-       (.CLR(1'b0),
-        .D(slv_reg1[4]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[4]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[5] 
-       (.CLR(1'b0),
-        .D(slv_reg1[5]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[5]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[6] 
-       (.CLR(1'b0),
-        .D(slv_reg1[6]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[6]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[7] 
-       (.CLR(1'b0),
-        .D(slv_reg1[7]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[7]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[8] 
-       (.CLR(1'b0),
-        .D(slv_reg1[8]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[8]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \R_ADDR_2_reg[9] 
-       (.CLR(1'b0),
-        .D(slv_reg1[9]),
-        .G(\R_ADDR_2_reg[31]_i_1_n_0 ),
-        .GE(1'b1),
-        .Q(R_ADDR_2[9]));
   LUT6 #(
     .INIT(64'hBFFFBF00BF00BF00)) 
     aw_en_i_1
@@ -996,7 +308,7 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
         .CE(1'b1),
         .D(aw_en_i_1_n_0),
         .Q(aw_en_reg_n_0),
-        .S(axi_awready_i_1_n_0));
+        .S(\slv_reg0[31]_i_1_n_0 ));
   LUT4 #(
     .INIT(16'hFB08)) 
     \axi_araddr[2]_i_1 
@@ -1018,13 +330,13 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
         .CE(1'b1),
         .D(\axi_araddr[2]_i_1_n_0 ),
         .Q(axi_araddr[2]),
-        .S(axi_awready_i_1_n_0));
+        .S(\slv_reg0[31]_i_1_n_0 ));
   FDSE \axi_araddr_reg[3] 
        (.C(s00_axi_aclk),
         .CE(1'b1),
         .D(\axi_araddr[3]_i_1_n_0 ),
         .Q(axi_araddr[3]),
-        .S(axi_awready_i_1_n_0));
+        .S(\slv_reg0[31]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT2 #(
     .INIT(4'h2)) 
@@ -1037,7 +349,7 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
         .CE(1'b1),
         .D(axi_arready0),
         .Q(S_AXI_ARREADY),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hFFFFBFFF00008000)) 
     \axi_awaddr[2]_i_1 
@@ -1063,22 +375,17 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
         .CE(1'b1),
         .D(\axi_awaddr[2]_i_1_n_0 ),
         .Q(p_0_in[0]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_awaddr_reg[3] 
        (.C(s00_axi_aclk),
         .CE(1'b1),
         .D(\axi_awaddr[3]_i_1_n_0 ),
         .Q(p_0_in[1]),
-        .R(axi_awready_i_1_n_0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    axi_awready_i_1
-       (.I0(s00_axi_aresetn),
-        .O(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT4 #(
     .INIT(16'h0080)) 
-    axi_awready_i_2
+    axi_awready_i_1
        (.I0(aw_en_reg_n_0),
         .I1(s00_axi_wvalid),
         .I2(s00_axi_awvalid),
@@ -1089,7 +396,7 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
         .CE(1'b1),
         .D(axi_awready0),
         .Q(S_AXI_AWREADY),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'h0000FFFF80008000)) 
     axi_bvalid_i_1
@@ -1105,7 +412,247 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
         .CE(1'b1),
         .D(axi_bvalid_i_1_n_0),
         .Q(s00_axi_bvalid),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[0]_i_1 
+       (.I0(R_ADDR_2[0]),
+        .I1(R_ADDR_1[0]),
+        .I2(slv_reg3[0]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[0]),
+        .O(reg_data_out[0]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[10]_i_1 
+       (.I0(R_ADDR_2[10]),
+        .I1(R_ADDR_1[10]),
+        .I2(slv_reg3[10]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[10]),
+        .O(reg_data_out[10]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[11]_i_1 
+       (.I0(R_ADDR_2[11]),
+        .I1(R_ADDR_1[11]),
+        .I2(slv_reg3[11]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[11]),
+        .O(reg_data_out[11]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[12]_i_1 
+       (.I0(R_ADDR_2[12]),
+        .I1(R_ADDR_1[12]),
+        .I2(slv_reg3[12]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[12]),
+        .O(reg_data_out[12]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[13]_i_1 
+       (.I0(R_ADDR_2[13]),
+        .I1(R_ADDR_1[13]),
+        .I2(slv_reg3[13]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[13]),
+        .O(reg_data_out[13]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[14]_i_1 
+       (.I0(R_ADDR_2[14]),
+        .I1(R_ADDR_1[14]),
+        .I2(slv_reg3[14]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[14]),
+        .O(reg_data_out[14]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[15]_i_1 
+       (.I0(R_ADDR_2[15]),
+        .I1(R_ADDR_1[15]),
+        .I2(slv_reg3[15]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[15]),
+        .O(reg_data_out[15]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[16]_i_1 
+       (.I0(R_ADDR_2[16]),
+        .I1(R_ADDR_1[16]),
+        .I2(slv_reg3[16]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[16]),
+        .O(reg_data_out[16]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[17]_i_1 
+       (.I0(R_ADDR_2[17]),
+        .I1(R_ADDR_1[17]),
+        .I2(slv_reg3[17]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[17]),
+        .O(reg_data_out[17]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[18]_i_1 
+       (.I0(R_ADDR_2[18]),
+        .I1(R_ADDR_1[18]),
+        .I2(slv_reg3[18]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[18]),
+        .O(reg_data_out[18]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[19]_i_1 
+       (.I0(R_ADDR_2[19]),
+        .I1(R_ADDR_1[19]),
+        .I2(slv_reg3[19]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[19]),
+        .O(reg_data_out[19]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[1]_i_1 
+       (.I0(R_ADDR_2[1]),
+        .I1(R_ADDR_1[1]),
+        .I2(slv_reg3[1]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[1]),
+        .O(reg_data_out[1]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[20]_i_1 
+       (.I0(R_ADDR_2[20]),
+        .I1(R_ADDR_1[20]),
+        .I2(slv_reg3[20]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[20]),
+        .O(reg_data_out[20]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[21]_i_1 
+       (.I0(R_ADDR_2[21]),
+        .I1(R_ADDR_1[21]),
+        .I2(slv_reg3[21]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[21]),
+        .O(reg_data_out[21]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[22]_i_1 
+       (.I0(R_ADDR_2[22]),
+        .I1(R_ADDR_1[22]),
+        .I2(slv_reg3[22]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[22]),
+        .O(reg_data_out[22]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[23]_i_1 
+       (.I0(R_ADDR_2[23]),
+        .I1(R_ADDR_1[23]),
+        .I2(slv_reg3[23]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[23]),
+        .O(reg_data_out[23]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[24]_i_1 
+       (.I0(R_ADDR_2[24]),
+        .I1(R_ADDR_1[24]),
+        .I2(slv_reg3[24]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[24]),
+        .O(reg_data_out[24]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[25]_i_1 
+       (.I0(R_ADDR_2[25]),
+        .I1(R_ADDR_1[25]),
+        .I2(slv_reg3[25]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[25]),
+        .O(reg_data_out[25]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[26]_i_1 
+       (.I0(R_ADDR_2[26]),
+        .I1(R_ADDR_1[26]),
+        .I2(slv_reg3[26]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[26]),
+        .O(reg_data_out[26]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[27]_i_1 
+       (.I0(R_ADDR_2[27]),
+        .I1(R_ADDR_1[27]),
+        .I2(slv_reg3[27]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[27]),
+        .O(reg_data_out[27]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[28]_i_1 
+       (.I0(R_ADDR_2[28]),
+        .I1(R_ADDR_1[28]),
+        .I2(slv_reg3[28]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[28]),
+        .O(reg_data_out[28]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[29]_i_1 
+       (.I0(R_ADDR_2[29]),
+        .I1(R_ADDR_1[29]),
+        .I2(slv_reg3[29]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[29]),
+        .O(reg_data_out[29]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[2]_i_1 
+       (.I0(R_ADDR_2[2]),
+        .I1(R_ADDR_1[2]),
+        .I2(slv_reg3[2]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[2]),
+        .O(reg_data_out[2]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[30]_i_1 
+       (.I0(R_ADDR_2[30]),
+        .I1(R_ADDR_1[30]),
+        .I2(slv_reg3[30]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[30]),
+        .O(reg_data_out[30]));
   LUT3 #(
     .INIT(8'h08)) 
     \axi_rdata[31]_i_1 
@@ -1113,198 +660,278 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
         .I1(s00_axi_arvalid),
         .I2(s00_axi_rvalid),
         .O(slv_reg_rden));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[31]_i_2 
+       (.I0(R_ADDR_2[31]),
+        .I1(R_ADDR_1[31]),
+        .I2(slv_reg3[31]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[31]),
+        .O(reg_data_out[31]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[3]_i_1 
+       (.I0(R_ADDR_2[3]),
+        .I1(R_ADDR_1[3]),
+        .I2(slv_reg3[3]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[3]),
+        .O(reg_data_out[3]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[4]_i_1 
+       (.I0(R_ADDR_2[4]),
+        .I1(R_ADDR_1[4]),
+        .I2(slv_reg3[4]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[4]),
+        .O(reg_data_out[4]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[5]_i_1 
+       (.I0(R_ADDR_2[5]),
+        .I1(R_ADDR_1[5]),
+        .I2(slv_reg3[5]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[5]),
+        .O(reg_data_out[5]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[6]_i_1 
+       (.I0(R_ADDR_2[6]),
+        .I1(R_ADDR_1[6]),
+        .I2(slv_reg3[6]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[6]),
+        .O(reg_data_out[6]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[7]_i_1 
+       (.I0(R_ADDR_2[7]),
+        .I1(R_ADDR_1[7]),
+        .I2(slv_reg3[7]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[7]),
+        .O(reg_data_out[7]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[8]_i_1 
+       (.I0(R_ADDR_2[8]),
+        .I1(R_ADDR_1[8]),
+        .I2(slv_reg3[8]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[8]),
+        .O(reg_data_out[8]));
+  LUT6 #(
+    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    \axi_rdata[9]_i_1 
+       (.I0(R_ADDR_2[9]),
+        .I1(R_ADDR_1[9]),
+        .I2(slv_reg3[9]),
+        .I3(axi_araddr[3]),
+        .I4(axi_araddr[2]),
+        .I5(R_ADDR_SUM[9]),
+        .O(reg_data_out[9]));
   FDRE \axi_rdata_reg[0] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[0]),
         .Q(s00_axi_rdata[0]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[10] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[10]),
         .Q(s00_axi_rdata[10]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[11] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[11]),
         .Q(s00_axi_rdata[11]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[12] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[12]),
         .Q(s00_axi_rdata[12]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[13] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[13]),
         .Q(s00_axi_rdata[13]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[14] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[14]),
         .Q(s00_axi_rdata[14]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[15] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[15]),
         .Q(s00_axi_rdata[15]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[16] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[16]),
         .Q(s00_axi_rdata[16]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[17] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[17]),
         .Q(s00_axi_rdata[17]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[18] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[18]),
         .Q(s00_axi_rdata[18]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[19] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[19]),
         .Q(s00_axi_rdata[19]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[1] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[1]),
         .Q(s00_axi_rdata[1]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[20] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[20]),
         .Q(s00_axi_rdata[20]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[21] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[21]),
         .Q(s00_axi_rdata[21]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[22] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[22]),
         .Q(s00_axi_rdata[22]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[23] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[23]),
         .Q(s00_axi_rdata[23]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[24] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[24]),
         .Q(s00_axi_rdata[24]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[25] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[25]),
         .Q(s00_axi_rdata[25]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[26] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[26]),
         .Q(s00_axi_rdata[26]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[27] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[27]),
         .Q(s00_axi_rdata[27]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[28] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[28]),
         .Q(s00_axi_rdata[28]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[29] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[29]),
         .Q(s00_axi_rdata[29]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[2] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[2]),
         .Q(s00_axi_rdata[2]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[30] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[30]),
         .Q(s00_axi_rdata[30]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[31] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[31]),
         .Q(s00_axi_rdata[31]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[3] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[3]),
         .Q(s00_axi_rdata[3]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[4] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[4]),
         .Q(s00_axi_rdata[4]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[5] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[5]),
         .Q(s00_axi_rdata[5]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[6] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[6]),
         .Q(s00_axi_rdata[6]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[7] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[7]),
         .Q(s00_axi_rdata[7]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[8] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[8]),
         .Q(s00_axi_rdata[8]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \axi_rdata_reg[9] 
        (.C(s00_axi_aclk),
         .CE(slv_reg_rden),
         .D(reg_data_out[9]),
         .Q(s00_axi_rdata[9]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
     .INIT(16'h08F8)) 
@@ -1319,7 +946,7 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
         .CE(1'b1),
         .D(axi_rvalid_i_1_n_0),
         .Q(s00_axi_rvalid),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT4 #(
     .INIT(16'h0080)) 
@@ -1334,583 +961,7 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
         .CE(1'b1),
         .D(axi_wready0),
         .Q(S_AXI_WREADY),
-        .R(axi_awready_i_1_n_0));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[0] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[0]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[0]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[0]_i_1 
-       (.I0(slv_reg3[0]),
-        .I1(R_ADDR_SUM[0]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[0]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[10] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[10]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[10]));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[10]_i_1 
-       (.I0(slv_reg3[10]),
-        .I1(R_ADDR_SUM[10]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[10]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[11] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[11]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[11]));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[11]_i_1 
-       (.I0(slv_reg3[11]),
-        .I1(R_ADDR_SUM[11]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[11]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[12] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[12]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[12]));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[12]_i_1 
-       (.I0(slv_reg3[12]),
-        .I1(R_ADDR_SUM[12]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[12]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[13] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[13]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[13]));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[13]_i_1 
-       (.I0(slv_reg3[13]),
-        .I1(R_ADDR_SUM[13]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[13]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[14] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[14]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[14]));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[14]_i_1 
-       (.I0(slv_reg3[14]),
-        .I1(R_ADDR_SUM[14]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[14]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[15] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[15]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[15]));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[15]_i_1 
-       (.I0(slv_reg3[15]),
-        .I1(R_ADDR_SUM[15]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[15]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[16] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[16]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[16]));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[16]_i_1 
-       (.I0(slv_reg3[16]),
-        .I1(R_ADDR_SUM[16]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[16]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[17] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[17]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[17]));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[17]_i_1 
-       (.I0(slv_reg3[17]),
-        .I1(R_ADDR_SUM[17]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[17]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[18] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[18]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[18]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[18]_i_1 
-       (.I0(slv_reg3[18]),
-        .I1(R_ADDR_SUM[18]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[18]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[19] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[19]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[19]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[19]_i_1 
-       (.I0(slv_reg3[19]),
-        .I1(R_ADDR_SUM[19]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[19]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[1] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[1]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[1]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[1]_i_1 
-       (.I0(slv_reg3[1]),
-        .I1(R_ADDR_SUM[1]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[1]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[20] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[20]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[20]));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[20]_i_1 
-       (.I0(slv_reg3[20]),
-        .I1(R_ADDR_SUM[20]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[20]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[21] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[21]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[21]));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[21]_i_1 
-       (.I0(slv_reg3[21]),
-        .I1(R_ADDR_SUM[21]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[21]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[22] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[22]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[22]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[22]_i_1 
-       (.I0(slv_reg3[22]),
-        .I1(R_ADDR_SUM[22]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[22]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[23] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[23]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[23]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[23]_i_1 
-       (.I0(slv_reg3[23]),
-        .I1(R_ADDR_SUM[23]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[23]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[24] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[24]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[24]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[24]_i_1 
-       (.I0(slv_reg3[24]),
-        .I1(R_ADDR_SUM[24]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[24]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[25] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[25]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[25]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[25]_i_1 
-       (.I0(slv_reg3[25]),
-        .I1(R_ADDR_SUM[25]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[25]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[26] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[26]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[26]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[26]_i_1 
-       (.I0(slv_reg3[26]),
-        .I1(R_ADDR_SUM[26]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[26]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[27] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[27]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[27]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[27]_i_1 
-       (.I0(slv_reg3[27]),
-        .I1(R_ADDR_SUM[27]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[27]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[28] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[28]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[28]));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[28]_i_1 
-       (.I0(slv_reg3[28]),
-        .I1(R_ADDR_SUM[28]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[28]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[29] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[29]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[29]));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[29]_i_1 
-       (.I0(slv_reg3[29]),
-        .I1(R_ADDR_SUM[29]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[29]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[2] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[2]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[2]));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[2]_i_1 
-       (.I0(slv_reg3[2]),
-        .I1(R_ADDR_SUM[2]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[2]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[30] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[30]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[30]));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[30]_i_1 
-       (.I0(slv_reg3[30]),
-        .I1(R_ADDR_SUM[30]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[30]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[31] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[31]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[31]));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[31]_i_1 
-       (.I0(slv_reg3[31]),
-        .I1(R_ADDR_SUM[31]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[31]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[3] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[3]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[3]));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[3]_i_1 
-       (.I0(slv_reg3[3]),
-        .I1(R_ADDR_SUM[3]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[3]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[4] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[4]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[4]));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[4]_i_1 
-       (.I0(slv_reg3[4]),
-        .I1(R_ADDR_SUM[4]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[4]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[5] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[5]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[5]));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[5]_i_1 
-       (.I0(slv_reg3[5]),
-        .I1(R_ADDR_SUM[5]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[5]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[6] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[6]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[6]));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[6]_i_1 
-       (.I0(slv_reg3[6]),
-        .I1(R_ADDR_SUM[6]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[6]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[7] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[7]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[7]));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[7]_i_1 
-       (.I0(slv_reg3[7]),
-        .I1(R_ADDR_SUM[7]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[7]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[8] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[8]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[8]));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[8]_i_1 
-       (.I0(slv_reg3[8]),
-        .I1(R_ADDR_SUM[8]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[8]_i_1_n_0 ));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \reg_data_out_reg[9] 
-       (.CLR(1'b0),
-        .D(\reg_data_out_reg[9]_i_1_n_0 ),
-        .G(axi_araddr[3]),
-        .GE(1'b1),
-        .Q(reg_data_out[9]));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
-  LUT3 #(
-    .INIT(8'hAC)) 
-    \reg_data_out_reg[9]_i_1 
-       (.I0(slv_reg3[9]),
-        .I1(R_ADDR_SUM[9]),
-        .I2(axi_araddr[2]),
-        .O(\reg_data_out_reg[9]_i_1_n_0 ));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   LUT4 #(
     .INIT(16'h0200)) 
     \slv_reg0[15]_i_1 
@@ -1927,9 +978,14 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
         .I2(p_0_in[0]),
         .I3(s00_axi_wstrb[2]),
         .O(p_1_in[23]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \slv_reg0[31]_i_1 
+       (.I0(s00_axi_aresetn),
+        .O(\slv_reg0[31]_i_1_n_0 ));
   LUT4 #(
     .INIT(16'h0200)) 
-    \slv_reg0[31]_i_1 
+    \slv_reg0[31]_i_2 
        (.I0(slv_reg_wren__2),
         .I1(p_0_in[1]),
         .I2(p_0_in[0]),
@@ -1937,7 +993,7 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
         .O(p_1_in[31]));
   LUT4 #(
     .INIT(16'h8000)) 
-    \slv_reg0[31]_i_2 
+    \slv_reg0[31]_i_3 
        (.I0(s00_axi_awvalid),
         .I1(S_AXI_AWREADY),
         .I2(S_AXI_WREADY),
@@ -1955,194 +1011,194 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[0]),
-        .Q(slv_reg0[0]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[0]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[10] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[15]),
         .D(s00_axi_wdata[10]),
-        .Q(slv_reg0[10]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[10]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[11] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[15]),
         .D(s00_axi_wdata[11]),
-        .Q(slv_reg0[11]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[11]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[12] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[15]),
         .D(s00_axi_wdata[12]),
-        .Q(slv_reg0[12]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[12]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[13] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[15]),
         .D(s00_axi_wdata[13]),
-        .Q(slv_reg0[13]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[13]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[14] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[15]),
         .D(s00_axi_wdata[14]),
-        .Q(slv_reg0[14]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[14]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[15] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[15]),
         .D(s00_axi_wdata[15]),
-        .Q(slv_reg0[15]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[15]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[16] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[23]),
         .D(s00_axi_wdata[16]),
-        .Q(slv_reg0[16]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[16]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[17] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[23]),
         .D(s00_axi_wdata[17]),
-        .Q(slv_reg0[17]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[17]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[18] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[23]),
         .D(s00_axi_wdata[18]),
-        .Q(slv_reg0[18]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[18]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[19] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[23]),
         .D(s00_axi_wdata[19]),
-        .Q(slv_reg0[19]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[19]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[1] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[1]),
-        .Q(slv_reg0[1]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[1]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[20] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[23]),
         .D(s00_axi_wdata[20]),
-        .Q(slv_reg0[20]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[20]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[21] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[23]),
         .D(s00_axi_wdata[21]),
-        .Q(slv_reg0[21]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[21]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[22] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[23]),
         .D(s00_axi_wdata[22]),
-        .Q(slv_reg0[22]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[22]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[23] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[23]),
         .D(s00_axi_wdata[23]),
-        .Q(slv_reg0[23]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[23]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[24] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[31]),
         .D(s00_axi_wdata[24]),
-        .Q(slv_reg0[24]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[24]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[25] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[31]),
         .D(s00_axi_wdata[25]),
-        .Q(slv_reg0[25]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[25]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[26] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[31]),
         .D(s00_axi_wdata[26]),
-        .Q(slv_reg0[26]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[26]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[27] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[31]),
         .D(s00_axi_wdata[27]),
-        .Q(slv_reg0[27]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[27]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[28] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[31]),
         .D(s00_axi_wdata[28]),
-        .Q(slv_reg0[28]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[28]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[29] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[31]),
         .D(s00_axi_wdata[29]),
-        .Q(slv_reg0[29]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[29]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[2] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[2]),
-        .Q(slv_reg0[2]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[2]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[30] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[31]),
         .D(s00_axi_wdata[30]),
-        .Q(slv_reg0[30]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[30]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[31] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[31]),
         .D(s00_axi_wdata[31]),
-        .Q(slv_reg0[31]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[31]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[3] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[3]),
-        .Q(slv_reg0[3]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[3]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[4] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[4]),
-        .Q(slv_reg0[4]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[4]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[5] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[5]),
-        .Q(slv_reg0[5]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[5]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[6] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[6]),
-        .Q(slv_reg0[6]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[6]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[7] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[7]),
         .D(s00_axi_wdata[7]),
-        .Q(slv_reg0[7]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[7]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[8] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[15]),
         .D(s00_axi_wdata[8]),
-        .Q(slv_reg0[8]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[8]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg0_reg[9] 
        (.C(s00_axi_aclk),
         .CE(p_1_in[15]),
         .D(s00_axi_wdata[9]),
-        .Q(slv_reg0[9]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_1[9]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   LUT4 #(
     .INIT(16'h0080)) 
     \slv_reg1[15]_i_1 
@@ -2179,194 +1235,194 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[7]_i_1_n_0 ),
         .D(s00_axi_wdata[0]),
-        .Q(slv_reg1[0]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[0]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[10] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[15]_i_1_n_0 ),
         .D(s00_axi_wdata[10]),
-        .Q(slv_reg1[10]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[10]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[11] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[15]_i_1_n_0 ),
         .D(s00_axi_wdata[11]),
-        .Q(slv_reg1[11]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[11]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[12] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[15]_i_1_n_0 ),
         .D(s00_axi_wdata[12]),
-        .Q(slv_reg1[12]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[12]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[13] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[15]_i_1_n_0 ),
         .D(s00_axi_wdata[13]),
-        .Q(slv_reg1[13]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[13]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[14] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[15]_i_1_n_0 ),
         .D(s00_axi_wdata[14]),
-        .Q(slv_reg1[14]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[14]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[15] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[15]_i_1_n_0 ),
         .D(s00_axi_wdata[15]),
-        .Q(slv_reg1[15]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[15]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[16] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[23]_i_1_n_0 ),
         .D(s00_axi_wdata[16]),
-        .Q(slv_reg1[16]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[16]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[17] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[23]_i_1_n_0 ),
         .D(s00_axi_wdata[17]),
-        .Q(slv_reg1[17]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[17]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[18] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[23]_i_1_n_0 ),
         .D(s00_axi_wdata[18]),
-        .Q(slv_reg1[18]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[18]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[19] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[23]_i_1_n_0 ),
         .D(s00_axi_wdata[19]),
-        .Q(slv_reg1[19]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[19]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[1] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[7]_i_1_n_0 ),
         .D(s00_axi_wdata[1]),
-        .Q(slv_reg1[1]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[1]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[20] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[23]_i_1_n_0 ),
         .D(s00_axi_wdata[20]),
-        .Q(slv_reg1[20]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[20]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[21] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[23]_i_1_n_0 ),
         .D(s00_axi_wdata[21]),
-        .Q(slv_reg1[21]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[21]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[22] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[23]_i_1_n_0 ),
         .D(s00_axi_wdata[22]),
-        .Q(slv_reg1[22]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[22]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[23] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[23]_i_1_n_0 ),
         .D(s00_axi_wdata[23]),
-        .Q(slv_reg1[23]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[23]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[24] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[31]_i_1_n_0 ),
         .D(s00_axi_wdata[24]),
-        .Q(slv_reg1[24]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[24]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[25] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[31]_i_1_n_0 ),
         .D(s00_axi_wdata[25]),
-        .Q(slv_reg1[25]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[25]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[26] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[31]_i_1_n_0 ),
         .D(s00_axi_wdata[26]),
-        .Q(slv_reg1[26]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[26]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[27] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[31]_i_1_n_0 ),
         .D(s00_axi_wdata[27]),
-        .Q(slv_reg1[27]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[27]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[28] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[31]_i_1_n_0 ),
         .D(s00_axi_wdata[28]),
-        .Q(slv_reg1[28]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[28]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[29] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[31]_i_1_n_0 ),
         .D(s00_axi_wdata[29]),
-        .Q(slv_reg1[29]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[29]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[2] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[7]_i_1_n_0 ),
         .D(s00_axi_wdata[2]),
-        .Q(slv_reg1[2]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[2]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[30] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[31]_i_1_n_0 ),
         .D(s00_axi_wdata[30]),
-        .Q(slv_reg1[30]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[30]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[31] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[31]_i_1_n_0 ),
         .D(s00_axi_wdata[31]),
-        .Q(slv_reg1[31]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[31]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[3] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[7]_i_1_n_0 ),
         .D(s00_axi_wdata[3]),
-        .Q(slv_reg1[3]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[3]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[4] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[7]_i_1_n_0 ),
         .D(s00_axi_wdata[4]),
-        .Q(slv_reg1[4]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[4]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[5] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[7]_i_1_n_0 ),
         .D(s00_axi_wdata[5]),
-        .Q(slv_reg1[5]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[5]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[6] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[7]_i_1_n_0 ),
         .D(s00_axi_wdata[6]),
-        .Q(slv_reg1[6]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[6]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[7] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[7]_i_1_n_0 ),
         .D(s00_axi_wdata[7]),
-        .Q(slv_reg1[7]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[7]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[8] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[15]_i_1_n_0 ),
         .D(s00_axi_wdata[8]),
-        .Q(slv_reg1[8]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[8]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg1_reg[9] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg1[15]_i_1_n_0 ),
         .D(s00_axi_wdata[9]),
-        .Q(slv_reg1[9]),
-        .R(axi_awready_i_1_n_0));
+        .Q(R_ADDR_2[9]),
+        .R(\slv_reg0[31]_i_1_n_0 ));
   LUT4 #(
     .INIT(16'h8000)) 
     \slv_reg3[15]_i_1 
@@ -2404,193 +1460,193 @@ module axi_addr_Lab1_AxiInterface_Ad_0_0_Lab1_AxiInterface_Adder_v1_0_S00_AXI
         .CE(\slv_reg3[7]_i_1_n_0 ),
         .D(s00_axi_wdata[0]),
         .Q(slv_reg3[0]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[10] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[15]_i_1_n_0 ),
         .D(s00_axi_wdata[10]),
         .Q(slv_reg3[10]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[11] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[15]_i_1_n_0 ),
         .D(s00_axi_wdata[11]),
         .Q(slv_reg3[11]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[12] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[15]_i_1_n_0 ),
         .D(s00_axi_wdata[12]),
         .Q(slv_reg3[12]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[13] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[15]_i_1_n_0 ),
         .D(s00_axi_wdata[13]),
         .Q(slv_reg3[13]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[14] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[15]_i_1_n_0 ),
         .D(s00_axi_wdata[14]),
         .Q(slv_reg3[14]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[15] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[15]_i_1_n_0 ),
         .D(s00_axi_wdata[15]),
         .Q(slv_reg3[15]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[16] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[23]_i_1_n_0 ),
         .D(s00_axi_wdata[16]),
         .Q(slv_reg3[16]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[17] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[23]_i_1_n_0 ),
         .D(s00_axi_wdata[17]),
         .Q(slv_reg3[17]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[18] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[23]_i_1_n_0 ),
         .D(s00_axi_wdata[18]),
         .Q(slv_reg3[18]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[19] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[23]_i_1_n_0 ),
         .D(s00_axi_wdata[19]),
         .Q(slv_reg3[19]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[1] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[7]_i_1_n_0 ),
         .D(s00_axi_wdata[1]),
         .Q(slv_reg3[1]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[20] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[23]_i_1_n_0 ),
         .D(s00_axi_wdata[20]),
         .Q(slv_reg3[20]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[21] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[23]_i_1_n_0 ),
         .D(s00_axi_wdata[21]),
         .Q(slv_reg3[21]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[22] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[23]_i_1_n_0 ),
         .D(s00_axi_wdata[22]),
         .Q(slv_reg3[22]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[23] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[23]_i_1_n_0 ),
         .D(s00_axi_wdata[23]),
         .Q(slv_reg3[23]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[24] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[31]_i_1_n_0 ),
         .D(s00_axi_wdata[24]),
         .Q(slv_reg3[24]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[25] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[31]_i_1_n_0 ),
         .D(s00_axi_wdata[25]),
         .Q(slv_reg3[25]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[26] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[31]_i_1_n_0 ),
         .D(s00_axi_wdata[26]),
         .Q(slv_reg3[26]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[27] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[31]_i_1_n_0 ),
         .D(s00_axi_wdata[27]),
         .Q(slv_reg3[27]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[28] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[31]_i_1_n_0 ),
         .D(s00_axi_wdata[28]),
         .Q(slv_reg3[28]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[29] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[31]_i_1_n_0 ),
         .D(s00_axi_wdata[29]),
         .Q(slv_reg3[29]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[2] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[7]_i_1_n_0 ),
         .D(s00_axi_wdata[2]),
         .Q(slv_reg3[2]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[30] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[31]_i_1_n_0 ),
         .D(s00_axi_wdata[30]),
         .Q(slv_reg3[30]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[31] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[31]_i_1_n_0 ),
         .D(s00_axi_wdata[31]),
         .Q(slv_reg3[31]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[3] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[7]_i_1_n_0 ),
         .D(s00_axi_wdata[3]),
         .Q(slv_reg3[3]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[4] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[7]_i_1_n_0 ),
         .D(s00_axi_wdata[4]),
         .Q(slv_reg3[4]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[5] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[7]_i_1_n_0 ),
         .D(s00_axi_wdata[5]),
         .Q(slv_reg3[5]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[6] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[7]_i_1_n_0 ),
         .D(s00_axi_wdata[6]),
         .Q(slv_reg3[6]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[7] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[7]_i_1_n_0 ),
         .D(s00_axi_wdata[7]),
         .Q(slv_reg3[7]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[8] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[15]_i_1_n_0 ),
         .D(s00_axi_wdata[8]),
         .Q(slv_reg3[8]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
   FDRE \slv_reg3_reg[9] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg3[15]_i_1_n_0 ),
         .D(s00_axi_wdata[9]),
         .Q(slv_reg3[9]),
-        .R(axi_awready_i_1_n_0));
+        .R(\slv_reg0[31]_i_1_n_0 ));
 endmodule
 `ifndef GLBL
 `define GLBL

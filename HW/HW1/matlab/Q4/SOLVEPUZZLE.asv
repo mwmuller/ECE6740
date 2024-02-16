@@ -1,0 +1,53 @@
+ 
+PopSize = 300;
+ActualRGB = imread('TreasureMap.jpg');
+
+ShreddedImg = ActualRGB;
+figure, imshow(ActualRGB), title('fullmap');
+IdealFitness = PuzzleFit(int16(ActualRGB), 0:87);
+disp(IdealFitness);
+WC = size(ShreddedImg,2);
+HR = size(ShreddedImg,1);
+
+V = InitV(PopSize);
+Vs = V(PopSize,:);
+
+% show the "super solution" image
+% uncomment to generate new shreddedmap
+%Si = AssembleImage(ShreddedImg, Vs);
+% Test run with same Si
+FitnessFunction = @(q) PuzzleFit(int16(ActualRGB), q); 
+p1 = 0:87;
+p1([1, 2]) = p1([2 ,1]);
+tempFitness = PuzzleFit(int16(ActualRGB), x);
+nvars = (WC/40)*(HR/40);
+
+options = optimoptions('ga',...
+    'InitialPopulation',V,...
+    'PlotFcn',{@gaplotbestf,@gaplotdistance},...
+    'PopulationSize',PopSize);
+
+options = optimoptions(options,'MaxGenerations',5000,...
+     'MaxStallGenerations', 20);
+
+%build custom mutation function
+myMutate = @(parents, options, nvars, ...
+   FitnessFunction, state, thisScore, ...
+   thisPopulation) MutateMap(parents, nvars, thisPopulation);
+
+%add custom mutation function
+options = optimoptions(options,'MutationFcn',myMutate);
+
+myCrossover = @(parents, options, nvars, FitnessFunction, ...
+      unused,thisPopulation) CrossoverMap(parents, nvars, thisPopulation);
+
+options = optimoptions(options,'CrossoverFcn', myCrossover...
+    , 'CrossoverFraction', 0.7);
+ 
+
+[x,fval] = ga(FitnessFunction,nvars,[],[],[],[],[],[],[],options)
+
+TreasureMap = AssembleImage(ActualRGB, x);
+%show the result and the actual target map (before it was shredded)
+figure, imshow(TreasureMap), title('My GA Map'),figure, imshow(ActualRGB), title('TheKeyMap')
+

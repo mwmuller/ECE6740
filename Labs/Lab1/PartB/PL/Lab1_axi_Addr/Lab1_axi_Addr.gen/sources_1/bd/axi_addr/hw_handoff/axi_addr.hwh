@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jan 22 20:27:11 2024" VIVADOVERSION="2022.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Feb 15 20:12:38 2024" VIVADOVERSION="2022.1">
 
-  <SYSTEMINFO ARCH="zynq" BOARD="www.digilentinc.com:pynq-z1:part0:1.0" DEVICE="7z020" NAME="axi_addr" PACKAGE="clg400" SPEEDGRADE="-1"/>
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="axi_addr" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
     <PORT DIR="O" LEFT="3" NAME="led" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
@@ -181,7 +181,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="3" FULLNAME="/Lab1_AxiInterface_Ad_0" HWVERSION="1.0" INSTANCE="Lab1_AxiInterface_Ad_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Lab1_AxiInterface_Adder" VLNV="xilinx.com:user:Lab1_AxiInterface_Adder:1.0">
+    <MODULE COREREVISION="4" FULLNAME="/Lab1_AxiInterface_Ad_0" HWVERSION="1.0" INSTANCE="Lab1_AxiInterface_Ad_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Lab1_AxiInterface_Adder" VLNV="xilinx.com:user:Lab1_AxiInterface_Adder:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_S00_AXI_DATA_WIDTH" VALUE="32"/>

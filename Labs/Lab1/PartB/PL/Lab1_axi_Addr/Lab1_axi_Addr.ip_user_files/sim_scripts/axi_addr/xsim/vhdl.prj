@@ -1,8 +1,8 @@
 vhdl xil_defaultlib  \
-"../../../bd/axi_addr/ipshared/6ac1/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd" \
-"../../../bd/axi_addr/ipshared/6ac1/hdl/Lab1_AxiInterface_Adder_v1_0.vhd" \
-"../../../bd/axi_addr/ip/axi_addr_Lab1_AxiInterface_Ad_0_0/sim/axi_addr_Lab1_AxiInterface_Ad_0_0.vhd" \
 "../../../bd/axi_addr/ip/axi_addr_c_addsub_0_0/sim/axi_addr_c_addsub_0_0.vhd" \
+"../../../bd/axi_addr/ipshared/47e8/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd" \
+"../../../bd/axi_addr/ipshared/47e8/hdl/Lab1_AxiInterface_Adder_v1_0.vhd" \
+"../../../bd/axi_addr/ip/axi_addr_Lab1_AxiInterface_Ad_0_0/sim/axi_addr_Lab1_AxiInterface_Ad_0_0.vhd" \
 "../../../bd/axi_addr/sim/axi_addr.vhd" \
 
 nosort

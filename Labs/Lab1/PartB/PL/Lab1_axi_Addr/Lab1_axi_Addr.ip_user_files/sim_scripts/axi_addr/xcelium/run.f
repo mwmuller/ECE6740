@@ -1,8 +1,3 @@
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/axi_addr/ipshared/6ac1/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd" \
-  "../../../bd/axi_addr/ipshared/6ac1/hdl/Lab1_AxiInterface_Adder_v1_0.vhd" \
-  "../../../bd/axi_addr/ip/axi_addr_Lab1_AxiInterface_Ad_0_0/sim/axi_addr_Lab1_AxiInterface_Ad_0_0.vhd" \
--endlib
 -makelib xcelium_lib/xbip_utils_v3_0_10 \
   "../../../../Lab1_axi_Addr.gen/sources_1/bd/axi_addr/ipshared/364f/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
 -endlib
@@ -34,6 +29,9 @@
   "../../../bd/axi_addr/ip/axi_addr_xlslice_0_0/sim/axi_addr_xlslice_0_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/axi_addr/ipshared/47e8/hdl/Lab1_AxiInterface_Adder_v1_0_S00_AXI.vhd" \
+  "../../../bd/axi_addr/ipshared/47e8/hdl/Lab1_AxiInterface_Adder_v1_0.vhd" \
+  "../../../bd/axi_addr/ip/axi_addr_Lab1_AxiInterface_Ad_0_0/sim/axi_addr_Lab1_AxiInterface_Ad_0_0.vhd" \
   "../../../bd/axi_addr/sim/axi_addr.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
