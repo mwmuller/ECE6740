@@ -3,30 +3,36 @@ ET = [5,10,15,5, 10,10,10,10, 15,15,5,5]; % define matricies
 P = [3,3,3,2, 2,1,3,2, 1,2,2,3]; % define matricies
 C = [10, 15, 22]; %
 
-x = ET(population(:, 1)); % sum of Et/P -> binding
-y = PT(population(:, 1)); % contains the new C
-z = scores; % grab the scores
-fun = @(x)[dot(x - [1,2,3],x - [1,2,3],2), ...
-    dot(x - [-1,3,-2],x - [-1,3,-2],2), ...
-    dot(x - [0,-1,1],x - [0,-1,1],2)];
-options = optimoptions('paretosearch','UseVectorized',true,'ParetoSetSize',200,...
-    'PlotFcn','psplotparetof');
-lb = zeros(1,3);
-ub = ones(1,3);
-rng default % For reproducibility
-[x,f] = paretosearch(fun,3,[],[],[],[],lb,ub,[],options);
-dot()
+% see individual sums
+x = sum(3.*ET(population(:, :))');
+y = sum(2.*P(population(:, :))');
 
-% Define the vectors
-x = [1, 2, 3, 4, 5];
-y = [2, 3, 4, 5, 6];
-z = [1:200];
+% C is based on block, find solution sum
+C_full = [];
+for i = 1:length(population)
+     temp_c = [];
+    for j = 1:solSize
+        vVal = population(i, j);
+        if vVal < 5
+            C_i = 1;
+        elseif vVal < 9
+            C_i = 2;
+        else
+            C_i = 3;
+        end
+        temp_c(j) = C_i;
+    end
+    C_full = [C_full; temp_c];
+end
+z = sum(C(C_full)'); % sum of the 
 
 % Plot the 3D graph
 grid off;
-plot3(x, y, z, 'b-', 'LineWidth', 2); % 'b-' specifies blue solid line
-xlabel('Binding OCF');
-ylabel('Cost');
-zlabel('Fitness');
-title('3D Plot');
+scatter3(x, y, z, 50, scores, 'filled'); % create scatter based on solution sums for bindings selected
+xlabel('ET Cost');
+ylabel('P Cost');
+zlabel('C Cost');
+title('Dimension Solution Sums and Fitness Color Scale');
 grid on;
+h = colorbar; % Add colorbar to show the mapping of colors to values
+ylabel(h, 'Total Fitness'); % Label the color bar
