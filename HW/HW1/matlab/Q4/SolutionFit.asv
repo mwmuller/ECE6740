@@ -1,0 +1,38 @@
+function [d] = PuzzleFit(V, solSize, ET, P, C)
+    num_sections = length(V);
+    d = 0;
+    for i = 1:num_sections
+        tempSumWithConstraints = 0;
+        tempSumNoConstraints = 0;
+        % C is based on block
+        for j = 1:solSize
+            vVal = V(i, j);
+            if vVal < 5
+                C_i = 1;
+            elseif vVal < 9
+                C_i = 2;
+            else
+                C_i = 3;
+            end
+            tempSumNoConstraints = 3*ET(V(i, j)) + 2*P(V(i, j)) + C(C_i); % Apply the equation into a single vector
+        end
+        % Constraints
+        tempSumWithConstraints = tempSumNoConstraints;
+        % Task 1 and Task 2 not bound to same block
+        if((V(i,1)+1) ~= V(i,2)) % sequential indicates same block
+            tempSumWithConstraints = tempSumWithConstraints + 1;
+        end
+
+        % Task 2 and Task 3 are not bound
+        if((V(i,2)+1) ~= V(i,3)) % sequential indicates same block
+            tempSumWithConstraints = tempSumWithConstraints + 2;
+        end
+
+        % Task 1 bound to Block 2 AND Task 3 bound to Block 3 -> ET
+        % increase of 2
+        if(V(i, 1)==5 && V(i, 3)==11)
+            tempSumWithConstraints = tempSumWithConstraints + 2;
+        end
+        d = d + tempSumWithConstraints;
+    end
+end
