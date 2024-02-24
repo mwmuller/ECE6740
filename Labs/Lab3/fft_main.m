@@ -44,10 +44,10 @@ if fileID == -1
 end
 last = 2^m;
 % write with delims
-fprintf(fileID, 'double x = {');
+fprintf(fileID, 'double x[] = {');
 fprintf(fileID, '%.4f,\n', xg(1:last-1)); % write all but last
 fprintf(fileID, '%.4f', xg(last));  % write last element
-fprintf(fileID, '}\n');
+fprintf(fileID, '};\n');
 
 fclose(fileID);
 
