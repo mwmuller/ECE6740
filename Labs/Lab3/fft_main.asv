@@ -1,0 +1,24 @@
+% Parameters
+f = 440;        % Frequency of the sine wave (Hz)
+m = 16; % used to get a decent duration
+Fs = 44100; % sampling rate
+duration = 2^m / Fs; % set duration such that time 
+% Time vector
+t = 0:1/Fs:duration-1/Fs;
+dir = 1;
+% Generate sine wave
+xg = sin(2*pi*f*t);
+y = zeros(size(x)); % For a real signal, imaginary part is zero
+
+% Call FFT function (assuming the function is available)
+[x, y] = FFT(dir, m, xg, y); % Forward transform
+
+dir = -1;
+[xr, y] = FFT(dir, m, x, y); % Forward transform
+find(x == max(x))
+
+% Play the original sound
+sound(xg, Fs);
+
+% play the reproduced sound
+sound(xr, Fs);
