@@ -58,63 +58,123 @@
    dir =  1 gives forward transform
    dir = -1 gives reverse transform
 */
+
+long getn(long m)
+{
+	long i = 0;
+	long n = 1;
+	for (i=0;i<m;i++)
+	  n *= 2;
+
+	return n;
+}
+
+void reversal(long n, double *x, double *y)
+{
+	long i2, i, j, k;
+	double tx, ty;
+	i2 = n >> 1;
+	   j = 0;
+	   for (i=0;i<n-1;i++) {
+		  if (i < j) {
+			 tx = x[i];
+			 ty = y[i];
+			 x[i] = x[j];
+			 y[i] = y[j];
+			 x[j] = tx;
+			 y[j] = ty;
+		  }
+		  k = i2;
+		  while (k <= j) {
+			 j -= k;
+			 k >>= 1;
+		  }
+		  j += k;
+	   }
+}
+
+void fft_nest3(long l1, long l2, double c1, double c2,
+				long n, double *x , double *y)
+{
+	long i1, j, i;
+	double t1, t2, z, u1, u2;
+		u1 = 1.0;
+		u2 = 0.0;
+	for (j=0;j<l1;j++) {
+		 for (i=j;i<n;i+=l2) {
+			i1 = i + l1;
+			t1 = u1 * x[i1] - u2 * y[i1];
+			t2 = u1 * y[i1] + u2 * x[i1];
+			x[i1] = x[i] - t1;
+			y[i1] = y[i] - t2;
+			x[i] += t1;
+			y[i] += t2;
+		 }
+		 z =  u1 * c1 - u2 * c2;
+		 u2 = u1 * c2 + u2 * c1;
+		 u1 = z;
+	  }
+}
+
+void calcfft(long n, long m, double *x, double *y, short int dir)
+{
+	long l,l1,l2;
+	double c1,c2;
+	/* Compute the FFT */
+	c1 = -1.0;
+	c2 = 0.0;
+	l2 = 1;
+	for (l=0;l<m;l++) {
+	  l1 = l2;
+	  l2 <<= 1;
+	  fft_nest3(l1, l2, c1, c2, n, x, y); // init i1
+
+	  c2 = sqrt((1.0 - c1) / 2.0);
+	  if (dir == 1)
+		 c2 = -c2;
+	  c1 = sqrt((1.0 + c1) / 2.0);
+	}
+}
 short FFT(short int dir,long m,double *x,double *y)
 {
-   long n,i,i1,j,k,i2,l,l1,l2;
-   double c1,c2,tx,ty,t1,t2,u1,u2,z;
+	long n,i;
    /* Calculate the number of points */
    n = 1;
-   for (i=0;i<m;i++)
-      n *= 2;
+   n = getn(m);
 
    /* Do the bit reversal */
-   i2 = n >> 1;
-   j = 0;
-   for (i=0;i<n-1;i++) {
-      if (i < j) {
-         tx = x[i];
-         ty = y[i];
-         x[i] = x[j];
-         y[i] = y[j];
-         x[j] = tx;
-         y[j] = ty;
-      }
-      k = i2;
-      while (k <= j) {
-         j -= k;
-         k >>= 1;
-      }
-      j += k;
-   }
+   reversal(n, x,y);
 
    /* Compute the FFT */
-   c1 = -1.0;
-   c2 = 0.0;
-   l2 = 1;
-   for (l=0;l<m;l++) {
-      l1 = l2;
-      l2 <<= 1;
-      u1 = 1.0;
-      u2 = 0.0;
-      for (j=0;j<l1;j++) {
-         for (i=j;i<n;i+=l2) {
-            i1 = i + l1;
-            t1 = u1 * x[i1] - u2 * y[i1];
-            t2 = u1 * y[i1] + u2 * x[i1];
-            x[i1] = x[i] - t1;
-            y[i1] = y[i] - t2;
-            x[i] += t1;
-            y[i] += t2;
+      /*c1 = -1.0;
+      c2 = 0.0;
+      l2 = 1;
+      for (l=0;l<m;l++) {
+         l1 = l2;
+         l2 <<= 1;
+         u1 = 1.0;
+         u2 = 0.0;
+         for (j=0;j<l1;j++) {
+            for (i=j;i<n;i+=l2) {
+               i1 = i + l1;
+               t1 = u1 * x[i1] - u2 * y[i1];
+               t2 = u1 * y[i1] + u2 * x[i1];
+               x[i1] = x[i] - t1;
+               y[i1] = y[i] - t2;
+               x[i] += t1;
+               y[i] += t2;
+            }
+            z =  u1 * c1 - u2 * c2;
+            u2 = u1 * c2 + u2 * c1;
+            u1 = z;
          }
-         z =  u1 * c1 - u2 * c2;
-         u2 = u1 * c2 + u2 * c1;
-         u1 = z;
-      }
-      c2 = sqrt((1.0 - c1) / 2.0);
-      if (dir == 1)
-         c2 = -c2;
-      c1 = sqrt((1.0 + c1) / 2.0);
-   }
+         c2 = sqrt((1.0 - c1) / 2.0);
+         if (dir == 1)
+            c2 = -c2;
+         c1 = sqrt((1.0 + c1) / 2.0);
+      }*/
+   /* computing fft */
+   calcfft(n, m, x, y, dir);
    /* Scaling for forward transform */
    if (dir == 1) {
       for (i=0;i<n;i++) {
@@ -124,6 +184,7 @@ short FFT(short int dir,long m,double *x,double *y)
    }
    return(1);
 }
+
 
 int main()
 {
@@ -139,23 +200,25 @@ int main()
     for( h=0 ; h < maxSize ; h++ ) {
           y[h] = 0;
        }
-    printf("Computing FFT...\n");
-    FFT(dir, m, x, y);
-    int i = 0;
-    double maxX = 0;
-    int maxIdx = 0;
-    printf("finding max bin...\n");
-    for(i = 0; i < maxSize; i++)
-    {
-    	// iterate and find the max
-    	if(maxX < x[i])
-    	{
-    		maxIdx = i+1;
-    		maxX = x[i]; // get the max bin? We'll see
-    	}
-    }
-    printf("Here is the index + 1 (matlab idx): %d\n", maxIdx);
-    printf("Here is my max: %f\n", maxX);
+    //while (1){
+		printf("Computing FFT...\n");
+		FFT(dir, m, x, y);
+		int i = 0;
+		double maxX = 0;
+		int maxIdx = 0;
+		printf("finding max bin...\n");
+		for(i = 0; i < maxSize; i++)
+		{
+			// iterate and find the max
+			if(maxX < x[i])
+			{
+				maxIdx = i+1;
+				maxX = x[i]; // get the max bin? We'll see
+			}
+		}
+		printf("Here is the index + 1 (matlab idx): %d\n", maxIdx);
+		printf("Here is my max: %f\n", maxX);
+    //}
     free(y);
     return 0;
 }
