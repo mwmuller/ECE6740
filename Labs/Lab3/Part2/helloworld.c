@@ -92,24 +92,30 @@ void reversal(long n, double *x, double *y)
 		  j += k;
 	   }
 }
-
+void fft_nest2(long n, long j, long l1, long l2,
+			   double u1, double u2, double *x, double *y)
+{
+	long i, i1;
+	double t1, t2;
+	for (i=j;i<n;i+=l2) {
+				i1 = i + l1;
+				t1 = u1 * x[i1] - u2 * y[i1];
+				t2 = u1 * y[i1] + u2 * x[i1];
+				x[i1] = x[i] - t1;
+				y[i1] = y[i] - t2;
+				x[i] += t1;
+				y[i] += t2;
+			 }
+}
 void fft_nest3(long l1, long l2, double c1, double c2,
 				long n, double *x , double *y)
 {
-	long i1, j, i;
-	double t1, t2, z, u1, u2;
+	long j;
+	double z, u1, u2;
 		u1 = 1.0;
 		u2 = 0.0;
 	for (j=0;j<l1;j++) {
-		 for (i=j;i<n;i+=l2) {
-			i1 = i + l1;
-			t1 = u1 * x[i1] - u2 * y[i1];
-			t2 = u1 * y[i1] + u2 * x[i1];
-			x[i1] = x[i] - t1;
-			y[i1] = y[i] - t2;
-			x[i] += t1;
-			y[i] += t2;
-		 }
+		fft_nest2(n, j, l1, l2, u1, u2, x, y);
 		 z =  u1 * c1 - u2 * c2;
 		 u2 = u1 * c2 + u2 * c1;
 		 u1 = z;
@@ -145,34 +151,6 @@ short FFT(short int dir,long m,double *x,double *y)
    /* Do the bit reversal */
    reversal(n, x,y);
 
-   /* Compute the FFT */
-      /*c1 = -1.0;
-      c2 = 0.0;
-      l2 = 1;
-      for (l=0;l<m;l++) {
-         l1 = l2;
-         l2 <<= 1;
-         u1 = 1.0;
-         u2 = 0.0;
-         for (j=0;j<l1;j++) {
-            for (i=j;i<n;i+=l2) {
-               i1 = i + l1;
-               t1 = u1 * x[i1] - u2 * y[i1];
-               t2 = u1 * y[i1] + u2 * x[i1];
-               x[i1] = x[i] - t1;
-               y[i1] = y[i] - t2;
-               x[i] += t1;
-               y[i] += t2;
-            }
-            z =  u1 * c1 - u2 * c2;
-            u2 = u1 * c2 + u2 * c1;
-            u1 = z;
-         }
-         c2 = sqrt((1.0 - c1) / 2.0);
-         if (dir == 1)
-            c2 = -c2;
-         c1 = sqrt((1.0 + c1) / 2.0);
-      }*/
    /* computing fft */
    calcfft(n, m, x, y, dir);
    /* Scaling for forward transform */
@@ -192,33 +170,39 @@ int main()
     long m = 12; // creates 2^m points for both x and y arrays
     // x is defined from matlab
     double *y;
-    double maxSize = pow(2,m);
-    printf("Inputs: [M = %ld | dir = %d | vector Size: %f]\n", m, dir, maxSize);
+    long maxSize = pow(2,m);
+
+    printf("Inputs: [M = %ld | dir = %d | vector Size: %ld]\n", m, dir, maxSize);
     printf("filling Y vector...\n");
     y = (double *) malloc (maxSize*sizeof(double));
     int h;
     for( h=0 ; h < maxSize ; h++ ) {
           y[h] = 0;
-       }
-    //while (1){
-		printf("Computing FFT...\n");
-		FFT(dir, m, x, y);
+   }
+
+    int printit = 1;
+    while (1){
+    	// AFTER THE FIRST LOOP THE VALUES ARE INCORRECT
+    	// THIS LOOP IS HERE FOR PROFILING
+    	if(printit == 1)printf("Computing FFT...\n");
+		FFT(dir, m, x_in, y);
 		int i = 0;
 		double maxX = 0;
 		int maxIdx = 0;
-		printf("finding max bin...\n");
+		if(printit == 1)printf("finding max bin...\n");
 		for(i = 0; i < maxSize; i++)
 		{
 			// iterate and find the max
-			if(maxX < x[i])
+			if(maxX < x_in[i])
 			{
 				maxIdx = i+1;
-				maxX = x[i]; // get the max bin? We'll see
+				maxX = x_in[i]; // get the max bin? We'll see
 			}
 		}
-		printf("Here is the index + 1 (matlab idx): %d\n", maxIdx);
-		printf("Here is my max: %f\n", maxX);
-    //}
+		if(printit == 1)printf("Here is the index + 1 (matlab idx): %d\n", maxIdx);
+		if(printit == 1)printf("Here is my max: %f\n", maxX);
+		printit = 0;
+    }
     free(y);
     return 0;
 }
