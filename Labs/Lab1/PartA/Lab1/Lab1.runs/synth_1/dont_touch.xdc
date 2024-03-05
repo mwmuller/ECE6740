@@ -6,19 +6,40 @@
 # Block Designs: bd/uart_bd/uart_bd.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd || ORIG_REF_NAME==uart_bd} -quiet] -quiet
 
-# IP: bd/uart_bd/ip/uart_bd_processing_system7_0_0/uart_bd_processing_system7_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_processing_system7_0_0 || ORIG_REF_NAME==uart_bd_processing_system7_0_0} -quiet] -quiet
-
 # IP: bd/uart_bd/ip/uart_bd_ps7_0_axi_periph_0/uart_bd_ps7_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_ps7_0_axi_periph_0 || ORIG_REF_NAME==uart_bd_ps7_0_axi_periph_0} -quiet] -quiet
 
 # IP: bd/uart_bd/ip/uart_bd_rst_ps7_0_100M_0/uart_bd_rst_ps7_0_100M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_rst_ps7_0_100M_0 || ORIG_REF_NAME==uart_bd_rst_ps7_0_100M_0} -quiet] -quiet
 
-# IP: bd/uart_bd/ip/uart_bd_axi_addr_wrapper_0_1/uart_bd_axi_addr_wrapper_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_axi_addr_wrapper_0_1 || ORIG_REF_NAME==uart_bd_axi_addr_wrapper_0_1} -quiet] -quiet
+# IP: bd/uart_bd/ip/uart_bd_xbar_0/uart_bd_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_xbar_0 || ORIG_REF_NAME==uart_bd_xbar_0} -quiet] -quiet
+
+# IP: bd/uart_bd/ip/uart_bd_axi_bram_ctrl_0_0/uart_bd_axi_bram_ctrl_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_axi_bram_ctrl_0_0 || ORIG_REF_NAME==uart_bd_axi_bram_ctrl_0_0} -quiet] -quiet
+
+# IP: bd/uart_bd/ip/uart_bd_axi_bram_ctrl_0_bram_0/uart_bd_axi_bram_ctrl_0_bram_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_axi_bram_ctrl_0_bram_0 || ORIG_REF_NAME==uart_bd_axi_bram_ctrl_0_bram_0} -quiet] -quiet
+
+# IP: bd/uart_bd/ip/uart_bd_axi_cdma_0_0/uart_bd_axi_cdma_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_axi_cdma_0_0 || ORIG_REF_NAME==uart_bd_axi_cdma_0_0} -quiet] -quiet
+
+# IP: bd/uart_bd/ip/uart_bd_auto_pc_2/uart_bd_auto_pc_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_auto_pc_2 || ORIG_REF_NAME==uart_bd_auto_pc_2} -quiet] -quiet
+
+# IP: bd/uart_bd/ip/uart_bd_auto_us_0/uart_bd_auto_us_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_auto_us_0 || ORIG_REF_NAME==uart_bd_auto_us_0} -quiet] -quiet
 
 # IP: bd/uart_bd/ip/uart_bd_auto_pc_0/uart_bd_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_auto_pc_0 || ORIG_REF_NAME==uart_bd_auto_pc_0} -quiet] -quiet
+
+# IP: bd/uart_bd/ip/uart_bd_auto_ds_0/uart_bd_auto_ds_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_auto_ds_0 || ORIG_REF_NAME==uart_bd_auto_ds_0} -quiet] -quiet
+
+# IP: bd/uart_bd/ip/uart_bd_auto_pc_1/uart_bd_auto_pc_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_auto_pc_1 || ORIG_REF_NAME==uart_bd_auto_pc_1} -quiet] -quiet
+
+# IP: bd/uart_bd/ip/uart_bd_processing_system7_0_1/uart_bd_processing_system7_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uart_bd_processing_system7_0_1 || ORIG_REF_NAME==uart_bd_processing_system7_0_1} -quiet] -quiet
 
 # XDC: f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/uart_bd_ooc.xdc

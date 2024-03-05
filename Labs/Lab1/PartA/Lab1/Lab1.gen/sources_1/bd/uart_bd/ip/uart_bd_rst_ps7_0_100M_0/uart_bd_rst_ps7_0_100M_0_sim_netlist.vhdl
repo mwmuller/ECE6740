@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
 -- Date        : Mon Jan 22 22:48:04 2024
 -- Host        : DESKTOP-NE4QLD0 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               f:/ECE6740/Labs/Lab1/PartA/Lab1/Lab1.gen/sources_1/bd/uart_bd/ip/uart_bd_rst_ps7_0_100M_0/uart_bd_rst_ps7_0_100M_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top uart_bd_rst_ps7_0_100M_0 -prefix
+--               uart_bd_rst_ps7_0_100M_0_ uart_bd_rst_ps7_0_100M_0_sim_netlist.vhdl
 -- Design      : uart_bd_rst_ps7_0_100M_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25,8 +25,6 @@ entity uart_bd_rst_ps7_0_100M_0_cdc_sync is
     aux_reset_in : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of uart_bd_rst_ps7_0_100M_0_cdc_sync : entity is "cdc_sync";
 end uart_bd_rst_ps7_0_100M_0_cdc_sync;
 
 architecture STRUCTURE of uart_bd_rst_ps7_0_100M_0_cdc_sync is
@@ -247,8 +245,6 @@ entity uart_bd_rst_ps7_0_100M_0_upcnt_n is
     seq_cnt_en : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of uart_bd_rst_ps7_0_100M_0_upcnt_n : entity is "upcnt_n";
 end uart_bd_rst_ps7_0_100M_0_upcnt_n;
 
 architecture STRUCTURE of uart_bd_rst_ps7_0_100M_0_upcnt_n is
@@ -413,8 +409,6 @@ entity uart_bd_rst_ps7_0_100M_0_lpf is
     ext_reset_in : in STD_LOGIC;
     aux_reset_in : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of uart_bd_rst_ps7_0_100M_0_lpf : entity is "lpf";
 end uart_bd_rst_ps7_0_100M_0_lpf;
 
 architecture STRUCTURE of uart_bd_rst_ps7_0_100M_0_lpf is
@@ -603,8 +597,6 @@ entity uart_bd_rst_ps7_0_100M_0_sequence_psr is
     lpf_int : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of uart_bd_rst_ps7_0_100M_0_sequence_psr : entity is "sequence_psr";
 end uart_bd_rst_ps7_0_100M_0_sequence_psr;
 
 architecture STRUCTURE of uart_bd_rst_ps7_0_100M_0_sequence_psr is
@@ -943,8 +935,6 @@ entity uart_bd_rst_ps7_0_100M_0_proc_sys_reset is
   attribute C_NUM_PERP_ARESETN of uart_bd_rst_ps7_0_100M_0_proc_sys_reset : entity is 1;
   attribute C_NUM_PERP_RST : integer;
   attribute C_NUM_PERP_RST of uart_bd_rst_ps7_0_100M_0_proc_sys_reset : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of uart_bd_rst_ps7_0_100M_0_proc_sys_reset : entity is "proc_sys_reset";
 end uart_bd_rst_ps7_0_100M_0_proc_sys_reset;
 
 architecture STRUCTURE of uart_bd_rst_ps7_0_100M_0_proc_sys_reset is

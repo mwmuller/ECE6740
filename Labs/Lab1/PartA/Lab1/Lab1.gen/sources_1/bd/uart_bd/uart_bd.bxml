@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="40">
   <CompositeFile CompositeFileTopName="uart_bd" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1705981628"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1705981628"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1705981628"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1705981628"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1709487482"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1709487482"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1709487482"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1709487482"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth\uart_bd.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
@@ -16,6 +16,13 @@
       <File Name="sim\uart_bd.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="uart_bd.bmm" Type="BMM">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
         <ProcessingOrder Val="NORMAL"/>
       </File>
