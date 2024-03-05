@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Mar  5 11:19:45 2024
+# Process ID: 93536
+# Current directory: F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL/fft_PL.runs/synth_1
+# Command line: vivado.exe -log fixed_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fixed_top.tcl
+# Log file: F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL/fft_PL.runs/synth_1/fixed_top.vds
+# Journal file: F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL/fft_PL.runs/synth_1\vivado.jou
+# Running On: DESKTOP-NE4QLD0, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 25690 MB
+#-----------------------------------------------------------
+source fixed_top.tcl -notrace

@@ -47,26 +47,11 @@
 
 #include <stdio.h>
 #include "platform.h"
-#include "xscutimer.h"  // if PS Timer is used
-#include "xaxicdma.h"	// if CDMA is used
-#include "xil_exception.h"	// if interrupt is used
+#include "xil_printf.h"
 #include <math.h>
-#include "xparameters.h"
 #include <stdlib.h>
 #include "xinput.h"
-#include "xil_cache.h"
-#include "xil_printf.h"
-#define PROCESSOR_BRAM_MEMORY 0x80000000 // BRAM Port A mapped through 1st BRAM Controller accessed by CPU
-#define CDMA_BRAM_MEMORY 0xC0000000 // BRAM Port B mapped through 2nd BRAM Controller accessed by CDMA
-#define DDR_MEMORY 0x01000000
-#define TIMER_DEVICE_ID	XPAR_SCUTIMER_DEVICE_ID
-#define TIMER_LOAD_VALUE 0xFFFFFFFF
-#define INTC_DEVICE_INT_ID XPAR_SCUGIC_SINGLE_DEVICE_ID
-volatile static int Done = 0;	/* Dma transfer is done */
-volatile static int Error = 0;	/* Dma Bus Error occurs */
 
-XScuTimer Timer;		/* Cortex A9 SCU Private Timer Instance */
-XScuGic Gic;			/* PS GIC */
 /*
    This computes an in-place complex-to-complex FFT
    x and y are the real and imaginary arrays of 2^m points.
@@ -92,7 +77,6 @@ void reversal(long n, double *x, double *y)
 	   j = 0;
 	   for (i=0;i<n-1;i++) {
 		  if (i < j) {
-			// access the arrays in BRAM
 			 tx = x[i];
 			 ty = y[i];
 			 x[i] = x[j];
@@ -115,7 +99,6 @@ void fft_nest2(long n, long j, long l1, long l2,
 	double t1, t2;
 	for (i=j;i<n;i+=l2) {
 				i1 = i + l1;
-				// access the arrays in BRAM
 				t1 = u1 * x[i1] - u2 * y[i1];
 				t2 = u1 * y[i1] + u2 * x[i1];
 				x[i1] = x[i] - t1;
@@ -180,47 +163,6 @@ short FFT(short int dir,long m,double *x,double *y)
    return(1);
 }
 
-int SetupIntrSystem(XScuGic *GicPtr, XAxiCdma  *DmaPtr)
-{
-	int Status;
-
-	Xil_ExceptionInit();
-
-	// Connect the interrupt controller interrupt handler to the hardware
-	// interrupt handling logic in the processor.
-	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_IRQ_INT,
-			     (Xil_ExceptionHandler)XScuGic_InterruptHandler,
-			     GicPtr);
-
-	// Connect a device driver handler that will be called when an interrupt
-	// for the device occurs, the device driver handler performs the specific
-	// interrupt processing for the device
-
-	Status = XScuGic_Connect(GicPtr,
-			XPAR_FABRIC_AXI_CDMA_0_CDMA_INTROUT_INTR,
-				 (Xil_InterruptHandler)XAxiCdma_IntrHandler,
-				 (void *)DmaPtr);
-	if (Status != XST_SUCCESS)
-		return XST_FAILURE;
-
-	// Enable the interrupt for the device
-	XScuGic_Enable(GicPtr, XPAR_FABRIC_AXI_CDMA_0_CDMA_INTROUT_INTR);
-
-	return XST_SUCCESS;
-}
-
-static void Example_CallBack(void *CallBackRef, u32 IrqMask, int *IgnorePtr)
-{
-
-	if (IrqMask & XAXICDMA_XR_IRQ_ERROR_MASK) {
-		Error = 1;
-	}
-
-	if (IrqMask & XAXICDMA_XR_IRQ_IOC_MASK) {
-		Done = 1;
-	}
-
-}
 
 int main()
 {
@@ -229,18 +171,10 @@ int main()
     // x is defined from matlab
     double *y;
     long maxSize = pow(2,m);
-	long numBytes = maxSize*sizeof(double);
 
-	PROCESSOR_BRAM_MEMORY 0x80000000 // BRAM Port A mapped through 1st BRAM Controller accessed by CPU
-	CDMA_BRAM_MEMORY 0xC0000000 // BRAM Port B mapped through 2nd BRAM Controller accessed by CDMA
-
-
-
-	// place X in memory
-	// place y in memory
     printf("Inputs: [M = %ld | dir = %d | vector Size: %ld]\n", m, dir, maxSize);
     printf("filling Y vector...\n");
-    y = (double *) malloc (numBytes);
+    y = (double *) malloc (maxSize*sizeof(double));
     int h;
     for( h=0 ; h < maxSize ; h++ ) {
           y[h] = 0;

@@ -1,0 +1,8 @@
+Time resolution is 1 ps
+Warning: :fixed_pkg:TO_SFIXED(INTEGER): vector truncated
+Time: 0 ps  Iteration: 0  Process: /fixed_tb/line__68  File: F:/ECE6740/Labs/Lab3/fft_PL_component/fixed_tb.vhd
+ERROR: Array sizes do not match, left array has 33 elements, right array has 34 elements
+Time: 100 ns  Iteration: 1  Process: /fixed_tb/UUT/line__74
+  File: F:/ECE6740/Labs/Lab3/fft_PL_component/fix.vhd
+
+HDL Line: F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL/fixed_pkg_c.vhdl:2467

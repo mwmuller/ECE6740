@@ -1,0 +1,74 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Mar  5 11:06:32 2024
+# Process ID: 96640
+# Current directory: F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34468 F:\ECE6740\Labs\Lab3\fft_PL_component\fft_PL\fft_PL.xpr
+# Log file: F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL/vivado.log
+# Journal file: F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL\vivado.jou
+# Running On: DESKTOP-NE4QLD0, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 25690 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL/fft_PL.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source fixed_tb.tcl
+close_sim
+launch_simulation
+source fixed_tb.tcl
+close_sim
+launch_simulation
+source fixed_tb.tcl
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_sim
+launch_simulation
+source fixed_tb.tcl
+close_sim
+launch_simulation
+source fixed_tb.tcl
+run 200 us
+close_sim
+launch_simulation
+source fixed_tb.tcl
+close_sim
+launch_simulation
+source fixed_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source fixed_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source fixed_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source fixed_tb.tcl
+close_sim
+launch_simulation
+source fixed_tb.tcl
+close_sim
+launch_simulation
+source fixed_tb.tcl
+close_sim
+launch_simulation
+source fixed_tb.tcl
+close_sim
+launch_simulation
+source fixed_tb.tcl
+close_sim
+launch_simulation
+source fixed_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source fixed_tb.tcl
+close_sim

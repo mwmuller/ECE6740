@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Mar  5 12:58:14 2024
+# Process ID: 93364
+# Current directory: F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent96800 F:\ECE6740\Labs\Lab3\fft_PL_component\fft_PL\fft_PL.xpr
+# Log file: F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL/vivado.log
+# Journal file: F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL\vivado.jou
+# Running On: DESKTOP-NE4QLD0, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 12, Host memory: 25690 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL/fft_PL.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source fixed_tb.tcl
+close_sim
+launch_simulation
+source fixed_tb.tcl
+close_sim
+launch_simulation
+source fixed_tb.tcl
+close_sim
+launch_simulation
+source fixed_tb.tcl
+close_sim

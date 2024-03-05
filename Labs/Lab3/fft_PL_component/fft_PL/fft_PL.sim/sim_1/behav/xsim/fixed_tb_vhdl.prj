@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../fixed_float_types_c.vhdl" \
+"../../../../fixed_pkg_c.vhdl" \
+"../../../../../fix.vhd" \
+"../../../../../fixed_tb.vhd" \
+
+# Do not sort compile order
+nosort
