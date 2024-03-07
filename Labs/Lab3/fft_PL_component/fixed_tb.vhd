@@ -40,48 +40,66 @@ end fixed_tb;
 
 architecture Behavioral of fixed_tb is
 
-component fixed_pt is
-    Port (  clr : in std_logic;
+
+component fixed_2 is
+    Port (  clk : in std_logic;
+            clr : in std_logic;
             start : in std_logic;
-            u1 : in sfixed (0 downto -8);
-            u2 : in sfixed (0 downto -8);
-            x_il : in sfixed (0 downto -32);
-            x_i : in sfixed (0 downto -32);
-            y_il : in sfixed (0 downto -32);
-            y_i : in sfixed (0 downto -32);
-            x_il_std : out std_logic_vector(32 downto 0);
-            y_il_std : out std_logic_vector(32 downto 0);
-            x_i_std : out std_logic_vector(32 downto 0);
-            y_i_std : out std_logic_vector(32 downto 0);
+            c1 : in sfixed (1 downto -16);
+            c2 : in sfixed (1 downto -16);
+            u1 : in std_logic_vector(33 downto 0);
+            u2 : in std_logic_vector(33 downto 0);
+            l1 : in std_logic_vector(11 downto 0);
+            u1_out : out std_logic_vector(33 downto 0);
+            u2_out : out std_logic_vector(33 downto 0);
             done : out std_logic);
 end component;
 
-signal clr, start, done : std_logic := '0';
-signal u1, u2 : sfixed (0 downto -8);
-signal x_i, x_il, y_i, y_il : sfixed (0 downto -32);
-signal x_il_std, y_il_std, x_i_std, y_i_std : std_logic_vector(32 downto 0);
+component my_reg is
+    generic (
+        DATA_WIDTH : integer := 34
+    );
+    port (
+        clk     : in  std_logic;             -- Clock input
+        reset   : in  std_logic;             -- Reset input
+        data_in : in  std_logic_vector(DATA_WIDTH - 1 downto 0); -- Data input          -- Enable input
+        data_out: out std_logic_vector(DATA_WIDTH - 1 downto 0)  -- Data output
+    );
+end component my_reg;
 
+signal clk, done, start, reset : std_logic := '0';
+signal c1, c2 : sfixed(1 downto -16);
+signal u1, u2, u1_out, u2_out : std_logic_vector(33 downto 0);
+signal l1 : std_logic_vector(11 downto 0);
 begin 
 
-UUT: fixed_pt port map (clr, start, u1, u2, x_il, x_i, y_il, y_i, x_il_std, y_il_std, x_i_std, y_i_std, done);
-
+UUT: fixed_2 port map (clk, reset, start, c1, c2, u1, u2, l1, u1_out, u2_out, done);
+reg: my_reg port map(clk, reset, u1_out, u1);
+reg1: my_reg port map(clk, reset, u2_out, u2);
 process
 begin
  -- test inputs 
  --  x = 0.0570, x_il 0.1137 
  -- for my example y is 0 for allgit 
-    clr <= '1';
-    u1 <= to_sfixed(1, 0, -8);
-    u2 <= to_sfixed(0, 0, -8);
-    x_i <= to_sfixed(0.0570,0, -32);
-    x_il <= to_sfixed(0.1137,0, -32);
-    y_i <= to_sfixed(0, 0, -32);
-    y_il <= to_sfixed(0, 0, -32);
+    start <= '0';
+    reset <= '0';
+    clk <= '0';
+    c1 <= to_sfixed(-1.0, 1, -16);
+    c2 <= to_sfixed(0, 1, -16);
     wait for 100 ns;
-    clr <= '0';
+    clk <= '1';
+    l1 <= x"001";
+    wait for 100 ns;
     start <= '1';
-    wait for 1000 ns;
-    start <= '1';
+    clk <= '0';
+    wait for 100 ns;
+    clk <= '1';
+    wait for 100 ns;
+    clk <= '0';
+    wait for 100 ns;
+    clk <= '1';
+    wait for 100 ns;
+    
     wait;
 end process;
 

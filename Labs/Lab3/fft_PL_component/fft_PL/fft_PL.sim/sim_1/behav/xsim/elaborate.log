@@ -14,6 +14,7 @@ Compiling package ieee.numeric_std
 Compiling package ieee_proposed.fixed_float_types
 Compiling package xil_defaultlib.fixed_pkg
 Compiling package ieee.math_real
-Compiling architecture behavioral of entity xil_defaultlib.fixed_pt [fixed_pt_default]
+Compiling architecture behavioral of entity xil_defaultlib.fixed_2 [fixed_2_default]
+Compiling architecture behavioral of entity xil_defaultlib.my_reg [my_reg_default]
 Compiling architecture behavioral of entity xil_defaultlib.fixed_tb
 Built simulation snapshot fixed_tb_behav

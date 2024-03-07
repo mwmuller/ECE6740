@@ -2483,7 +2483,6 @@ package body fixed_pkg is
     lslv       := to_uns (cleanvec(l));
     rslv       := to_uns (cleanvec(r));
     result_slv := lslv * rslv;
-    result     := to_fixed (result_slv, result'high, result'low);
     return result;
   end function "*";
 
