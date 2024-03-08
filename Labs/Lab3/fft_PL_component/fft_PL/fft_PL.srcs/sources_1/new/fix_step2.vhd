@@ -79,15 +79,17 @@ begin
                     when 0 =>
                         z <=  u1_temp * c1 - u2_temp * c2;
                         u2_temp_66 <= (u1_temp * c2) + (u2_temp * c1);
+                        i <= i+1;
                     when 1 =>
                         u2_temp <= u2_temp_66(1 downto -16);
                         u1_temp <= z(1 downto -16);
+                        i <= i+1;
                     when 2 =>
                         done_temp <= '1';
+                        i <= 0;
                     when others =>
                         null;
                     end case;
-                i <= i+1;
              end if;
          end loop;
     elsif start = '0' then

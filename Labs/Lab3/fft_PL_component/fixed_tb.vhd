@@ -76,35 +76,29 @@ begin
 UUT: fixed_2 port map (clk, reset, start, c1, c2, u1, u2, l1, u1_out, u2_out, done);
 reg: my_reg port map(clk, reset, u1_out, u1);
 reg1: my_reg port map(clk, reset, u2_out, u2);
+
+process
+    begin
+    
+    clk <= '0';
+    wait for 100 ns;
+    clk <= '1';
+    wait for 100 ns;
+end process;
+
 process
 begin
+    
  -- test inputs 
  --  x = 0.0570, x_il 0.1137 
  -- for my example y is 0 for allgit 
     start <= '0';
     reset <= '0';
-    clk <= '0';
-    c1 <= to_sfixed(-1.0, 1, -16);
+    c1 <= to_sfixed(-1, 1, -16);
     c2 <= to_sfixed(0, 1, -16);
     wait for 100 ns;
-    clk <= '1';
-    l1 <= x"001";
-    wait for 100 ns;
-    start <= '1';
-    clk <= '0';
-    wait for 100 ns;
-    clk <= '1';
-    wait for 100 ns;
-    clk <= '0';
-    wait for 100 ns;
-    clk <= '1';
-    wait for 100 ns;
-    clk <= '1';
-    wait for 100 ns;
-    clk <= '0';
-    wait for 100 ns;
-    clk <= '1';
-    wait for 100 ns;
+    start <='1';
+    l1 <= x"002";
     
     wait;
 end process;
