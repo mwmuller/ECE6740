@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity my_reg is
     generic (
-        DATA_WIDTH : integer := 34
+        DATA_WIDTH : integer := 18
     );
     port (
         clk     : in  std_logic;             -- Clock input

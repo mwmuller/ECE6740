@@ -34,11 +34,11 @@ use work.fixed_pkg.all;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity fixed_tb is
+entity fixed_tb_swap is
 --  Port ( );
-end fixed_tb;
+end fixed_tb_swap;
 
-architecture Behavioral of fixed_tb is
+architecture Behavioral of fixed_tb_swap is
 
 
 component fixed_3 is

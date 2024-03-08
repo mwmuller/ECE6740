@@ -47,17 +47,17 @@ component fixed_2 is
             start : in std_logic;
             c1 : in sfixed (1 downto -16);
             c2 : in sfixed (1 downto -16);
-            u1 : in std_logic_vector(33 downto 0);
-            u2 : in std_logic_vector(33 downto 0);
+            u1 : in std_logic_vector(17 downto 0);
+            u2 : in std_logic_vector(17 downto 0);
             l1 : in std_logic_vector(11 downto 0);
-            u1_out : out std_logic_vector(33 downto 0);
-            u2_out : out std_logic_vector(33 downto 0);
+            u1_out : out std_logic_vector(17 downto 0);
+            u2_out : out std_logic_vector(17 downto 0);
             done : out std_logic);
 end component;
 
 component my_reg is
     generic (
-        DATA_WIDTH : integer := 34
+        DATA_WIDTH : integer := 18
     );
     port (
         clk     : in  std_logic;             -- Clock input
@@ -69,7 +69,7 @@ end component my_reg;
 
 signal clk, done, start, reset : std_logic := '0';
 signal c1, c2 : sfixed(1 downto -16);
-signal u1, u2, u1_out, u2_out : std_logic_vector(33 downto 0);
+signal u1, u2, u1_out, u2_out : std_logic_vector(17 downto 0);
 signal l1 : std_logic_vector(11 downto 0);
 begin 
 
@@ -92,6 +92,12 @@ begin
     wait for 100 ns;
     start <= '1';
     clk <= '0';
+    wait for 100 ns;
+    clk <= '1';
+    wait for 100 ns;
+    clk <= '0';
+    wait for 100 ns;
+    clk <= '1';
     wait for 100 ns;
     clk <= '1';
     wait for 100 ns;
