@@ -69,6 +69,7 @@ process(clk, start)
 begin
 	i2 <= n srl 1;
 	j <= (others => '0');
+	if rising_edge(clk) and start = '1' then
 	   for i in 0 to to_integer(unsigned(n)-2) loop --(i=0;i<n-1;i++) {
 	       -- read in x[i]
 	       -- read in y[i]
@@ -99,6 +100,7 @@ begin
 		  j <= j + k;
           end loop;
 	   end loop;
+	   end if;
 end process;
     x_i_o <= to_slv(x_i_out);
     y_i_o <= to_slv(y_i_out);

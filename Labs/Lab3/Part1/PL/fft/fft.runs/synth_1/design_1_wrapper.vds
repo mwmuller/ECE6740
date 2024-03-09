@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Fri Mar  1 20:51:30 2024
-# Process ID: 18480
+# Start of session at: Sat Mar  9 11:50:40 2024
+# Process ID: 22604
 # Current directory: F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/design_1_wrapper.vds
@@ -26,47 +26,44 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16956
+INFO: [Synth 8-7075] Helper process launched with PID 82960
 WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [F:/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1279.441 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1284.781 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:12]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_axi_bram_ctrl_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_axi_bram_ctrl_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_axi_bram_ctrl_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_axi_bram_ctrl_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'rsta_busy' of module 'design_1_axi_bram_ctrl_0_bram_0' is unconnected for instance 'axi_bram_ctrl_0_bram' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:318]
 WARNING: [Synth 8-7071] port 'rstb_busy' of module 'design_1_axi_bram_ctrl_0_bram_0' is unconnected for instance 'axi_bram_ctrl_0_bram' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:318]
 WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_0_bram' of module 'design_1_axi_bram_ctrl_0_bram_0' has 16 connections declared, but only 14 given [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:318]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_1_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_axi_bram_ctrl_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_1_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_axi_bram_ctrl_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_cdma_0_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_axi_cdma_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_cdma_0_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_axi_cdma_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_1_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_axi_bram_ctrl_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_1_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_axi_bram_ctrl_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_cdma_0_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_axi_cdma_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_cdma_0_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_axi_cdma_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'cdma_tvect_out' of module 'design_1_axi_cdma_0_0' is unconnected for instance 'axi_cdma_0' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:374]
 WARNING: [Synth 8-7023] instance 'axi_cdma_0' of module 'design_1_axi_cdma_0_0' has 50 connections declared, but only 49 given [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:374]
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_0' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:734]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R706YB' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:2476]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_auto_pc_2_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_auto_pc_2_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R706YB' (0#1) [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:2476]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_3HM21E' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:2836]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_1' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_auto_ds_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_1' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_auto_ds_1_stub.v:5]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_ds_1' is unconnected for instance 'auto_ds' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3115]
-WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'design_1_auto_ds_1' is unconnected for instance 'auto_ds' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3115]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_ds_1' is unconnected for instance 'auto_ds' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3115]
-WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'design_1_auto_ds_1' is unconnected for instance 'auto_ds' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3115]
-WARNING: [Synth 8-7023] instance 'auto_ds' of module 'design_1_auto_ds_1' has 72 connections declared, but only 68 given [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3115]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_3HM21E' (0#1) [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:2836]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3569]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (0#1) [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3569]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_xbar_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_xbar_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R706YB' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:2468]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_auto_pc_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_auto_pc_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R706YB' (0#1) [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:2468]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_3HM21E' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:2828]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_3HM21E' (0#1) [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:2828]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3441]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (0#1) [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3441]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_xbar_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_xbar_1_stub.v:5]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_arqos' does not match port width (8) of module 'design_1_xbar_1' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:1436]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_arregion' does not match port width (8) of module 'design_1_xbar_1' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:1438]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_awqos' does not match port width (8) of module 'design_1_xbar_1' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:1447]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_awregion' does not match port width (8) of module 'design_1_xbar_1' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:1449]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_0' (0#1) [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:734]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_processing_system7_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_processing_system7_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_processing_system7_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_processing_system7_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:528]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:528]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:528]
@@ -74,40 +71,40 @@ WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_s
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:528]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:528]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 108 connections declared, but only 102 given [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:528]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:1508]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:2246]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (0#1) [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:2246]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3186]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_auto_ds_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_auto_ds_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_auto_pc_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_auto_pc_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3513]
-WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3513]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3513]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_0' has 56 connections declared, but only 53 given [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3513]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (0#1) [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3186]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3785]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_auto_pc_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_auto_pc_1_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_auto_us_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_auto_us_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_0' is unconnected for instance 'auto_us' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:4203]
-WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_0' is unconnected for instance 'auto_us' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:4203]
-WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_0' has 76 connections declared, but only 74 given [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:4203]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3785]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_xbar_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_xbar_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:1508]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_rst_ps7_0_100M_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-18480-DESKTOP-NE4QLD0/realtime/design_1_rst_ps7_0_100M_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:1500]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:2238]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (0#1) [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:2238]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3058]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_auto_ds_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_auto_ds_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_auto_pc_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3385]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3385]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3385]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_0' has 56 connections declared, but only 53 given [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3385]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (0#1) [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3058]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3657]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_auto_pc_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_auto_pc_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_auto_us_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_auto_us_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_0' is unconnected for instance 'auto_us' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:4075]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_0' is unconnected for instance 'auto_us' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:4075]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_0' has 76 connections declared, but only 74 given [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:4075]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:3657]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:1500]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_rst_ps7_0_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/.Xil/Vivado-22604-DESKTOP-NE4QLD0/realtime/design_1_rst_ps7_0_100M_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:725]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:725]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:725]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:725]
 WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:725]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/synth/design_1.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_UYSKKA is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_UYSKKA is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_XU9C55 is either unconnected or has no load
@@ -128,38 +125,8 @@ WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_7HNO1D is either 
 WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_7HNO1D is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_3HM21E is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_araddr[31] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_araddr[30] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_araddr[29] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_araddr[28] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_araddr[27] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_araddr[26] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_araddr[25] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_araddr[24] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_araddr[23] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_araddr[22] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_araddr[21] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_araddr[20] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_araddr[19] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_araddr[18] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_araddr[17] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_araddr[16] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_awaddr[31] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_awaddr[30] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_awaddr[29] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_awaddr[28] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_awaddr[27] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_awaddr[26] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_awaddr[25] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_awaddr[24] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_awaddr[23] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_awaddr[22] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_awaddr[21] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_awaddr[20] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_awaddr[19] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_awaddr[18] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_awaddr[17] in module m01_couplers_imp_3HM21E is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_awaddr[16] in module m01_couplers_imp_3HM21E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_3HM21E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_3HM21E is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_1R706YB is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_1R706YB is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
@@ -169,18 +136,18 @@ WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_axi_mem_intercon_0 i
 WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1287.672 ; gain = 8.230
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1291.957 ; gain = 7.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1287.672 ; gain = 8.230
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1291.957 ; gain = 7.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1287.672 ; gain = 8.230
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1291.957 ; gain = 7.176
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1287.672 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1291.957 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -209,10 +176,8 @@ Parsing XDC File [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_
 Finished Parsing XDC File [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
 Parsing XDC File [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_pc'
 Finished Parsing XDC File [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_2_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_pc'
-Parsing XDC File [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1/design_1_auto_ds_1_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m01_couplers/auto_ds'
-Finished Parsing XDC File [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1/design_1_auto_ds_1_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m01_couplers/auto_ds'
-Parsing XDC File [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_1_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_1'
-Finished Parsing XDC File [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_1_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_1'
+Parsing XDC File [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_1'
+Finished Parsing XDC File [f:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/axi_bram_ctrl_1'
 Parsing XDC File [F:/ECE6740/PYNQ-Z1_C.xdc]
 WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [F:/ECE6740/PYNQ-Z1_C.xdc:13]
 WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [F:/ECE6740/PYNQ-Z1_C.xdc:14]
@@ -228,23 +193,23 @@ Parsing XDC File [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/dont_touch.
 Finished Parsing XDC File [F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1287.672 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1291.957 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1287.672 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1291.957 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/axi_bram_ctrl_0_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1287.672 ; gain = 8.230
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1291.957 ; gain = 7.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1287.672 ; gain = 8.230
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1291.957 ; gain = 7.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -523,14 +488,13 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_bram_ctrl_0_bram. 
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_cdma_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/xbar. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/m00_couplers/auto_pc. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/m01_couplers/auto_ds. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_bram_ctrl_1. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1287.672 ; gain = 8.230
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1291.957 ; gain = 7.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1287.672 ; gain = 8.230
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1291.957 ; gain = 7.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -565,25 +529,25 @@ WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_axi_mem_intercon_0 i
 WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1287.672 ; gain = 8.230
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1291.957 ; gain = 7.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1287.672 ; gain = 8.230
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1291.965 ; gain = 7.184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1287.672 ; gain = 8.230
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1292.781 ; gain = 8.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1306.652 ; gain = 27.211
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1312.281 ; gain = 27.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -601,37 +565,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1311.461 ; gain = 32.020
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1317.520 ; gain = 32.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1311.461 ; gain = 32.020
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1317.520 ; gain = 32.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1311.461 ; gain = 32.020
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1317.520 ; gain = 32.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1311.461 ; gain = 32.020
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1317.520 ; gain = 32.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1311.461 ; gain = 32.020
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1317.520 ; gain = 32.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1311.461 ; gain = 32.020
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1317.520 ; gain = 32.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -643,54 +607,53 @@ Report BlackBoxes:
 +------+--------------------------------+----------+
 |1     |design_1_xbar_1                 |         1|
 |2     |design_1_auto_pc_2              |         1|
-|3     |design_1_auto_ds_1              |         1|
-|4     |design_1_xbar_0                 |         1|
-|5     |design_1_auto_ds_0              |         1|
-|6     |design_1_auto_pc_0              |         1|
-|7     |design_1_auto_pc_1              |         1|
-|8     |design_1_auto_us_0              |         1|
-|9     |design_1_axi_bram_ctrl_0_0      |         1|
-|10    |design_1_axi_bram_ctrl_0_bram_0 |         1|
-|11    |design_1_axi_bram_ctrl_1_0      |         1|
-|12    |design_1_axi_cdma_0_0           |         1|
-|13    |design_1_processing_system7_0_0 |         1|
-|14    |design_1_rst_ps7_0_100M_0       |         1|
+|3     |design_1_xbar_0                 |         1|
+|4     |design_1_auto_ds_0              |         1|
+|5     |design_1_auto_pc_0              |         1|
+|6     |design_1_auto_pc_1              |         1|
+|7     |design_1_auto_us_0              |         1|
+|8     |design_1_axi_bram_ctrl_0_0      |         1|
+|9     |design_1_axi_bram_ctrl_0_bram_0 |         1|
+|10    |design_1_axi_bram_ctrl_1_0      |         1|
+|11    |design_1_axi_cdma_0_0           |         1|
+|12    |design_1_processing_system7_0_0 |         1|
+|13    |design_1_rst_ps7_0_100M_0       |         1|
 +------+--------------------------------+----------+
 
 Report Cell Usage: 
 +------+------------------------------+------+
 |      |Cell                          |Count |
 +------+------------------------------+------+
-|1     |design_1_auto_ds              |     2|
-|3     |design_1_auto_pc              |     3|
-|6     |design_1_auto_us              |     1|
-|7     |design_1_axi_bram_ctrl_0      |     1|
-|8     |design_1_axi_bram_ctrl_0_bram |     1|
-|9     |design_1_axi_bram_ctrl_1      |     1|
-|10    |design_1_axi_cdma_0           |     1|
-|11    |design_1_processing_system7_0 |     1|
-|12    |design_1_rst_ps7_0_100M       |     1|
-|13    |design_1_xbar                 |     2|
+|1     |design_1_auto_ds              |     1|
+|2     |design_1_auto_pc              |     3|
+|5     |design_1_auto_us              |     1|
+|6     |design_1_axi_bram_ctrl_0      |     1|
+|7     |design_1_axi_bram_ctrl_0_bram |     1|
+|8     |design_1_axi_bram_ctrl_1      |     1|
+|9     |design_1_axi_cdma_0           |     1|
+|10    |design_1_processing_system7_0 |     1|
+|11    |design_1_rst_ps7_0_100M       |     1|
+|12    |design_1_xbar                 |     2|
 +------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1311.461 ; gain = 32.020
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1317.520 ; gain = 32.738
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1311.461 ; gain = 32.020
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1311.461 ; gain = 32.020
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1317.520 ; gain = 32.738
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1317.520 ; gain = 32.738
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1311.461 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1317.520 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1344.223 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1344.430 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: d33b04fa
+Synth Design complete, checksum: b575ef52
 INFO: [Common 17-83] Releasing license: Synthesis
-69 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
+67 Infos, 82 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1349.219 ; gain = 69.777
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1349.434 ; gain = 64.652
 INFO: [Common 17-1381] The checkpoint 'F:/ECE6740/Labs/Lab3/Part1/PL/fft/fft.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Mar  1 20:52:10 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat Mar  9 11:51:20 2024...

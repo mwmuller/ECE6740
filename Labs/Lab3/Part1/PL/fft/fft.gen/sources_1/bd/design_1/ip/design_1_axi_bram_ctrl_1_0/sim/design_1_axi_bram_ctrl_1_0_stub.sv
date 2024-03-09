@@ -77,8 +77,8 @@ module design_1_axi_bram_ctrl_1_0 (
   input bit [2 : 0] s_axi_awprot,
   input bit_as_bool s_axi_awvalid,
   output bit_as_bool s_axi_awready,
-  input bit [31 : 0] s_axi_wdata,
-  input bit [3 : 0] s_axi_wstrb,
+  input bit [63 : 0] s_axi_wdata,
+  input bit [7 : 0] s_axi_wstrb,
   input bit_as_bool s_axi_wlast,
   input bit_as_bool s_axi_wvalid,
   output bit_as_bool s_axi_wready,
@@ -94,7 +94,7 @@ module design_1_axi_bram_ctrl_1_0 (
   input bit [2 : 0] s_axi_arprot,
   input bit_as_bool s_axi_arvalid,
   output bit_as_bool s_axi_arready,
-  output bit [31 : 0] s_axi_rdata,
+  output bit [63 : 0] s_axi_rdata,
   output bit [1 : 0] s_axi_rresp,
   output bit_as_bool s_axi_rlast,
   output bit_as_bool s_axi_rvalid,
@@ -102,10 +102,10 @@ module design_1_axi_bram_ctrl_1_0 (
   output bit_as_bool bram_rst_a,
   output bit_as_bool bram_clk_a,
   output bit_as_bool bram_en_a,
-  output bit [3 : 0] bram_we_a,
+  output bit [7 : 0] bram_we_a,
   output bit [15 : 0] bram_addr_a,
-  output bit [31 : 0] bram_wrdata_a,
-  input bit [31 : 0] bram_rddata_a
+  output bit [63 : 0] bram_wrdata_a,
+  input bit [63 : 0] bram_rddata_a
 );
 endmodule
 `endif
@@ -126,8 +126,8 @@ module design_1_axi_bram_ctrl_1_0 (s_axi_aclk,s_axi_aresetn,s_axi_awaddr,s_axi_a
   input bit [2 : 0] s_axi_awprot;
   input bit s_axi_awvalid;
   output wire s_axi_awready;
-  input bit [31 : 0] s_axi_wdata;
-  input bit [3 : 0] s_axi_wstrb;
+  input bit [63 : 0] s_axi_wdata;
+  input bit [7 : 0] s_axi_wstrb;
   input bit s_axi_wlast;
   input bit s_axi_wvalid;
   output wire s_axi_wready;
@@ -143,7 +143,7 @@ module design_1_axi_bram_ctrl_1_0 (s_axi_aclk,s_axi_aresetn,s_axi_awaddr,s_axi_a
   input bit [2 : 0] s_axi_arprot;
   input bit s_axi_arvalid;
   output wire s_axi_arready;
-  output wire [31 : 0] s_axi_rdata;
+  output wire [63 : 0] s_axi_rdata;
   output wire [1 : 0] s_axi_rresp;
   output wire s_axi_rlast;
   output wire s_axi_rvalid;
@@ -151,9 +151,9 @@ module design_1_axi_bram_ctrl_1_0 (s_axi_aclk,s_axi_aresetn,s_axi_awaddr,s_axi_a
   output wire bram_rst_a;
   output wire bram_clk_a;
   output wire bram_en_a;
-  output wire [3 : 0] bram_we_a;
+  output wire [7 : 0] bram_we_a;
   output wire [15 : 0] bram_addr_a;
-  output wire [31 : 0] bram_wrdata_a;
-  input bit [31 : 0] bram_rddata_a;
+  output wire [63 : 0] bram_wrdata_a;
+  input bit [63 : 0] bram_rddata_a;
 endmodule
 `endif

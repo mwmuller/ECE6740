@@ -27,12 +27,12 @@ sound(xr, Fs);
 
 % Plot the magnitude spectrum
 figure;
-plot(Fs/L*(0:L-1),abs(xout),"LineWidth",3)
+plot(Fs/L*(0:L-1),xout,"LineWidth",3)
 title("Complex Magnitude of fft Spectrum")
 xlabel("f (Hz)")
 ylabel("|fft(dir,m,x,y)|")
 
-% output 440 Hz xg to a file for vitis input data
+% output 400 Hz xg to a file for vitis input data
 filePath = 'xinput.h';
 
 % Open the file for writing

@@ -90,7 +90,7 @@ set_property ip_output_repo f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xci
+read_ip -quiet F:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xci
 set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xdc]
 
 OPTRACE "Adding files" END { }

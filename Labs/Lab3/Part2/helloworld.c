@@ -176,12 +176,12 @@ int main()
     printf("filling Y vector...\n");
     y = (double *) malloc (maxSize*sizeof(double));
     int h;
-    for( h=0 ; h < maxSize ; h++ ) {
+    for(h=0 ; h < maxSize ; h++ ) {
           y[h] = 0;
    }
 
     int printit = 1;
-    while (1){
+    //while (1){
     	// AFTER THE FIRST LOOP THE VALUES ARE INCORRECT
     	// THIS LOOP IS HERE FOR PROFILING
     	if(printit == 1)printf("Computing FFT...\n");
@@ -202,7 +202,7 @@ int main()
 		if(printit == 1)printf("Here is the index + 1 (matlab idx): %d\n", maxIdx);
 		if(printit == 1)printf("Here is my max: %f\n", maxX);
 		printit = 0;
-    }
+    //}
     free(y);
     return 0;
 }
