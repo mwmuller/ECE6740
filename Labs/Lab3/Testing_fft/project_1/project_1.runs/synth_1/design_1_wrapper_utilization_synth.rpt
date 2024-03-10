@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Sat Mar  9 14:24:44 2024
+| Date         : Sun Mar 10 09:24:58 2024
 | Host         : DESKTOP-NE4QLD0 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -176,12 +176,17 @@ Table of Contents
 +----------------------------------+------+
 |             Ref Name             | Used |
 +----------------------------------+------+
+| design_1_xbar_0                  |    1 |
+| design_1_rst_ps7_0_140M_0        |    1 |
 | design_1_rst_ps7_0_100M_2        |    1 |
 | design_1_processing_system7_0_1  |    1 |
-| design_1_axi_cdma_0_7            |    1 |
-| design_1_axi_bram_ctrl_0_bram_11 |    1 |
-| design_1_axi_bram_ctrl_0_2       |    1 |
-| design_1_auto_pc_2               |    1 |
+| design_1_axi_smc_1               |    1 |
+| design_1_axi_cdma_0_9            |    1 |
+| design_1_axi_bram_ctrl_1_0       |    1 |
+| design_1_axi_bram_ctrl_0_bram_13 |    1 |
+| design_1_axi_bram_ctrl_0_4       |    1 |
+| design_1_auto_pc_1               |    1 |
+| design_1_auto_pc_0               |    1 |
 +----------------------------------+------+
 
 

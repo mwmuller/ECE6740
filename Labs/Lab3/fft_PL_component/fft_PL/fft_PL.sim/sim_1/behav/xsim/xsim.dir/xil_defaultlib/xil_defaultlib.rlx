@@ -2,9 +2,11 @@
 2020.2
 Apr 18 2022
 16:05:34
+F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL/fft_PL.srcs/sources_1/new/fft_step3.vhd,1710081137,vhdl,,,,fixed_3,,,,,,,,
 F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL/fft_PL.srcs/sources_1/new/fix_step2.vhd,1709864429,vhdl,,,,fixed_2,,,,,,,,
+F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL/fft_PL.srcs/sources_1/new/fixed_tb_swap.vhd,1710078199,vhdl,,,,fixed_tb_swap,,,,,,,,
 F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL/fft_PL.srcs/sources_1/new/my_reg.vhd,1709862198,vhdl,,,,my_reg,,,,,,,,
 F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL/fixed_float_types_c.vhdl,1709501471,vhdl,,,,fixed_float_types,,,,,,,,
-F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL/fixed_pkg_c.vhdl,1709781086,vhdl,F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL/fft_PL.srcs/sources_1/new/fix_step2.vhd,,,fixed_pkg,,,,,,,,
+F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL/fixed_pkg_c.vhdl,1709781086,vhdl,F:/ECE6740/Labs/Lab3/fft_PL_component/fft_PL/fft_PL.srcs/sources_1/new/fft_step3.vhd,,,fixed_pkg,,,,,,,,
 F:/ECE6740/Labs/Lab3/fft_PL_component/fix.vhd,1709691749,vhdl,,,,fixed_pt,,,,,,,,
 F:/ECE6740/Labs/Lab3/fft_PL_component/fixed_tb.vhd,1709864259,vhdl,,,,fixed_tb,,,,,,,,

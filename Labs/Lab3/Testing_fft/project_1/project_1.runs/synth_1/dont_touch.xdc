@@ -15,16 +15,34 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_rs
 # IP: bd/design_1/ip/design_1_ps7_0_axi_periph_2/design_1_ps7_0_axi_periph_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ps7_0_axi_periph_2 || ORIG_REF_NAME==design_1_ps7_0_axi_periph_2} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_axi_cdma_0_7/design_1_axi_cdma_0_7.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_cdma_0_7 || ORIG_REF_NAME==design_1_axi_cdma_0_7} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_axi_bram_ctrl_0_4/design_1_axi_bram_ctrl_0_4.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_bram_ctrl_0_4 || ORIG_REF_NAME==design_1_axi_bram_ctrl_0_4} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_axi_bram_ctrl_0_2/design_1_axi_bram_ctrl_0_2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_bram_ctrl_0_2 || ORIG_REF_NAME==design_1_axi_bram_ctrl_0_2} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_13/design_1_axi_bram_ctrl_0_bram_13.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_bram_ctrl_0_bram_13 || ORIG_REF_NAME==design_1_axi_bram_ctrl_0_bram_13} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_11/design_1_axi_bram_ctrl_0_bram_11.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_bram_ctrl_0_bram_11 || ORIG_REF_NAME==design_1_axi_bram_ctrl_0_bram_11} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_axi_smc_1/design_1_axi_smc_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_smc_1 || ORIG_REF_NAME==design_1_axi_smc_1} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_2 || ORIG_REF_NAME==design_1_auto_pc_2} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_rst_ps7_0_140M_0/design_1_rst_ps7_0_140M_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_rst_ps7_0_140M_0 || ORIG_REF_NAME==design_1_rst_ps7_0_140M_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_axi_cdma_0_9/design_1_axi_cdma_0_9.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_cdma_0_9 || ORIG_REF_NAME==design_1_axi_cdma_0_9} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xbar_0 || ORIG_REF_NAME==design_1_xbar_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_axi_mem_intercon_0/design_1_axi_mem_intercon_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_0 || ORIG_REF_NAME==design_1_axi_mem_intercon_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_bram_ctrl_1_0 || ORIG_REF_NAME==design_1_axi_bram_ctrl_1_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_0 || ORIG_REF_NAME==design_1_auto_pc_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_1 || ORIG_REF_NAME==design_1_auto_pc_1} -quiet] -quiet
 
 # XDC: f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/design_1_ooc.xdc

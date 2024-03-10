@@ -88,17 +88,33 @@ set_property ip_output_repo f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+read_verilog -library xil_defaultlib F:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
 add_files F:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd
 set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xdc]
 set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_2/design_1_rst_ps7_0_100M_2_board.xdc]
 set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_2/design_1_rst_ps7_0_100M_2.xdc]
 set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_2/design_1_rst_ps7_0_100M_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_cdma_0_7/design_1_axi_cdma_0_7.xdc]
-set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_cdma_0_7/design_1_axi_cdma_0_7_ooc.xdc]
-set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_2/design_1_axi_bram_ctrl_0_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_11/design_1_axi_bram_ctrl_0_bram_11_ooc.xdc]
-set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_4/design_1_axi_bram_ctrl_0_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_13/design_1_axi_bram_ctrl_0_bram_13_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/bd_6f02_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/bd_6f02_psr_aclk_0.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_5/bd_6f02_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_6/bd_6f02_sarn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_7/bd_6f02_srn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_8/bd_6f02_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_9/bd_6f02_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_10/bd_6f02_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_11/bd_6f02_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1/ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_140M_0/design_1_rst_ps7_0_140M_0_board.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_140M_0/design_1_rst_ps7_0_140M_0.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_140M_0/design_1_rst_ps7_0_140M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_cdma_0_9/design_1_axi_cdma_0_9.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_cdma_0_9/design_1_axi_cdma_0_9_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_1_0/design_1_axi_bram_ctrl_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all f:/ECE6740/Labs/Lab3/Testing_fft/project_1/project_1.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }

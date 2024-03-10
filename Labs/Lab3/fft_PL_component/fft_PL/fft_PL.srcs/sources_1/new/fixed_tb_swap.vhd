@@ -21,6 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use ieee.std_logic_unsigned.all;
 library IEEE_PROPOSED;
 --use IEEE_PROPOSED.fixed_float_types.all;
 use work.fixed_pkg.all;
@@ -44,63 +45,46 @@ architecture Behavioral of fixed_tb_swap is
 component fixed_3 is
     Port (  clk : in std_logic;
             start : in std_logic;
-            x_i : in sfixed (0 downto -32);
-            y_i : in sfixed (0 downto -32);
-            x_j : in sfixed (0 downto -32);
-            y_j : in sfixed (0 downto -32);
-            n : in std_logic_vector (12 downto 0);
-            x_i_o : out std_logic_vector (33 downto 0);
-            y_i_o : out std_logic_vector (33 downto 0);
-            x_j_o : out std_logic_vector (33 downto 0);
-            y_j_o : out std_logic_vector (33 downto 0);
+            x_i : in std_logic_vector (17 downto 0);
+            y_i : in std_logic_vector (17 downto 0);
+            x_j : in std_logic_vector (17 downto 0);
+            y_j : in std_logic_vector (17 downto 0);
+            n : in std_logic_vector (15 downto 0);
+            x_i_o : out std_logic_vector (17 downto 0);
+            y_i_o : out std_logic_vector (17 downto 0);
+            x_j_o : out std_logic_vector (17 downto 0);
+            y_j_o : out std_logic_vector (17 downto 0);
             done : out std_logic);
 end component;
 
-component my_reg is
-    generic (
-        DATA_WIDTH : integer := 34
-    );
-    port (
-        clk     : in  std_logic;             -- Clock input
-        reset   : in  std_logic;             -- Reset input
-        data_in : in  std_logic_vector(DATA_WIDTH - 1 downto 0); -- Data input          -- Enable input
-        data_out: out std_logic_vector(DATA_WIDTH - 1 downto 0)  -- Data output
-    );
-end component my_reg;
 
-signal clk, done, start, reset : std_logic := '0';
-signal c1, c2 : sfixed(1 downto -16);
-signal u1, u2, u1_out, u2_out : std_logic_vector(33 downto 0);
-signal l1 : std_logic_vector(11 downto 0);
+signal clk, done, start : std_logic := '0';
+signal n : std_logic_vector (15 downto 0) := x"1000";
+signal x_i, y_i, x_j, y_j : std_logic_vector (17 downto 0);
+signal x_i_o, y_i_o, x_j_o, y_j_o : std_logic_vector(17 downto 0);
 begin 
 
-UUT: fixed_2 port map (clk, reset, start, c1, c2, u1, u2, l1, u1_out, u2_out, done);
-reg: my_reg port map(clk, reset, u1_out, u1);
-reg1: my_reg port map(clk, reset, u2_out, u2);
+UUT: fixed_3 port map (clk, start, x_i, y_i, x_j, y_j, n, x_i_o, y_i_o, x_j_o, y_j_o);
+
+clock: process
+begin
+    clk <= '0';
+    wait for 20 ns;
+    clk <= '1';
+    wait for 20 ns;
+end process;
 process
 begin
  -- test inputs 
  --  x = 0.0570, x_il 0.1137 
  -- for my example y is 0 for allgit 
     start <= '0';
-    reset <= '0';
-    clk <= '0';
-    c1 <= to_sfixed(-1.0, 1, -16);
-    c2 <= to_sfixed(0, 1, -16);
-    wait for 100 ns;
-    clk <= '1';
-    l1 <= x"001";
-    wait for 100 ns;
+    x_i <= "00" & x"beef";
+    x_j <= "00" & x"dead";
+    y_i <= "00" & x"aaaa";
+    y_j <= "00" & x"bbbb";
+    wait for 40 ns;
     start <= '1';
-    clk <= '0';
-    wait for 100 ns;
-    clk <= '1';
-    wait for 100 ns;
-    clk <= '0';
-    wait for 100 ns;
-    clk <= '1';
-    wait for 100 ns;
-    
     wait;
 end process;
 

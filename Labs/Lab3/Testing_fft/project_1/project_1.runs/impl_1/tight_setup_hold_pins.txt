@@ -1,0 +1,14 @@
++====================+===================+===================================================================================================================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                                                                                                               |
++====================+===================+===================================================================================================================================================================+
+| clk_fpga_1         | clk_fpga_1        | design_1_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/aw_reg_slice/skid2vector_q_reg/D                                      |
+| clk_fpga_1         | clk_fpga_1        | design_1_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/aw_reg_slice/state_reg[s_ready_i]/D                                   |
+| clk_fpga_1         | clk_fpga_1        | design_1_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/aw_reg_slice/state_reg[m_valid_i]/D                                   |
+| clk_fpga_1         | clk_fpga_1        | design_1_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/cmd_fifo/fifoaddr_afull_reg/D         |
+| clk_fpga_1         | clk_fpga_1        | design_1_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/w_payld_fifo/cmd_fifo/gen_pipelined.mesg_reg_reg[10]/D                |
+| clk_fpga_1         | clk_fpga_1        | design_1_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/cmd_fifo/gen_pipelined.state_reg[1]/D |
+| clk_fpga_1         | clk_fpga_1        | design_1_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/cmd_fifo/fifoaddr_reg[1]/D            |
+| clk_fpga_1         | clk_fpga_1        | design_1_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/cmd_fifo/fifoaddr_reg[2]/D            |
+| clk_fpga_1         | clk_fpga_1        | design_1_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/cmd_fifo/fifoaddr_reg[3]/D            |
+| clk_fpga_1         | clk_fpga_1        | design_1_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/w_cmd_fifo/fifoaddr_reg[3]/D                                          |
++--------------------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
